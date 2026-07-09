@@ -1,0 +1,13 @@
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  max-width: 800px;
+  margin: 0 auto 16px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+.title span {
+  color: #ffffff;
+}

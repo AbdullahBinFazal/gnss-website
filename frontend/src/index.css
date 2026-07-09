@@ -1,0 +1,1142 @@
+/* ============================================================
+   GNSS WEBSITE 
+   National Center of GIS & Space Applications | IST Islamabad
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+  /* Colors - Light Theme */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fc;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  
+  --text-primary: #0a0a1a;
+  --text-secondary: #4a4a6a;
+  --text-muted: #8a8aa0;
+  
+  /* Removed purple accent colors - using black instead */
+  --accent-primary: #000000;
+  --accent-secondary: #1a1a2e;
+  --accent-tertiary: #2d2d44;
+  --accent-glow: rgba(0, 0, 0, 0.08);
+  
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --border-hover: rgba(0, 0, 0, 0.2);
+  
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 30px rgba(0, 0, 0, 0.05);
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  
+  --max-width: 1200px;
+  --header-height: 70px;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { 
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover { background: #000000; }
+
+/* ============================================================
+   CONTAINER
+   ============================================================ */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+/* ============================================================
+   GLASS CARD
+   ============================================================ */
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ============================================================
+   GRADIENT TEXT - NOW BLACK
+   ============================================================ */
+.gradient-text {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #000000;
+  background-clip: unset;
+  color: #ffffff;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  padding: 12px 28px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: #1a1a2e;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.03);
+  color: var(--text-primary);
+  padding: 12px 28px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0 24px;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* NCGSA Logo - BLACK text */
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000000;
+}
+
+.navbar .logo .icon {
+  font-size: 1.8rem;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.navbar .nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar .nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #000000;
+}
+
+.navbar .nav-links a:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-links a.active {
+  color: #000000;
+}
+
+.navbar .nav-links a.active::after {
+  width: 100%;
+  background: #000000;
+}
+
+.navbar .auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar .auth-buttons .btn-login {
+  background: transparent;
+  color: var(--text-secondary);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar .auth-buttons .btn-login:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.navbar .auth-buttons .btn-signup {
+  background: #000000;
+  color: white;
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar .auth-buttons .btn-signup:hover {
+  background: #1a1a2e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================================
+   FOOTER LOGO - BLACK
+   ============================================================ */
+.footer .brand .logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000000;
+}
+
+/* ============================================================
+   HERO SECTION - ALL TEXT WHITE
+   ============================================================ */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 60px;
+
+  /* --- background image --- */
+  background-image: url('./assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Subtle dark overlay to make white text pop */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+/* make sure the actual content sits above the overlay */
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(4px);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* GNSS text is WHITE */
+.hero h1 .gradient-text {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff;
+  background-clip: unset;
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+  text-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero .buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.hero .buttons .btn-primary {
+  background: #ffffff;
+  color: #0a0a1a;
+  border: none;
+}
+
+.hero .buttons .btn-primary:hover {
+  background: #f0f0f5;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.hero .buttons .btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero .buttons .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.hero .trust-badges {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+
+.hero .trust-badges span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(4px);
+}
+
+/* ============================================================
+   SECTION BACKGROUNDS - FOR ALL PAGES
+   WITH REDUCED WHITE OVERLAY (MORE IMAGE VISIBLE)
+   ============================================================ */
+
+/* Hero/Space Section - Space/Galaxy */
+.section-hero {
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.section-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+.section-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-hero h1 {
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+.section-hero p {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Stats Section - Galaxy/Nebula - REDUCED OVERLAY */
+.section-stats {
+  background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48d0a9c?w=1920&h=600&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-stats::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.35); /* Reduced from 0.88 to 0.35 */
+  z-index: 0;
+}
+
+.section-stats .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Research Domains - Satellite/Technology - REDUCED OVERLAY */
+.section-domains {
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=800&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-domains::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.40); /* Reduced from 0.90 to 0.40 */
+  z-index: 0;
+}
+
+.section-domains .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* SDGs Section - Nature/Sustainable - REDUCED OVERLAY */
+.section-sdgs {
+  background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&h=800&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-sdgs::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.35); /* Reduced from 0.88 to 0.35 */
+  z-index: 0;
+}
+
+.section-sdgs .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Labs Section - Research Lab - REDUCED OVERLAY */
+.section-labs {
+  background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1920&h=800&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-labs::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.40); /* Reduced from 0.90 to 0.40 */
+  z-index: 0;
+}
+
+.section-labs .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Impact Section - Data/Technology - REDUCED OVERLAY */
+.section-impact {
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=800&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-impact::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.40); /* Reduced from 0.90 to 0.40 */
+  z-index: 0;
+}
+
+.section-impact .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Programs Section - Education/Space - REDUCED OVERLAY */
+.section-programs {
+  background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1920&h=800&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-programs::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.40); /* Reduced from 0.90 to 0.40 */
+  z-index: 0;
+}
+
+.section-programs .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Faculty Section - People/Collaboration - REDUCED OVERLAY */
+.section-faculty {
+  background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=800&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-faculty::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.40); /* Reduced from 0.90 to 0.40 */
+  z-index: 0;
+}
+
+.section-faculty .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Publications Section - Documents/Research - REDUCED OVERLAY */
+.section-publications {
+  background-image: url('https://images.unsplash.com/photo-1532012197267-da84d127e765?w=1920&h=800&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-publications::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.40); /* Reduced from 0.90 to 0.40 */
+  z-index: 0;
+}
+
+.section-publications .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Events Section - Calendar/Events - REDUCED OVERLAY */
+.section-events {
+  background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&h=800&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-events::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.40); /* Reduced from 0.90 to 0.40 */
+  z-index: 0;
+}
+
+.section-events .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Contact Section - Map/Communication - REDUCED OVERLAY */
+.section-contact {
+  background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&h=800&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-contact::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.35); /* Reduced from 0.88 to 0.35 */
+  z-index: 0;
+}
+
+.section-contact .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* About Section - Earth/Satellite - REDUCED OVERLAY */
+.section-about {
+  background-image: url('https://images.unsplash.com/photo-1517976487492-5750f3195933?w=1920&h=800&fit=crop&crop=center');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.section-about::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.40); /* Reduced from 0.90 to 0.40 */
+  z-index: 0;
+}
+
+.section-about .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   STATS SECTION
+   ============================================================ */
+.stats {
+  padding: 60px 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.stats .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stats .stat-item {
+  text-align: center;
+}
+
+.stats .stat-item .number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.stats .stat-item .label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+/* ============================================================
+   SECTION TITLES - ALL BLACK
+   ============================================================ */
+.section-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-title .subtitle {
+  display: inline-block;
+  padding: 4px 16px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius-full);
+  color: #000000;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.section-title h2 .gradient-text {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #000000;
+  background-clip: unset;
+  color: #000000;
+}
+
+.section-title p {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   FEATURES / RESEARCH AREAS
+   ============================================================ */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.feature-card {
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.feature-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   FACULTY
+   ============================================================ */
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.faculty-card {
+  padding: 24px;
+  text-align: center;
+}
+
+.faculty-card .photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  object-fit: cover;
+}
+
+.faculty-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.faculty-card .designation {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.faculty-card .interests {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.faculty-card .email {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+/* ============================================================
+   PUBLICATIONS
+   ============================================================ */
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.publication-item {
+  padding: 20px 24px;
+}
+
+.publication-item .title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.publication-item .authors {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.publication-item .meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.publication-item .link {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 0.85rem;
+}
+
+/* ============================================================
+   EVENTS
+   ============================================================ */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.event-card {
+  padding: 24px;
+}
+
+.event-card .date {
+  font-size: 0.85rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+.event-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 8px 0;
+  color: var(--text-primary);
+}
+
+.event-card .location {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.event-card .description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  padding: 40px 0 24px;
+  margin-top: 60px;
+}
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+.footer .brand p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 12px;
+  max-width: 300px;
+}
+
+.footer h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer ul a:hover {
+  color: #000000;
+}
+
+.footer .bottom {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   RESPONSIVE - Disable fixed backgrounds on mobile
+   ============================================================ */
+@media (max-width: 768px) {
+  .section-hero,
+  .section-about,
+  .section-stats,
+  .section-domains,
+  .section-sdgs,
+  .section-labs,
+  .section-impact,
+  .section-programs,
+  .section-faculty,
+  .section-publications,
+  .section-events,
+  .section-contact {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero h1 { font-size: 3rem; }
+  .stats .grid { grid-template-columns: repeat(2, 1fr); }
+  .footer .grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .hero p { font-size: 1rem; }
+  .hero .trust-badges { gap: 16px; flex-wrap: wrap; }
+  
+  .navbar .nav-links { display: none; }
+  .navbar .mobile-menu { display: block; }
+  
+  .stats .grid { grid-template-columns: 1fr 1fr; }
+  .features-grid { grid-template-columns: 1fr; }
+  .faculty-grid { grid-template-columns: 1fr; }
+  .events-grid { grid-template-columns: 1fr; }
+  .footer .grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.8rem; }
+  .stats .stat-item .number { font-size: 2rem; }
+  .section-title h2 { font-size: 1.8rem; }
+}
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); }
+  50% { box-shadow: 0 0 30px rgba(0, 0, 0, 0.08); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
+
+/* ============================================================
+   CARD HOVER ANIMATIONS
+   ============================================================ */
+
+/* Floating card animation */
+.card-float {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-float:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Glow effect on hover */
+.card-glow {
+  transition: all 0.4s ease;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.2);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+/* 3D tilt effect */
+.card-tilt {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-tilt:hover {
+  transform: rotateX(2deg) rotateY(4deg) translateY(-5px);
+}
+
+/* Border pulse animation */
+@keyframes borderPulse {
+  0%, 100% {
+    border-color: rgba(99, 102, 241, 0.1);
+  }
+  50% {
+    border-color: rgba(99, 102, 241, 0.4);
+  }
+}
+
+.card-pulse {
+  animation: borderPulse 2s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.card-pulse:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+

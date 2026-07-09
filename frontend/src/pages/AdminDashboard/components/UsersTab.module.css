@@ -1,0 +1,72 @@
+.tableContainer {
+  padding: 24px;
+  overflow: hidden;
+}
+
+.tableTitle {
+  margin-bottom: 16px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead tr {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.table th {
+  padding: 12px;
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.table td {
+  padding: 12px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.roleBadge {
+  padding: 2px 12px;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.adminBadge {
+  background: rgba(99, 102, 241, 0.2);
+  color: #6366f1;
+}
+
+.userBadge {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+}
+
+.deleteBtn {
+  padding: 4px 12px;
+  font-size: 0.7rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background: #dc2626;
+}

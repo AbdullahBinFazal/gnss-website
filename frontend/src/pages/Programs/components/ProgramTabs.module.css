@@ -1,0 +1,24 @@
+.tabs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 10px 32px;
+  border-radius: 9999px;
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-secondary);
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #000000, #1a1a2e);
+  color: white;
+  font-weight: 600;
+}
