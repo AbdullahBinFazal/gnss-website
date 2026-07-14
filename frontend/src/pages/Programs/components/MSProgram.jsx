@@ -39,9 +39,9 @@ const SectionCard = ({ image, title, children }) => (
 const MSProgram = () => {
   const data = programData.ms;
   const sectionImages = {
-    specializations: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=400&fit=crop",
-    courses: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=400&fit=crop",
-    research: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=400&fit=crop",
+    specializations: "https://plus.unsplash.com/premium_photo-1712039658659-7019cfe912e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWFydGh8ZW58MHx8MHx8fDA%3D",
+    courses: "https://plus.unsplash.com/premium_photo-1714618990872-09781a8421f0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHNhdGVsbGl0ZSUyMHNwYWNlfGVufDB8fDB8fHww",
+    research: "https://plus.unsplash.com/premium_photo-1679756099015-b06104fff761?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2F0ZWxsaXRlJTIwc3BhY2V8ZW58MHx8MHx8fDA%3D",
   };
 
   return (

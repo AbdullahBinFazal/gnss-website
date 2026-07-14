@@ -1,7 +1,7 @@
 import styles from "./GNSSLabSection.module.css";
 
 const GNSSLabSection = () => {
-  const gnssLabImage = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=500&fit=crop";
+  const gnssLabImage = "https://images.unsplash.com/photo-1710267224542-6c0428a796fd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNhdGVsbGl0ZSUyMHNwYWNlfGVufDB8fDB8fHww";
 
   return (
     <section style={{ padding: "20px 0 60px" }}>

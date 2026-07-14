@@ -141,7 +141,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(0, 0, 0, 0.03);
+  background: rgb(244, 238, 238);
   color: var(--text-primary);
   padding: 12px 28px;
   border-radius: var(--radius-full);
@@ -469,7 +469,7 @@ body {
 
 /* Stats Section - Galaxy/Nebula - REDUCED OVERLAY */
 .section-stats {
-  background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48d0a9c?w=1920&h=600&fit=crop&crop=center');
+  background-image: url('https://t4.ftcdn.net/jpg/05/94/95/61/240_F_594956182_Ks7783WF2C5ZCv4afXJ3JOnOk8cXwlr5.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -515,7 +515,7 @@ body {
 
 /* SDGs Section - Nature/Sustainable - REDUCED OVERLAY */
 .section-sdgs {
-  background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&h=800&fit=crop&crop=center');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/042/196/636/non_2x/ai-generated-satellite-space-background-free-photo.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -538,7 +538,7 @@ body {
 
 /* Labs Section - Research Lab - REDUCED OVERLAY */
 .section-labs {
-  background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1920&h=800&fit=crop&crop=center');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/042/196/607/non_2x/ai-generated-satellite-space-background-free-photo.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -584,7 +584,7 @@ body {
 
 /* Programs Section - Education/Space - REDUCED OVERLAY */
 .section-programs {
-  background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1920&h=800&fit=crop&crop=center');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/042/196/607/non_2x/ai-generated-satellite-space-background-free-photo.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -607,7 +607,7 @@ body {
 
 /* Faculty Section - People/Collaboration - REDUCED OVERLAY */
 .section-faculty {
-  background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=800&fit=crop&crop=center');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/058/348/247/non_2x/a-satellite-orbits-the-earth-transmitting-telemetry-and-gps-signals-this-advanced-spacecraft-supports-global-tracking-and-positioning-systems-enhancing-navigation-capabilities-photo.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -630,7 +630,7 @@ body {
 
 /* Publications Section - Documents/Research - REDUCED OVERLAY */
 .section-publications {
-  background-image: url('https://images.unsplash.com/photo-1532012197267-da84d127e765?w=1920&h=800&fit=crop&crop=center');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/042/196/636/non_2x/ai-generated-satellite-space-background-free-photo.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -653,7 +653,7 @@ body {
 
 /* Events Section - Calendar/Events - REDUCED OVERLAY */
 .section-events {
-  background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&h=800&fit=crop&crop=center');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/042/196/607/non_2x/ai-generated-satellite-space-background-free-photo.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -676,7 +676,7 @@ body {
 
 /* Contact Section - Map/Communication - REDUCED OVERLAY */
 .section-contact {
-  background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&h=800&fit=crop&crop=center');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/042/196/607/non_2x/ai-generated-satellite-space-background-free-photo.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -765,9 +765,9 @@ body {
 .section-title .subtitle {
   display: inline-block;
   padding: 4px 16px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgb(4, 4, 4);
   border-radius: var(--radius-full);
-  color: #000000;
+  color: #f9f4f4;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;

@@ -6,10 +6,10 @@ const HeroSection = () => {
     <section className={styles.hero}>
       <div className={`container ${styles.animateFadeInUp}`}>
         <span className={styles.badge}>🛰️ National Center of GIS & Space Applications</span>
-        <h1 className={styles.title}>
-          Advancing <span className="gradient-text">GNSS</span> Research &<br />
-          Space Applications
-        </h1>
+       <h1 className={styles.title}>
+  Advancing <span className={styles.heroGradientText}>GNSS</span> Research &<br />
+  Space Applications
+</h1>
         <p className={styles.description}>
           The GNSS program at NCGSA focuses on cutting-edge research in
           navigation, timing, surveying, and space applications.

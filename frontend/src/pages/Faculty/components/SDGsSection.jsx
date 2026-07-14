@@ -7,7 +7,7 @@ const SDGsSection = () => {
     <section className="section-sdgs" style={{ padding: "40px 0" }}>
       <div className="container">
         <div className={styles.card}>
-          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&h=500&fit=crop" alt="Focused SDGs" className={styles.cardImage} />
+          <img src="https://media.gettyimages.com/id/165773692/photo/satellite-and-earth.jpg?s=612x612&w=0&k=20&c=Vlp5tQzJyqBIUxtqvHZ5MvAOHPjPo0LeozGo9wjAKfk=" alt="Focused SDGs" className={styles.cardImage} />
           <div className={styles.overlay} />
           <div className={styles.content}>
             <h2 className={styles.heading}>Focused <span className="gradient-text" style={{ color: "#a78bfa" }}>SDGs</span></h2>

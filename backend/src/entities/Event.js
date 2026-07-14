@@ -1,4 +1,4 @@
-// Purpose: Defines Event table - stores workshops, seminars, conferences
+
 const { EntitySchema } = require("typeorm");
 
 const Event = new EntitySchema({

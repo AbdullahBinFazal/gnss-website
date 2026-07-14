@@ -48,6 +48,12 @@
   margin-bottom: 24px;
 }
 
+/* Add this to ensure GNSS text is white */
+.title .gradient-text {
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+
 .description {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.95);
@@ -91,4 +97,20 @@
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* HeroSection.module.css */
+
+/* Add this new class for hero section GNSS text */
+.heroGradientText {
+  color: #ffffff !important;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(104, 101, 101, 0.5);
+  margin-bottom: 24px;
 }

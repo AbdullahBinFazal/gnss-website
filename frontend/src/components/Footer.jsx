@@ -20,7 +20,7 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/about">About GNSS</Link></li>
-              <li><Link to="/program">Program Info</Link></li>
+              <li><Link to="/programs">Program Info</Link></li>
               <li><Link to="/faculty">Faculty</Link></li>
               <li><Link to="/research">Research</Link></li>
             </ul>
@@ -31,7 +31,7 @@ const Footer = () => {
             <ul>
               <li><Link to="/publications">Publications</Link></li>
               <li><Link to="/events">Events</Link></li>
-              <li><Link to="/resources">Student Resources</Link></li>
+              
             </ul>
           </div>
 

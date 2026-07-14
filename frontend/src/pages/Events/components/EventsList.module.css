@@ -107,7 +107,7 @@
 }
 
 .learnLink {
-  color: #c0c1ff;
+  color: #f0f0f6;
   text-decoration: none;
   font-size: 0.75rem;
   font-weight: 600;
@@ -115,5 +115,5 @@
 }
 
 .learnLink:hover {
-  color: #a78bfa;
+  color: #ebe9f0;
 }
