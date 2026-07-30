@@ -1,14 +1,8 @@
 .heading {
-  font-size: 1.8rem;
-  font-weight: 800;
-  margin-bottom: 24px;
+  font-size: 1.8rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 24px !important;
   color: var(--text-primary);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
 }
 
 .avatar {

@@ -1,0 +1,43 @@
+.categoryWrapper {
+  margin-bottom: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.categoryWrapper:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 24px;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.categoryIcon {
+  font-size: 1.5rem;
+}
+
+.categoryName {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.countTag {
+  background: rgba(0, 0, 0, 0.05) !important;
+  color: var(--text-muted) !important;
+  border: none !important;
+  font-size: 0.7rem !important;
+  border-radius: 9999px !important;
+}
+
+.questionsList {
+  padding: 8px 0;
+}

@@ -1,9 +1,3 @@
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
 .statCard {
   position: relative;
   border-radius: 16px;

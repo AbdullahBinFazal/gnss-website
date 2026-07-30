@@ -1,87 +1,74 @@
-import styles from "./PhDProgram.module.css";
+import { Col, Row, Typography } from 'antd';
+import styles from "../Programs.module.css";
 
-const programData = {
-  phd: {
-    title: "PhD Global Navigation Satellite Systems",
-    duration: "3-5 Years",
-    eligibility: [
-      "MS in GNSS, Remote Sensing & GIS, Space Science, or related field",
-      "Minimum 3.0 CGPA (or equivalent)",
-      "GAT (Subject) with minimum 60% score",
-      "Research proposal in relevant area"
-    ],
-    specializations: [
-      "Advanced GNSS Signal Processing",
-      "GNSS Augmentation Systems",
-      "Space Weather & Satellite Navigation",
-      "GNSS for Geospatial & Remote Sensing Applications",
-      "Satellite Navigation Systems Design & Engineering"
-    ],
-    researchAreas: [
-      "Multi-GNSS Positioning Algorithms",
-      "Real-Time Kinematic (RTK) Positioning",
-      "Precise Point Positioning (PPP)",
-      "Ionosphere Modeling & Monitoring",
-      "Seismo-Ionospheric Anomalies",
-      "GNSS Spoofing & Jamming Detection",
-      "Small Satellite Navigation Systems",
-      "LEO-PNT Systems",
-      "GNSS Reflectometry",
-      "Space Weather Impact on GNSS"
-    ]
-  }
-};
-
-const SectionCard = ({ image, title, children }) => (
-  <div className={styles.sectionCard}>
-    <img src={image} alt={title} className={styles.sectionImage} />
-    <div className={styles.sectionOverlay} />
-    <div className={styles.sectionContent}>{children}</div>
-  </div>
-);
+const { Title, Paragraph } = Typography;
 
 const PhDProgram = () => {
-  const data = programData.phd;
-  const sectionImages = {
-    specializations: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=400&fit=crop",
-    research: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=400&fit=crop",
-  };
-
   return (
-    <section className="section-programs" style={{ padding: "20px 0 40px" }}>
+    <section className={styles.section}>
       <div className="container">
         <div className={styles.programContainer}>
-          {/* Program Overview */}
-          <div className="glass-card" style={{ padding: "32px" }}>
-            <h2 className={styles.programTitle}>{data.title}</h2>
-            <p className={styles.duration}>Duration: <strong>{data.duration}</strong></p>
-            <div>
-              <h4 className={styles.subHeading}>Eligibility Criteria</h4>
-              <ul className={styles.list}>
-                {data.eligibility.map((item, i) => <li key={i}>{item}</li>)}
-              </ul>
-            </div>
-          </div>
-
-          {/* Specializations */}
-          <SectionCard image={sectionImages.specializations} title="Specializations">
-            <h3 className={styles.cardTitle}>🎯 Specializations</h3>
-            <div className={styles.specializationsGrid}>
-              {data.specializations.map((s, i) => (
-                <div key={i} className={styles.specializationItem}>{s}</div>
-              ))}
-            </div>
-          </SectionCard>
-
-          {/* Research Areas */}
-          <SectionCard image={sectionImages.research} title="Research Areas">
-            <h3 className={styles.cardTitle}>🧪 Research Areas</h3>
-            <div className={styles.researchGrid}>
-              {data.researchAreas.map((item, i) => (
-                <div key={i} className={styles.researchItem}>🧪 {item}</div>
-              ))}
-            </div>
-          </SectionCard>
+          <Row gutter={[50, 40]} align="middle" className={styles.phdOverview}>
+            <Col xs={24} lg={12}>
+              <div className={styles.imageWrapper}>
+                <img src="https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-2-1200x1200.jpg" alt="PhD GNSS & Space Engineering" className={styles.sectionImage} />
+              </div>
+            </Col>
+            <Col xs={24} lg={12}>
+              <div className={styles.textContent}>
+                <span className={styles.badge}>Program</span>
+                <Title level={2} className={styles.heading}>
+                  PhD in <span className={styles.highlight}>GNSS & Space Engineering</span>
+                </Title>
+                <Paragraph className={styles.description}>
+                  Our PhD program is designed for researchers aiming to pioneer new scientific methodologies in satellite-based positioning, timing, and atmospheric remote sensing.
+                </Paragraph>
+              </div>
+            </Col>
+          </Row>
+          <Row gutter={[50, 40]} align="middle" className={styles.phdDetails}>
+            <Col xs={24} lg={12}>
+              <div className={styles.textContent}>
+                <span className={styles.badge}>Details</span>
+                <Title level={2} className={styles.heading}>
+                  Program <span className={styles.highlight}>Details</span>
+                </Title>
+                <div className={styles.detailsList}>
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailIcon}>⏱️</span>
+                    <div>
+                      <h4 className={styles.detailTitle}>Duration</h4>
+                      <p className={styles.detailDesc}>3 to 5 Years | Coursework + Comprehensive Exam + Peer-Reviewed Dissertation</p>
+                    </div>
+                  </div>
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailIcon}>🔬</span>
+                    <div>
+                      <h4 className={styles.detailTitle}>Core Research Domains</h4>
+                      <ul className={styles.listItems}>
+                        <li>Multi-frequency Integer Ambiguity Resolution for Next-Gen PPP</li>
+                        <li>Regional Ionospheric Total Electron Content (TEC) and Scintillation Modeling over South Asia</li>
+                        <li>High-Precision Geodetic Network Adjustments for Tectonic Strain Analysis</li>
+                        <li>Advanced Space Weather Monitoring and Satellite Orbit Determination</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailIcon}>📝</span>
+                    <div>
+                      <h4 className={styles.detailTitle}>Expectations</h4>
+                      <p className={styles.detailDesc}>Doctoral candidates lead our high-end computing facilities (GAMIT/GLOBK and Bernese GNSS Software), mentor undergraduate teams, and publish their findings in high-impact international aerospace and geodetic journals.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col xs={24} lg={12}>
+              <div className={styles.imageWrapper}>
+                <img src="https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-3-1200x1165.jpg" alt="Program Details" className={styles.sectionImage} />
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
     </section>

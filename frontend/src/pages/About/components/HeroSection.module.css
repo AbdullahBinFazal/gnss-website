@@ -25,11 +25,11 @@
 }
 
 .title {
-  font-size: 4rem;
-  font-weight: 900;
-  color: #ffffff;
+  font-size: 4rem !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
   text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
 }
 
 .title span {
@@ -37,10 +37,10 @@
 }
 
 .description {
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem !important;
+  color: rgba(255, 255, 255, 0.95) !important;
   max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
+  margin: 0 auto !important;
+  line-height: 1.8 !important;
   text-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
 }

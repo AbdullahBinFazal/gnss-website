@@ -1,4 +1,4 @@
-import styles from "./ImpactSection.module.css";
+import styles from "../Research.module.css";
 
 const impactStats = [
   { id: 1, value: "49", label: "Academic Research & Development", icon: "📊", image: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=400&h=300&fit=crop&crop=center" },
@@ -10,12 +10,12 @@ const impactStats = [
 
 const ImpactCard = ({ stat }) => (
   <div className={styles.impactCard}>
-    <img src={stat.image} alt={stat.label} className={styles.cardImage} />
-    <div className={styles.overlay} />
-    <div className={styles.cardContent}>
-      <div className={styles.icon}>{stat.icon}</div>
-      <div className={styles.value}>{stat.value}</div>
-      <div className={styles.label}>{stat.label}</div>
+    <img src={stat.image} alt={stat.label} className={styles.impactCardImage} />
+    <div className={styles.impactOverlay} />
+    <div className={styles.impactContent}>
+      <div className={styles.impactIcon}>{stat.icon}</div>
+      <div className={styles.impactValue}>{stat.value}</div>
+      <div className={styles.impactLabel}>{stat.label}</div>
     </div>
   </div>
 );
@@ -24,9 +24,9 @@ const ImpactSection = () => {
   return (
     <section className="section-impact" style={{ padding: "60px 0" }}>
       <div className="container">
-        <h2 className={styles.heading}>Research <span className="gradient-text">Impact</span></h2>
-        <p className={styles.subheading}>Measuring our contribution to space science and technology</p>
-        <div className={styles.grid}>
+        <h2 className={styles.impactHeading}>Research <span className="gradient-text">Impact</span></h2>
+        <p className={styles.impactSubheading}>Measuring our contribution to space science and technology</p>
+        <div className={styles.impactGrid}>
           {impactStats.map(s => <ImpactCard key={s.id} stat={s} />)}
         </div>
       </div>
