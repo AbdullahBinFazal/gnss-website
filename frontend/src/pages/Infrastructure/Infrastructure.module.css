@@ -1,0 +1,530 @@
+/* ===== INFRASTRUCTURE PAGE - CONSOLIDATED STYLES ===== */
+.infrastructure {
+  min-height: 100vh;
+}
+
+/* ===== SECTION CONTAINER ===== */
+.section {
+  padding: 60px 0;
+}
+
+/* ===== IMAGE - NO VISIBLE BOX ===== */
+.imageWrapper {
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+  max-width: 500px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.sectionImage {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.4s ease;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.sectionImage:hover {
+  transform: scale(1.02);
+}
+
+/* ===== TEXT CONTENT ===== */
+.textContent {
+  padding: 10px 0;
+}
+
+/* ===== BADGE ===== */
+.badge {
+  display: inline-block;
+  padding: 4px 16px;
+  background: #000;
+  border-radius: 9999px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+/* ===== HEADINGS - Inter Font, Consistent Size ===== */
+.heading {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  color: #0a0a1a !important;
+  line-height: 1.3 !important;
+}
+
+.headingSm {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 800 !important;
+  color: #0a0a1a !important;
+  line-height: 1.3 !important;
+}
+
+.highlight {
+  color: #000000;
+}
+
+/* ===== DESCRIPTION - Consistent Size ===== */
+.description {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.05rem !important;
+  line-height: 1.9 !important;
+  color: #4a4a6a !important;
+  margin-bottom: 0 !important;
+}
+
+.descriptionSm {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  color: #4a4a6a !important;
+  margin: 0 !important;
+}
+
+/* ===== SUB HEADING ===== */
+.subHeading {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: #0a0a1a !important;
+  margin-bottom: 4px !important;
+}
+
+/* ===== LIST STYLES ===== */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.listItem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.listIcon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.listTitle {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: #0a0a1a !important;
+  margin-bottom: 4px !important;
+}
+
+.listDesc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.95rem !important;
+  color: #4a4a6a !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+.listItems {
+  font-family: 'Inter', sans-serif !important;
+  color: #4a4a6a !important;
+  line-height: 1.8 !important;
+  padding-left: 20px !important;
+  margin: 0 !important;
+}
+
+.listItems li {
+  font-size: 0.95rem !important;
+}
+
+/* ===== SECTION TITLE (for Facilities heading) ===== */
+.sectionTitle {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 0 !important;
+  color: #0a0a1a !important;
+}
+
+.sectionHighlight {
+  color: #000000;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ===== HERO SECTION ===== */
+.heroContent {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 3.5rem !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: 16px !important;
+}
+
+.heroHighlight {
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+.heroDescription {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.2rem !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  line-height: 1.8 !important;
+  text-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+  margin: 0 !important;
+}
+
+/* ===== BULLET LIST (for Services) ===== */
+.bulletItem {
+  border: none !important;
+  padding: 4px 0 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+}
+
+.bullet {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.7;
+  flex-shrink: 0;
+  width: 18px;
+  display: inline-block;
+  text-align: left;
+}
+
+.bulletText {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.95rem !important;
+  color: #4a4a6a !important;
+  line-height: 1.7 !important;
+  flex: 1 !important;
+}
+
+/* ===== MOVING TAGS (for Sensor Equipment) ===== */
+.tagsWrapper {
+  margin-top: 40px;
+  overflow: hidden;
+  padding: 16px 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.tagsContainer {
+  display: flex;
+  gap: 24px;
+  animation: scrollTags 20s linear infinite;
+  width: max-content;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-subtle);
+}
+
+.tag:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes scrollTags {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ===== STATS SECTION ===== */
+.statsSection {
+  padding: 60px 0;
+  background: #f8f9fc;
+}
+
+.statsHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.statsTitle {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
+  color: #0a0a1a !important;
+}
+
+.statsHighlight {
+  color: #000000;
+}
+
+.statsSubtitle {
+  font-family: 'Inter', sans-serif !important;
+  color: #4a4a6a !important;
+  font-size: 1.1rem !important;
+}
+
+.statCard {
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.statCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.statIcon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.statValue {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 4px !important;
+  color: #0a0a1a !important;
+}
+
+.statLabel {
+  font-family: 'Inter', sans-serif !important;
+  color: #4a4a6a !important;
+  font-size: 0.95rem !important;
+  margin: 0 !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .heading {
+    font-size: 1.8rem !important;
+  }
+  .headingSm {
+    font-size: 1.6rem !important;
+  }
+  .description {
+    font-size: 0.95rem !important;
+  }
+  .descriptionSm {
+    font-size: 0.9rem !important;
+  }
+  .subHeading {
+    font-size: 0.95rem !important;
+  }
+  .listTitle {
+    font-size: 0.95rem !important;
+  }
+  .listDesc {
+    font-size: 0.9rem !important;
+  }
+  .listItems li {
+    font-size: 0.9rem !important;
+  }
+  .bulletText {
+    font-size: 0.9rem !important;
+  }
+  .imageWrapper {
+    max-width: 400px;
+  }
+  .sectionImage {
+    max-height: 320px;
+  }
+  .sectionTitle {
+    font-size: 2rem !important;
+  }
+  .statsTitle {
+    font-size: 2rem !important;
+  }
+  .statValue {
+    font-size: 1.8rem !important;
+  }
+  .heroTitle {
+    font-size: 2.8rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.6rem !important;
+  }
+  .headingSm {
+    font-size: 1.4rem !important;
+  }
+  .description {
+    font-size: 0.9rem !important;
+  }
+  .descriptionSm {
+    font-size: 0.85rem !important;
+  }
+  .imageWrapper {
+    max-width: 100%;
+  }
+  .sectionImage {
+    max-height: 280px;
+  }
+  .list {
+    gap: 16px;
+  }
+  .listIcon {
+    font-size: 1.5rem;
+  }
+  .sectionTitle {
+    font-size: 1.8rem !important;
+  }
+  .statsTitle {
+    font-size: 1.8rem !important;
+  }
+  .statsSubtitle {
+    font-size: 0.95rem !important;
+  }
+  .statValue {
+    font-size: 1.5rem !important;
+  }
+  .tagsContainer {
+    gap: 14px;
+    animation-duration: 30s;
+  }
+  .tag {
+    padding: 4px 12px;
+    font-size: 0.7rem;
+  }
+  .equipmentList {
+    gap: 18px;
+  }
+  .equipmentIcon {
+    font-size: 1.5rem;
+  }
+  .bullet {
+    font-size: 0.9rem;
+    width: 16px;
+  }
+  .bulletText {
+    font-size: 0.85rem !important;
+  }
+  .heroTitle {
+    font-size: 2.2rem !important;
+  }
+  .heroDescription {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.3rem !important;
+  }
+  .headingSm {
+    font-size: 1.2rem !important;
+  }
+  .description {
+    font-size: 0.85rem !important;
+  }
+  .descriptionSm {
+    font-size: 0.8rem !important;
+  }
+  .subHeading {
+    font-size: 0.85rem !important;
+  }
+  .listTitle {
+    font-size: 0.85rem !important;
+  }
+  .listDesc {
+    font-size: 0.85rem !important;
+  }
+  .listItems li {
+    font-size: 0.85rem !important;
+  }
+  .sectionImage {
+    max-height: 220px;
+  }
+  .sectionTitle {
+    font-size: 1.5rem !important;
+  }
+  .statsTitle {
+    font-size: 1.5rem !important;
+  }
+  .statCard {
+    padding: 16px;
+  }
+  .statIcon {
+    font-size: 2rem;
+  }
+  .statValue {
+    font-size: 1.3rem !important;
+  }
+  .bullet {
+    font-size: 0.85rem;
+    width: 14px;
+  }
+  .bulletText {
+    font-size: 0.85rem !important;
+  }
+  .equipmentItem {
+    gap: 12px;
+  }
+  .equipmentIcon {
+    font-size: 1.3rem;
+  }
+  .equipmentTitle {
+    font-size: 0.85rem;
+  }
+  .equipmentDesc {
+    font-size: 0.8rem;
+  }
+  .sensorImage {
+    max-height: 220px;
+  }
+  .tagsWrapper {
+    padding: 12px 0;
+  }
+  .tagsContainer {
+    gap: 10px;
+    animation-duration: 35s;
+  }
+  .tag {
+    padding: 4px 10px;
+    font-size: 0.65rem;
+  }
+  .heroTitle {
+    font-size: 1.8rem !important;
+  }
+  .heroDescription {
+    font-size: 0.9rem !important;
+  }
+}

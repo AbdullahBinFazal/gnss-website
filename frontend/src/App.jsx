@@ -17,6 +17,16 @@ import Faculty from "./pages/Faculty/Faculty";
 import Publications from "./pages/Publications/Publications";
 import Programs from "./pages/Programs/Programs";
 import Events from "./pages/Events/Events";
+import Engagement from "./pages/Engagement/Engagement";
+import FAQ from "./pages/FAQ/FAQ";  // ← NEW
+
+import CoPilot from "./pages/CoPilot/CoPilot";
+import Infrastructure from "./pages/Infrastructure/Infrastructure";
+
+
+
+import ContactUs from "./pages/ContactUs/ContactUs";
+
 
 // Components
 import Navbar from "./components/Navbar";
@@ -42,9 +52,17 @@ function AppContent() {
           <Route path="/register" element={<Register />} />
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/publications" element={<Publications />} />
+
           <Route path="/programs" element={<Programs />} />
+          <Route path="/copilot" element={<CoPilot />} />
+    <Route path="/engagement" element={<Engagement />} />
+         <Route path="/infrastructure" element={<Infrastructure />} />
+    
           <Route path="/events" element={<Events />} />
+          <Route path="/faq" element={<FAQ />} />  {/* ← NEW */}
+  <Route path="/infrastructure" element={<Infrastructure />} />
           <Route path="/dashboard" element={<ProtectedRoute><UserDashboard /></ProtectedRoute>} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
         </Routes>
       </main>

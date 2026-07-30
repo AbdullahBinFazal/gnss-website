@@ -1,15 +1,15 @@
-import styles from "./ProgramTabs.module.css";
+import styles from "../Programs.module.css";
 
 const ProgramTabs = ({ activeTab, setActiveTab }) => {
   return (
     <section style={{ padding: "10px 0" }}>
       <div className="container">
-        <div className={styles.tabs}>
+        <div className={styles.programTabs}>
           {["ms", "phd"].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`${styles.tab} ${activeTab === tab ? styles.active : ""}`}
+              className={`${styles.programTab} ${activeTab === tab ? styles.programTabActive : ""}`}
             >
               {tab === "ms" ? "MS Program" : "PhD Program"}
             </button>

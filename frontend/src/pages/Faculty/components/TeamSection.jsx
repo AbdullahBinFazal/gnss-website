@@ -1,4 +1,7 @@
+import { Col, Row, Typography } from 'antd';
 import styles from "./TeamSection.module.css";
+
+const { Title } = Typography;
 
 const teamMembers = [
   { name: "Prof. Dr. Najam Abbas Naqvi", image: "https://ncgsa.org.pk/storage/2021/04/Prof.-Dr.-Najam-Abbas-Naqvi.jpg", designation: "Professor" },
@@ -29,20 +32,22 @@ const TeamSection = () => {
   return (
     <section style={{ padding: "20px 0 60px" }}>
       <div className="container">
-        <h2 className={styles.heading}>Our <span className="gradient-text">Team</span></h2>
-        <div className={styles.grid}>
+        <Title level={2} className={styles.heading}>Our <span className="gradient-text">Team</span></Title>
+        <Row gutter={[20, 20]}>
           {teamMembers.map((member, index) => (
-            <div key={index} className="glass-card" style={{ padding: "20px", textAlign: "center", transition: "all 0.3s ease" }}
-              onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.borderColor = "rgba(0,0,0,0.4)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.borderColor = "var(--border-subtle)"; }}>
-              <div className={styles.avatar}>
-                <img src={member.image} alt={member.name} />
+            <Col xs={24} sm={12} md={8} lg={6} key={index}>
+              <div className="glass-card" style={{ padding: "20px", textAlign: "center", transition: "all 0.3s ease", height: "100%" }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.borderColor = "rgba(0,0,0,0.4)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.borderColor = "var(--border-subtle)"; }}>
+                <div className={styles.avatar}>
+                  <img src={member.image} alt={member.name} />
+                </div>
+                <h4 className={styles.memberName}>{member.name}</h4>
+                <p className={styles.memberDesignation}>{member.designation}</p>
               </div>
-              <h4 className={styles.memberName}>{member.name}</h4>
-              <p className={styles.memberDesignation}>{member.designation}</p>
-            </div>
+            </Col>
           ))}
-        </div>
+        </Row>
       </div>
     </section>
   );

@@ -8,6 +8,15 @@ const { Faculty } = require("../entities/Faculty");
 const { Publication } = require("../entities/Publication");
 const { Event } = require("../entities/Event");
 const { ResearchArea } = require("../entities/ResearchArea");
+const { Facility } = require("../entities/Facility");
+const { Observatory } = require("../entities/Observatory");
+const { CapacityProgram } = require("../entities/CapacityProgram");
+const { Collaboration } = require("../entities/Collaboration");
+const { CoPilot } = require("../entities/CoPilot");
+const { Opportunity } = require("../entities/Opportunity");
+const { ContactMessage } = require("../entities/ContactMessage");
+const { Infrastructure } = require("../entities/Infrastructure");
+const { Engagement } = require("../entities/Engagement");
 
 const AppDataSource = new DataSource({
   type: "postgres",

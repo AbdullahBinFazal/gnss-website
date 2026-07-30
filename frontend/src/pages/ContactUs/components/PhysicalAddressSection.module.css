@@ -1,0 +1,134 @@
+/* Left Side - Image - NO VISIBLE BOX */
+.imageWrapper {
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+  max-width: 500px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.addressImage {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.4s ease;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.addressImage:hover {
+  transform: scale(1.02);
+}
+
+/* Right Side - Text Content */
+.textContent {
+  padding: 10px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 16px;
+  background: #000;
+  border-radius: 9999px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.heading {
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 20px !important;
+  color: var(--text-primary) !important;
+  line-height: 1.3 !important;
+}
+
+.highlight {
+  color: #000000;
+}
+
+.addressBox {
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
+  padding: 24px 28px;
+  border: 1px solid var(--border-subtle);
+}
+
+.addressText {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.addressText strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .heading {
+    font-size: 1.8rem !important;
+  }
+  
+  .addressText {
+    font-size: 0.95rem;
+  }
+  
+  .imageWrapper {
+    max-width: 400px;
+  }
+  
+  .addressImage {
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.6rem !important;
+  }
+  
+  .addressBox {
+    padding: 18px 20px;
+  }
+  
+  .addressText {
+    font-size: 0.9rem;
+  }
+  
+  .imageWrapper {
+    max-width: 100%;
+  }
+  
+  .addressImage {
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.3rem !important;
+  }
+  
+  .addressBox {
+    padding: 14px 16px;
+  }
+  
+  .addressText {
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+  
+  .addressImage {
+    max-height: 220px;
+  }
+}

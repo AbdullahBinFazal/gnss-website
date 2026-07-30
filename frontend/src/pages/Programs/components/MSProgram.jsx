@@ -1,97 +1,72 @@
-import styles from "./MSProgram.module.css";
+import { Col, Row, Typography } from 'antd';
+import styles from "../Programs.module.css";
 
-const programData = {
-  ms: {
-    title: "MS Global Navigation Satellite Systems",
-    duration: "2 Years",
-    eligibility: [
-      "BS in Electronics/Telecommunications/Electrical Engineering",
-      "BS in Computer Science",
-      "BS in Physics or equivalent",
-      "Minimum 2.5 CGPA (or equivalent)",
-      "GAT (General) with minimum 50% score"
-    ],
-    specializations: [
-      "Integrated Satellite Navigation Systems",
-      "Advanced GNSS Signal Processing",
-      "GNSS Augmentation Systems",
-      "Space Weather & Satellite Navigation",
-      "GNSS for Geospatial & Remote Sensing Applications",
-      "Satellite Navigation Systems Design & Engineering"
-    ],
-    courseStructure: [
-      { title: "Core Courses", courses: ["Fundamentals of GNSS", "Reference Systems and Coordinate Transformations", "Satellite Orbits and Positioning", "GNSS Signal Structures and Modulation Techniques", "Position Determination Techniques"] },
-      { title: "Advanced Courses", courses: ["Advanced GNSS Signal Processing", "GNSS/INS Integrated Navigation", "Space Weather and GNSS", "GNSS Augmentation Systems", "GNSS Receivers and Software Defined Radio"] },
-      { title: "Elective Courses", courses: ["GNSS for Geospatial Applications", "Remote Sensing & GIS Integration", "Satellite Navigation System Design", "GNSS Security: Spoofing & Jamming", "Ionosphere Monitoring & Modeling"] }
-    ],
-    researchDomains: ["Constellation Design", "NAV-COM Integration", "GNSS Signal & Integrity Monitoring", "Space Weather Effects", "Natural Hazard Monitoring", "Earthquake Monitoring", "Ionosphere Monitoring", "Volcanic Eruption Monitoring", "GNSS Receiver Development", "Signal Security & Interference Detection"]
-  }
-};
-
-const SectionCard = ({ image, title, children }) => (
-  <div className={styles.sectionCard}>
-    <img src={image} alt={title} className={styles.sectionImage} />
-    <div className={styles.sectionOverlay} />
-    <div className={styles.sectionContent}>{children}</div>
-  </div>
-);
+const { Title, Paragraph } = Typography;
 
 const MSProgram = () => {
-  const data = programData.ms;
-  const sectionImages = {
-    specializations: "https://plus.unsplash.com/premium_photo-1712039658659-7019cfe912e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWFydGh8ZW58MHx8MHx8fDA%3D",
-    courses: "https://plus.unsplash.com/premium_photo-1714618990872-09781a8421f0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHNhdGVsbGl0ZSUyMHNwYWNlfGVufDB8fDB8fHww",
-    research: "https://plus.unsplash.com/premium_photo-1679756099015-b06104fff761?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2F0ZWxsaXRlJTIwc3BhY2V8ZW58MHx8MHx8fDA%3D",
-  };
-
   return (
-    <section className="section-programs" style={{ padding: "20px 0 40px" }}>
+    <section className={styles.section}>
       <div className="container">
         <div className={styles.programContainer}>
-          {/* Program Overview */}
-          <div className="glass-card" style={{ padding: "32px" }}>
-            <h2 className={styles.programTitle}>{data.title}</h2>
-            <p className={styles.duration}>Duration: <strong>{data.duration}</strong></p>
-            <div>
-              <h4 className={styles.subHeading}>Eligibility Criteria</h4>
-              <ul className={styles.list}>
-                {data.eligibility.map((item, i) => <li key={i}>{item}</li>)}
-              </ul>
-            </div>
-          </div>
-
-          {/* Specializations */}
-          <SectionCard image={sectionImages.specializations} title="Specializations">
-            <h3 className={styles.cardTitle}>🎯 Specializations</h3>
-            <div className={styles.specializationsGrid}>
-              {data.specializations.map((s, i) => (
-                <div key={i} className={styles.specializationItem}>{s}</div>
-              ))}
-            </div>
-          </SectionCard>
-
-          {/* Course Structure */}
-          <SectionCard image={sectionImages.courses} title="Course Structure">
-            <h3 className={styles.cardTitle}>📚 Course Structure</h3>
-            {data.courseStructure.map((section, i) => (
-              <div key={i} className={styles.courseSection}>
-                <h4 className={styles.courseTitle}>{section.title}</h4>
-                <ul className={styles.courseList}>
-                  {section.courses.map((c, idx) => <li key={idx}>{c}</li>)}
-                </ul>
+          <Row gutter={[50, 40]} align="middle" className={styles.msOverview}>
+            <Col xs={24} lg={12}>
+              <div className={styles.imageWrapper}>
+                <img src="https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-2-1200x1200.jpg" alt="MS GNSS & Space Engineering" className={styles.sectionImage} />
               </div>
-            ))}
-          </SectionCard>
-
-          {/* Research Domains */}
-          <SectionCard image={sectionImages.research} title="Research Domains">
-            <h3 className={styles.cardTitle}>🔬 Research Domains</h3>
-            <div className={styles.researchGrid}>
-              {data.researchDomains.map((item, i) => (
-                <div key={i} className={styles.researchItem}>🔬 {item}</div>
-              ))}
-            </div>
-          </SectionCard>
+            </Col>
+            <Col xs={24} lg={12}>
+              <div className={styles.textContent}>
+                <Title level={2} className={styles.heading}>
+                  Master of Science (MS) in <span className={styles.highlight}>GNSS & Space Engineering</span>
+                </Title>
+                <Paragraph className={styles.description}>
+                  Our MS program focuses on the technical, algorithmic, and engineering aspects of modern positioning systems. It bridges the gap between hardware receiver architectures and downstream software applications.
+                </Paragraph>
+              </div>
+            </Col>
+          </Row>
+          <Row gutter={[50, 40]} align="middle" className={styles.msDetails}>
+            <Col xs={24} lg={12}>
+              <div className={styles.textContent}>
+                <Title level={2} className={styles.heading}>
+                  Program <span className={styles.highlight}>Details</span>
+                </Title>
+                <div className={styles.detailsList}>
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailIcon}>⏱️</span>
+                    <div>
+                      <h4 className={styles.detailTitle}>Duration</h4>
+                      <p className={styles.detailDesc}>2 Years (4 Semesters) | 30 Credit Hours (24 Coursework + 6 Thesis)</p>
+                    </div>
+                  </div>
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailIcon}>📚</span>
+                    <div>
+                      <h4 className={styles.detailTitle}>Core Coursework</h4>
+                      <ul className={styles.listItems}>
+                        <li>Advanced Multi-Constellation GNSS Architecture</li>
+                        <li>Statistical Signal Processing & Kalman Filtering</li>
+                        <li>Geodetic Data Analysis & Error Modeling</li>
+                        <li>Scripting and Automation for Geospatial Data (Python/C++)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailIcon}>🔬</span>
+                    <div>
+                      <h4 className={styles.detailTitle}>Thesis Research Focus</h4>
+                      <p className={styles.detailDesc}>MS students are responsible for algorithmic optimization, sensor fusion (e.g., GNSS/INS integration for UAVs), real-time software-defined radio (SDR) testing, and building the automation pipelines that drive our live GNSS Observatory.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col xs={24} lg={12}>
+              <div className={styles.imageWrapper}>
+                <img src="https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-3-1200x1165.jpg" alt="Program Details" className={styles.sectionImage} />
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
     </section>

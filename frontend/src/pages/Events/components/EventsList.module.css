@@ -1,9 +1,3 @@
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 24px;
-}
-
 .eventCard {
   position: relative;
   border-radius: 16px;
@@ -15,6 +9,7 @@
   justify-content: flex-end;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .eventCard:hover {

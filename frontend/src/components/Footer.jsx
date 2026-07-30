@@ -23,6 +23,7 @@ const Footer = () => {
               <li><Link to="/programs">Program Info</Link></li>
               <li><Link to="/faculty">Faculty</Link></li>
               <li><Link to="/research">Research</Link></li>
+              <li><Link to="/faq">FAQs</Link></li>
             </ul>
           </div>
 
@@ -31,7 +32,6 @@ const Footer = () => {
             <ul>
               <li><Link to="/publications">Publications</Link></li>
               <li><Link to="/events">Events</Link></li>
-              
             </ul>
           </div>
 
@@ -42,6 +42,38 @@ const Footer = () => {
               <li>📧 info@ist.edu.pk</li>
               <li>📞 +92-51-1234567</li>
             </ul>
+          </div>
+        </div>
+
+        {/* Logos Row - 4 Logos */}
+        <div className="logos-row">
+          <div className="logo-item">
+            <img 
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCvuP7gdReb_phPd0U2uFbOieNlh_wdNSpH2zFJPyO68c9oKAUNt-TNjs&s=10" 
+              alt="GNSS Logo"
+              className="footer-logo"
+            />
+          </div>
+          <div className="logo-item">
+            <img 
+              src="https://ncgsa.org.pk/wp-content/uploads/2026/01/MINISTRY-OF-PLANNING-COMMISION-150x150.png" 
+              alt="Ministry of Planning & Commission"
+              className="footer-logo"
+            />
+          </div>
+          <div className="logo-item">
+            <img 
+              src="https://ncgsa.org.pk/wp-content/uploads/2020/09/hec.png" 
+              alt="HEC Logo"
+              className="footer-logo"
+            />
+          </div>
+          <div className="logo-item">
+            <img 
+              src="https://ncgsa.org.pk/wp-content/uploads/2026/01/IST-LOGO-1-200x115-1-1-1.png" 
+              alt="IST Logo"
+              className="footer-logo"
+            />
           </div>
         </div>
 

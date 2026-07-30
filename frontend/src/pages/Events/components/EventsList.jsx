@@ -1,3 +1,4 @@
+import { Col, Row } from 'antd';
 import styles from "./EventsList.module.css";
 
 // Data moved outside
@@ -63,9 +64,13 @@ const EventsList = ({ activeFilter, searchTerm }) => {
   return (
     <section className="section-events" style={{ padding: "20px 0 60px" }}>
       <div className="container">
-        <div className={styles.grid}>
-          {filtered.map((event) => <EventCard key={event.id} event={event} />)}
-        </div>
+        <Row gutter={[24, 24]}>
+          {filtered.map((event) => (
+            <Col xs={24} sm={12} lg={8} key={event.id}>
+              <EventCard event={event} />
+            </Col>
+          ))}
+        </Row>
       </div>
     </section>
   );
