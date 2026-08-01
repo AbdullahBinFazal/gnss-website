@@ -121,56 +121,67 @@ const Navbar = () => {
 
   const handleAboutDropdownClick = (sectionId) => {
     setShowAboutDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/about#${sectionId}`);
   };
 
   const handleProgramsDropdownClick = (sectionId) => {
     setShowProgramsDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/programs#${sectionId}`);
   };
 
   const handleInfrastructureDropdownClick = (sectionId) => {
     setShowInfrastructureDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/infrastructure#${sectionId}`);
   };
 
   const handleResearchDropdownClick = (sectionId) => {
     setShowResearchDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/research#${sectionId}`);
   };
 
   const handleEngagementDropdownClick = (sectionId) => {
     setShowEngagementDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/engagement#${sectionId}`);
   };
 
   const handleFacilitiesDropdownClick = (sectionId) => {
     setShowFacilitiesDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/facilities#${sectionId}`);
   };
 
   const handleDigitalObservatoryDropdownClick = (sectionId) => {
     setShowDigitalObservatoryDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/digital-observatory#${sectionId}`);
   };
 
   const handleCapacityBuildingDropdownClick = (sectionId) => {
     setShowCapacityBuildingDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/capacity-building#${sectionId}`);
   };
 
   const handleCollaborationsDropdownClick = (sectionId) => {
     setShowCollaborationsDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/collaborations#${sectionId}`);
   };
 
   const handleOpportunitiesDropdownClick = (sectionId) => {
     setShowOpportunitiesDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/opportunities#${sectionId}`);
   };
 
   const handleCoPilotDropdownClick = (sectionId) => {
     setShowCoPilotDropdown(false);
+    setMobileMenuOpen(false);
     navigate(`/copilot#${sectionId}`);
   };
 

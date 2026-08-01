@@ -2398,11 +2398,31 @@ const CampusMap3D = () => {
     window.addEventListener('mousemove', onMove);
     window.addEventListener('touchmove', e => onMove(e), { passive: true });
     renderer.domElement.addEventListener('wheel', onWheel, { passive: false });
-    const onResize = () => { const w = el.clientWidth; const h = el.clientHeight; camera.aspect = w / h; camera.updateProjectionMatrix(); renderer.setSize(w, h); };
+    
+    // Enhanced resize handler with debouncing for mobile
+    let resizeTimeout;
+    const onResize = () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        const w = el.clientWidth;
+        const h = el.clientHeight;
+        if (w > 0 && h > 0) {
+          camera.aspect = w / h;
+          camera.updateProjectionMatrix();
+          renderer.setSize(w, h);
+        }
+      }, 100);
+    };
+    
     window.addEventListener('resize', onResize);
+    // Trigger resize on orientation change
+    window.addEventListener('orientationchange', onResize);
+    // Handle mobile viewport resize
+    document.addEventListener('fullscreenchange', onResize);
 
     return () => {
       cancelAnimationFrame(frameRef.current);
+      clearTimeout(resizeTimeout);
       ctrlRef.current = null;
       renderer.domElement.removeEventListener('mousemove', onMM);
       renderer.domElement.removeEventListener('click', onClick);
@@ -2410,6 +2430,8 @@ const CampusMap3D = () => {
       window.removeEventListener('touchend', onUp);
       window.removeEventListener('mousemove', onMove);
       window.removeEventListener('resize', onResize);
+      window.removeEventListener('orientationchange', onResize);
+      document.removeEventListener('fullscreenchange', onResize);
       renderer.dispose();
       if (el.contains(renderer.domElement)) el.removeChild(renderer.domElement);
     };
@@ -2467,9 +2489,13 @@ const CampusMap3D = () => {
   ];
 
   return (
-    <div style={{ position: 'relative', userSelect: 'none' }}>
+    <div style={{ position: 'relative', userSelect: 'none', touchAction: 'manipulation' }}>
       {/* ── Three.js Container ── */}
-      <div ref={containerRef} className={styles.mapWrapper} style={{ display: showPanorama ? 'none' : 'block' }} />
+      <div 
+        ref={containerRef} 
+        className={styles.mapWrapper} 
+        style={{ display: showPanorama ? 'none' : 'block', touchAction: 'none', overflow: 'hidden' }} 
+      />
 
       {/* ── CUSTOM PANORAMA VIEWER - YOUR 7 IMAGES ── */}
       {showPanorama && (

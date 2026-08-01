@@ -11,6 +11,19 @@
     0 0 60px rgba(79, 70, 229, 0.2),
     inset 0 0 60px rgba(96, 165, 250, 0.05);
   display: block;       /* ← fixes small size issue */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  max-width: 100%;
+  touch-action: manipulation;
+}
+
+canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
 }
 
 .loadingOverlay {
@@ -368,15 +381,645 @@
 
 .routeTitle { color: #f5b942; font-weight: 700; }
 
+@media (max-width: 1024px) {
+  .mapWrapper, .errorContainer { height: 500px; }
+  .searchBox { width: 220px; }
+  .rangeInput { width: 130px; }
+  .layerBar { gap: 4px; }
+  .layerBtn { padding: 6px 10px; font-size: 10px; }
+  .infoCard { min-width: 200px; max-width: 260px; }
+  .bottomBar { gap: 6px; }
+  .sliderPanel { padding: 6px 12px; gap: 8px; }
+  .statsPanel { padding: 6px 10px; font-size: 9px; }
+}
+
 @media (max-width: 768px) {
-  .mapWrapper, .errorContainer { height: 420px; }
-  .searchBox { width: 190px; }
-  .rangeInput { width: 110px; }
+  .mapWrapper, .errorContainer { 
+    height: 400px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  /* Adjust layer buttons */
+  .layerBar { 
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    gap: 4px;
+    flex-wrap: wrap;
+    max-width: calc(100% - 24px);
+    box-sizing: border-box;
+  }
+  .layerBtn { 
+    padding: 5px 9px; 
+    font-size: 9px;
+    white-space: nowrap;
+  }
+  
+  /* Search box adjustments */
+  .searchBox { 
+    width: 85%;
+    max-width: 280px;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .searchInput {
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+  .searchResults {
+    max-height: 180px;
+  }
+  .searchResultItem {
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+  
+  /* Info card mobile */
+  .infoCard { 
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    min-width: unset;
+    max-width: calc(100% - 24px);
+    padding: 12px 14px;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+  .infoCardTitle { 
+    font-size: 12px; 
+    margin-bottom: 6px;
+  }
+  .infoCardRow { 
+    font-size: 10px; 
+    gap: 8px;
+  }
+  
+  /* Slider and controls */
+  .bottomBar { 
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    gap: 6px;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+    transform: none;
+  }
+  .sliderPanel { 
+    padding: 6px 12px;
+    gap: 8px;
+    font-size: 9px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .sliderLabel { 
+    min-width: 50px; 
+    font-size: 9px;
+  }
+  .sliderValue { 
+    min-width: 40px;
+    font-size: 9px;
+  }
+  .rangeInput { 
+    width: 100px;
+    height: 3px;
+  }
+  
+  /* Stats panel */
+  .statsPanel { 
+    padding: 6px 10px;
+    font-size: 8px;
+    border-radius: 10px;
+  }
+  
+  /* Google Earth and Street View buttons */
+  .googleEarthToggleBtn,
+  .streetViewToggleBtn {
+    bottom: 60px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  
+  /* Legend panel mobile */
+  .legendPanel {
+    bottom: 70px;
+    left: 12px;
+    right: 12px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    min-width: unset;
+    max-width: calc(100% - 24px);
+    box-sizing: border-box;
+  }
+  .legendTitle {
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+  .legendGrid {
+    gap: 3px 10px;
+  }
+  .legendItem {
+    font-size: 9px;
+    gap: 4px;
+  }
+  
+  /* Clarity button */
+  .clarityBtn {
+    top: 12px;
+    padding: 5px 14px;
+    font-size: 10px;
+    border-radius: 16px;
+  }
+  
+  /* Pill buttons */
+  .pillBtn {
+    font-size: 9px;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  
+  /* Route panel */
+  .routePanel {
+    padding: 8px 12px;
+    font-size: 10px;
+    max-width: 230px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mapWrapper, .errorContainer { 
+    height: 340px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .layerBar { 
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    gap: 3px;
+    max-width: calc(100% - 20px);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  .layerBtn { 
+    padding: 4px 8px; 
+    font-size: 8px; 
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+  
+  .searchBox { 
+    display: none;
+  }
+  
+  .infoCard { 
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    min-width: unset;
+    max-width: calc(100% - 20px);
+    padding: 10px 12px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  .infoCardTitle { 
+    font-size: 11px; 
+    margin-bottom: 5px;
+  }
+  .infoCardRow { 
+    font-size: 9px; 
+    gap: 6px;
+    line-height: 1.6;
+  }
+  .infoCardLabel { font-size: 9px; }
+  .infoCardValue { font-size: 9px; }
+  
+  .bottomBar { 
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    transform: none;
+    gap: 5px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+  }
+  .sliderPanel { 
+    padding: 5px 10px;
+    gap: 6px;
+    font-size: 8px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sliderLabel { 
+    min-width: 45px; 
+    font-size: 8px;
+  }
+  .sliderValue { 
+    min-width: 35px;
+    font-size: 8px;
+  }
+  .rangeInput { 
+    width: 80px;
+    height: 3px;
+  }
+  
+  .statsPanel { 
+    padding: 5px 8px;
+    font-size: 7px;
+    border-radius: 8px;
+    min-width: 110px;
+  }
+  
+  .googleEarthToggleBtn,
+  .streetViewToggleBtn {
+    bottom: 50px;
+    right: 8px;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .legendPanel {
+    bottom: 60px;
+    left: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    min-width: 150px;
+  }
+  .legendTitle {
+    font-size: 9px;
+    margin-bottom: 5px;
+  }
+  .legendGrid {
+    grid-template-columns: 1fr;
+    gap: 2px 8px;
+  }
+  .legendItem {
+    font-size: 8px;
+    gap: 3px;
+  }
+  .legendColor {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .clarityBtn {
+    top: 10px;
+    padding: 4px 12px;
+    font-size: 9px;
+    border-radius: 14px;
+  }
+  
+  .pillBtn {
+    font-size: 8px;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+  
+  .routePanel {
+    padding: 6px 10px;
+    font-size: 9px;
+    max-width: 200px;
+    border-radius: 8px;
+  }
+  
+  .googleEarthTitle,
+  .streetViewTitle,
+  .panoramaTitle span:first-child {
+    font-size: 14px;
+  }
+  
+  .googleEarthControlsHint,
+  .streetViewControlsHint,
+  .panoramaControlsHint {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
 }
 
 @media (max-width: 480px) {
-  .mapWrapper, .errorContainer { height: 320px; }
-  .searchBox { display: none; }
+  .mapWrapper, .errorContainer { 
+    height: 300px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .layerBar { 
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    gap: 2px;
+    max-width: calc(100% - 16px);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  .layerBtn { 
+    padding: 3px 6px; 
+    font-size: 7px; 
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  
+  .infoCard { 
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    min-width: unset;
+    max-width: calc(100% - 16px);
+    padding: 8px 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  .infoCardTitle { 
+    font-size: 10px; 
+    margin-bottom: 4px;
+  }
+  .infoCardRow { 
+    font-size: 8px; 
+    gap: 4px;
+    line-height: 1.5;
+  }
+  .infoCardClose {
+    top: 6px;
+    right: 8px;
+  }
+  
+  .bottomBar { 
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    transform: none;
+    gap: 4px;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+  }
+  .sliderPanel { 
+    padding: 4px 8px;
+    gap: 4px;
+    font-size: 7px;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sliderLabel { 
+    min-width: 40px; 
+    font-size: 7px;
+  }
+  .sliderValue { 
+    min-width: 30px;
+    font-size: 7px;
+  }
+  .rangeInput { 
+    width: 60px;
+    height: 2px;
+  }
+  
+  .rangeInput::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .rangeInput::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .statsPanel { 
+    padding: 4px 6px;
+    font-size: 6px;
+    border-radius: 6px;
+    min-width: 100px;
+  }
+  
+  .googleEarthToggleBtn,
+  .streetViewToggleBtn {
+    bottom: 40px;
+    right: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+  
+  .exitGoogleEarthBtn,
+  .exitStreetViewBtn,
+  .exitPanoramaBtn {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+  
+  .legendPanel {
+    bottom: 50px;
+    left: 8px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    min-width: 140px;
+  }
+  .legendTitle {
+    font-size: 8px;
+    margin-bottom: 4px;
+  }
+  .legendGrid {
+    grid-template-columns: 1fr;
+    gap: 2px 6px;
+  }
+  .legendItem {
+    font-size: 7px;
+    gap: 2px;
+  }
+  .legendColor {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .clarityBtn {
+    top: 8px;
+    padding: 3px 10px;
+    font-size: 8px;
+    border-radius: 12px;
+  }
+  
+  .pillBtn {
+    font-size: 7px;
+    padding: 3px 6px;
+    border-radius: 5px;
+  }
+  
+  .routePanel {
+    padding: 5px 8px;
+    font-size: 8px;
+    max-width: 180px;
+    border-radius: 6px;
+  }
+  .routeTitle { font-size: 8px; }
+  
+  .googleEarthTitle,
+  .streetViewTitle,
+  .panoramaTitle span:first-child {
+    font-size: 12px;
+  }
+  
+  .googleEarthControlsHint,
+  .streetViewControlsHint,
+  .panoramaControlsHint {
+    font-size: 9px;
+    padding: 5px 10px;
+  }
+  
+  .googleEarthHeader,
+  .streetViewHeader,
+  .panoramaHeader {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .mapWrapper, .errorContainer { 
+    height: 280px;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .layerBar { 
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    gap: 2px;
+    max-width: calc(100% - 12px);
+    flex-wrap: wrap;
+  }
+  .layerBtn { 
+    padding: 2px 5px; 
+    font-size: 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  
+  .infoCard { 
+    bottom: 6px;
+    left: 6px;
+    right: 6px;
+    min-width: unset;
+    max-width: calc(100% - 12px);
+    padding: 6px 8px;
+    box-sizing: border-box;
+  }
+  .infoCardTitle { font-size: 9px; }
+  .infoCardRow { font-size: 7px; }
+  
+  .bottomBar { 
+    bottom: 6px;
+    left: 6px;
+    right: 6px;
+    width: calc(100% - 12px);
+    max-width: calc(100% - 12px);
+    box-sizing: border-box;
+  }
+  .sliderPanel { 
+    padding: 3px 6px;
+    font-size: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .rangeInput { width: 50px; }
+  
+  .googleEarthToggleBtn,
+  .streetViewToggleBtn {
+    bottom: 35px;
+    right: 5px;
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .mapWrapper, .errorContainer { 
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+  }
+
+  .layerBar {
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    gap: 2px;
+    max-width: calc(100% - 8px);
+  }
+
+  .layerBtn {
+    padding: 2px 4px;
+    font-size: 5px;
+    border-radius: 4px;
+  }
+
+  .infoCard {
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    max-width: calc(100% - 8px);
+    padding: 4px 6px;
+    border-radius: 6px;
+  }
+
+  .infoCardTitle { font-size: 8px; }
+  .infoCardRow { font-size: 6px; }
+
+  .bottomBar {
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    width: calc(100% - 8px);
+  }
+
+  .sliderPanel {
+    padding: 2px 4px;
+    font-size: 5px;
+    gap: 2px;
+  }
+
+  .rangeInput { width: 40px; }
+
+  .googleEarthToggleBtn,
+  .streetViewToggleBtn {
+    bottom: 30px;
+    right: 4px;
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+
+  .clarityBtn {
+    padding: 2px 8px;
+    font-size: 7px;
+    top: 4px;
+  }
 }
 
 /* ── Clarity Mode Legend ── */
