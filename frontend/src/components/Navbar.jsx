@@ -14,6 +14,13 @@ const Navbar = () => {
   const [showInfrastructureDropdown, setShowInfrastructureDropdown] = useState(false);
   const [showResearchDropdown, setShowResearchDropdown] = useState(false);
   const [showEngagementDropdown, setShowEngagementDropdown] = useState(false);
+  const [showFacilitiesDropdown, setShowFacilitiesDropdown] = useState(false);
+  const [showDigitalObservatoryDropdown, setShowDigitalObservatoryDropdown] = useState(false);
+  const [showCapacityBuildingDropdown, setShowCapacityBuildingDropdown] = useState(false);
+  const [showCollaborationsDropdown, setShowCollaborationsDropdown] = useState(false);
+  const [showOpportunitiesDropdown, setShowOpportunitiesDropdown] = useState(false);
+  const [showCoPilotDropdown, setShowCoPilotDropdown] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleLogout = () => {
     dispatch(logout());
@@ -59,6 +66,39 @@ const Navbar = () => {
     { id: "collaborations", label: "Collaborations" },
     { id: "agreements", label: "Agreements" },
     { id: "news-events", label: "News & Events" },
+    { id: "gnss-observatory", label: "GNSS Observatory" },
+  ];
+
+  const facilitiesSections = [
+    { id: "sensor-equipment", label: "Sensor Equipment" },
+    { id: "research-infrastructure", label: "Research Infrastructure" },
+    { id: "laboratories", label: "Laboratories" },
+  ];
+
+  const digitalObservatorySections = [
+    { id: "gnss-observatory", label: "GNSS Observatory" },
+    { id: "space-weather", label: "Space Weather Observatory" },
+  ];
+
+  const capacityBuildingSections = [
+    { id: "training-workshops", label: "Training & Workshops" },
+    { id: "tutorials", label: "Tutorials & Documentation" },
+  ];
+
+  const collaborationsSections = [
+    { id: "agreements", label: "Agreements" },
+    { id: "outreach", label: "Outreach" },
+  ];
+
+  const opportunitiesSections = [
+    { id: "engagement", label: "Engagement" },
+    { id: "research-opportunities", label: "Research Opportunities" },
+  ];
+
+  const coPilotSections = [
+    { id: "copilot-assistance", label: "Co-Pilot Assistance" },
+    { id: "software-configuration", label: "Software Configuration" },
+    { id: "data-hub-navigation", label: "Data Hub Navigation" },
   ];
 
   // Handle hash navigation when page loads or hash changes
@@ -72,6 +112,11 @@ const Navbar = () => {
         }, 300);
       }
     }
+  }, [location]);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
   }, [location]);
 
   const handleAboutDropdownClick = (sectionId) => {
@@ -99,6 +144,36 @@ const Navbar = () => {
     navigate(`/engagement#${sectionId}`);
   };
 
+  const handleFacilitiesDropdownClick = (sectionId) => {
+    setShowFacilitiesDropdown(false);
+    navigate(`/facilities#${sectionId}`);
+  };
+
+  const handleDigitalObservatoryDropdownClick = (sectionId) => {
+    setShowDigitalObservatoryDropdown(false);
+    navigate(`/digital-observatory#${sectionId}`);
+  };
+
+  const handleCapacityBuildingDropdownClick = (sectionId) => {
+    setShowCapacityBuildingDropdown(false);
+    navigate(`/capacity-building#${sectionId}`);
+  };
+
+  const handleCollaborationsDropdownClick = (sectionId) => {
+    setShowCollaborationsDropdown(false);
+    navigate(`/collaborations#${sectionId}`);
+  };
+
+  const handleOpportunitiesDropdownClick = (sectionId) => {
+    setShowOpportunitiesDropdown(false);
+    navigate(`/opportunities#${sectionId}`);
+  };
+
+  const handleCoPilotDropdownClick = (sectionId) => {
+    setShowCoPilotDropdown(false);
+    navigate(`/copilot#${sectionId}`);
+  };
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -106,12 +181,25 @@ const Navbar = () => {
         <Link to="/" className="logo">
           <img src={gnssLogo} alt="GNSS Logo" />
           <span className="logo-text">
-            GNSS<span>Lab</span>
+            {/* GNSS<span>Lab</span> */}
           </span>
         </Link>
 
-        {/* Nav Links - Right Side, Row 1 */}
-        <ul className="nav-links nav-links-row1">
+        {/* Mobile Hamburger Menu */}
+        <button 
+          className="mobile-toggle"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span className={mobileMenuOpen ? "hamburger active" : "hamburger"}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        {/* Nav Links - Single Centered Row */}
+        <ul className={`nav-links ${mobileMenuOpen ? "mobile-open" : ""}`}>
           <li><NavLink to="/">Home</NavLink></li>
           
           {/* About with Dropdown */}
@@ -143,7 +231,7 @@ const Navbar = () => {
             onMouseEnter={() => setShowInfrastructureDropdown(true)}
             onMouseLeave={() => setShowInfrastructureDropdown(false)}
           >
-            <NavLink to="/infrastructure">Infrastructure</NavLink>
+            {/* <NavLink to="/infrastructure">Infrastructure</NavLink> */}
             {showInfrastructureDropdown && (
               <ul className="dropdown-menu">
                 {infrastructureSections.map((section) => (
@@ -183,7 +271,7 @@ const Navbar = () => {
             )}
           </li>       
 
-          {/* Programs with Dropdown */}
+          {/* Programs/Academics with Dropdown */}
           <li 
             className="nav-item has-dropdown"
             onMouseEnter={() => setShowProgramsDropdown(true)}
@@ -212,7 +300,7 @@ const Navbar = () => {
             onMouseEnter={() => setShowEngagementDropdown(true)}
             onMouseLeave={() => setShowEngagementDropdown(false)}
           >
-            <NavLink to="/engagement">Engagement</NavLink>
+            {/* <NavLink to="/engagement">Engagement</NavLink> */}
             {showEngagementDropdown && (
               <ul className="dropdown-menu">
                 {engagementSections.map((section) => (
@@ -229,36 +317,147 @@ const Navbar = () => {
             )}
           </li>
 
-          
-          <li><NavLink to="/copilot">Co-Pilot</NavLink></li>
-        </ul>
+          {/* Facilities with Dropdown */}
+          <li 
+            className="nav-item has-dropdown"
+            onMouseEnter={() => setShowFacilitiesDropdown(true)}
+            onMouseLeave={() => setShowFacilitiesDropdown(false)}
+          >
+            <NavLink to="/facilities">Facilities</NavLink>
+            {showFacilitiesDropdown && (
+              <ul className="dropdown-menu">
+                {facilitiesSections.map((section) => (
+                  <li key={section.id}>
+                    <Link 
+                      to={`/facilities#${section.id}`}
+                      onClick={() => handleFacilitiesDropdownClick(section.id)}
+                    >
+                      {section.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
 
-        {/* Nav Links - Right Side, Row 2 */}
-        <ul className="nav-links nav-links-row2">
+          {/* Digital Observatory with Dropdown */}
+          <li 
+            className="nav-item has-dropdown"
+            onMouseEnter={() => setShowDigitalObservatoryDropdown(true)}
+            onMouseLeave={() => setShowDigitalObservatoryDropdown(false)}
+          >
+            <NavLink to="/digital-observatory">Digital Observatory</NavLink>
+            {showDigitalObservatoryDropdown && (
+              <ul className="dropdown-menu">
+                {digitalObservatorySections.map((section) => (
+                  <li key={section.id}>
+                    <Link 
+                      to={`/digital-observatory#${section.id}`}
+                      onClick={() => handleDigitalObservatoryDropdownClick(section.id)}
+                    >
+                      {section.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+
+          {/* Capacity Building with Dropdown */}
+          <li 
+            className="nav-item has-dropdown"
+            onMouseEnter={() => setShowCapacityBuildingDropdown(true)}
+            onMouseLeave={() => setShowCapacityBuildingDropdown(false)}
+          >
+            <NavLink to="/capacity-building">Capacity Building</NavLink>
+            {showCapacityBuildingDropdown && (
+              <ul className="dropdown-menu">
+                {capacityBuildingSections.map((section) => (
+                  <li key={section.id}>
+                    <Link 
+                      to={`/capacity-building#${section.id}`}
+                      onClick={() => handleCapacityBuildingDropdownClick(section.id)}
+                    >
+                      {section.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+
+          {/* Collaborations with Dropdown */}
+          <li 
+            className="nav-item has-dropdown"
+            onMouseEnter={() => setShowCollaborationsDropdown(true)}
+            onMouseLeave={() => setShowCollaborationsDropdown(false)}
+          >
+            <NavLink to="/collaborations">Collaborations</NavLink>
+            {showCollaborationsDropdown && (
+              <ul className="dropdown-menu">
+                {collaborationsSections.map((section) => (
+                  <li key={section.id}>
+                    <Link 
+                      to={`/collaborations#${section.id}`}
+                      onClick={() => handleCollaborationsDropdownClick(section.id)}
+                    >
+                      {section.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+
+          {/* Opportunities with Dropdown */}
+          <li 
+            className="nav-item has-dropdown"
+            onMouseEnter={() => setShowOpportunitiesDropdown(true)}
+            onMouseLeave={() => setShowOpportunitiesDropdown(false)}
+          >
+            <NavLink to="/opportunities">Opportunities</NavLink>
+            {showOpportunitiesDropdown && (
+              <ul className="dropdown-menu">
+                {opportunitiesSections.map((section) => (
+                  <li key={section.id}>
+                    <Link 
+                      to={`/opportunities#${section.id}`}
+                      onClick={() => handleOpportunitiesDropdownClick(section.id)}
+                    >
+                      {section.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+
+          {/* Co-Pilot with Dropdown */}
+          <li 
+            className="nav-item has-dropdown"
+            onMouseEnter={() => setShowCoPilotDropdown(true)}
+            onMouseLeave={() => setShowCoPilotDropdown(false)}
+          >
+            <NavLink to="/copilot">Co-Pilot</NavLink>
+            {showCoPilotDropdown && (
+              <ul className="dropdown-menu">
+                {coPilotSections.map((section) => (
+                  <li key={section.id}>
+                    <Link 
+                      to={`/copilot#${section.id}`}
+                      onClick={() => handleCoPilotDropdownClick(section.id)}
+                    >
+                      {section.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+
           <li><NavLink to="/contact-us">Contact Us</NavLink></li>
           {isAdmin && <li><NavLink to="/admin">Admin</NavLink></li>}
         </ul>
-
-        {/* Auth Buttons - Right Side, Row 3 */}
-        <div className="auth-buttons">
-          {isAuthenticated ? (
-            <>
-              <span>👋 {user?.name || "User"} {isAdmin && "👑"}</span>
-              <button className="btn-secondary" onClick={handleLogout}>
-                Logout
-              </button>
-            </>
-          ) : (
-            <>
-              <Link to="/login" className="btn-primary">
-                Login
-              </Link>
-              <Link to="/register" className="btn-secondary">
-                Sign Up
-              </Link>
-            </>
-          )}
-        </div>
       </div>
     </nav>
   );

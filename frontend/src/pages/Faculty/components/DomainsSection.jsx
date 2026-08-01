@@ -1,29 +1,63 @@
-import styles from "./DomainsSection.module.css";
+import { Col, Row, Typography } from 'antd';
+import styles from "../Faculty.module.css";
+
+const { Title, Paragraph } = Typography;
 
 const researchDomains = [
-  { title: "Domain 1 – Space Awareness and Outreach", description: "This application domain deals with the space education and awareness activities targeting general masses for the greater impact.", image: "https://media.gettyimages.com/id/2167849497/photo/satellite-in-space-station-orbiting-earth.jpg?s=612x612&w=0&k=20&c=cnmNm9dBVanP6_5hNG6vMM023XBZZhxn10h6Mch8O8g=" },
-  { title: "Domain 2 – Education & Training", description: "This Application domain focuses on the education and specialized trainings related to space science & technology and GNSS. Several education programs, including degree programs will be run throughout the year to develop specialized human resource in the domains of Space Science & Technology and GNSS.", image: "https://media.gettyimages.com/id/1648725322/photo/satellite-internet-communication-and-earth.jpg?s=612x612&w=0&k=20&c=-MeQJG21OCHLWyt2xmb5sTXPTTEi8aFGzOuroCs7NSU=" },
-  { title: "Domain 3 – GNSS Research & Development", description: "This Application domain is specifically focused on GNSS. Purpose of the domain is to design and develop some hardware and software solutions using GNSS. These solutions will be focused on the real-life problems in our society.", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop" },
-  { title: "Domain 4 – GNSS Applications", description: "This domain deals with the applications and spins offs of GNSS. Various applications of GNSS technology will be applied to design solutions, applications and research products.", image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop" },
+  { 
+    title: "Domain 1 – Space Awareness and Outreach", 
+    description: "This application domain deals with the space education and awareness activities targeting general masses for the greater impact.", 
+    image: "https://media.gettyimages.com/id/2167849497/photo/satellite-in-space-station-orbiting-earth.jpg?s=612x612&w=0&k=20&c=cnmNm9dBVanP6_5hNG6vMM023XBZZhxn10h6Mch8O8g=" 
+  },
+  { 
+    title: "Domain 2 – Education & Training", 
+    description: "This Application domain focuses on the education and specialized trainings related to space science & technology and GNSS. Several education programs, including degree programs will be run throughout the year to develop specialized human resource in the domains of Space Science & Technology and GNSS.", 
+    image: "https://media.gettyimages.com/id/1648725322/photo/satellite-internet-communication-and-earth.jpg?s=612x612&w=0&k=20&c=-MeQJG21OCHLWyt2xmb5sTXPTTEi8aFGzOuroCs7NSU=" 
+  },
+  { 
+    title: "Domain 3 – GNSS Research & Development", 
+    description: "This Application domain is specifically focused on GNSS. Purpose of the domain is to design and develop some hardware and software solutions using GNSS. These solutions will be focused on the real-life problems in our society.", 
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop" 
+  },
+  { 
+    title: "Domain 4 – GNSS Applications", 
+    description: "This domain deals with the applications and spins offs of GNSS. Various applications of GNSS technology will be applied to design solutions, applications and research products.", 
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop" 
+  },
 ];
 
 const DomainsSection = () => {
   return (
-    <section className="section-domains" style={{ padding: "20px 0" }}>
+    <section className="section-domains" style={{ padding: "60px 0" }}>
       <div className="container">
-        <h2 className={styles.heading}>Research <span className="gradient-text">Domains</span></h2>
-        <div className={styles.grid}>
-          {researchDomains.map((domain, index) => (
-            <div key={index} className={styles.domainCard}>
-              <img src={domain.image} alt={domain.title} className={styles.cardImage} />
-              <div className={styles.overlay} />
-              <div className={styles.cardContent}>
-                <h4 className={styles.cardTitle}>{domain.title}</h4>
-                <p className={styles.cardDescription}>{domain.description}</p>
-              </div>
+        <Row gutter={[40, 40]} align="middle">
+          <Col xs={24} lg={6}>
+            <div className={styles.textContent}>
+              <Title level={2} className={styles.heading}>
+                Research <span className={styles.highlight}>Domains</span>
+              </Title>
+              <Paragraph className={styles.description}>
+                NCGSA focuses on four key research domains to advance space science, 
+                GNSS technology, and capacity building in Pakistan.
+              </Paragraph>
             </div>
-          ))}
-        </div>
+          </Col>
+
+          <Col xs={24} lg={18}>
+            <div className={styles.domainsGrid}>
+              {researchDomains.map((domain, index) => (
+                <div key={index} className={styles.domainCard}>
+                  <img src={domain.image} alt={domain.title} className={styles.cardImage} />
+                  <div className={styles.cardOverlay} />
+                  <div className={styles.cardContent}>
+                    <h4 className={styles.cardTitle}>{domain.title}</h4>
+                    <p className={styles.cardDescription}>{domain.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );

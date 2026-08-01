@@ -1,10 +1,11 @@
 import HeroSection from "./components/HeroSection";
 import CoPilotOverviewSection from "./components/CoPilotOverviewSection"; 
 import CoPilotAssistanceSection from "./components/CoPilotAssistanceSection"; 
+import AskItSection from "./components/AskItSection";
 import CoPilotCodeSection from "./components/CoPilotCodeSection";
 import CoPilotConfigSection from "./components/CoPilotConfigSection";
+import PromptItWithSection from "./components/PromptItWithSection";
 import CoPilotInfrastructureSection from "./components/CoPilotInfrastructureSection";
-
 import styles from "./CoPilot.module.css";
 
 const CoPilot = () => {
@@ -12,11 +13,25 @@ const CoPilot = () => {
     <div className={styles.coPilot}>
       <HeroSection />
       <CoPilotOverviewSection />
-          <CoPilotAssistanceSection />
-            <CoPilotCodeSection /> 
-            <CoPilotConfigSection />
-             <CoPilotInfrastructureSection />  
       
+      <div id="copilot-assistance">
+        <CoPilotAssistanceSection />
+      </div>
+      
+      <AskItSection />
+      
+      <CoPilotCodeSection />
+      
+      <div id="software-configuration">
+        <CoPilotConfigSection />
+      </div>
+      
+      {/* Prompt It With Section - Added after Config */}
+      <PromptItWithSection />  {/* ← ADDED HERE */}
+      
+      <div id="data-hub-navigation">
+        <CoPilotInfrastructureSection />
+      </div>
     </div>
   );
 };

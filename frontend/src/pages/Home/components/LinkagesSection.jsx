@@ -8,7 +8,7 @@ const LinkagesSection = () => {
       <div className="container">
         {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <span style={{
+          {/* <span style={{
             display: "inline-block",
             padding: "4px 16px",
             background: "#000",
@@ -21,7 +21,7 @@ const LinkagesSection = () => {
             marginBottom: "12px"
           }}>
             Collaborations
-          </span>
+          </span> */}
           <Title level={2} style={{
             fontSize: "2.5rem",
             fontWeight: 800,

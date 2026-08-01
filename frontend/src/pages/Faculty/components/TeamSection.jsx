@@ -1,5 +1,5 @@
 import { Col, Row, Typography } from 'antd';
-import styles from "./TeamSection.module.css";
+import styles from "../Faculty.module.css";
 
 const { Title } = Typography;
 
@@ -32,14 +32,14 @@ const TeamSection = () => {
   return (
     <section style={{ padding: "20px 0 60px" }}>
       <div className="container">
-        <Title level={2} className={styles.heading}>Our <span className="gradient-text">Team</span></Title>
+        <Title level={2} className={styles.teamHeading}>Our <span className={styles.highlight}>Team</span></Title>
         <Row gutter={[20, 20]}>
           {teamMembers.map((member, index) => (
             <Col xs={24} sm={12} md={8} lg={6} key={index}>
               <div className="glass-card" style={{ padding: "20px", textAlign: "center", transition: "all 0.3s ease", height: "100%" }}
                 onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.borderColor = "rgba(0,0,0,0.4)"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.borderColor = "var(--border-subtle)"; }}>
-                <div className={styles.avatar}>
+                <div className={styles.teamAvatar}>
                   <img src={member.image} alt={member.name} />
                 </div>
                 <h4 className={styles.memberName}>{member.name}</h4>

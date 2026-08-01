@@ -1,10 +1,10 @@
 import styles from "../Programs.module.css";
 
 const stats = [
-  { label: "Established Graduate Program", image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop", icon: "🚀" },
-  { label: "Active Research", image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop", icon: "🎓" },
-  { label: "Thesis Based Learning", image: "https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=600&h=400&fit=crop", icon: "📄" },
-  { label: "International Publications", image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop", icon: "📚" },
+  { label: "Established Graduate Program", image: "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2", icon: "" },
+  { label: "Active Research", image: "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2", icon: "" },
+  { label: "Thesis Based Learning", image: "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2", icon: "" },
+  { label: "International Publications", image: "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2", icon: "" },
 ];
 
 const StatsSection = () => {

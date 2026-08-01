@@ -1,11 +1,11 @@
 import styles from "../Research.module.css";
 
 const impactStats = [
-  { id: 1, value: "49", label: "Academic Research & Development", icon: "📊", image: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=400&h=300&fit=crop&crop=center" },
-  { id: 2, value: "32", label: "Hardware/Software", icon: "💻", image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop&crop=center" },
-  { id: 3, value: "601", label: "Models & Maps Development", icon: "🗺️", image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=300&fit=crop&crop=center" },
-  { id: 4, value: "37", label: "Capacity Building", icon: "🏗️", image: "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=400&h=300&fit=crop&crop=center" },
-  { id: 5, value: "67", label: "Linkages & Commercialization", icon: "🔗", image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop&crop=center" },
+  { id: 1, value: "49", label: "Academic Research & Development", icon: "", image: "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" },
+  { id: 2, value: "32", label: "Hardware/Software", icon: "", image: "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" },
+  { id: 3, value: "601", label: "Models & Maps Development", icon: "", image: "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" },
+  { id: 4, value: "37", label: "Capacity Building", icon: "", image: "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" },
+  { id: 5, value: "67", label: "Linkages & Commercialization", icon: "", image: "https://www.bing.com/th/id/OIP.wI6ZFV8xbLIXhAq3PXfiNgHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" },
 ];
 
 const ImpactCard = ({ stat }) => (

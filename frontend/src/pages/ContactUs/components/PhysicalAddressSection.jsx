@@ -1,28 +1,24 @@
 import { Col, Row, Typography } from 'antd';
-import styles from "./PhysicalAddressSection.module.css";
+import styles from "../ContactUs.module.css";
 
 const { Title, Paragraph } = Typography;
 
 const PhysicalAddressSection = () => {
   return (
-    <section className="section-address" style={{ padding: "60px 0" }}>
+    <section className={styles.section}>
       <div className="container">
         <Row gutter={[50, 40]} align="middle">
-          {/* Left Side - Image - NO VISIBLE BOX */}
           <Col xs={24} lg={12}>
             <div className={styles.imageWrapper}>
               <img 
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6m7VbOEoWFeCrlanPPf-OsYgLQxEW7el4H77XpasRw&s" 
+                src="https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg" 
                 alt="Physical Address"
-                className={styles.addressImage}
+                className={styles.sectionImage}
               />
             </div>
           </Col>
-
-          {/* Right Side - Text */}
           <Col xs={24} lg={12}>
             <div className={styles.textContent}>
-              {/* <span className={styles.badge}>Location</span> */}
               <Title level={2} className={styles.heading}>
                 <span className={styles.highlight}>Physical</span> Address
               </Title>

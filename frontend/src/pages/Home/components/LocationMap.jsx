@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from "./LocationMap.module.css";
+import styles from "./LocationMap.module.css";  // ← KEEPS ITS OWN CSS
 import CampusMap3D from './CampusMap3D';
 
 const LocationMap = () => {
@@ -10,7 +10,6 @@ const LocationMap = () => {
       <div className={styles.overlay} />
       <div className="container">
         <div className={styles.mapTitle}>
-          {/* <span className={styles.mapSubtitle}>Our Location</span> */}
           <h2 className={styles.mapHeading}>Find <span className={styles.mapGradient}>Us</span></h2>
           <p className={styles.mapDescription}>
             Visit us at the Institute of Space Technology, Islamabad
@@ -37,7 +36,7 @@ const LocationMap = () => {
         ) : (
           <div className={styles.mapContainer}>
             <iframe
-             src="https://maps.google.com/maps?q=33.5194,73.1775&z=17&output=embed"
+              src="https://maps.google.com/maps?q=33.5194,73.1775&z=17&output=embed"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen

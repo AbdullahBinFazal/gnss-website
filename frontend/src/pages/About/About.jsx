@@ -6,6 +6,7 @@ import TeamSection from "./components/TeamSection";
 import LabLeadershipSection from "./components/LabLeadershipSection";
 import ResearchTeamsSection from "./components/ResearchTeamsSection";
 import AlumniNetworkSection from "./components/AlumniNetworkSection";
+import StrategicObjectivesCarousel from "./components/StrategicObjectivesCarousel";
 import styles from "./About.module.css";
 
 const About = () => {
@@ -20,6 +21,10 @@ const About = () => {
       
       <div id="core-objectives" style={{ scrollMarginTop: "130px" }}>
         <CoreObjectives />
+      </div>
+
+         <div id="strategic-objectives">
+        <StrategicObjectivesCarousel />
       </div>
       
       <div id="team" style={{ scrollMarginTop: "130px" }}>

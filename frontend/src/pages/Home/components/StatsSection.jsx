@@ -1,5 +1,5 @@
 import { Col, Row, Typography } from 'antd';
-import styles from "./StatsSection.module.css";
+import styles from "../Home.module.css";
 
 const { Title, Paragraph } = Typography;
 
@@ -7,26 +7,22 @@ const glanceStats = [
   { 
     value: "60+", 
     label: "Graduated Researchers", 
-    icon: "🎓",
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop&crop=center" 
+    image: "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" 
   },
   { 
     value: "7", 
     label: "Research Labs", 
-    icon: "🔬",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop&crop=center" 
+    image: "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" 
   },
   { 
     value: "100+", 
     label: "Research Publications", 
-    icon: "📄",
-    image: "https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=400&h=300&fit=crop&crop=center" 
+    image: "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" 
   },
   { 
     value: "15+", 
     label: "International Collaborations", 
-    icon: "🌍",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop&crop=center" 
+    image: "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" 
   },
 ];
 
@@ -35,33 +31,28 @@ const StatsSection = () => {
     <section className="section-stats" style={{ padding: "60px 0" }}>
       <div className="container">
         <div className={styles.sectionHeader}>
-          {/* <span className={styles.badge}>Overview</span> */}
           <Title level={2} className={styles.sectionTitle}>
-            GNSS <span className="gradient-text">at a Glance</span>
+            GNSS <span>at a Glance</span>
           </Title>
         </div>
 
         <Row gutter={[40, 40]} align="middle">
-          {/* Left Side - 4 Grid Containers */}
           <Col xs={24} lg={12}>
-            <div className={styles.gridContainer}>
+            <div className={styles.statsGrid}>
               {glanceStats.map((stat, index) => (
                 <div key={index} className={styles.statsCard}>
-                  <img src={stat.image} alt={stat.label} className={styles.cardImage} />
-                  <div className={styles.overlay} />
-                  <div className={styles.cardContent}>
-                    <div className={styles.iconWrapper}>
-                      <span className={styles.icon}>{stat.icon}</span>
-                    </div>
-                    <div className={styles.value}>{stat.value}</div>
-                    <div className={styles.label}>{stat.label}</div>
+                  <img src={stat.image} alt={stat.label} className={styles.statImage} />
+                  <div className={styles.statOverlay} />
+                  <div className={styles.statContent}>
+                    {/* Icon and circle removed */}
+                    <div className={styles.statValue}>{stat.value}</div>
+                    <div className={styles.statLabel}>{stat.label}</div>
                   </div>
                 </div>
               ))}
             </div>
           </Col>
 
-          {/* Right Side - Text */}
           <Col xs={24} lg={12}>
             <div className={styles.textContent}>
               <Paragraph className={styles.description}>

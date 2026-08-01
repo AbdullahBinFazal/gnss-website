@@ -1,19 +1,36 @@
-import styles from "./HostUniversitySection.module.css";
+import { Col, Row, Typography } from 'antd';
+import styles from "../Faculty.module.css";
+
+const { Title, Paragraph } = Typography;
 
 const HostUniversitySection = () => {
-  const istBuildingImage = "https://images.unsplash.com/photo-1562774053-701939374585?w=1200&h=600&fit=crop";
+  const istImage = "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg";
 
   return (
-    <section className="section-about" style={{ padding: "20px 0" }}>
+    <section className="section-about" style={{ padding: "60px 0" }}>
       <div className="container">
-        <div className={styles.card}>
-          <img src={istBuildingImage} alt="Institute of Space Technology, Islamabad" className={styles.image} />
-          <div className={styles.overlay} />
-          <div className={styles.content}>
-            <h3 className={styles.title}>🏛️ Host University</h3>
-            <p className={styles.text}>Institute of Space Technology, Pakistan<br />Institute of Space Technology, Islamabad</p>
-          </div>
-        </div>
+        <Row gutter={[50, 40]} align="middle">
+          <Col xs={24} lg={12}>
+            <div className={styles.textContent}>
+              <Title level={2} className={styles.heading}>
+                <span className={styles.highlight}>Host</span> University
+              </Title>
+              <Paragraph className={styles.description}>
+                Institute of Space Technology, Islamabad, Pakistan
+              </Paragraph>
+            </div>
+          </Col>
+
+          <Col xs={24} lg={12}>
+            <div className={styles.imageWrapperBox}>
+              <img 
+                src={istImage} 
+                alt="Institute of Space Technology, Islamabad" 
+                className={styles.sectionImageBox} 
+              />
+            </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );

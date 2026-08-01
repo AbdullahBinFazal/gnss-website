@@ -1,5 +1,5 @@
 import { Col, Row, Typography } from 'antd';
-import styles from "./ResearchAreasSection.module.css";
+import styles from "../Home.module.css";
 
 const { Title, Paragraph } = Typography;
 
@@ -23,18 +23,16 @@ const ResearchAreasSection = () => {
         </div>
 
         <Row gutter={[40, 40]} align="middle">
-          {/* Left Side - Image - NO VISIBLE BOX */}
           <Col xs={24} lg={12}>
             <div className={styles.imageWrapper}>
               <img 
                 src="https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png" 
                 alt="NCGSA Research Labs"
-                className={styles.researchImage}
+                className={styles.sectionImage}
               />
             </div>
           </Col>
 
-          {/* Right Side - Text */}
           <Col xs={24} lg={12}>
             <div className={styles.textContent}>
               <Paragraph className={styles.description}>
@@ -49,16 +47,13 @@ const ResearchAreasSection = () => {
           </Col>
         </Row>
 
-        {/* Moving Tags / Research Areas Labels */}
         <div className={styles.tagsWrapper}>
           <div className={styles.tagsContainer}>
-            {/* First set */}
             {researchTags.map((tag, index) => (
               <span key={index} className={styles.tag}>
                 {tag.icon} {tag.name}
               </span>
             ))}
-            {/* Duplicate for seamless scrolling */}
             {researchTags.map((tag, index) => (
               <span key={`dup-${index}`} className={styles.tag}>
                 {tag.icon} {tag.name}

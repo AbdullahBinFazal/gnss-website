@@ -1,5 +1,5 @@
 import { Col, Row } from 'antd';
-import styles from "./StatsSection.module.css";
+import styles from "../Events.module.css";
 
 const stats = [
   { label: "Scientific Conferences", image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=350&fit=crop", icon: "📅" },
@@ -15,12 +15,12 @@ const StatsSection = () => {
         <Row gutter={[20, 20]}>
           {stats.map((stat, index) => (
             <Col xs={24} sm={12} md={6} key={index}>
-              <div className={styles.statCard}>
-                <img src={stat.image} alt={stat.label} className={styles.cardImage} />
-                <div className={styles.overlay} />
-                <div className={styles.cardContent}>
-                  <div className={styles.icon}>{stat.icon}</div>
-                  <div className={styles.label}>{stat.label}</div>
+              <div className={styles.statsCard}>
+                <img src={stat.image} alt={stat.label} className={styles.statsImage} />
+                <div className={styles.statsOverlay} />
+                <div className={styles.statsContent}>
+                  <div className={styles.statsIcon}>{stat.icon}</div>
+                  <div className={styles.statsLabel}>{stat.label}</div>
                 </div>
               </div>
             </Col>

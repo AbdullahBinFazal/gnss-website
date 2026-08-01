@@ -19,13 +19,18 @@ import Programs from "./pages/Programs/Programs";
 import Events from "./pages/Events/Events";
 import Engagement from "./pages/Engagement/Engagement";
 import FAQ from "./pages/FAQ/FAQ";  // ← NEW
-
+import Resources from "./pages/Resources/Resources";
 import CoPilot from "./pages/CoPilot/CoPilot";
 import Infrastructure from "./pages/Infrastructure/Infrastructure";
-
-
-
+import GNSSAcademy from "./pages/GNSSAcademy/GNSSAcademy";
+import Team from "./pages/Team/Team";
+import Collaborations from "./pages/Collaborations/Collaborations";
+import Opportunities from "./pages/Opportunities/Opportunities";
+import CapacityBuilding from "./pages/CapacityBuilding/CapacityBuilding";
+import DigitalObservatory from "./pages/DigitalObservatory/DigitalObservatory";
+import Facilities from "./pages/Facilities/Facilities";
 import ContactUs from "./pages/ContactUs/ContactUs";
+
 
 
 // Components
@@ -52,18 +57,24 @@ function AppContent() {
           <Route path="/register" element={<Register />} />
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/publications" element={<Publications />} />
-
+<Route path="/resources" element={<Resources />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/copilot" element={<CoPilot />} />
     <Route path="/engagement" element={<Engagement />} />
          <Route path="/infrastructure" element={<Infrastructure />} />
-    
+  <Route path="/collaborations" element={<Collaborations />} />
           <Route path="/events" element={<Events />} />
           <Route path="/faq" element={<FAQ />} />  {/* ← NEW */}
   <Route path="/infrastructure" element={<Infrastructure />} />
           <Route path="/dashboard" element={<ProtectedRoute><UserDashboard /></ProtectedRoute>} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
+<Route path="/gnss-academy" element={<GNSSAcademy />} />
+<Route path="/team" element={<Team />} />
+<Route path="/opportunities" element={<Opportunities />} />
+<Route path="/capacity-building" element={<CapacityBuilding />} />
+<Route path="/digital-observatory" element={<DigitalObservatory />} />
+<Route path="/facilities" element={<Facilities />} />
         </Routes>
       </main>
       <Footer />

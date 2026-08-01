@@ -7,7 +7,7 @@ import ResearchAreasSection from "./components/ResearchAreasSection";
 import LocationMap from "./components/LocationMap";  // ← ADD THIS
 import LinkagesSection from "./components/LinkagesSection"; 
 import styles from "./Home.module.css";
-
+import ServiceCardsSection from "./components/ServiceCardsSection";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -21,6 +21,7 @@ const Home = () => {
       <HeroSection />
       <StatsSection />
       <ResearchAreasSection />
+      <ServiceCardsSection />
        <LinkagesSection />  
       <LocationMap />  {/* ← ADD THIS - Above Footer */}
     </div>

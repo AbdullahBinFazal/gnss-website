@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import gnssLogo from "../assets/GNSS-Logo.png"; // Import the logo
 
 const Footer = () => {
   return (
@@ -7,12 +8,10 @@ const Footer = () => {
         <div className="grid">
           <div className="brand">
             <Link to="/" className="logo">
-              <span>🛰️</span>
-              <span className="gradient-text">GNSS (NCGSA) </span>
+              <img src={gnssLogo} alt="GNSS Logo" className="footer-brand-logo" />
             </Link>
-            <p>
-              National Center of GIS & Space Applications<br />
-              Institute of Space Technology, Islamabad
+            <p className="brand-text">
+              Institute Of Space Technology, Islamabad.
             </p>
           </div>
 
@@ -22,6 +21,7 @@ const Footer = () => {
               <li><Link to="/about">About GNSS</Link></li>
               <li><Link to="/programs">Program Info</Link></li>
               <li><Link to="/faculty">Faculty</Link></li>
+               <li><Link to="/resources">Resources</Link></li> 
               <li><Link to="/research">Research</Link></li>
               <li><Link to="/faq">FAQs</Link></li>
             </ul>

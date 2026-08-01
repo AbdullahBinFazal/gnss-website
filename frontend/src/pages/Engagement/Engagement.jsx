@@ -6,6 +6,9 @@ import ExchangesSection from "./components/ExchangesSection";
 import AgreementsSection from "./components/AgreementsSection";
 import OutreachSection from "./components/OutreachSection";
 import NewsEventsSection from "./components/NewsEventsSection";
+import GNSSObservatorySection from "./components/GNSSObservatorySection";  // ← ADD
+import LiveDashboardSection from "./components/LiveDashboardSection";      // ← ADD
+import DataHubSection from "./components/DataHubSection";                  // ← ADD
 import styles from "./Engagement.module.css";
 
 const Engagement = () => {
@@ -16,10 +19,16 @@ const Engagement = () => {
       <div id="collaborations">
         <PartnersSection />
       </div>
+
       
-      <OrganizationsSection />
-      <EngagementsSection />
-      <ExchangesSection />
+      
+<GNSSObservatorySection />
+      <LiveDashboardSection />
+      <DataHubSection />
+
+
+
+     
       
       <div id="agreements">
         <AgreementsSection />
@@ -30,6 +39,15 @@ const Engagement = () => {
       <div id="news-events">
         <NewsEventsSection />
       </div>
+
+         <div id="gnss-observatory">
+        <GNSSObservatorySection />
+      </div>
+
+      {/* New Sections */}
+      <OrganizationsSection />
+      <EngagementsSection />
+      <ExchangesSection />
     </div>
   );
 };

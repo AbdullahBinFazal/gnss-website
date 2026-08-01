@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section className={styles.hero}>
       <div className={`container ${styles.animateFadeInUp}`}>
-        <span className={styles.badge}>🛰️ National Center of GIS & Space Applications</span>
+        {/* <span className={styles.badge}>🛰️ National Center of GIS & Space Applications</span> */}
         
         <Title level={1} className={styles.title}>
           Advancing <span className={styles.heroGradientText}>GNSS</span> Research &<br />
@@ -33,11 +33,11 @@ const HeroSection = () => {
           </Link>
         </Flex>
         
-        <Flex gap="32px" justify="center" wrap="wrap" className={styles.trustBadges}>
+        {/* <Flex gap="32px" justify="center" wrap="wrap" className={styles.trustBadges}>
           <span>✅ MS/PhD Program</span>
           <span>🔬 State-of-the-art Lab</span>
           <span>🌍 Global Collaborations</span>
-        </Flex>
+        </Flex> */}
       </div>
     </section>
   );

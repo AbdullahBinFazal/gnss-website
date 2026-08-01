@@ -1,7 +1,4 @@
-import { Button, Input, Space } from 'antd';
-import styles from "./FilterSection.module.css";
-
-const { Search } = Input;
+import styles from "../Events.module.css";
 
 // Data moved outside for categories
 const eventsData = [

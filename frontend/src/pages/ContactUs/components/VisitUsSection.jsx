@@ -1,25 +1,22 @@
 import { Col, Row, Typography } from 'antd';
-import styles from "./VisitUsSection.module.css";
+import styles from "../ContactUs.module.css";
 
 const { Title, Paragraph } = Typography;
 
 const VisitUsSection = () => {
   return (
-    <section className="section-visit-us" style={{ padding: "60px 0" }}>
+    <section className={styles.section}>
       <div className="container">
         <Row gutter={[50, 40]} align="middle">
-          {/* Left Side - Image - NO VISIBLE BOX */}
           <Col xs={24} lg={12}>
             <div className={styles.imageWrapper}>
               <img 
                 src="https://ncgsa.org.pk/wp-content/uploads/2026/01/linkages-and-Outreach-circle-1200x1199.png" 
                 alt="Visit Us"
-                className={styles.visitImage}
+                className={styles.sectionImage}
               />
             </div>
           </Col>
-
-          {/* Right Side - Map */}
           <Col xs={24} lg={12}>
             <div className={styles.textContent}>
               <span className={styles.badge}>Location</span>

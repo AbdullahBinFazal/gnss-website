@@ -1,28 +1,24 @@
 import { Col, Row, Typography } from 'antd';
-import styles from "./CoPilotOverviewSection.module.css";
+import styles from "../CoPilot.module.css";
 
 const { Title, Paragraph } = Typography;
 
 const CoPilotOverviewSection = () => {
   return (
-    <section className="section-copilot-overview" style={{ padding: "60px 0" }}>
+    <section className={styles.section}>
       <div className="container">
         <Row gutter={[50, 40]} align="middle">
-          {/* Left Side - Image - NO VISIBLE BOX */}
           <Col xs={24} lg={12}>
             <div className={styles.imageWrapper}>
               <img 
                 src="https://ncgsa.org.pk/wp-content/uploads/2026/01/linkages-and-Outreach-circle-1200x1199.png" 
                 alt="GNSS Co-Pilot"
-                className={styles.copilotImage}
+                className={styles.sectionImage}
               />
             </div>
           </Col>
-
-          {/* Right Side - Text */}
           <Col xs={24} lg={12}>
             <div className={styles.textContent}>
-              {/* <span className={styles.badge}>AI Assistant</span> */}
               <Title level={2} className={styles.heading}>
                 Your <span className={styles.highlight}>AI-Powered</span> Satellite Navigation<br />
                 Research & Technical Assistant

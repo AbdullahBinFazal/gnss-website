@@ -1,5 +1,5 @@
 import { Col, Row, Typography } from 'antd';
-import styles from "./TeamSection.module.css";
+import styles from "../About.module.css";
 
 const { Title, Paragraph } = Typography;
 
@@ -8,11 +8,9 @@ const TeamSection = () => {
     <section className="section-team" style={{ padding: "60px 0" }}>
       <div className="container">
         <Row gutter={[50, 40]} align="middle">
-          {/* Left Side - Text */}
           <Col xs={24} lg={12}>
             <div className={styles.textContent}>
-              {/* <span className={styles.badge}>Team</span> */}
-              <Title level={2} className={styles.heading}>
+              <Title level={2} className={styles.headingSmall}>
                 <span className={styles.highlight}>Team</span>
               </Title>
               <Paragraph className={styles.description}>
@@ -22,13 +20,12 @@ const TeamSection = () => {
             </div>
           </Col>
 
-          {/* Right Side - Image - NO VISIBLE BOX */}
           <Col xs={24} lg={12}>
             <div className={styles.imageWrapper}>
               <img 
                 src="https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-2-1200x1200.jpg" 
                 alt="Team"
-                className={styles.teamImage}
+                className={styles.sectionImage}
               />
             </div>
           </Col>

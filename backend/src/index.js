@@ -18,6 +18,15 @@ const opportunityRoutes = require("./routes/opportunities");
 const contactRoutes = require("./routes/contact");
 const infrastructureRoutes = require("./routes/infrastructure");
 const engagementRoutes = require("./routes/engagement");
+const resourceRoutes = require("./routes/resources");
+const gnssAcademyRoutes = require("./routes/gnssAcademy");
+const teamRoutes = require("./routes/team");
+const collaborationRoutes = require("./routes/collaborations");
+const opportunityRoutes = require("./routes/opportunities");
+const capacityRoutes = require("./routes/capacity");
+const observatoryRoutes = require("./routes/observatory");
+const facilityRoutes = require("./routes/facilities");
+
 
 const app = express();
 app.use(cors());
@@ -38,6 +47,14 @@ app.use("/api/opportunities", opportunityRoutes);
 app.use("/api/contact", contactRoutes);
 app.use("/api/infrastructure", infrastructureRoutes);
 app.use("/api/engagement", engagementRoutes);
+app.use("/api/resources", resourceRoutes);
+app.use("/api/gnss-academy", gnssAcademyRoutes);
+app.use("/api/team", teamRoutes);
+app.use("/api/collaborations", collaborationRoutes);
+app.use("/api/opportunities", opportunityRoutes);
+app.use("/api/capacity", capacityRoutes);
+app.use("/api/observatory", observatoryRoutes);
+app.use("/api/facilities", facilityRoutes);
 
 // Health check
 app.get("/api/health", (req, res) => {

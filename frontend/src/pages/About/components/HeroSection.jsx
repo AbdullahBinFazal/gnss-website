@@ -1,5 +1,5 @@
 import { Typography } from 'antd';
-import styles from "./HeroSection.module.css";
+import styles from "../About.module.css";
 
 const { Title, Paragraph } = Typography;
 
@@ -8,8 +8,8 @@ const HeroSection = () => {
     <section className={styles.hero}>
       <div className={styles.overlay} />
       <div className="container">
-        <Title level={1} className={styles.title}>About <span>Us</span></Title>
-        <Paragraph className={styles.description}>
+        <Title level={1} className={styles.heroTitle}>About <span>Us</span></Title>
+        <Paragraph className={styles.heroDescription}>
           Global Navigation Satellite System Lab, a research and development
           lab, is dedicated to the advancement of GNSS technology and plays a
           crucial role in advancing research, innovation, and cutting-edge

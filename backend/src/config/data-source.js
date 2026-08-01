@@ -17,6 +17,14 @@ const { Opportunity } = require("../entities/Opportunity");
 const { ContactMessage } = require("../entities/ContactMessage");
 const { Infrastructure } = require("../entities/Infrastructure");
 const { Engagement } = require("../entities/Engagement");
+const { Resource } = require("../entities/Resource");
+const { GNSSAcademy } = require("../entities/GNSSAcademy");
+const { Team } = require("../entities/Team");
+const { Collaboration } = require("../entities/Collaboration");
+const { Opportunity } = require("../entities/Opportunity");
+const { CapacityBuilding } = require("../entities/CapacityBuilding");
+const { DigitalObservatory } = require("../entities/DigitalObservatory");
+const { Facility } = require("../entities/Facility");
 
 const AppDataSource = new DataSource({
   type: "postgres",

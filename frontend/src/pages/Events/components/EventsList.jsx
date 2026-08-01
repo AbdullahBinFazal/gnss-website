@@ -1,5 +1,5 @@
 import { Col, Row } from 'antd';
-import styles from "./EventsList.module.css";
+import styles from "../Events.module.css";
 
 // Data moved outside
 const eventsData = [
@@ -30,7 +30,7 @@ const getCategoryColor = (cat) => categoryColors[cat] || "#ffffff";
 const EventCard = ({ event }) => (
   <div className={styles.eventCard} style={{ borderLeft: `4px solid ${getCategoryColor(event.category)}` }}>
     <img src={event.image} alt={event.title} className={styles.cardImage} />
-    <div className={styles.overlay} />
+    <div className={styles.cardOverlay} />
     <div className={styles.cardContent}>
       <div className={styles.cardHeader}>
         <span className={styles.cardIcon}>{event.icon}</span>

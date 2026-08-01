@@ -1,4 +1,4 @@
-import styles from "./ImpactSection.module.css";
+import styles from "../Faculty.module.css";
 
 const impacts = [
   { number: "49", label: "Academic Research & Development", image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=300&fit=crop" },
@@ -13,15 +13,15 @@ const ImpactSection = () => {
   return (
     <section className="section-impact" style={{ padding: "20px 0 40px" }}>
       <div className="container">
-        <h2 className={styles.heading}><span className="gradient-text">Impact</span></h2>
-        <div className={styles.grid}>
+        <h2 className={styles.heading}><span className={styles.highlight}>Impact</span></h2>
+        <div className={styles.impactGrid}>
           {impacts.map((impact, index) => (
             <div key={index} className={styles.impactCard}>
-              <img src={impact.image} alt={impact.label} className={styles.cardImage} />
-              <div className={styles.overlay} />
-              <div className={styles.cardContent}>
-                <div className={styles.number}>{impact.number}</div>
-                <div className={styles.label}>{impact.label}</div>
+              <img src={impact.image} alt={impact.label} className={styles.impactImage} />
+              <div className={styles.impactOverlay} />
+              <div className={styles.impactContent}>
+                <div className={styles.impactNumber}>{impact.number}</div>
+                <div className={styles.impactLabel}>{impact.label}</div>
               </div>
             </div>
           ))}
