@@ -1,48 +1,48 @@
-import HeroSection from "./components/HeroSection";
-import StatsSection from "./components/StatsSection";
-import OurMission from "./components/OurMission";
-import CoreObjectives from "./components/CoreObjectives";
-import TeamSection from "./components/TeamSection";
-import LabLeadershipSection from "./components/LabLeadershipSection";
-import ResearchTeamsSection from "./components/ResearchTeamsSection";
-import AlumniNetworkSection from "./components/AlumniNetworkSection";
-import StrategicObjectivesCarousel from "./components/StrategicObjectivesCarousel";
-import styles from "./About.module.css";
+// src/pages/About/About.jsx
+import { Layout } from 'antd';
+import Comp1 from "./components/Comp1";
+import Comp2 from "./components/Comp2";
+import Comp3 from "./components/Comp3";
+import Comp4 from "./components/Comp4";
+import Comp5 from "./components/Comp5";
+import Comp6 from "./components/Comp6";
+import Comp7 from "./components/Comp7";
+import Comp8 from "./components/Comp8";
+
+const { Content } = Layout;
 
 const About = () => {
   return (
-    <div className={styles.about}>
-      <HeroSection />
-      <StatsSection />
+    <Content>
+      <Comp1 />
+      <Comp2 />
       
       <div id="our-mission" style={{ scrollMarginTop: "130px" }}>
-        <OurMission />
+        <Comp3 />
       </div>
       
       <div id="core-objectives" style={{ scrollMarginTop: "130px" }}>
-        <CoreObjectives />
+        <Comp4 />
       </div>
 
-         <div id="strategic-objectives">
-        <StrategicObjectivesCarousel />
+      <div id="strategic-objectives">
+        <Comp5 />
       </div>
       
       <div id="team" style={{ scrollMarginTop: "130px" }}>
-        <TeamSection />
+        <Comp6 />
       </div>
       
       <div id="lab-leadership" style={{ scrollMarginTop: "130px" }}>
-        <LabLeadershipSection />
+        <Comp7 />
       </div>
       
-      <div id="research-teams" style={{ scrollMarginTop: "130px" }}>
-        <ResearchTeamsSection />
+      <div id="research-teams-carousel" style={{ scrollMarginTop: "130px" }}>
+        <Comp8 />
       </div>
       
-      <div id="alumni" style={{ scrollMarginTop: "130px" }}>
-        <AlumniNetworkSection />
-      </div>
-    </div>
+     
+    </Content>
   );
 };
 

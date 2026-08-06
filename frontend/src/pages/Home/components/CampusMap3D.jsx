@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
-import styles from './CampusMap3D.module.css';
+import styles from "../../../styles/HomeStyles/CampusMap3D.module.css";
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // IST Campus Coordinates

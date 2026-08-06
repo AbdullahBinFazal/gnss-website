@@ -1,32 +1,24 @@
-import HeroSection from "./components/HeroSection";
-import InfrastructureSection from "./components/InfrastructureSection";
-import SensorEquipmentSection from "./components/SensorEquipmentSection";
-import ComputingSection from "./components/ComputingSection";
-import ResearchInfrastructureSection from "./components/ResearchInfrastructureSection";
-import LaboratoriesCarousel from "./components/LaboratoriesCarousel";
-import styles from "./Facilities.module.css";
+// src/pages/Facilities/Facilities.jsx
+import Comp1 from "./components/Comp1";
+import Comp2 from "./components/Comp2";
+import Comp3 from "./components/Comp3";
+import Comp4 from "./components/Comp4";
+import Comp5 from "./components/Comp5";
+import Comp6 from "./components/Comp6";
+import Comp7 from "./components/Comp7";
+import Comp8 from "./components/Comp8";
 
 const Facilities = () => {
   return (
-    <div className={styles.facilities}>
-      <HeroSection />
-      <InfrastructureSection />
-      
-      <div id="sensor-equipment">
-        <SensorEquipmentSection />
-      </div>
-      
-      <ComputingSection />
-
-      <div id="laboratories">
-        <LaboratoriesCarousel />
-      
-      <div id="research-infrastructure">
-        <ResearchInfrastructureSection />
-      </div>
-      
-      
-      </div>
+    <div>
+      <Comp1 />
+      <Comp2 />
+      <Comp3 />
+      <Comp4 />
+      <Comp5 />
+      <Comp6 />
+      <Comp7 />
+      <Comp8 />
     </div>
   );
 };

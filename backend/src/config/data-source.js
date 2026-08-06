@@ -18,8 +18,6 @@ const { ContactMessage } = require("../entities/ContactMessage");
 const { Infrastructure } = require("../entities/Infrastructure");
 const { Engagement } = require("../entities/Engagement");
 const { Resource } = require("../entities/Resource");
-const { GNSSAcademy } = require("../entities/GNSSAcademy");
-const { Team } = require("../entities/Team");
 const { Collaboration } = require("../entities/Collaboration");
 const { Opportunity } = require("../entities/Opportunity");
 const { CapacityBuilding } = require("../entities/CapacityBuilding");
@@ -33,7 +31,7 @@ const AppDataSource = new DataSource({
   username: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_NAME,
-  synchronize: true, // Auto-creates tables in development
+  synchronize: true, 
   logging: true,
   entities: [User, Faculty, Publication, Event, ResearchArea],
 });

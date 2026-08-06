@@ -1,36 +1,35 @@
-import HeroSection from "./components/HeroSection";
-import CoPilotOverviewSection from "./components/CoPilotOverviewSection"; 
-import CoPilotAssistanceSection from "./components/CoPilotAssistanceSection"; 
-import AskItSection from "./components/AskItSection";
-import CoPilotCodeSection from "./components/CoPilotCodeSection";
-import CoPilotConfigSection from "./components/CoPilotConfigSection";
-import PromptItWithSection from "./components/PromptItWithSection";
-import CoPilotInfrastructureSection from "./components/CoPilotInfrastructureSection";
-import styles from "./CoPilot.module.css";
+// src/pages/CoPilot/CoPilot.jsx
+import Comp1 from "./components/Comp1";
+import Comp2 from "./components/Comp2";
+import Comp3 from "./components/Comp3";
+import Comp4 from "./components/Comp4";
+import Comp5 from "./components/Comp5";
+import Comp6 from "./components/Comp6";
+import Comp7 from "./components/Comp7";
+import Comp8 from "./components/Comp8";
 
 const CoPilot = () => {
   return (
-    <div className={styles.coPilot}>
-      <HeroSection />
-      <CoPilotOverviewSection />
+    <div>
+      <Comp1 />
+      <Comp2 />
       
       <div id="copilot-assistance">
-        <CoPilotAssistanceSection />
+        <Comp3 />
       </div>
       
-      <AskItSection />
+      <Comp4 />
       
-      <CoPilotCodeSection />
+      <Comp5 />
       
       <div id="software-configuration">
-        <CoPilotConfigSection />
+        <Comp6 />
       </div>
       
-      {/* Prompt It With Section - Added after Config */}
-      <PromptItWithSection />  {/* ← ADDED HERE */}
+      <Comp7 />
       
       <div id="data-hub-navigation">
-        <CoPilotInfrastructureSection />
+        <Comp8 />
       </div>
     </div>
   );

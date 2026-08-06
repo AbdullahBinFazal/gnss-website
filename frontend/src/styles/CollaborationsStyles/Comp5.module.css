@@ -1,0 +1,123 @@
+/* src/styles/CollaborationsStyles/Comp5.module.css */
+/* ===== TITLES ===== */
+.titleCenter {
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
+  color: #0a0a1a !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+/* ===== CARDS - DARK VARIANT ===== */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.card:hover .cardImage img {
+  transform: scale(1.08);
+}
+.cardContent {
+  padding: 24px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cardTitle {
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: #111111 !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+.cardDescription {
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.9rem !important;
+  color: rgba(8, 8, 8, 0.75) !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  flex-grow: 1;
+}
+/* Card Dark Variant */
+.cardDark {
+  background: rgba(244, 244, 246, 0.991);
+  border: 1px solid rgba(0, 150, 200, 0.2);
+  backdrop-filter: blur(8px);
+}
+.cardDark:hover {
+  border-color: rgba(0, 150, 200, 0.6);
+  box-shadow: 0 12px 32px rgba(0, 150, 200, 0.25);
+  background: rgba(10, 10, 26, 0.9);
+}
+.cardDark .cardTitle {
+  color: #111111 !important;
+}
+.cardDark:hover .cardTitle {
+  color: #ffffff !important;
+}
+.cardDark .cardDescription {
+  color: rgba(8, 8, 8, 0.75) !important;
+}
+.cardDark:hover .cardDescription {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+/* ===== CAROUSEL ===== */
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  padding: 20px 0;
+}
+.carouselArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(10, 10, 26, 0.15);
+  background: rgba(10, 10, 26, 0.06);
+  color: #0a0a1a;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+.carouselArrow:hover {
+  background: #0a0a1a;
+  border-color: #0a0a1a;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(10, 10, 26, 0.25);
+}
+.carouselContainer {
+  flex: 1;
+  overflow: hidden;
+  min-width: 0;
+  max-width: 1200px;
+}

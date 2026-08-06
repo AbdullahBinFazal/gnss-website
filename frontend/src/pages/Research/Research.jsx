@@ -1,44 +1,44 @@
-import HeroSection from "./components/HeroSection";
-import DomainsSection from "./components/DomainsSection";
-import ResearchDetailSection from "./components/ResearchDetailSection";
-import IonosphericSection from "./components/IonosphericSection";
-import CrustalDeformationSection from "./components/CrustalDeformationSection";
-import ImpactSection from "./components/ImpactSection";
-import ResearchProjectsSection from "./components/ResearchProjectsSection";
-import PublicationsSection from "./components/PublicationsSection";
-import styles from "./Research.module.css";
+// src/pages/Research/Research.jsx
+import Comp1 from "./components/Comp1";
+import Comp2 from "./components/Comp2";
+import Comp3 from "./components/Comp3";
+import Comp4 from "./components/Comp4";
+import Comp5 from "./components/Comp5";
+import Comp6 from "./components/Comp6";
+import Comp7 from "./components/Comp7";
+import Comp8 from "./components/Comp8";
 
 const Research = () => {
   return (
-    <div className={styles.research}>
-      <HeroSection />
+    <div>
+      <Comp1 />
       
       <div id="domains">
-        <DomainsSection />
+        <Comp2 />
       </div>
       
       <div id="research-detail">
-        <ResearchDetailSection />
+        <Comp3 />
       </div>
       
       <div id="ionospheric">
-        <IonosphericSection />
+        <Comp4 />
       </div>
       
       <div id="crustal-deformation">
-        <CrustalDeformationSection />
+        <Comp5 />
       </div>
       
       <div id="impact">
-        <ImpactSection />
+        <Comp6 />
       </div>
       
       <div id="research-projects">
-        <ResearchProjectsSection />
+        <Comp7 />
       </div>
       
       <div id="publications">
-        <PublicationsSection />
+        <Comp8 />
       </div>
     </div>
   );

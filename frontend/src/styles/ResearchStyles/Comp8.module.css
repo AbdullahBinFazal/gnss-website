@@ -1,0 +1,143 @@
+/* src/styles/ResearchStyles/Comp8.module.css */
+
+/* ===== TITLES ===== */
+.titleCenter {
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
+  color: #0a0a1a !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+.titleCenter span {
+  color: #000000;
+}
+
+/* ===== PARAGRAPHS ===== */
+.paragraphCenter {
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  color: #4a4a6a !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+/* ===== PUBLICATION CARD ===== */
+.publicationCard {
+  height: 100%;
+  border-left: 4px solid;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.publicationCard:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+.publicationImage {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+.publicationImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.publicationImage img:hover {
+  transform: scale(1.08);
+}
+.publicationOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+}
+.publicationTitle {
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: #0a0a1a !important;
+  line-height: 1.4 !important;
+  margin-bottom: 8px !important;
+}
+.publicationMeta {
+  font-size: 0.9rem !important;
+  color: #4a4a6a !important;
+  line-height: 1.6 !important;
+  margin-bottom: 6px !important;
+}
+.publicationMeta strong {
+  color: #0a0a1a !important;
+}
+.publicationAbstract {
+  font-size: 0.85rem !important;
+  color: #4a4a6a !important;
+  line-height: 1.6 !important;
+  margin-bottom: 12px !important;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.publicationTag {
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+}
+.publicationLink {
+  text-decoration: none !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  margin-top: 8px !important;
+  display: inline-block !important;
+  transition: opacity 0.3s ease !important;
+}
+.publicationLink:hover {
+  opacity: 0.8 !important;
+}
+
+/* ===== STATS CARD ===== */
+.statsCard {
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.statsIcon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.statsValue {
+  font-family: "Inter", sans-serif !important;
+  color: #0a0a1a !important;
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+}
+.statsLabel {
+  font-family: "Inter", sans-serif !important;
+  color: #4a4a6a !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+}
+
+/* ===== FILTERS ===== */
+.filterWrapper {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+.filterButton {
+  font-family: "Inter", sans-serif !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+}
+.searchInput {
+  font-family: "Inter", sans-serif !important;
+  border-radius: 6px !important;
+}

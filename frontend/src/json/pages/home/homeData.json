@@ -1,0 +1,239 @@
+
+{
+  "comp2": {
+    "title": "From Satellite Signals to Real-World Solutions",
+    "description": "GNSS technologies support modern transportation, surveying, telecommunications, agriculture, environmental monitoring, disaster management and critical infrastructure. The GNSS Research Lab connects fundamental science with practical applications through advanced research, laboratory-based education, field experimentation and technology development.",
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2025/09/ncgsa-800x800.jpg"
+  },
+  "comp3": {
+    "title": "Core Focus",
+    "cards": [
+      {
+        "id": 1,
+        "title": "Research and Innovation",
+        "description": "Advancing GNSS algorithms, receiver technologies, precise positioning, augmentation, integrity monitoring, interference mitigation and resilient PNT solutions.",
+        "image": "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 2,
+        "title": "Academic Excellence",
+        "description": "Supporting specialized undergraduate, master's and doctoral education through research-led teaching, laboratory experimentation and academic supervision.",
+        "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 3,
+        "title": "Digital Observation",
+        "description": "Transforming GNSS receiver measurements and scientific datasets into interactive visualizations of satellite signals, positioning performance, ionospheric conditions and space weather.",
+        "image": "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 4,
+        "title": "Capacity Development",
+        "description": "Delivering GNSS schools, workshops, seminars and professional training for students, researchers, educators, engineers and practitioners.",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  },
+"comp4": {
+  "title": "About the Lab",
+  "subtitle": "Our Foundation, Direction and People",
+  "description": "Discover the Genesis, Vision, Mission and Strategic Objectives of the GNSS Research Lab. Meet the academic leadership, researchers and technical team advancing satellite navigation and PNT research.",
+  "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-4-800x792.jpg",
+  "cards": [
+    {
+      "id": 1,
+      "title": "Strategic Objectives",
+      "image": "https://th.bing.com/th/id/OIP.Gb92ApMrtgC_zGFIj2dh0QHaEK?w=316&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 2,
+      "title": "Academic Leadership",
+      "image": "https://th.bing.com/th/id/OIGP.AvlWP.3SssqrreRNOM8G?w=244&h=180&c=7&r=0&o=5&dpr=1.5&pid=ImgGn"
+    },
+    {
+      "id": 3,
+      "title": "Researchers",
+      "image": "https://th.bing.com/th/id/OIP.98vK1qivMJNaDgV3n4Ql2wHaEK?w=234&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 4,
+      "title": "Technical Team",
+      "image": "https://th.bing.com/th/id/OIP.T6dh-GTFYm5ZZNc_LXbwtwHaEo?w=249&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    }
+  ]
+},
+"comp5": {
+  "title": "Facilities",
+  "subtitle": "Infrastructure for Observation and Precision",
+  "description": "Explore research-grade GNSS receivers, multi-frequency antennas, software-defined radio platforms, processing software, the ICTP GNSS Station, the GISTM receiver, Academic CORS infrastructure and dedicated research workstations.",
+  "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png",
+  "cards": [
+    {
+      "id": 1,
+      "title": "Multi-frequency Antennas",
+      "image": "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+    },
+    {
+      "id": 2,
+      "title": "Software-defined Radio Platforms",
+      "image": "https://th.bing.com/th/id/OIP._KFlSGoByd9IPWvTFa1SKQHaEo?w=268&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 3,
+      "title": "Processing Software",
+      "image": "https://th.bing.com/th/id/OIP.-9ZlkqyWprFWdup6LEXmnwHaEK?w=331&h=186&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 4,
+      "title": "The ICTP GNSS Station",
+      "image": "https://th.bing.com/th/id/OIGP.k9IMDHqZA8bU0tt2Zm1A?w=279&h=186&c=7&r=0&o=5&dpr=1.5&pid=ImgGn"
+    }
+  ]
+},
+"comp6": {
+  "title": "Research",
+  "subtitle": "From Signals to Scientific Solutions",
+  "description": "Learn about the Lab's research in constellation design, GNSS signals and receivers, precise positioning, augmentation, resilient PNT, integrated navigation, space weather and environmental applications. Access featured projects, publications and supervised research theses.",
+  "image": "https://ncgsa.org.pk/wp-content/uploads/2025/09/NCGSA-Research-Domains.png",
+  "cards": [
+    {
+      "id": 1,
+      "title": "GNSS Signals and Receivers",
+      "image": "https://th.bing.com/th/id/OIP.fz9H8SsUSWi410KKrYe-GwHaEo?w=265&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 2,
+      "title": "Precise Positioning",
+      "image": "https://th.bing.com/th/id/OIP.ychhOpSmbYhsJP2WZ9SqcAHaEK?w=294&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 3,
+      "title": "Resilient PNT",
+      "image": "https://th.bing.com/th/id/OIP.BWj7kVsdPgNC8qbwR56TQAHaEo?w=281&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 4,
+      "title": "Integrated Navigation",
+      "image": "https://th.bing.com/th/id/OIP.xQ2Jwpi0EmLCDZux2WqoEwHaEK?w=331&h=186&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    }
+  ]
+},
+"comp7": {
+  "title": "Digital Observatory",
+  "subtitle": "A Digital Window into GNSS and Space Weather",
+  "description": "Access interactive visualizations of satellite visibility, signal strength, skyplots, positioning stability, constellation status, Total Electron Content and atmospheric effects. The Space Weather Observatory connects solar activity, solar wind, geomagnetic conditions and ionospheric behaviour with GNSS performance.",
+  "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-2-1200x1200.jpg",
+  "cards": [
+    {
+      "id": 1,
+      "title": "Satellite Visibility",
+      "image": "https://th.bing.com/th/id/OIP.i1W0L66rHzDLY3EZuFleAwHaEJ?w=371&h=187&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 2,
+      "title": "Signal Strength",
+      "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+    },
+    {
+      "id": 3,
+      "title": "Skyplots",
+      "image": "https://th.bing.com/th/id/OIP.pWucyiNA3tAEXee-70KItgHaEK?w=264&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 4,
+      "title": "Positioning Stability",
+      "image": "https://th.bing.com/th/id/OIP.ychhOpSmbYhsJP2WZ9SqcAHaEK?w=294&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    }
+  ]
+},
+"comp8": {
+  "title": "Capacity Building",
+  "subtitle": "Learning Beyond the Classroom",
+  "description": "Explore GNSS schools, technical workshops, specialized training, seminars, webinars and conference activities designed to translate scientific knowledge into practical capability.",
+  "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png",
+  "cards": [
+    {
+      "id": 1,
+      "title": "GNSS Schools",
+      "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Technical Workshops",
+      "image": "https://th.bing.com/th/id/OIP.98vK1qivMJNaDgV3n4Ql2wHaEK?w=234&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 3,
+      "title": "Specialized Training",
+      "image": "https://th.bing.com/th/id/OIP.T6dh-GTFYm5ZZNc_LXbwtwHaEo?w=249&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 4,
+      "title": "Seminars",
+      "image": "https://th.bing.com/th/id/OIP.xQ2Jwpi0EmLCDZux2WqoEwHaEK?w=331&h=186&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    }
+  ]
+},
+"comp9": {
+  "title": "Collaborations",
+  "subtitle": "Connecting Expertise and Expanding Impact",
+  "description": "The Lab engages with academic institutions, government organizations, industry partners and international scientific networks through joint research, training, instrument deployment, data sharing and technology development.",
+  "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/linkages-and-Outreach-circle-1200x1199.png",
+  "cards": [
+    {
+      "id": 1,
+      "title": "Academic Institutions",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjEPWuhwcdVAvlewqIjb-dzrs3hsmOkHwN8qySs7nxLg&s=10"
+    },
+    {
+      "id": 2,
+      "title": "Government Organizations",
+      "image": "https://th.bing.com/th/id/OIP.2sTpdNUuTiSrAZOfTCF-MwHaEJ?w=295&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 3,
+      "title": "Industry Partners",
+      "image": "https://th.bing.com/th/id/OIP.NdI1pvG6v0J3w5PRO72e8AHaE7?w=245&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 4,
+      "title": "International Scientific Networks",
+      "image": "https://th.bing.com/th/id/OIP.O5prTLb4Z43FEdNgjKAbQQHaE7?w=237&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    }
+  ]
+},
+  "comp10": {
+    "title": "GNSS Co-Pilot",
+    "subtitle": "Intelligent Support for Learning and Research",
+    "description": "GNSS Co-Pilot is an AI-assisted platform for exploring satellite-navigation concepts, positioning techniques, GNSS data formats and research workflows. It provides structured guidance for learners, researchers and practitioners.",
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png"
+  },
+"comp11": {
+  "title": "Opportunities",
+  "subtitle": "Learn, Research and Innovate with Us",
+  "description": "Explore opportunities for graduate research, undergraduate projects, internships, research assistantships, professional training, visiting research and institutional partnerships.",
+  "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/linkages-and-Outreach-circle-1200x1199.png",
+  "cards": [
+    {
+      "id": 1,
+      "title": "Undergraduate Projects",
+      "image": "https://th.bing.com/th/id/OIP.gFUjBcoMjLC8BTVUoHa_lgHaFj?w=238&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 2,
+      "title": "Internships",
+      "image": "https://ncgsa.org.pk/wp-content/uploads/2025/08/internship.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Research Assistantships",
+      "image": "https://th.bing.com/th/id/OIP.z6pmcTDzA5iX-iK_iVwbBwHaHN?w=157&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 4,
+      "title": "Professional Training",
+      "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+    }
+  ]
+}
+}

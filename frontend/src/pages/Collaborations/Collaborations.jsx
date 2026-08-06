@@ -1,30 +1,28 @@
-import HeroSection from "./components/HeroSection";
-// import PartnersSection from "./components/PartnersSection";
-import AcademicPartnersCarousel from "./components/AcademicPartnersCarousel";
-import AgreementsSection from "./components/AgreementsSection";
-import OutreachSection from "./components/OutreachSection";
-import NewsEventsSection from "./components/NewsEventsSection";
-import styles from "./Collaborations.module.css";
+// src/pages/Collaborations/Collaborations.jsx
+import Comp1 from "./components/Comp1";
+import Comp2 from "./components/Comp2";
+import Comp3 from "./components/Comp3";
+import Comp4 from "./components/Comp4";
+import Comp5 from "./components/Comp5";
 
 const Collaborations = () => {
   return (
-    <div className={styles.collaborations}>
-      <HeroSection />
-      {/* <PartnersSection /> */}
+    <div>
+      <Comp1 />
       
-  <div id="academic-partners">
-        <AcademicPartnersCarousel />
+      <div id="academic-partners">
+        <Comp2 />
       </div>
 
       <div id="agreements">
-        <AgreementsSection />
+        <Comp3 />
       </div>
       
       <div id="outreach">
-        <OutreachSection />
+        <Comp4 />
       </div>
       
-      <NewsEventsSection />
+      <Comp5 />
     </div>
   );
 };

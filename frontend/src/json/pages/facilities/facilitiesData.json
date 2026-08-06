@@ -1,0 +1,242 @@
+
+{
+"comp2": {
+  "title": "Research infrastructure for observation, experimentation and precision positioning",
+  "description": "The GNSS Research Lab combines multi-frequency receivers, geodetic antennas, specialised stations, processing software and computing resources to support education, field experimentation and advanced research.",
+  "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-6-1200x1200.jpg",
+  "cards": [
+    {
+      "id": 1,
+      "title": "GNSS Development Workstations",
+      "subtitle": "Quantity: 20",
+      "image": "https://th.bing.com/th/id/OIP.zVb_IU05f90F4PvkmV-qnQHaFc?w=236&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 2,
+      "title": "Software-Defined Radio Devices",
+      "subtitle": "Quantity: 20",
+      "image": "https://th.bing.com/th/id/OIP.gIpVN98EKyLfi2OgXEQHtAHaHa?w=167&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 3,
+      "title": "Multi-Frequency GNSS Antennas",
+      "subtitle": "Quantity: 4",
+      "image": "https://th.bing.com/th?q=GNSS+Antenna+Top+View&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=PK&setlang=en&adlt=moderate&t=1&mw=247"
+    },
+    {
+      "id": 4,
+      "title": "Septentrio PolaRx5S GISTM Receiver",
+      "subtitle": "Quantity: 1",
+      "image": "https://th.bing.com/th/id/OIP.gjpWMqSBxhgoqjuzoR53kQHaEK?w=298&h=180&c=7&r=0&o=7&dpr=2.6&pid=1.7&rm=3"
+    }
+  ]
+},
+ "comp3": {
+  "title": "GNSS Receivers and Antennas",
+  "description": "The laboratory supports multi-constellation and multi-frequency observations through research-grade and cost-effective GNSS receivers.",
+  "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-1-800x800.jpg",
+  "cards": [
+    {
+      "id": 1,
+      "title": "Septentrio and u-blox platforms",
+      "image": "https://th.bing.com/th/id/OIP.jFkk78pFLGwMs14HagKVUgHaFF?w=235&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 2,
+      "title": "Geodetic antennas, survey accessories",
+      "image": "https://th.bing.com/th/id/OIP.qEslyUdfaIQgzOVjIm6peAHaHa?w=172&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 3,
+      "title": "Configurable hardware for positioning",
+      "image": "https://th.bing.com/th/id/OIP.gPRq8ylBWtDdKYT2hgdF_AHaFI?w=289&h=199&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 4,
+      "title": "Timing and signal-quality studies",
+      "image": "https://th.bing.com/th/id/OIP.k5mlX9uGDYDPzfSogJsbKgHaDs?w=328&h=174&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    }
+  ]
+},
+  "comp4": {
+    "title": "Software and Processing Platforms",
+    "description": "Dedicated platforms support simulation, post-processing, real-time positioning and data analysis",
+    "platformCards": {
+      "title": "The working environment includes :",
+      "cards": [
+        {
+          "id": 1,
+          "title": "MATLAB, Systems Tool Kit, RTKLIB",
+          "image": "https://th.bing.com/th/id/OIP.96D3Xnu5SnTRlPlLroKpqwHaEM?w=305&h=186&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 2,
+          "title": "GNSS-SDR, RINEX utilities",
+          "image": "https://th.bing.com/th/id/OIP.pHdTzUZDky77jj13D2RE6gHaE1?w=266&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 3,
+          "title": "Custom tools for PPP, RTK, CORS",
+          "image": "https://th.bing.com/th/id/OIP.viNKrvdKVWruwwPADQZWKgAAAA?w=175&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 4,
+          "title": "Custom tools for signal processing and visualization",
+          "image": "https://th.bing.com/th/id/OIP.HRrUAJziTmdRWfvNts_15wHaEK?w=328&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        }
+      ]
+    }
+  },
+  "comp5": {
+    "title": "ICTP GNSS Station",
+    "description": "The ICTP GNSS station supports continuous observation of navigation signals and contributes to research in ionospheric variability and space weather. The station strengthens international scientific cooperation and enables the lab to connect local observations with broader research networks.",
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-2-800x800.jpg"
+  },
+  "comp6": {
+    "title": "GISTM Receiver",
+    "description": "The PolaRx5 GISTM receiver provides multi-frequency GNSS observations for ionospheric and scintillation studies.",
+    "gistmCards": {
+      "title": "It supports the analysis of :",
+      "cards": [
+        {
+          "id": 1,
+          "title": "Total Electron Content",
+          "image": "https://th.bing.com/th/id/OIP.h-MFz4cnvNrAz9-RandOMQHaFh?w=269&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 2,
+          "title": "Signal Intensity",
+          "image": "https://th.bing.com/th/id/OIP.0waWhm1AlWiMdrOrskABPgHaDd?w=349&h=163&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 3,
+          "title": "Phase Fluctuations",
+          "image": "https://th.bing.com/th?q=What+Is+Quantum+Fluctuation&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=PK&setlang=en&adlt=moderate&t=1&mw=247"
+        },
+        {
+          "id": 4,
+          "title": "Effects of space weather on navigation performance",
+          "image": "https://www.bing.com/th/id/OIP.0CJZmVXV1fxFiIviSixZPAHaFO?w=193&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        }
+      ]
+    }
+  },
+  "comp7": {
+    "title": "Academic CORS Network",
+    "description": "The Academic and Research GNSS CORS Network is designed to support high-precision positioning, geodetic research, training and practical applications in the Islamabad region.",
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs-800x800.png"
+  },
+  "comp8": {
+    "title": "Student Research Workstations",
+    "description": "High-performance workstations provide students and researchers with dedicated resources for simulation, GNSS data processing, algorithm development, geospatial analysis and visualization. Shared storage and software environments support reproducible research and supervised laboratory work.",
+    "facilityCards": {
+      "title": "Facility Equipments",
+      "cards": [
+        {
+          "id": 1,
+          "title": "GNSS Development Workstations",
+          "subtitle": "Dell Core i5, 11th Generation, 16 GB RAM and 500 GB storage",
+          "quantity": "Quantity: 20",
+          "usage": "Primary Research and Academic Use: GNSS data processing, receiver programming, positioning algorithms, simulations, and laboratory instruction",
+          "image": "https://th.bing.com/th/id/OIP.aHV5fEbneO2UVqXt65OTXwHaET?w=264&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 2,
+          "title": "RTK GNSS Receiver Modules",
+          "subtitle": "10 u-blox C94-M8P and 10 u-blox ZED-F9P receivers",
+          "quantity": "Quantity: 20",
+          "usage": "Primary Research and Academic Use: Real-time kinematic positioning, base–rover experiments, receiver integration, and precise navigation research",
+          "image": "https://th.bing.com/th/id/OIP.TiSvsmPqyWH68rmHvZnF2wHaHa?w=218&h=219&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 3,
+          "title": "GISTM Receiver",
+          "subtitle": "Septentrio PolaRx5S",
+          "quantity": "Quantity: 1",
+          "usage": "Primary Research and Academic Use: Ionospheric monitoring, Total Electron Content analysis, scintillation studies, and space-weather research",
+          "image": "https://th.bing.com/th/id/OIP.H6pG9ISzAmCsx8ZDb_X0cAHaHa?w=173&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 4,
+          "title": "CORS Reference Receivers",
+          "subtitle": "ComNav M300 Pro",
+          "quantity": "Quantity: 3",
+          "usage": "Primary Research and Academic Use: Continuous GNSS observations, reference-station operation, correction generation, and CORS network research",
+          "image": "https://www.bing.com/th/id/OIP.2YemJXO111xVBCpfF8ZnygHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 5,
+          "title": "CORS Monitoring Platform",
+          "subtitle": "ComNav monitoring software",
+          "quantity": "Quantity: 1",
+          "usage": "Primary Research and Academic Use: CORS Monitoring Platform, ComNav monitoring software, Reference-station monitoring, receiver status assessment, data-stream supervision, and network management",
+          "image": "https://th.bing.com/th/id/OIP.1RVmfnNa3m4RvAA7Vc0dOAHaHa?w=160&h=108&c=7&qlt=90&bgcl=247c28&r=0&o=6&dpr=1.5&pid=13.1"
+        },
+        {
+          "id": 6,
+          "title": "Precise DGNSS Receiver",
+          "subtitle": "South survey-grade GNSS receiver",
+          "quantity": "Quantity: 1",
+          "usage": "Primary Research and Academic Use: Differential GNSS observations, high-accuracy surveying, validation, and field demonstrations",
+          "image": "https://www.bing.com/th/id/OIP.9krBcWYJP1ailQdtAxq4qgHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 7,
+          "title": "GNSS Rovers and Data Collectors",
+          "subtitle": "ComNav survey-grade receivers",
+          "quantity": "Quantity: 2",
+          "usage": "Primary Research and Academic Use: RTK and DGNSS field surveys, correction reception, coordinate collection, and practical training",
+          "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 8,
+          "title": "Multi-Frequency GNSS Antennas",
+          "subtitle": "PolaNT choke-ring antenna and three AT600 antennas",
+          "quantity": "Quantity: 4",
+          "usage": "Primary Research and Academic Use: Multi-frequency signal reception, reference-station operation, ionospheric observations, and precise positioning",
+          "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 9,
+          "title": "GNSS Signal Splitter",
+          "subtitle": "GPS420 splitter",
+          "quantity": "Quantity: 1",
+          "usage": "Primary Research and Academic Use: Distribution of a common antenna signal to multiple receivers for comparative testing and receiver evaluation",
+          "image": "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 10,
+          "title": "Software-Defined Radio Systems",
+          "subtitle": "20 RTL-SDR Blog V3 units and 10 HackRF One devices",
+          "quantity": "Quantity: 30",
+          "usage": "Primary Research and Academic Use: GNSS signal acquisition, RF experimentation, interference studies, spectrum analysis, and SDR-based receiver development",
+          "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 11,
+          "title": "Inertial Measurement Unit",
+          "subtitle": "IMU RS235",
+          "quantity": "Quantity: 1",
+          "usage": "Primary Research and Academic Use: GNSS–INS integration, attitude estimation, navigation during GNSS outages, and sensor-fusion research",
+          "image": "https://www.bing.com/th/id/OIP.wI6ZFV8xbLIXhAq3PXfiNgHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 12,
+          "title": "Digital Oscilloscope",
+          "subtitle": "Siglent 100 MHz with SMA cable",
+          "quantity": "Quantity: 1",
+          "usage": "Primary Research and Academic Use: Signal inspection, receiver testing, laboratory diagnostics, and RF experimentation",
+          "image": "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 13,
+          "title": "Command and Control Displays",
+          "subtitle": "Three 75-inch TCL displays",
+          "quantity": "Quantity: 3",
+          "usage": "Primary Research and Academic Use: Real-time GNSS monitoring, observatory visualizations, collaborative analysis, and research demonstrations",
+          "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        }
+      ]
+    }
+  }
+}

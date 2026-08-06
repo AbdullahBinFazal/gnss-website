@@ -1,61 +1,45 @@
-import HeroSection from "./components/HeroSection";
-import AcademicsSection from "./components/AcademicsSection";
-import StatsSection from "./components/StatsSection";
-import ProgramTabs from "./components/ProgramTabs";
-import MSProgram from "./components/MSProgram";
-import PhDProgram from "./components/PhDProgram";
-import UndergraduateSection from "./components/UndergraduateSection";
-import AcademicResourcesSection from "./components/AcademicResourcesSection";
-import OpportunitiesSection from "./components/OpportunitiesSection";
-import EngagementSection from "./components/EngagementSection";
-import ResearchOpportunitiesSection from "./components/ResearchOpportunitiesSection";
-import GNSSAcademySection from "./components/GNSSAcademySection";
-import TrainingWorkshopsSection from "./components/TrainingWorkshopsSection";
-import TutorialsSection from "./components/TutorialsSection";
-import styles from "./Programs.module.css";
+// src/pages/Programs/Programs.jsx
 import { useState } from "react";
+import Comp1 from "./components/Comp1";
+import Comp2 from "./components/Comp2";
+
+import Comp7 from "./components/Comp7";
+import Comp8 from "./components/Comp8";
+import Comp9 from "./components/Comp9";
+import Comp10 from "./components/Comp10";
+
 
 const Programs = () => {
   const [activeTab, setActiveTab] = useState("ms");
 
   return (
-    <div className={styles.programs}>
-      <HeroSection />
+    <div>
+      <Comp1 />
       
       <div id="academics">
-        <AcademicsSection />
+        <Comp2 />
       </div>
       
-      <StatsSection />
-      <ProgramTabs activeTab={activeTab} setActiveTab={setActiveTab} />
-      {activeTab === "ms" ? <MSProgram /> : <PhDProgram />}
+      
       
       <div id="undergraduate">
-        <UndergraduateSection />
+        <Comp7 />
       </div>
+      
+      <Comp8 />
       
       <div id="academic-resources">
-        <AcademicResourcesSection />
+        <Comp9 />
       </div>
       
-      <OpportunitiesSection />
-      <EngagementSection />
+      <Comp10 />
       
-      <div id="research-opportunities">
-        <ResearchOpportunitiesSection />
-      </div>
       
-      <div id="gnss-academy">
-        <GNSSAcademySection />
-      </div>
       
-      <div id="training-workshops">
-        <TrainingWorkshopsSection />
-      </div>
       
-      <div id="tutorials">
-        <TutorialsSection />
-      </div>
+  
+      
+      
     </div>
   );
 };

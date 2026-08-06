@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
-import styles from "./LocationMap.module.css";  // ← KEEPS ITS OWN CSS
-import CampusMap3D from './CampusMap3D';
+// LocationMap.jsx
+import React, { useState, lazy, Suspense } from 'react';
+import styles from "../../../styles/HomeStyles/LocationMap.module.css";
+
+// Lazy load CampusMap3D to break circular dependency
+const CampusMap3D = lazy(() => import('./CampusMap3D'));
 
 const LocationMap = () => {
   const [use3D, setUse3D] = useState(false);
@@ -32,7 +35,9 @@ const LocationMap = () => {
         </div>
 
         {use3D ? (
-          <CampusMap3D />
+          <Suspense fallback={<div className={styles.loading}>Loading 3D Campus Map...</div>}>
+            <CampusMap3D />
+          </Suspense>
         ) : (
           <div className={styles.mapContainer}>
             <iframe

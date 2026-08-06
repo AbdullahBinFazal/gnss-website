@@ -1,27 +1,24 @@
-import HeroSection from "./components/HeroSection";
-import GNSSAcademySection from "./components/GNSSAcademySection";
-import TrainingWorkshopsSection from "./components/TrainingWorkshopsSection";
-import TutorialsSection from "./components/TutorialsSection";
-import CoreModulesSection from "./components/CoreModulesSection";  // ← ADD THIS
-import styles from "./CapacityBuilding.module.css";
+// src/pages/CapacityBuilding/CapacityBuilding.jsx
+import Comp1 from "./components/Comp1";
+import Comp2 from "./components/Comp2";
+import Comp3 from "./components/Comp3";
+import Comp4 from "./components/Comp4";
+import Comp5 from "./components/Comp5";
 
 const CapacityBuilding = () => {
   return (
-    <div className={styles.capacityBuilding}>
-      <HeroSection />
-      <GNSSAcademySection />
-      
-      
-      {/* <CoreModulesSection />  */}
+    <div>
+      <Comp1 />
+      <Comp2 />
       
       <div id="training-workshops">
-        <TrainingWorkshopsSection />
+        <Comp3 />
       </div>
 
-      <CoreModulesSection /> 
+      <Comp4 /> 
       
       <div id="tutorials">
-        <TutorialsSection />
+        <Comp5 />
       </div>
     </div>
   );

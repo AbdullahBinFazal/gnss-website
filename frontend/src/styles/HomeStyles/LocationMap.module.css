@@ -1,0 +1,206 @@
+/* src/styles/HomeStyles/LocationMap.module.css */
+
+.mapSection {
+  position: relative;
+  padding: 80px 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.10);
+  z-index: 0;
+}
+
+.mapSection .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   MAP TITLE - WHITE TEXT
+   ============================================================ */
+.mapTitle {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.mapSubtitle {
+  display: inline-block;
+  padding: 4px 16px;
+  background: rgba(216, 8, 8, 0.12);
+  border-radius: 9999px;
+  color: #080808 !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mapHeading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #0d0d0d !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mapGradient {
+  color: #0a0a0a !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mapDescription {
+  color: rgba(15, 15, 15, 0.92) !important;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================================
+   TOGGLE BUTTONS - UPDATED WITH FIXES
+   ============================================================ */
+.toggleContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.toggleBtn {
+  padding: 8px 24px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(11, 11, 11, 0.6);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.toggleBtn.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #171717;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.toggleBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* ============================================================
+   MAP CONTAINER
+   ============================================================ */
+.mapContainer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mapIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Loading state */
+.loading {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a1a;
+  border-radius: 16px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  .mapSection {
+    padding: 60px 0;
+    background-attachment: scroll;
+  }
+  
+  .mapContainer {
+    height: 300px;
+    border-radius: 12px;
+  }
+  
+  .loading {
+    height: 300px;
+  }
+  
+  .mapHeading {
+    font-size: 2rem;
+  }
+  
+  .mapDescription {
+    font-size: 1rem;
+  }
+
+  .toggleBtn {
+    padding: 6px 18px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mapSection {
+    padding: 40px 0;
+  }
+  
+  .mapContainer {
+    height: 250px;
+    border-radius: 8px;
+  }
+  
+  .loading {
+    height: 250px;
+  }
+  
+  .mapHeading {
+    font-size: 1.6rem;
+  }
+  
+  .mapDescription {
+    font-size: 0.9rem;
+  }
+
+  .toggleContainer {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .toggleBtn {
+    padding: 6px 14px;
+    font-size: 0.75rem;
+  }
+}

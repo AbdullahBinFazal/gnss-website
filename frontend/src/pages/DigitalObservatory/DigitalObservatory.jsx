@@ -1,24 +1,24 @@
-import HeroSection from "./components/HeroSection";
-import ObservatoryOverviewSection from "./components/ObservatoryOverviewSection";
-import GNSSObservatoryCarousel from "./components/GNSSObservatoryCarousel";
-import SpaceWeatherObservatorySection from "./components/SpaceWeatherObservatorySection";
-import styles from "./DigitalObservatory.module.css";
+// src/pages/DigitalObservatory/DigitalObservatory.jsx
+import Comp1 from "./components/Comp1";
+import Comp2 from "./components/Comp2";
+import Comp3 from "./components/Comp3";
+import Comp4 from "./components/Comp4";
 
 const DigitalObservatory = () => {
   return (
-    <div className={styles.digitalObservatory}>
-      <HeroSection />
+    <div>
+      <Comp1 />
       
       <div id="gnss-observatory">
-        <ObservatoryOverviewSection />
+        <Comp2 />
       </div>
 
        <div id="gnss-observatory-cards">
-        <GNSSObservatoryCarousel />
+        <Comp3 />
       </div>
       
       <div id="space-weather">
-        <SpaceWeatherObservatorySection />
+        <Comp4 />
       </div>
     </div>
   );
