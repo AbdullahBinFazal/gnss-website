@@ -1,0 +1,1038 @@
+
+{
+  "comp2": {
+    "title": "Research that connects satellite signals with real-world impact",
+    "description": "The lab conducts fundamental and applied research across GNSS science, positioning algorithms, receiver technologies, resilient PNT, space weather and emerging navigation applications.",
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-4-1200x1188.jpg"
+  },
+  "comp3": {
+    "title": "Research Domains",
+    "description": "Following are the research domains",
+    "cards": [
+      {
+        "id": 1,
+        "title": "GNSS Constellations and Orbit Design",
+        "description": "Regional and global constellation analysis, optimisation, coverage and geometry assessment.",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.TNewWS2eYuuAW2va8-LXAAHaGc?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "id": 2,
+        "title": "GNSS Signals and Receiver Systems",
+        "description": "Signal generation, acquisition, tracking, navigation data processing and software-defined receivers.",
+        "image": "https://cdn.shopify.com/s/files/1/0075/3677/1145/files/What_is_Global_Network_Satellite_Systems_GNSS_480x480.png?v=1726740568"
+      },
+      {
+        "id": 3,
+        "title": "Positioning and Estimation",
+        "description": "Single-point positioning, differential GNSS, RTK, network RTK, PPP and estimation algorithms.",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.ptpF57w_SSTuR-GklfwoRwHaHa?r=0&pid=ImgDet&w=178&h=178&c=7&dpr=1.5&o=7&rm=3"
+      },
+      {
+        "id": 4,
+        "title": "GNSS Augmentation",
+        "description": "Ground- and space-based augmentation, correction services, integrity and performance monitoring.",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 5,
+        "title": "Resilient and Secure PNT",
+        "description": "Jamming, spoofing, fault detection, interference mitigation, integrity and alternative PNT.",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 6,
+        "title": "GNSS and Inertial Integration",
+        "description": "Multi-sensor navigation, GNSS/INS integration, attitude determination and autonomous systems.",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 7,
+        "title": "Ionosphere and Space Weather",
+        "description": "TEC, scintillation, ionospheric modelling, geomagnetic effects and signal-propagation studies.",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 8,
+        "title": "GNSS Remote Sensing",
+        "description": "Reflectometry, environmental sensing, atmospheric studies and GNSS-based radar concepts.",
+        "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 9,
+        "title": "GNSS Applications and Services",
+        "description": "Transport, agriculture, surveying, telecommunications, smart infrastructure and location-based services.",
+        "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  },
+  "comp4": {
+    "title": "Research Projects",
+    "description": "Following are the research projects",
+    "cards": [
+      {
+        "id": 1,
+        "title": "Academic and Research GNSS CORS Network",
+        "description": "Development of a reference-station network for precise positioning, geodetic research, education and correction-service experimentation.",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.lrL4o6DMhdsjBhOpeVzpZgHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "id": 2,
+        "title": "GNSS Digital Observatory",
+        "description": "A visual platform for satellite visibility, signal quality, positioning performance, constellation status and receiver-health analytics.",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.gnwNBCqKjkSHLBB0xZTEXgHaED?r=0&pid=ImgDet&w=178&h=97&c=7&dpr=1.5&o=7&rm=3"
+      },
+      {
+        "id": 3,
+        "title": "Space Weather and Ionospheric Observatory",
+        "description": "Local GNSS and GISTM observations integrated with authoritative datasets to study TEC, scintillation and space-weather impacts.",
+        "image": "https://tse3.mm.bing.net/th/id/OIP.0bT0QR5YX71yD0vrxk_bCQHaFQ?r=0&pid=ImgDet&w=199&h=141&c=7&dpr=1.5&o=7&rm=3"
+      },
+      {
+        "id": 4,
+        "title": "Regional Navigation Satellite Constellation Design",
+        "description": "Optimization of satellite constellations for Pakistan and regional service areas using geometry, availability and multi-objective design criteria.",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 5,
+        "title": "Resilient PNT and GNSS Security",
+        "description": "Detection and mitigation of jamming, spoofing, signal anomalies and integrity risks in GNSS-dependent systems.",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 6,
+        "title": "Low-Cost Precise Positioning",
+        "description": "Evaluation and development of cost-effective receiver configurations for DGPS, RTK, PPP and CORS applications.",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 7,
+        "title": "GNSS/INS and Attitude Determination",
+        "description": "Integrated navigation and platform-attitude solutions using GNSS measurements, inertial sensors and estimation methods.",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 8,
+        "title": "GNSS Remote Sensing and Environmental Applications",
+        "description": "Research on GNSS reflectometry, soil moisture, atmospheric conditions and signal-based sensing applications.",
+        "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  },
+  "comp5": {
+    "title": "Publications",
+    "description": "The lab's research outputs include peer-reviewed journal articles, conference papers, technical studies and supervised theses. Types of publications are",
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-4-1200x1188.jpg",
+    "cards": {
+      "title": "Publication Types",
+      "items": [
+        {
+          "id": 1,
+          "title": "Journal publications",
+          "image": "https://tse3.mm.bing.net/th/id/OIP.sgc20caLbGMp4x_AResJNQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+          "id": 2,
+          "title": "Conference publications",
+          "image": "https://publishingstate.com/wp-content/uploads/2023/08/Journal-publication-types-1024x1024.jpg"
+        },
+        {
+          "id": 3,
+          "title": "MS research theses",
+          "image": "https://www.acm.org/binaries/ctaimagelarge/content/gallery/acm/ctas/practical_content_journals.jpg"
+        }
+      ]
+    }
+  },
+  "comp6": {
+    "title": "Journal Publications",
+    "description": "Peer-reviewed journal articles from GNSS Research Lab",
+    "publications": [
+      {
+        "id": 1,
+        "title": "Total electron content anomalies associated with earthquakes occurred during 1998–2019",
+        "authors": "Munawar Shah, Arslan Ahmed, Muhsan Ehsan, Majid Khan, Muhammad Arslan Tariq, Andres Calabia",
+        "journal": "Acta Astronautica",
+        "year": "2020",
+        "doi": "10.1016/j.actaastro.2020.06.005",
+        "impact": "2.83",
+        "category": "Seismo-Ionospheric",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.cIkB5ygOJiEnUnrXcXRMZAHaEv?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "id": 2,
+        "title": "Seismo ionospheric anomalies possibly associated with the 2018 Mw 8.2 Fiji earthquake detected with GNSS TEC",
+        "authors": "Amna Kiyani, Munawar Shah, Arslan Ahmed, Hasrat Hussain Shah, Saman Hameed, Muhammad Arqam Adil, Najam Abbas Naqvi",
+        "journal": "Journal of Geodynamics",
+        "year": "2020",
+        "doi": "10.1016/j.jog.2020.101782",
+        "impact": "1.855",
+        "category": "Seismo-Ionospheric",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.BQvC9pQRyUp0qUCx-sR_uQHaF2?r=0&pid=ImgDet&w=178&h=140&c=7&dpr=1.5&o=7&rm=3"
+      },
+      {
+        "id": 3,
+        "title": "Possible ionospheric anomalies associated with the 2009 Mw 6.4 Taiwan earthquake from DEMETER and GNSS TEC",
+        "authors": "Abdur Rafeh Abbasi, Munawar Shah, Arslan Ahmed, Najam Abbas Naqvi",
+        "journal": "Acta Geodaetica et Geophysica",
+        "year": "2020",
+        "doi": "10.1007/s40328-020-00325-1",
+        "impact": "0.909",
+        "category": "Seismo-Ionospheric",
+        "image": "https://tse3.mm.bing.net/th/id/OIP.tY4tmHUNI0pzVEO_mE-8fgHaDx?r=0&pid=ImgDet&w=178&h=90&c=7&dpr=1.5&o=7&rm=3"
+      },
+      {
+        "id": 4,
+        "title": "Artificial Neural Network based thermal anomalies associated with earthquakes in Pakistan from MODIS LST",
+        "authors": "Munawar Shah, Rizwan Ullah Qureshi, Nangyal Ghani Khan, Muhsan Ehsan, Jianguo Yan",
+        "journal": "Journal of Atmospheric and Solar-Terrestrial Physics",
+        "year": "2021",
+        "doi": "10.1016/j.jastp.2021.105568",
+        "impact": "1.503",
+        "category": "Machine Learning",
+        "image": "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 5,
+        "title": "Seismo ionospheric anomalies in Turkey associated with Mw≥ 6.0 earthquakes detected by GPS stations and GIM TEC",
+        "authors": "Munawar Shah, Samed Inyurt, Muhsan Ehsan, Arslan Ahmed, Muhammad Shakir, Saleem Ullah, Muhammad Shahid Iqbal",
+        "journal": "Advances in Space Research",
+        "year": "2021",
+        "doi": "10.1016/j.asr.2020.03.005",
+        "impact": "2.177",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 6,
+        "title": "Comparison of VTEC from GPS and IRI-2007, IRI-2012 and IRI-2016 over Sukkur Pakistan",
+        "authors": "Rasim Shahzad, Munawar Shah, Arslan Ahmed",
+        "journal": "Astrophysics and Space Science",
+        "year": "2021",
+        "doi": "10.1007/s10509-021-03947-1",
+        "impact": "1.43",
+        "category": "Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 7,
+        "title": "Comparison of VTEC from GPS and IRI-2007, IRI-2012 and IRI-2016 over Sukkur Pakistan",
+        "authors": "Rasim Shahzad, Munawar Shah, Arslan Ahmed",
+        "journal": "Astrophysics and Space Science",
+        "year": "2021",
+        "doi": "https://doi.org/10.1007/s10509-021-03947-1",
+        "impact": "1.83",
+        "category": "Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 8,
+        "title": "GNSS-and-GIS based android integration of mobile based virtual guide application ExpLahore for walled city Lahore, Pakistan",
+        "authors": "Aaysha Rahim, Dr. Najam Abbas",
+        "journal": "National Academy of Sciences of India",
+        "year": "2021",
+        "doi": "https://doi.org/10.47264/idea.nasij/2.1.2",
+        "impact": "",
+        "category": "GNSS Applications",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 9,
+        "title": "Comparison of TEC from IRI-2016 and GPS during the low solar activity over Turkey",
+        "authors": "M. Arslan Tariq, Munawar Shah, Samed Inyurt, M. Ali Shah, Libo Liu",
+        "journal": "Astrophysics and Space Science",
+        "year": "2021",
+        "doi": "10.1007/s10509-020-03894-3",
+        "impact": "1.43",
+        "category": "Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 10,
+        "title": "Urban rainfall in the Capitals of Brazil: Variability, trend, and wavelet analysis",
+        "authors": "José Francisco de Oliveira-Júnior, Washington Luiz Félix Correia Filho, Lua da Silva Monteiro, Munawar Shah, Amna Hafeez",
+        "journal": "Atmospheric Research",
+        "year": "2021",
+        "doi": "https://doi.org/10.1016/j.atmosres.2021.105984",
+        "impact": "5.39",
+        "category": "Atmospheric",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 11,
+        "title": "Machine learning-based thermal anomalies detection from MODIS LST associated with the Mw 7.7 Awaran, Pakistan earthquake",
+        "authors": "Amna Hafeez, Rasim Shahzad, Muhsan Ahsan, Munawar Shah, Ayesha Abbas",
+        "journal": "Natural Hazards",
+        "year": "2022",
+        "doi": "https://doi.org/10.1007/s11069-021-05131-8",
+        "impact": "3.102",
+        "category": "Machine Learning",
+        "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 12,
+        "title": "Spatiotemporal analysis of drought and rainfall in Pakistan via Standardized Precipitation Index: homogeneous regions, trend, wavelet, and influence of El Niño-southern oscillation",
+        "authors": "José Francisco de Oliveira-Júnior, Munawar Shah, Ayesha Abbas, M. Shahid Iqbal, Rasim Shahzad, Givanildo de Gois, Marcos Vinícius da Silva, Alexandre Maniçoba da Rosa Ferraz Jardim, Amaury de Souza",
+        "journal": "Theoretical and Applied Climatology",
+        "year": "2022",
+        "doi": "10.1007/s00704-022-04082-9",
+        "impact": "3.179",
+        "category": "Atmospheric",
+        "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 13,
+        "title": "Weighted Least Square Based RAIM for Single Frequency GNSS Receivers",
+        "authors": "Sunnayaha Saeed, Salma Zainab Farooq, Imtiaz Nabi",
+        "journal": "Not provided",
+        "year": "2022",
+        "doi": "",
+        "impact": "",
+        "category": "GNSS Security",
+        "image": "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 14,
+        "title": "Latitudinal Variations of Ionospheric-thermospheric responses to Geomagnetic Storms from the Multi-instruments",
+        "authors": "Rasim Shahzad, Munawar Shah, Ayesha Abbas, Amna Hafeez, Andres Calabia, Angela Melgarejo-Morales, Najam Abbas Naqvi, Mohd Anul Haq, Ilyas Khan, Abdullah Mohamedd, El-Awady ATTIA",
+        "journal": "Not provided",
+        "year": "2022",
+        "doi": "-",
+        "impact": "2.19",
+        "category": "Space Weather",
+        "image": "https://www.bing.com/th/id/OIP.1UvH1oFkfbvszNpDWBU65QHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 15,
+        "title": "Wavelet analysis based VTEC variability over mid latitude region Sukkur, Pakistan and its comparison with IRI Models during 2019-2020",
+        "authors": "Rasim Shahzad, Amna Hafeez, José Francisco de Oliveira-Júnior, Arslan Ahmed, Punyawi Jamjareegulgarn, Najam Abbas Naqvi",
+        "journal": "Not provided",
+        "year": "2022",
+        "doi": "-",
+        "impact": "-",
+        "category": "Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 16,
+        "title": "Landslide susceptibility mapping (LSM) of Swat District, Hindu Kush Himalayan region of Pakistan, using GIS-based bivariate modeling",
+        "authors": "Fakhrul Islam, Salma Riaz, Bushra Ghaffar, Aqil Tariq, Safeer Ullah Shah, Muhammad Nawaz, Mian Luqman Hussain, Naz Ul Amin, Qingting Li, Linlin Lu, Munawar Shah, Muhammad Aslam",
+        "journal": "Frontiers in Environmental Science",
+        "year": "2022",
+        "doi": "10.3389/fenvs.2022.1027423",
+        "impact": "4.75",
+        "category": "Remote Sensing",
+        "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 17,
+        "title": "Rainfall in the Urban Area and Its Impact on Climatology and Population Growth",
+        "authors": "Lua da Silva Monteiro, José Francisco de Oliveira-Júnior, Bushra Ghaffar, Aqil Tariq, Shujing Qin, Faisal Mumtaz, Washington Luiz Félix Correia Filho, Munawar Shah, Alexandre Maniçoba da Rosa Ferraz Jardim, Marcos Vinícius da Silva, Dimas de Barros Santiago, Heliofábio Gomes Barros, David Mendes, Marcel Carvalho Abreu, Amaury de Souza, Luiz Cláudio Gomes Pimentel, Jhon Lennon Bezerra da Silva, Muhammad Aslam, Alban Kuriqi",
+        "journal": "Atmosphere",
+        "year": "2022",
+        "doi": "10.3390/atmos13101610",
+        "impact": "3.12",
+        "category": "Atmospheric",
+        "image": "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 18,
+        "title": "Atmospheric Anomalies Associated with the 2021 Mw 7.2 Haiti Earthquake Using Machine Learning from Multiple Satellites",
+        "authors": "Muhammad Muzamil Khan, Bushra Ghaffar, Rasim Shahzad, M. Riaz Khan, Munawar Shah, Ali H. Amin, Sayed M. Eldin, Najam Abbas Naqvi and Rashid Ali",
+        "journal": "Sustainability",
+        "year": "2022",
+        "doi": "10.3390/su142214782",
+        "impact": "3.889",
+        "category": "Machine Learning",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 19,
+        "title": "Possible seismo-ionospheric anomalies associated with the 2016 Mw 6.5 Indonesia earthquake from GPS TEC and SWARM satellites",
+        "authors": "Abdul Qadeer Khan, Bushra Ghaffar, Munawar Shah, Irfan Ullah, José Francisco Oliveira-Júnior and Sayed M. Eldin",
+        "journal": "Frontiers in Astronomy and Space Sciences",
+        "year": "2022",
+        "doi": "10.3389/fspas.2022.1065453",
+        "impact": "4.055",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 20,
+        "title": "Ionospheric-Thermospheric responses to the May and September 2017 geomagnetic storms over Asian regions",
+        "authors": "M. Arslan Tariq, Yang Yuyan, Munawar Shah, M. Ali Shah, Talat Iqbal, Libo Liu",
+        "journal": "Advances in Space Research",
+        "year": "2022",
+        "doi": "10.1016/j.asr.2022.08.050",
+        "impact": "2.69",
+        "category": "Space Weather",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 21,
+        "title": "Integrated Analysis of Lithosphere-Atmosphere-Ionospheric Coupling Associated with the 2021 Mw 7.2 Haiti Earthquake",
+        "authors": "Faisal Shahzad, Munawar Shah, Salma Riaz, Bushra Ghaffar, Irfan Ullah, Sayed M. Eldin",
+        "journal": "Atmosphere",
+        "year": "2023",
+        "doi": "10.3390/atmos14020347",
+        "impact": "3.12",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 22,
+        "title": "Seismo Ionospheric Anomalies around and over the Epicenters of Pakistan Earthquakes",
+        "authors": "Munawar Shah, Rasim Shahzad, Muhsan Ehsan, Bushra Ghaffar, Irfan Ullah, Punyawi Jamjareegulgarn, Ahmed M Hassan",
+        "journal": "Atmosphere",
+        "year": "2023",
+        "doi": "10.3390/atmos14030601",
+        "impact": "3.12",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 23,
+        "title": "Deep Machine Learning Based Possible Atmospheric and Ionospheric Precursors of the 2021 Mw 7.1 Japan Earthquake",
+        "authors": "Muhammad Umar Draz, Munawar Shah, Punyawi Jamjareegulgarn, Rasim Shahzad, Ahmed M Hassan, Nivin A Ghamry",
+        "journal": "Remote Sensing",
+        "year": "2023",
+        "doi": "10.3390/rs15071904",
+        "impact": "5.45",
+        "category": "Machine Learning",
+        "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 24,
+        "title": "Synchronized and Co-Located Ionospheric and Atmospheric Anomalies Associated with the 2023 Mw 7.8 Turkey Earthquake",
+        "authors": "Syed Faizan Haider, Munawar Shah, Bofeng Li, Punyawi Jamjareegulgarn, José Francisco de Oliveira-Júnior and Changyu Zhou",
+        "journal": "Remote Sensing",
+        "year": "2024",
+        "doi": "10.3390/rs16020222",
+        "impact": "5.45",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 25,
+        "title": "Performance of multi-source remote sensing soil moisture products over Punjab Pakistan during 2022–2023",
+        "authors": "Saba ul Hassan, Munawar Shah, Rasim Shahzad, Bushra Ghaffar, Bofeng Li, José Francisco de Oliveira-Júnior, Khristina Maksudovna Vafaeva and Punyawi Jamjareegulgarn",
+        "journal": "Theoretical and Applied Climatology",
+        "year": "2024",
+        "doi": "s00704-024-05082-7",
+        "impact": "3.54",
+        "category": "Remote Sensing",
+        "image": "https://www.bing.com/th/id/OIP.1UvH1oFkfbvszNpDWBU65QHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 26,
+        "title": "Synchrosqueezing-based Shallow Neural Network for Near-surface Void Recognition by Ground Penetrating Radar",
+        "authors": "Changyu Zhou, Xu Bai, Li Yi, Yongjiu Feng, Munawar Shah, Xiaohua Tong",
+        "journal": "IEEE Geoscience and Remote Sensing Letters",
+        "year": "2024",
+        "doi": "10.1109/LGRS.2024.3449390",
+        "impact": "4.4",
+        "category": "Machine Learning",
+        "image": "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 27,
+        "title": "Remotely sensed atmospheric anomalies of the 2022 Mw 7.0 Bantay, Philippines earthquake",
+        "authors": "Sohrab Khan, Munawar Shah, Punyawi Jamjareegulgarn, Ahmed M. El-Sherbeeny, Mostafa R. Abukhadra, Majid Khan",
+        "journal": "Advances in Space Research",
+        "year": "2024",
+        "doi": "10.1016/j.asr.2024.12.013",
+        "impact": "2.611",
+        "category": "Remote Sensing",
+        "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 28,
+        "title": "Spatiotemporal analysis of surface Urban Heat Island intensity and the role of vegetation in six major Pakistani cities",
+        "authors": "Shoaib Ahmad Anees, Kaleem Mehmood, Syed Imran Haider Raza, Sebastian Pfautsch, Munawar Shah, Punyawi Jamjareegulgarn, Fahad Shahzad, Abdullah A Alarfaj, Sulaiman Ali Alharbi, Waseem Razzaq Khan, Timothy Dube",
+        "journal": "Ecological Informatics",
+        "year": "2025",
+        "doi": "10.1016/j.ecoinf.2024.102986",
+        "impact": "7.1",
+        "category": "Remote Sensing",
+        "image": "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 29,
+        "title": "Rainfall variability, land use and land cover dynamics, and implications for climate risk through a theoretical-conceptual model for the Eastern Northeast of Brazil",
+        "authors": "Micejane da Silva Costa, José Francisco de Oliveira Júnior, Bárbara Godoy de Barros, Luís Felipe Francisco Ferreira da Silva, Kelvy Rosalvo Alencar Cardoso, Akza Hellen dos Santos Silva, Ana Carla do Santos Gomes, Maytê Duarte Leal Coutinho, Edson de Oliveira Souza, Michelyne Duarte Coutinho de Morais, Ninu Krishnan Modon Valappil, Vijith Hamza, Sudhir Kumar Singh, Punyawi Jamjareegulgarn, Munawar Shah",
+        "journal": "Journal of South American Earth Sciences",
+        "year": "2025",
+        "doi": "10.1016/j.jsames.2025.105470",
+        "impact": "3.73",
+        "category": "Atmospheric",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 30,
+        "title": "Multi-satellite based possible precursory signals detection linked to the 2024 Noto Peninsula Japan earthquake of Mw 7.5",
+        "authors": "Rasim Shahzad, Munawar Shah, Imtiaz Nabi, Punyawi Jamjareegulgarn",
+        "journal": "Advances in Space Research",
+        "year": "2025",
+        "doi": "10.1016/j.asr.2025.04.015",
+        "impact": "2.611",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 31,
+        "title": "Integrated landslide risk assessment utilizing open source satellite and ground data in the Himalayas of Northern Pakistan",
+        "authors": "Naseem Ahmad, Muhammad Shafique, Mian Luqman Hussain, Munawar Shah, Punyawi Jamjareegulgarn, Nassir Saad Alarifi, Mostafa R Abukhadra",
+        "journal": "Natural Hazards",
+        "year": "2025",
+        "doi": "10.1007/s11069-025-07443-5",
+        "impact": "3.7",
+        "category": "Remote Sensing",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 32,
+        "title": "Exploring vegetation health in Southern Thailand under climate stress from temperature and water impacts between 2000 and 2023",
+        "authors": "Kaleem Mehmood, Shoaib Ahmad Anees, Fahad Shahzad, Sultan Muhammad, Qijing Liu, Waseem Razzaq Khan, Munawar Shah, Punyawi Jamjareegulgarn",
+        "journal": "Scientific Reports",
+        "year": "2025",
+        "doi": "10.1038/s41598-025-16293-x",
+        "impact": "4.3",
+        "category": "Remote Sensing",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 33,
+        "title": "Socioeconomic and Climatic determinants of COVID-19 in the health regions of Eastern Northeast Brazil",
+        "authors": "Elania Barros da Silva, Thelma de Barros Machado, José Francisco de Oliveira Jr, Carlos Rodrigues Pereira, Luiz Cláudio Gomes Pimentel, Kelvy Rosalvo Alencar Cardoso, Edson de Oliveira Souza, Silvania Donato da Silva, Corbiniano Silva, Munawar Shah, Sudhir Kumar Singh, Saroj Ahirwar",
+        "journal": "International Journal of Biometeorology",
+        "year": "2025",
+        "doi": "10.1007/s00484-025-02994-5",
+        "impact": "3.2",
+        "category": "Atmospheric",
+        "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 34,
+        "title": "Unveiling Earthquake Precursors with SARIMAX: A Case Study of Atmospheric Anomalies for the Mw≥ 5.9 China Earthquakes",
+        "authors": "Amna Liaqat, Munawar Shah, Irfan Ullah",
+        "journal": "Advances in Space Research",
+        "year": "2025",
+        "doi": "10.1016/j.asr.2025.09.029",
+        "impact": "2.611",
+        "category": "Machine Learning",
+        "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 35,
+        "title": "Understanding green house gases emission dynamics from forest fires in Thailand using predictive models",
+        "authors": "Fahad Shahzad, Kaleem Mehmood, Shoaib Ahmad Anees, Muhammad Adnan, Khadim Hussain, Waseem Razzaq Khan, Munawar Shah, Punyawi Jamjareegulgarn, Manuela Oliveira, José G Borges",
+        "journal": "Global and Planetary Change",
+        "year": "2025",
+        "doi": "10.1016/j.gloplacha.2025.105236",
+        "impact": "5.11",
+        "category": "Atmospheric",
+        "image": "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  },
+  "comp7": {
+    "title": "Conference Publications",
+    "description": "Conference papers from GNSS Research Lab",
+    "publications": [
+      {
+        "id": 1,
+        "title": "Threats to the Navigation of Drone Based Delivery Services",
+        "conference": "International Conference of Aerospace Science and Engineering 2021",
+        "year": "2021",
+        "category": "GNSS Security",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.a9QVoNySpaF_Ayqi9z_d6AHaFS?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "id": 2,
+        "title": "Performance evaluation of IRI models over mid latitude during ascending phase of solar cycle 25",
+        "conference": "International Conference of Aerospace Science and Engineering 2021",
+        "year": "2021",
+        "category": "Ionospheric",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.iu6_60bhRkBRPlMNAZof8wHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "id": 3,
+        "title": "Machine learning based thermal anomaly detection associated with three earthquakes in Pakistan using MODIS LST",
+        "conference": "International Conference of Aerospace Science and Engineering 2021",
+        "year": "2021",
+        "category": "Machine Learning",
+        "image": "https://tse1.mm.bing.net/th/id/OIP.IiSJhe7ZIXjaRhGf1c1baAHaFB?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "id": 4,
+        "title": "Resolution Improvement In Gnss Based Synthetic Aperture Radar Using GPS L1 Signals From Different Look Angles",
+        "conference": "International Conference of Aerospace Science and Engineering 2021",
+        "year": "2021",
+        "category": "GNSS SAR",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 5,
+        "title": "Constellation Designs and Optimization for Regional Navigation Satellite System",
+        "conference": "International Conference on Space 2022",
+        "year": "2022",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 6,
+        "title": "Integrity Monitoring for GNSS Based Railway Traffic Management",
+        "conference": "International Conference on Space 2022",
+        "year": "2022",
+        "category": "GNSS Security",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 7,
+        "title": "GNSS Fault Detection and Exclusion Algorithm for Single Frequency GNSS Receivers",
+        "conference": "IBCAST",
+        "year": "2022",
+        "category": "GNSS Security",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 8,
+        "title": "Multipath Mitigation Using Stand-Alone Receivers Using Wavelet Denoising",
+        "conference": "ICACS 2023",
+        "year": "2023",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 9,
+        "title": "Multipath Mitigation Using Discrete Wavelet Denoising for GNSS Point Positioning",
+        "conference": "IBCAST 2023",
+        "year": "2023",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 10,
+        "title": "GNSS Measurements Based Attitude Determination",
+        "conference": "14th International Conference on Electrical Engineering (ICEENG), 2024",
+        "year": "2024",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 11,
+        "title": "Machine Learning-Based Detection of Spoofing Attacks in GNSS: A Study using TEXBAT Dataset",
+        "conference": "14th International Conference on Electrical Engineering (ICEENG), 2024",
+        "year": "2024",
+        "category": "Machine Learning",
+        "image": "https://www.bing.com/th/id/OIP.1UvH1oFkfbvszNpDWBU65QHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 12,
+        "title": "Evaluation of Code & Carrier Based GNSS Positioning Techniques for Positioning Accuracy Using Low Cost GNSS Receivers",
+        "conference": "14th International Conference on Electrical Engineering (ICEENG), 2024",
+        "year": "2024",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 13,
+        "title": "Attitude Determination with GPS Carrier Smoothed Code Phase Measurements and Kalman Filtering",
+        "conference": "75th International Astronautical Congress (IAC), Milan, Italy",
+        "year": "2024",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 14,
+        "title": "The Establishment of the First Global Navigation Satellite Systems (GNSS) Research Lab",
+        "conference": "76th International Astronautical Congress (IAC), Milan, Italy",
+        "year": "2024",
+        "category": "GNSS Lab",
+        "image": "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 15,
+        "title": "Pioneering Navigation: The Specialized MS GNSS Program at Institute of Space Technology, Pakistan",
+        "conference": "77th International Astronautical Congress (IAC), Milan, Italy",
+        "year": "2024",
+        "category": "GNSS Education",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 16,
+        "title": "Pioneering GNSS Capacity: Establishing the Foundations for Innovation and Advancement",
+        "conference": "International Conference on Geological Hazards in Pakistan",
+        "year": "2025",
+        "category": "GNSS Education",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 17,
+        "title": "Designing an Academic CORS-Network Improving GNSS Coverage for Scientific Research and Practical Applications",
+        "conference": "International Conference on Geological Hazards in Pakistan",
+        "year": "2025",
+        "category": "GNSS CORS",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 18,
+        "title": "Design, Implementation and Verification of GNSS Continuously Operating Reference Stations using Commercial off the Shelf Receivers",
+        "conference": "76th International Astronautical Congress (IAC 2025), Sydney, Australia",
+        "year": "2025",
+        "category": "GNSS CORS",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 19,
+        "title": "Establishment of GNSS Observatory for Space Weather and Ionospheric Modelling Research",
+        "conference": "76th International Astronautical Congress (IAC 2025), Sydney, Australia",
+        "year": "2025",
+        "category": "Space Weather",
+        "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 20,
+        "title": "Optimum Navigation Satellite Constellation Design For Pakistan Region Using Multi-objective Genetic Algorithm",
+        "conference": "International Conference on Applications of Space Science & Technology (ICAST 2025), Pakistan",
+        "year": "2025",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 21,
+        "title": "Navigating The Lunar Frontier: A Review Of Navigation Satellite Constellation",
+        "conference": "International Conference on Applications of Space Science & Technology (ICAST 2025), Pakistan",
+        "year": "2025",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  },
+  "comp8": {
+    "title": "MS Research Thesis",
+    "description": "Supervised research theses from GNSS Research Lab",
+    "publications": [
+      {
+        "id": 1,
+        "title": "Possible Seismo-Ionospheric Anomalies Associated with 11 Earthquakes occurred in 2018 using GNSS TEC: A Statistical Analysis",
+        "year": "2021",
+        "supervisor": "Dr. Munawar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.7MQHntQxyhyZxF3L6dm3DwHaEK?r=0&pid=ImgDet&w=199&h=112&c=7&dpr=1.5&o=7&rm=3"
+      },
+      {
+        "id": 2,
+        "title": "Investigation of the Possible Ionospheric Anomalies associated with the Earthquake using Demeter and GNSS-TEC: A Case Study from Taiwan",
+        "year": "2021",
+        "supervisor": "Dr. Munawar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://th.bing.com/th/id/R.d0c545ab60d9ec4be1772791ddf2aa49?rik=TIRejM6fpkiJlg&pid=ImgRaw&r=0"
+      },
+      {
+        "id": 3,
+        "title": "GNSS-GIS-Android Integration For Virtual Guide Application",
+        "year": "2021",
+        "supervisor": "Dr. Najam Abbas Naqvi",
+        "category": "GNSS Applications",
+        "image": "https://tse3.mm.bing.net/th/id/OIP.DCAXK-iQTfjdz4l0IxVixgHaEK?r=0&pid=ImgDet&w=178&h=100&c=7&dpr=1.5&o=7&rm=3"
+      },
+      {
+        "id": 4,
+        "title": "Resolution Improvement in GNSS Based Synthetic Aperture Radar Using Signal from Multiple Satellites",
+        "year": "2021",
+        "supervisor": "Dr. Najam Abbas Naqvi",
+        "category": "GNSS SAR",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 5,
+        "title": "Comparison of GPS TEC with IRI Models of 2007, 2012, and 2016 over Sukkur, Pakistan",
+        "year": "2021",
+        "supervisor": "Dr. Munawar Shah",
+        "category": "Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 6,
+        "title": "Design, Simulation, AND Demonstration of GLOBAL NAVIGATION SATELLITE SYSTEM (GNSS) based radar Altimeter",
+        "year": "2021",
+        "supervisor": "Dr. Najam Abbas Naqvi",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 7,
+        "title": "Jamming Techniques for Global Positioning System (GPS) L1 Signal Using RTL-SDR",
+        "year": "2021",
+        "supervisor": "Dr. Najam Abbas Naqvi",
+        "category": "GNSS Security",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 8,
+        "title": "Modelling & Simulation of BSAR (Bi Static Synthetic Aperture RADAR) System Using Reflected BeiDou B1I Signal",
+        "year": "2021",
+        "supervisor": "Dr. Najam Abbas Naqvi",
+        "category": "GNSS SAR",
+        "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 9,
+        "title": "MEMS INS & GNSS Integrated Navigation by Using Heading of AHRS-Magnetometer During GNSS Signal Outages",
+        "year": "2021",
+        "supervisor": "Dr. Najam Abbas Naqvi",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 10,
+        "title": "Investigation of the Possible Ionospheric Anomalies Coupling associated with the Earthquakes in Pakistan from Machine Learning Procedures",
+        "year": "2022",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Machine Learning",
+        "image": "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 11,
+        "title": "Investigation of seismo ionospheric anomalies associated with the Mw 6.7 Mongolia Earthquake",
+        "year": "2022",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.1UvH1oFkfbvszNpDWBU65QHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 12,
+        "title": "GNSS TEC Based Ionospheric Anomalies Related to The 2019 Mw 6.2 Thailand Earthquake",
+        "year": "2022",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 13,
+        "title": "Atmospheric Anomalies Due to Seismic Stress using GNSS and Remote Sensing",
+        "year": "2022",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Remote Sensing",
+        "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 14,
+        "title": "Statistical Analysis of GPS TEC Anomalies Associated With Earthquakes And a Case Study Of Mw>7 Earthquakes In Japan",
+        "year": "2022",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 15,
+        "title": "Multi-Parametric Approach to Investigate the Pre-Seismic Anomalies of Mw>6.0 using GNSS and Remote Sensing Satellites. A Case Study of Four Earthquakes from Mid Latitude Regions",
+        "year": "2022",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 16,
+        "title": "Ionospheric Anomalies Detected by GPS TEC Measurement and Swarm Satellite during an Earth of Magnitude 6.5 in Sumatra, Indonesia",
+        "year": "2022",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 17,
+        "title": "Comparison of VTEC from GIS and IRI Models and its Validation by Wavelet Correlation During the 2019-2020 Solar Minimum Phase",
+        "year": "2022",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 18,
+        "title": "Vulnerability Assessment of GNSS L1 C/A Signal Using Software Defined Spoofing Attack",
+        "year": "2022",
+        "supervisor": "Dr. Salma Zainab Farooq",
+        "category": "GNSS Security",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 19,
+        "title": "Integrity Monitoring Through Receiver Autonomous Integrity Monitoring (RAIM) for Single Frequency GNSS Applications",
+        "year": "2022",
+        "supervisor": "Dr. Salma Zainab Farooq",
+        "category": "GNSS Security",
+        "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 20,
+        "title": "Integrated Analysis of Lithosphere-Ionospheric Coupling associated with the 2021 Mw 7.2 Haiti Earthquake from Multiple Satellites",
+        "year": "2022",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 21,
+        "title": "SWARM Satellite Based GNSS Ionospheric Data Analysis for Earthquakes Prediction",
+        "year": "2023",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 22,
+        "title": "Deep Machine Learning based possible Atmospheric and Ionospheric Precursors of the 2021 Mw 7.1 Japan Earthquake",
+        "year": "2023",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Machine Learning",
+        "image": "https://www.bing.com/th/id/OIP.1UvH1oFkfbvszNpDWBU65QHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 23,
+        "title": "Seismoionospheric evaluation of the 2020 Mw 7.4 Kermadec Islands, New Zealand Earthquake",
+        "year": "2023",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 24,
+        "title": "An Optimal Satellite Constellation Design for Pakistan's Regional Navigation System Using Genetic Algorithm",
+        "year": "2023",
+        "supervisor": "Dr. Najam Abbas Naqvi",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 25,
+        "title": "GNSS CORS Development and Verification using Commercial Off the Shelf Receivers",
+        "year": "2023",
+        "supervisor": "Dr. Najam Abbas Naqvi",
+        "category": "GNSS CORS",
+        "image": "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 26,
+        "title": "Multipath Mitigation Using Wavelet Denoising For GNSS Single Point Positioning",
+        "year": "2023",
+        "supervisor": "Dr. Salma Zainab Farooq",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 27,
+        "title": "Hybrid Ubiquitous Positioning System Using WI-FI and GPS",
+        "year": "2024",
+        "supervisor": "Dr. Salma Zainab Farooq",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 28,
+        "title": "Integrating Multiple Techniques to Investigate Lithosphere-Atmosphere-Ionosphere Coupling Case Studies of Turkey and Afghanistan Earthquakes",
+        "year": "2024",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 29,
+        "title": "GPS Spoofing Detection Based on Machine Learning",
+        "year": "2024",
+        "supervisor": "Dr. Salma Zainab Farooq",
+        "category": "Machine Learning",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 30,
+        "title": "GNSS Aided Photogrammetry for Digital Mapping",
+        "year": "2024",
+        "supervisor": "Dr. Sajid Ghuffar",
+        "category": "GNSS Applications",
+        "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 31,
+        "title": "Possible Atmospheric-Ionospheric Precursors of the 2020 Hotan China Earthquake from Various Satellites",
+        "year": "2024",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Seismo-Ionospheric",
+        "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 32,
+        "title": "Performance of Multi-Source Remote Sensing Soil Moisture Products Over Punjab Pakistan During 2022-2023",
+        "year": "2024",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Remote Sensing",
+        "image": "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 33,
+        "title": "Optimum Navigation Satellite Constellation Design for Pakistan Region using Multi-Objective Genetic Algorithm",
+        "year": "2024",
+        "supervisor": "Dr. Najam Abbas Naqvi",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.1UvH1oFkfbvszNpDWBU65QHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 34,
+        "title": "Mitigation of GNSS Interference Signals through Direction of Arrival Estimation of Flower Pollination Heuristics",
+        "year": "2025",
+        "supervisor": "Dr. Salma Zainab Farooq",
+        "category": "GNSS Security",
+        "image": "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 35,
+        "title": "Development Of Attitude Determination Algorithm For Aerial Platforms Using Single Frequency Receivers",
+        "year": "2025",
+        "supervisor": "Dr. Salma Zainab Farooq",
+        "category": "GNSS",
+        "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 36,
+        "title": "Comprehensive Analysis Of Geomagnetic Storm Impacts On The Ionosphere Using Swarm Satellite Data: A Study Of Solar Cycle 24",
+        "year": "2025",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Space Weather",
+        "image": "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 37,
+        "title": "Geomagnetic Storm Effects on the Ionosphere: Insights from TEC, EEJ, and O/N₂ Ratio Analysis",
+        "year": "2025",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Space Weather",
+        "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 38,
+        "title": "Multi-Satellite Analysis of Key Climate Variables over Qinghai Province: GNSS-RO vs Remote Sensing (2019–2023)",
+        "year": "2025",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Remote Sensing",
+        "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 39,
+        "title": "Estimation Of Surface Soil Moisture In Sindh, Pakistan From GNSS-R & Remote Sensing",
+        "year": "2025",
+        "supervisor": "Dr. Munawwar Shah",
+        "category": "Remote Sensing",
+        "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 40,
+        "title": "Mitigation of GNSS Interference Signals through Direction of Arrival Estimation of Flower Pollination Heuristics",
+        "year": "2025",
+        "supervisor": "Dr. Salma Zainab Farooq",
+        "category": "GNSS Security",
+        "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  }
+}

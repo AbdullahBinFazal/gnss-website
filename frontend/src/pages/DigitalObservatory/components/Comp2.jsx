@@ -1,34 +1,56 @@
 // src/pages/DigitalObservatory/components/Comp2.jsx
 import { Col, Row, Typography, Flex } from "antd";
 import styles from "../../../styles/DigitalObservatoryStyles/Comp2.module.css";
+import digitalObservatoryData from "../../../json/pages/digitalObservatory/digitalObservatoryData.json";
 
 const { Title, Paragraph } = Typography;
 
 const Comp2 = () => {
+  const data = digitalObservatoryData.comp2;
+
   return (
     <section style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Row gutter={[50, 40]} align="middle">
-          <Col xs={24} lg={12}>
+        {/* Section 1: Image + Title + Text */}
+        <Row gutter={[40, 40]} align="middle">
+          <Col xs={24} lg={10}>
+            <div className={styles.image}>
+              <img src={data.image} alt="Digital Observatory" />
+            </div>
+          </Col>
+
+          <Col xs={24} lg={14}>
             <Flex vertical gap={16}>
               <Title level={2} className={styles.title}>
-                <span>GNSS</span> Observatory
+                {data.title}
               </Title>
               <Paragraph className={styles.paragraph}>
-                The GNSS Observatory serves as our interactive public window, streaming real-time 
-                geospatial insights and serving as a centralized hub for regional geodetic data.
+                {data.description}
               </Paragraph>
             </Flex>
           </Col>
-          <Col xs={24} lg={12}>
-            <div className={styles.image}>
-              <img
-                src="https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png"
-                alt="GNSS Observatory"
-              />
-            </div>
-          </Col>
         </Row>
+
+        {/* Section 2: Cards */}
+        <div style={{ marginTop: "60px" }}>
+          <Row gutter={[24, 24]} justify="center">
+            {data.cards.map((card) => (
+              <Col key={card.id} xs={24} sm={12} md={8}>
+                <div className={styles.card}>
+                  <div className={styles.cardImage}>
+                    <img src={card.image} alt={card.title} />
+                    <div className={styles.cardOverlay} />
+                  </div>
+                  <div className={styles.cardContent}>
+                    <Title level={4} className={styles.cardTitle}>
+                      {card.title}
+                    </Title>
+                  </div>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </div>
       </div>
     </section>
   );

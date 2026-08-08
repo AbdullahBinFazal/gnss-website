@@ -1,36 +1,34 @@
 // src/pages/ContactUs/components/Comp2.jsx
 import { Col, Row, Typography, Flex } from "antd";
 import styles from "../../../styles/ContactUsStyles/Comp2.module.css";
+import contactUsData from "../../../json/pages/contactUs/contactUsData.json";
 
-const { Title } = Typography;
+const { Title, Paragraph } = Typography;
 
 const Comp2 = () => {
+  const data = contactUsData.comp2;
+
   return (
     <section style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Row gutter={[50, 40]} align="middle">
-          <Col xs={24} lg={12}>
+        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
+          <Title level={2} className={styles.titleCenter}>
+            {data.title}
+          </Title>
+        </Flex>
+
+        <Row gutter={[40, 40]} align="middle">
+          <Col xs={24} lg={10}>
             <div className={styles.image}>
-              <img
-                src="https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
-                alt="Physical Address"
-              />
+              <img src={data.image} alt="Contact" />
             </div>
           </Col>
-          <Col xs={24} lg={12}>
+
+          <Col xs={24} lg={14}>
             <Flex vertical gap={16}>
-              <Title level={2} className={styles.title}>
-                <span></span> Address
-              </Title>
-              <div className={styles.addressBox}>
-                <p className={styles.addressText}>
-                  <strong>GNSS Research Lab</strong><br />
-                  National Center of GIS and Space Applications (NCGSA)<br />
-                  Institute of Space Technology<br />
-                  Islamabad Highway, Islamabad<br />
-                  Pakistan
-                </p>
-              </div>
+              <Paragraph className={styles.paragraph}>
+                {data.description}
+              </Paragraph>
             </Flex>
           </Col>
         </Row>

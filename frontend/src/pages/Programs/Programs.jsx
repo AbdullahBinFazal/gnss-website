@@ -1,45 +1,38 @@
 // src/pages/Programs/Programs.jsx
-import { useState } from "react";
 import Comp1 from "./components/Comp1";
 import Comp2 from "./components/Comp2";
-
-import Comp7 from "./components/Comp7";
-import Comp8 from "./components/Comp8";
-import Comp9 from "./components/Comp9";
-import Comp10 from "./components/Comp10";
-
+import Comp3 from "./components/Comp3";
+import Comp4 from "./components/Comp4";
+import Comp5 from "./components/Comp5";
+import Comp6 from "./components/Comp6";
 
 const Programs = () => {
-  const [activeTab, setActiveTab] = useState("ms");
-
   return (
     <div>
       <Comp1 />
       
-      <div id="academics">
+      {/* Academics - Comp2 (NOT in dropdown) */}
+      <div id="academics" style={{ scrollMarginTop: "130px" }}>
         <Comp2 />
       </div>
       
-      
-      
-      <div id="undergraduate">
-        <Comp7 />
+      {/* MS Program - Comp3 (IN DROPDOWN) */}
+      <div id="ms-program-section" style={{ scrollMarginTop: "130px" }}>
+        <Comp3 />
       </div>
       
-      <Comp8 />
-      
-      <div id="academic-resources">
-        <Comp9 />
+      {/* PhD Program - Comp4 (IN DROPDOWN) */}
+      <div id="phd-program-section" style={{ scrollMarginTop: "130px" }}>
+        <Comp4 />
       </div>
       
-      <Comp10 />
+      {/* Comp5 (NOT in dropdown) */}
+      <Comp5 />
       
-      
-      
-      
-  
-      
-      
+      {/* BS Program - Comp6 (IN DROPDOWN) */}
+      <div id="bs-program-section" style={{ scrollMarginTop: "130px" }}>
+        <Comp6 />
+      </div>
     </div>
   );
 };

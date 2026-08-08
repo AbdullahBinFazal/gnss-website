@@ -1,0 +1,105 @@
+/* src/styles/ProgramsStyles/Comp6.module.css */
+
+/* ===== TITLES ===== */
+.titleCenter {
+  font-size: 2.1rem !important;
+  font-weight: 700 !important;
+  color: #0a0a1a !important;
+  text-align: center !important;
+}
+
+/* ===== PARAGRAPHS ===== */
+.paragraph {
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  color: #4a4a6a !important;
+  margin: 0 !important;
+}
+
+/* ===== IMAGES ===== */
+.image {
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 82%;
+  margin: 0;
+}
+.image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.image img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== BUTTON ===== */
+.programBtn {
+  background: #0a0a1a !important;
+  border-color: #0a0a1a !important;
+  color: #ffffff !important;
+  padding: 12px 32px !important;
+  height: auto !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+}
+.programBtn:hover {
+  background: #1a1a2e !important;
+  border-color: #1a1a2e !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: rgba(239, 239, 242, 0.7);
+  border: 1px solid rgba(0, 150, 200, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+}
+.card:hover {
+  border-color: rgba(0, 150, 200, 0.6);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 150, 200, 0.25);
+  background: rgba(241, 241, 242, 0.9);
+}
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgb(9, 9, 9) 0%, rgb(7, 7, 7) 100%);
+}
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.card:hover .cardImage img {
+  transform: scale(1.08);
+}
+.cardContent {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cardTitle {
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  color: #050404 !important;
+  margin: 0 !important;
+}

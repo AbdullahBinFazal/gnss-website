@@ -1,44 +1,36 @@
 /* src/styles/ContactUsStyles/Comp2.module.css */
 
 /* ===== TITLES ===== */
-.title {
-  font-size: 2.5rem !important;
-  font-weight: 800 !important;
+.titleCenter {
+  font-size: 2.1rem !important;
+  font-weight: 700 !important;
   color: #0a0a1a !important;
+  text-align: center !important;
 }
+
+/* ===== PARAGRAPHS ===== */
+.paragraph {
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  color: #4a4a6a !important;
+  margin: 0 !important;
+}
+
 /* ===== IMAGES ===== */
 .image {
   border-radius: 8px;
   overflow: hidden;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 82%;
+  margin: 0;
 }
 .image img {
   width: 100%;
   height: auto;
   max-height: 400px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
 }
 .image img:hover {
   transform: scale(1.02);
-}
-
-/* ===== ADDRESS BOX ===== */
-.addressBox {
-  background: rgba(0, 0, 0, 0.02);
-  border-radius: 12px;
-  padding: 24px 28px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-}
-.addressText {
-  font-family: "Inter", sans-serif !important;
-  font-size: 1.05rem !important;
-  line-height: 2 !important;
-  color: #4a4a6a !important;
-}
-.addressText strong {
-  color: #0a0a1a !important;
-  font-weight: 700 !important;
 }

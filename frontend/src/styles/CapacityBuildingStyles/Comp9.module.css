@@ -1,0 +1,76 @@
+/* src/styles/CapacityBuildingStyles/Comp9.module.css */
+
+/* ===== TITLES ===== */
+.titleCenter {
+  font-size: 2.1rem !important;
+  font-weight: 700 !important;
+  color: #0a0a1a !important;
+  text-align: center !important;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: rgba(239, 239, 242, 0.7);
+  border: 1px solid rgba(0, 150, 200, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+}
+.card:hover {
+  border-color: rgba(0, 150, 200, 0.6);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 150, 200, 0.25);
+  background: rgba(241, 241, 242, 0.9);
+}
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgb(9, 9, 9) 0%, rgb(7, 7, 7) 100%);
+}
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.card:hover .cardImage img {
+  transform: scale(1.08);
+}
+.cardContent {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cardTitle {
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  color: #050404 !important;
+  margin: 0 !important;
+}
+.cardSubtitle {
+  font-size: 0.8rem !important;
+  color: #4a4a6a !important;
+  line-height: 1.5 !important;
+}
+.cardResource {
+  font-size: 0.75rem !important;
+  color: #4a4a6a !important;
+  line-height: 1.4 !important;
+}
+.cardParticipants {
+  font-size: 0.8rem !important;
+  color: #0a0a1a !important;
+  font-weight: 600 !important;
+  margin-top: 4px;
+}

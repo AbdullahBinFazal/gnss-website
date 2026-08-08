@@ -1,28 +1,17 @@
 /* src/styles/OpportunitiesStyles/Comp2.module.css */
 
 /* ===== TITLES ===== */
-.title {
-  font-size: 2.5rem !important;
-  font-weight: 800 !important;
-  color: #0a0a1a !important;
-  line-height: 1.3 !important;
-  margin: 0 !important;
-}
-.title span {
-  color: #000000;
-}
-.titleSmall {
-  font-size: 1.05rem !important;
+.titleCenter {
+  font-size: 2.1rem !important;
   font-weight: 700 !important;
   color: #0a0a1a !important;
-  line-height: 1.4 !important;
-  margin: 0 0 4px 0 !important;
+  text-align: center !important;
 }
 
 /* ===== PARAGRAPHS ===== */
-.paragraphSmall {
-  font-size: 0.95rem !important;
-  line-height: 1.6 !important;
+.paragraph {
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
   color: #4a4a6a !important;
   margin: 0 !important;
 }
@@ -31,14 +20,14 @@
 .image {
   border-radius: 8px;
   overflow: hidden;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 83%;
+  margin: 0;
 }
 .image img {
   width: 100%;
   height: auto;
   max-height: 400px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
 }

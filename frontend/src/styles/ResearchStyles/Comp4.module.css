@@ -1,37 +1,115 @@
 /* src/styles/ResearchStyles/Comp4.module.css */
 
 /* ===== TITLES ===== */
-.title {
-  font-size: 2.5rem !important;
-  font-weight: 800 !important;
+.titleCenter {
+  font-size: 2.3rem !important;
+  font-weight: 700 !important;
   color: #0a0a1a !important;
-  line-height: 1.3 !important;
-  margin: 0 !important;
+  text-align: center !important;
 }
 
-/* ===== PARAGRAPHS ===== */
-.paragraph {
+.paragraphCenter {
   font-size: 1.05rem !important;
   line-height: 1.8 !important;
   color: #4a4a6a !important;
+  text-align: center !important;
+  max-width: 800px;
+  margin: 0 auto !important;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: rgba(239, 239, 242, 0.7);
+  border: 1px solid rgba(0, 150, 200, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+}
+.card:hover {
+  border-color: rgba(0, 150, 200, 0.6);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 150, 200, 0.25);
+  background: rgba(241, 241, 242, 0.9);
+}
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgb(9, 9, 9) 0%, rgb(7, 7, 7) 100%);
+}
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.card:hover .cardImage img {
+  transform: scale(1.08);
+}
+.cardContent {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cardTitle {
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  color: #050404 !important;
+  margin: 0 !important;
+}
+.cardDescription {
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.85rem !important;
+  color: rgba(13, 13, 13, 0.75) !important;
+  line-height: 1.5 !important;
   margin: 0 !important;
 }
 
-/* ===== IMAGES ===== */
-.image {
-  border-radius: 8px;
+/* ===== CAROUSEL ===== */
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  padding: 20px 0;
+}
+.carouselArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(10, 10, 26, 0.15);
+  background: rgba(10, 10, 26, 0.06);
+  color: #0a0a1a;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+.carouselArrow:hover {
+  background: #0a0a1a;
+  border-color: #0a0a1a;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(10, 10, 26, 0.25);
+}
+.carouselContainer {
+  flex: 1;
   overflow: hidden;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.image img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: contain;
-  display: block;
-  transition: transform 0.4s ease;
-}
-.image img:hover {
-  transform: scale(1.02);
+  min-width: 0;
+  max-width: 1200px;
 }

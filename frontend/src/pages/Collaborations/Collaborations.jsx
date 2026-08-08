@@ -10,19 +10,25 @@ const Collaborations = () => {
     <div>
       <Comp1 />
       
-      <div id="academic-partners">
+      {/* Comp2 - NOT in dropdown */}
+      <div id="academic-partners" style={{ scrollMarginTop: "130px" }}>
         <Comp2 />
       </div>
 
-      <div id="agreements">
+      {/* Objectives - Comp3 (IN DROPDOWN) */}
+      <div id="objectives-section" style={{ scrollMarginTop: "130px" }}>
         <Comp3 />
       </div>
       
-      <div id="outreach">
+      {/* Institutions - Comp4 (IN DROPDOWN) */}
+      <div id="institutions-section" style={{ scrollMarginTop: "130px" }}>
         <Comp4 />
       </div>
       
-      <Comp5 />
+      {/* Engagement - Comp5 (IN DROPDOWN) */}
+      <div id="engagement-section" style={{ scrollMarginTop: "130px" }}>
+        <Comp5 />
+      </div>
     </div>
   );
 };

@@ -13,31 +13,44 @@ const Research = () => {
     <div>
       <Comp1 />
       
-      <div id="domains">
+    
+      
+      {/* Research Detail - Comp2 (NOT in dropdown) */}
+      <div id="research-detail" style={{ scrollMarginTop: "130px" }}>
         <Comp2 />
       </div>
-      
-      <div id="research-detail">
+
+
+ {/* Domains - Comp3 (IN DROPDOWN) */}
+      <div id="domains-section" style={{ scrollMarginTop: "130px" }}>
         <Comp3 />
       </div>
-      
-      <div id="ionospheric">
+
+   {/* Projects - Comp7 (IN DROPDOWN) */}
+      <div id="projects-section" style={{ scrollMarginTop: "130px" }}>
         <Comp4 />
       </div>
       
-      <div id="crustal-deformation">
+    {/* Publications - Comp8 (IN DROPDOWN) */}
+      <div id="publications-section" style={{ scrollMarginTop: "130px" }}>
         <Comp5 />
       </div>
-      
-      <div id="impact">
+
+
+         {/* Impact - Comp6 (NOT in dropdown) */}
+      <div id="impact" style={{ scrollMarginTop: "130px" }}>
         <Comp6 />
       </div>
-      
-      <div id="research-projects">
+
+
+      {/* Ionospheric - Comp4 (NOT in dropdown) */}
+      <div id="ionospheric" style={{ scrollMarginTop: "130px" }}>
         <Comp7 />
       </div>
       
-      <div id="publications">
+        {/* Crustal Deformation - Comp5 (NOT in dropdown) */}
+    
+      <div id="crustal-deformation" style={{ scrollMarginTop: "130px" }}>
         <Comp8 />
       </div>
     </div>

@@ -1,76 +1,316 @@
 // src/pages/Research/components/Comp6.jsx
-import { Col, Row, Statistic, Typography, Flex } from "antd";
+import { useState } from "react";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import {
+  Row,
+  Col,
+  Card,
+  Tag,
+  Input,
+  Button,
+  Flex,
+  Statistic,
+  Empty,
+  Typography,
+} from "antd";
+import { SearchOutlined } from "@ant-design/icons";
 import styles from "../../../styles/ResearchStyles/Comp6.module.css";
+import researchData from "../../../json/pages/research/researchData.json";
 
-const { Text } = Typography;
+const { Title, Paragraph, Text } = Typography;
 
-const impactStats = [
-  { id: 1, value: 49, label: "Academic Research & Development", image: "https://www.bing.com/th/id/OIP.bEb4zVWk3ft5aoIv2Mlo0AHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" },
-  { id: 2, value: 32, label: "Hardware / Software", image: "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" },
-  { id: 3, value: 601, label: "Models & Maps Development", image: "https://www.bing.com/th/id/OIP.liAtbVDTGB_ITwp40W7LdwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" },
-  { id: 4, value: 37, label: "Capacity Building", image: "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" },
-  { id: 5, value: 67, label: "Linkages & Commercialization", image: "https://www.bing.com/th/id/OIP.wI6ZFV8xbLIXhAq3PXfiNgHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" },
-];
+// Category colors for tags
+const categoryColors = {
+  "Seismo-Ionospheric": "#090909",
+  "Ionospheric": "#060606",
+  "GNSS": "#090909",
+  "GNSS Security": "#050404",
+  "GNSS CORS": "#0b0b0b",
+  "GNSS Education": "#080808",
+  "GNSS Lab": "#090909",
+  "GNSS SAR": "#0c0c0c",
+  "Space Weather": "#090909",
+  "Atmospheric": "#000101",
+  "Remote Sensing": "#090909",
+  "Machine Learning": "#0a0a0b",
+  "Geodesy": "#0b0b0b",
+  "GNSS Applications": "#050505",
+};
+
+const getCategoryColor = (category) => categoryColors[category] || "#1890ff";
 
 const Comp6 = () => {
-  return (
-    <section style={{ padding: "80px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Typography.Title level={2} className={styles.titleCenter}>
-            Research <span>Impact</span>
-          </Typography.Title>
-          <Typography.Paragraph className={styles.paragraphCenter} style={{ maxWidth: "600px" }}>
-            Measuring our contribution to space science and technology
-          </Typography.Paragraph>
-        </Flex>
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [activeFilter, setActiveFilter] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
+  
+  const data = researchData.comp6;
+  const publications = data.publications;
 
-        <Row gutter={[24, 24]} justify="center">
-          {impactStats.map((item) => (
-            <Col xs={12} sm={12} md={8} lg={5} xl={4} key={item.id}>
-              <div className={styles.card}>
-                <div
-                  style={{
-                    height: "180px",
-                    backgroundImage: `url(${item.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    position: "relative",
-                  }}
-                >
-                  <div
-                    style={{
-                      position: "absolute",
-                      inset: 0,
-                      backgroundColor: "rgba(0, 0, 0, 0.3)",
-                    }}
-                  />
-                </div>
-                <div style={{ padding: "20px 16px", textAlign: "center" }}>
-                  <Statistic
-                    value={item.value}
-                    valueStyle={{
-                      color: "#0a0a1a",
-                      fontSize: "2rem",
-                      fontWeight: 800,
-                    }}
-                  />
-                  <Text
-                    style={{
-                      fontSize: "0.85rem",
-                      color: "#4a4a6a",
-                      lineHeight: 1.6,
-                      display: "block",
-                      marginTop: "12px",
-                    }}
-                  >
-                    {item.label}
-                  </Text>
-                </div>
+  const cardsPerView = 3;
+
+  // Get unique categories for filters
+  const categories = ["All", ...new Set(publications.map((p) => p.category))];
+
+  // Filter publications
+  const filtered = publications.filter((pub) => {
+    const matchFilter = activeFilter === "All" || pub.category === activeFilter;
+    const matchSearch =
+      pub.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      pub.authors.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      pub.journal.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      pub.year.toString().includes(searchTerm) ||
+      pub.doi?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      pub.impact?.toString().includes(searchTerm);
+    return matchFilter && matchSearch;
+  });
+
+  const totalCards = filtered.length;
+  const maxIndex = Math.max(0, totalCards - cardsPerView);
+
+  // Reset index when filter changes
+  const handleFilterChange = (filter) => {
+    setActiveFilter(filter);
+    setCurrentIndex(0);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+    setCurrentIndex(0);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex >= maxIndex ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex <= 0 ? maxIndex : prevIndex - 1
+    );
+  };
+
+  const visibleCards = filtered.slice(currentIndex, currentIndex + cardsPerView);
+
+  // Publication Card Component
+  const PublicationCard = ({ publication }) => {
+    const borderColor = getCategoryColor(publication.category);
+
+    return (
+      <Card
+        hoverable
+        className={styles.publicationCard}
+        style={{ borderLeftColor: borderColor }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.boxShadow = "0 8px 24px rgba(0, 0, 0, 0.15)";
+          e.currentTarget.style.transform = "translateY(-4px)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.08)";
+          e.currentTarget.style.transform = "translateY(0)";
+        }}
+        cover={
+          <div className={styles.publicationImageWrapper}>
+            <img
+              alt={publication.title}
+              src={publication.image}
+              className={styles.publicationImage}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "scale(1.08)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "scale(1)";
+              }}
+            />
+            <div className={styles.publicationOverlay} />
+          </div>
+        }
+      >
+        <Flex vertical gap={12} className={styles.publicationContent}>
+          <div className={styles.publicationTitle}>
+            {publication.title}
+          </div>
+
+          <div className={styles.publicationMetaData}>
+            <div className={styles.publicationMeta}>
+              <strong>Authors:</strong> {publication.authors}
+            </div>
+
+            <div className={styles.publicationMeta}>
+              <strong>Journal:</strong> {publication.journal}
+            </div>
+
+            <div className={styles.publicationMeta}>
+              <strong>Year:</strong> {publication.year}
+            </div>
+
+            {publication.impact && (
+              <div className={styles.publicationMeta}>
+                <strong>Impact Factor:</strong> {publication.impact}
               </div>
-            </Col>
-          ))}
+            )}
+          </div>
+
+          <Flex wrap gap="small" className={styles.publicationTags}>
+            <Tag 
+              color={borderColor} 
+              className={styles.publicationTagWhite}
+              style={{ fontSize: "0.8rem", fontWeight: 600 }}
+            >
+              {publication.category}
+            </Tag>
+            <Tag style={{ fontSize: "0.8rem", fontWeight: 600 }}>
+              {publication.year}
+            </Tag>
+          </Flex>
+
+          {publication.doi && (
+            <a
+              href={`https://doi.org/${publication.doi}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.publicationLink}
+              style={{ color: borderColor }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.opacity = "0.8";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.opacity = "1";
+              }}
+            >
+              View Paper →
+            </a>
+          )}
+        </Flex>
+      </Card>
+    );
+  };
+
+  return (
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <Title level={2} className={styles.titleCenter}>
+            {data.title}
+          </Title>
+          <Paragraph className={styles.paragraphCenter}>
+            {data.description}
+          </Paragraph>
+        </div>
+
+        {/* Search and Filter Section */}
+        <div className={styles.filterWrapper}>
+          <Flex vertical gap={16}>
+            <Flex wrap gap="small" className={styles.filterButtons}>
+              {categories.map((cat) => (
+                <Button
+                  key={cat}
+                  type={activeFilter === cat ? "primary" : "default"}
+                  onClick={() => handleFilterChange(cat)}
+                  className={styles.filterButton}
+                >
+                  {cat}
+                </Button>
+              ))}
+            </Flex>
+
+            <Input
+              placeholder="Search by title, author, journal, year, DOI, or impact factor..."
+              prefix={<SearchOutlined />}
+              value={searchTerm}
+              onChange={handleSearchChange}
+              className={styles.searchInput}
+              allowClear
+            />
+          </Flex>
+        </div>
+
+        {/* Stats Cards */}
+        <Row gutter={[24, 24]} className={styles.statsRow}>
+          <Col xs={12} sm={6}>
+            <Card className={styles.statsCard}>
+              <div className={styles.statsIcon}></div>
+              <Statistic 
+                title="Total Publications" 
+                value={filtered.length}
+                valueClassName={styles.statsValue}
+              />
+            </Card>
+          </Col>
+          <Col xs={12} sm={6}>
+            <Card className={styles.statsCard}>
+              <div className={styles.statsIcon}></div>
+              <Statistic 
+                title="Categories" 
+                value={categories.length - 1}
+                valueClassName={styles.statsValue}
+              />
+            </Card>
+          </Col>
+          <Col xs={12} sm={6}>
+            <Card className={styles.statsCard}>
+              <div className={styles.statsIcon}></div>
+              <Statistic 
+                title="Unique Authors" 
+                value={new Set(publications.map(p => p.authors.split(', ')).flat()).size}
+                valueClassName={styles.statsValue}
+              />
+            </Card>
+          </Col>
+          <Col xs={12} sm={6}>
+            <Card className={styles.statsCard}>
+              <div className={styles.statsIcon}></div>
+              <Statistic 
+                title="Years" 
+                value={new Set(publications.map(p => p.year)).size}
+                valueClassName={styles.statsValue}
+              />
+            </Card>
+          </Col>
         </Row>
+
+        {/* Carousel */}
+        {filtered.length > 0 ? (
+          <>
+            <div className={styles.carouselWrapper}>
+              <button className={styles.carouselArrow} onClick={handlePrev}>
+                <LeftOutlined />
+              </button>
+
+              <div className={styles.carouselContainer}>
+                <Row gutter={[24, 24]} justify="center">
+                  {visibleCards.map((publication) => (
+                    <Col key={publication.id} xs={24} sm={24} md={8}>
+                      <PublicationCard publication={publication} />
+                    </Col>
+                  ))}
+                </Row>
+              </div>
+
+              <button className={styles.carouselArrow} onClick={handleNext}>
+                <RightOutlined />
+              </button>
+            </div>
+
+            <div className={styles.carouselIndicators}>
+              {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
+                <button
+                  key={idx}
+                  className={`${styles.indicator} ${currentIndex === idx ? styles.indicatorActive : ""}`}
+                  onClick={() => setCurrentIndex(idx)}
+                />
+              ))}
+            </div>
+          </>
+        ) : (
+          <Card className={styles.emptyCard}>
+            <Empty description="No publications found matching your search" />
+            <p className={styles.emptyText}>
+              Try adjusting your search or category filters
+            </p>
+          </Card>
+        )}
       </div>
     </section>
   );

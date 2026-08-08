@@ -3,6 +3,7 @@ import Comp1 from "./components/Comp1";
 import Comp2 from "./components/Comp2";
 import Comp3 from "./components/Comp3";
 import Comp4 from "./components/Comp4";
+import Comp5 from "./components/Comp5";
 
 const ContactUs = () => {
   return (
@@ -11,6 +12,7 @@ const ContactUs = () => {
       <Comp2 />
       <Comp3 />
       <Comp4 />
+      <Comp5 />
     </div>
   );
 };

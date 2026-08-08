@@ -13,12 +13,30 @@ const Facilities = () => {
     <div>
       <Comp1 />
       <Comp2 />
-      <Comp3 />
-      <Comp4 />
+      
+      {/* Ecosystem - Comp3 (IN DROPDOWN) */}
+      <div id="ecosystem-section" style={{ scrollMarginTop: "130px" }}>
+        <Comp3 />
+      </div>
+      
+      {/* Environment - Comp4 (IN DROPDOWN) */}
+      <div id="environment-section" style={{ scrollMarginTop: "130px" }}>
+        <Comp4 />
+      </div>
+      
       <Comp5 />
-      <Comp6 />
+      
+      {/* Receivers - Comp6 (IN DROPDOWN) */}
+      <div id="receivers-section" style={{ scrollMarginTop: "130px" }}>
+        <Comp6 />
+      </div>
+      
       <Comp7 />
-      <Comp8 />
+      
+      {/* Equipments - Comp8 (IN DROPDOWN) */}
+      <div id="equipments-section" style={{ scrollMarginTop: "130px" }}>
+        <Comp8 />
+      </div>
     </div>
   );
 };

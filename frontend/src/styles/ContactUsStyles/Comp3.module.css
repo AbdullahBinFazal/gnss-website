@@ -1,59 +1,61 @@
 /* src/styles/ContactUsStyles/Comp3.module.css */
+
 /* ===== TITLES ===== */
-.title {
-  font-size: 2.5rem !important;
-  font-weight: 800 !important;
-  color: #0a0a1a !important;
-}
-.titleSmall {
-  font-size: 1.05rem !important;
+.titleCenter {
+  font-size: 2.1rem !important;
   font-weight: 700 !important;
   color: #0a0a1a !important;
-}
-/* ===== IMAGES ===== */
-.image {
-  border-radius: 8px;
-  overflow: hidden;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.image img {
-  width: 100%;
-  height: auto;
-  max-height: 450px;
-  object-fit: contain;
-  display: block;
-  transition: transform 0.4s ease;
-}
-.image img:hover {
-  transform: scale(1.02);
+  text-align: center !important;
 }
 
-/* ===== EMAIL LIST ===== */
-.emailList {
+/* ===== CARDS ===== */
+.card {
+  background: rgba(239, 239, 242, 0.7);
+  border: 1px solid rgba(0, 150, 200, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  backdrop-filter: blur(8px);
 }
-.emailItem {
+.card:hover {
+  border-color: rgba(0, 150, 200, 0.6);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 150, 200, 0.25);
+  background: rgba(241, 241, 242, 0.9);
+}
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgb(9, 9, 9) 0%, rgb(7, 7, 7) 100%);
+}
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.card:hover .cardImage img {
+  transform: scale(1.08);
+}
+.cardContent {
+  padding: 20px;
+  flex-grow: 1;
   display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  padding: 16px 20px;
-  background: rgba(0, 0, 0, 0.02);
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.emailItem:hover {
-  background: rgba(0, 0, 0, 0.04);
-  border-color: rgba(0, 0, 0, 0.12);
-  transform: translateX(4px);
-}
-.emailAddress {
+.cardTitle {
   font-family: "Inter", sans-serif !important;
-  font-size: 1rem !important;
-  color: #4a4a6a !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  color: #050404 !important;
   margin: 0 !important;
-  word-break: break-all !important;
 }

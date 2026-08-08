@@ -17,31 +17,35 @@ const About = () => {
       <Comp1 />
       <Comp2 />
       
-      <div id="our-mission" style={{ scrollMarginTop: "130px" }}>
+      {/* History Section */}
+      <div id="history-section" style={{ scrollMarginTop: "130px" }}>
         <Comp3 />
       </div>
       
-      <div id="core-objectives" style={{ scrollMarginTop: "130px" }}>
+      {/* Vision Section */}
+      <div id="vision-section" style={{ scrollMarginTop: "130px" }}>
         <Comp4 />
       </div>
 
-      <div id="strategic-objectives">
+      {/* Strategic Objectives Section - Note: This is Comp5 in your code but named "Strategic Objectives" */}
+      <div id="objectives-section" style={{ scrollMarginTop: "130px" }}>
         <Comp5 />
       </div>
       
-      <div id="team" style={{ scrollMarginTop: "130px" }}>
-        <Comp6 />
+      {/* Team Section */}
+      <div id="team-section" style={{ scrollMarginTop: "130px" }}>
+        <Comp8 />
       </div>
       
+      {/* Note: Comp6 and Comp7 are not in the dropdown, but still render on the page */}
       <div id="lab-leadership" style={{ scrollMarginTop: "130px" }}>
         <Comp7 />
       </div>
       
       <div id="research-teams-carousel" style={{ scrollMarginTop: "130px" }}>
-        <Comp8 />
+        <Comp6 />
       </div>
       
-     
     </Content>
   );
 };

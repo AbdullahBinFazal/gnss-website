@@ -1,0 +1,158 @@
+
+{
+  "comp2": {
+    "title": "An intelligent assistant for GNSS learning and research support",
+    "description": "GNSS Co-Pilot is a guided digital assistant designed to make satellite-navigation concepts, data formats and analytical workflows easier to explore.",
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/linkages-and-Outreach-circle-1200x1199.png"
+  },
+  "comp3": {
+    "title": "It supports",
+    "cards": [
+      {
+        "id": 1,
+        "title": "Learning",
+        "image": "https://www.bing.com/th/id/OIP.IN4FQupxv0Q0A0SEbH2vmAHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 2,
+        "title": "Research orientation",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.CUbYlJzHXSGZqMghWLGH-gHaDT?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "id": 3,
+        "title": "Technical problem framing",
+        "image": "https://th.bing.com/th/id/OIP.ncRyuXeMdaEljeSF2k-9rQHaEK?w=272&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+      },
+      {
+        "id": 4,
+        "title": "Clear, structured responses",
+        "image": "https://th.bing.com/th/id/OIP.DLTPm09ooOcX8IIDRFf3ZwHaEl?w=295&h=183&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+      }
+    ]
+  },
+  "comp4": {
+    "title": "It Explains",
+    "cards": [
+      {
+        "id": 1,
+        "title": "GNSS concepts",
+        "image": "https://www.bing.com/th/id/OIP.Z9CZFHgiAAkkaRx7rxLGDAHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 2,
+        "title": "Terminology",
+        "image": "https://www.bing.com/th/id/OIP.RX0MhAWYSVquL5OJIT87rgHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 3,
+        "title": "Equations",
+        "image": "https://www.bing.com/th/id/OIP.N9cuX2hM3J-xGScqTbgXXQHaHF?w=193&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  },
+  "comp5": {
+    "title": "It Compares",
+    "cards": [
+      {
+        "id": 1,
+        "title": "SPP (Single Point Positioning)",
+        "image": "https://www.bing.com/th/id/OIP.JctvpYZT78xvQevCpfTLGgHaEa?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 2,
+        "title": "DGPS, RTK (Differential Global Positioning System and Real-Time Kinematic)",
+        "image": "https://www.bing.com/th/id/OIP.oejUCy1WZv-7dwiOE74PDgHaD3?w=218&h=128&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 3,
+        "title": "PPP (Precise Point Positioning)",
+        "image": "https://www.bing.com/th/id/OIP.EC2v6-7U_dbd57TNwxnQZwHaFl?w=193&h=146&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 4,
+        "title": "Integrated-navigation techniques",
+        "image": "https://www.bing.com/th/id/OIP.SkfhxdikGDYwRAgTE3PjtQHaHa?w=193&h=194&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  },
+  "comp6": {
+    "title": "Guide users through",
+    "cards": [
+      {
+        "id": 1,
+        "title": "NMEA (National Marine Electronics Association)",
+        "image": "https://www.bing.com/th/id/OIP.Y6AuqZQTlphm9ISxCKWOvgHaEF?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 2,
+        "title": "RINEX (Receiver Independent Exchange Format)",
+        "image": "https://www.bing.com/th/id/OIP.kRVKgNyJa9NAg-FrYhfjtQAAAA?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 3,
+        "title": "PPP (Precise Point Positioning)",
+        "image": "https://www.bing.com/th/id/OIP.LEgHH68iuH8_UpocOAguywHaD3?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  },
+  "comp7": {
+    "title": "It Supports",
+    "cards": [
+      {
+        "id": 1,
+        "title": "Receiver workflows",
+        "image": "https://www.bing.com/th/id/OIP.MpjMKMFpBUZ9NdS7xyVQPwHaEN?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 2,
+        "title": "Signal-processing workflows",
+        "image": "https://www.bing.com/th/id/OIP.NLCcPsgSwKwqYl6KKpKSKgHaEq?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 3,
+        "title": "Positioning workflows",
+        "image": "https://www.bing.com/th/id/OIP.ONmy5CDd7Ev863RuGrLyVwHaEf?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  },
+  "comp8": {
+    "title": "It Suggests",
+    "cards": [
+      {
+        "id": 1,
+        "title": "Learning resources",
+        "image": "https://www.bing.com/th/id/OIP.9hKrLjWmmwgbZ4HBs4mxngHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 2,
+        "title": "Research directions",
+        "image": "https://www.bing.com/th/id/OIP.F17KiTOQpc_daWHUPrjcQAHaCx?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 3,
+        "title": "Integrated-navigation techniques",
+        "image": "https://www.bing.com/th/id/OIP.wrtBWhItdbN6Xl5sI1rIWAHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  },
+  "comp9": {
+    "title": "It Directs user to",
+    "cards": [
+      {
+        "id": 1,
+        "title": "Relevant lab facilities",
+        "image": "https://th.bing.com/th/id/OIP.SgAkfIN5dvnyQ-W9-sYcJQHaFm?w=253&h=191&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+      },
+      {
+        "id": 2,
+        "title": "Programs",
+        "image": "https://www.bing.com/th/id/OIP.CNEssEA1js4V0mhTRVzDVwHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 3,
+        "title": "Publications",
+        "image": "https://www.bing.com/th/id/OIP.dBjtiEFN5l85iGFjj8JJHgHaFo?w=193&h=146&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      }
+    ]
+  }
+}

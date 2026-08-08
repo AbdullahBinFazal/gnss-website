@@ -29,16 +29,20 @@ const Navbar = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Handle hash navigation
+  // Handle hash navigation - scroll to section
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.replace("#", "");
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(() => {
+      // Wait for DOM to render
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 300);
-      }
+        }
+      }, 300);
+    } else {
+      // If no hash, scroll to top of page
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location]);
 
@@ -68,72 +72,96 @@ const Navbar = () => {
     }));
   };
 
+  // ─── HOME SECTIONS ───
+  const homeSections = [
+    { key: "core-focus", label: "Core Focus" },
+    { key: "about-the-lab", label: "About" },
+    { key: "facilities-section", label: "Facilities" },
+    { key: "collaborations-section", label: "Collaborations" },
+  ];
+
+  // ─── ABOUT SECTIONS ───
   const aboutSections = [
-    { key: "our-mission", label: "Our Mission" },
-    { key: "core-objectives", label: "Core Objectives" },
-    { key: "team", label: "Team" },
-    { key: "lab-leadership", label: "Lab Leadership & Faculty" },
-    { key: "research-teams", label: "Research Teams" },
-    { key: "alumni", label: "Alumni Network" },
+    { key: "history-section", label: "History" },
+    { key: "vision-section", label: "Vision" },
+    { key: "objectives-section", label: "Objectives" },
+    { key: "team-section", label: "Team" },
   ];
 
-  const programsSections = [
-    { key: "academics", label: "Academics" },
-    { key: "undergraduate", label: "Undergraduate & FYP Pathways" },
-    { key: "academic-resources", label: "Academic Resources & Lab Facilities" },
-    { key: "research-opportunities", label: "Research Opportunities" },
-    { key: "gnss-academy", label: "GNSS Academy" },
-    { key: "training-workshops", label: "Training Workshops" },
-    { key: "tutorials", label: "Tutorials" },
-  ];
 
-  const researchSections = [
-    { key: "domains", label: "Domains" },
-    { key: "research-detail", label: "PPP & RTK Algorithms" },
-    { key: "ionospheric", label: "Ionospheric Modeling" },
-    { key: "crustal-deformation", label: "Crustal Deformation" },
-    { key: "impact", label: "Research Impact" },
-    { key: "research-projects", label: "Research Projects" },
-    { key: "publications", label: "Publications" },
-  ];
+const researchSections = [
+  { key: "domains-section", label: "Domains" },
+  { key: "projects-section", label: "Projects" },
+  { key: "publications-section", label: "Publications" },
+];
 
-  const facilitiesSections = [
-    { key: "sensor-equipment", label: "Sensor Equipment" },
-    { key: "research-infrastructure", label: "Research Infrastructure" },
-    { key: "laboratories", label: "Laboratories" },
-  ];
+  // ─── OTHER PAGE SECTIONS ───
+// ─── PROGRAMS SECTIONS (UPDATED) ───
+const programsSections = [
+  { key: "ms-program-section", label: "MS Program" },
+  { key: "phd-program-section", label: "PhD Program" },
+  { key: "bs-program-section", label: "BS Program" },
+];
 
-  const digitalObservatorySections = [
-    { key: "gnss-observatory", label: "GNSS Observatory" },
-    { key: "space-weather", label: "Space Weather Observatory" },
-  ];
+// ─── FACILITIES SECTIONS (UPDATED) ───
+const facilitiesSections = [
+  { key: "ecosystem-section", label: "Ecosystem" },
+  { key: "environment-section", label: "Environment" },
+  { key: "receivers-section", label: "Receivers" },
+  { key: "equipments-section", label: "Equipments" },
+];
 
-  const capacityBuildingSections = [
-    { key: "training-workshops", label: "Training & Workshops" },
-    { key: "tutorials", label: "Tutorials & Documentation" },
-  ];
+// ─── DIGITAL OBSERVATORY SECTIONS (UPDATED) ───
+const digitalObservatorySections = [
+  { key: "gnss-observatory-cards-section", label: "GNSS Observatory" },
+  { key: "space-weather-section", label: "Space Weather" },
+];
 
-  const collaborationsSections = [
-    { key: "agreements", label: "Agreements" },
-    { key: "outreach", label: "Outreach" },
-  ];
+ // ─── CAPACITY BUILDING SECTIONS (UPDATED) ───
+const capacityBuildingSections = [
+  { key: "gnss-school-section", label: "GNSS School" },
+  { key: "conferences-section", label: "Conferences" },
+  { key: "workshops-section", label: "Workshops" },
+  { key: "seminars-section", label: "Seminars" },
+];
 
-  const opportunitiesSections = [
-    { key: "engagement", label: "Engagement" },
-    { key: "research-opportunities", label: "Research Opportunities" },
-  ];
+// ─── COLLABORATIONS SECTIONS (UPDATED) ───
+const collaborationsSections = [
+  { key: "objectives-section", label: "Objectives" },
+  { key: "institutions-section", label: "Institutions" },
+  { key: "engagement-section", label: "Engagement" },
+];
 
-  const coPilotSections = [
-    { key: "copilot-assistance", label: "Co-Pilot Assistance" },
-    { key: "software-configuration", label: "Software Configuration" },
-    { key: "data-hub-navigation", label: "Data Hub Navigation" },
-  ];
+// ─── OPPORTUNITIES SECTIONS (UPDATED) ───
+const opportunitiesSections = [
+  { key: "projects-section", label: "Projects" },
+  { key: "internships-section", label: "Internships" },
+  { key: "assistantships-section", label: "AssistantShips" },
+  { key: "collaborations-section", label: "Collaborations" },
+];
 
-  // Desktop menu items with dropdowns
+// ─── COPILOT SECTIONS (UPDATED) ───
+const coPilotSections = [
+  { key: "explains-section", label: "It Explains" },
+  { key: "guides-section", label: "It Guides" },
+  { key: "suggests-section", label: "It Suggests" },
+];
+
+  // ─── DESKTOP MENU ITEMS ───
   const desktopMenuItems = [
     {
       key: "/",
-      label: <NavLink to="/">Home</NavLink>,
+      label: (
+        <Dropdown
+          menu={{
+            items: createDropdownItems(homeSections, "/"),
+          }}
+          placement="bottom"
+          trigger={["hover"]}
+        >
+          <NavLink to="/">Home</NavLink>
+        </Dropdown>
+      ),
     },
     {
       key: "about",
@@ -267,7 +295,7 @@ const Navbar = () => {
     },
   ];
 
-  // Mobile menu items (simple links without dropdowns)
+  // ─── MOBILE MENU ITEMS ───
   const mobileMenuItems = [
     { key: "/", label: <NavLink to="/" onClick={() => setMobileMenuOpen(false)}>Home</NavLink> },
     { key: "/about", label: <NavLink to="/about" onClick={() => setMobileMenuOpen(false)}>About</NavLink> },

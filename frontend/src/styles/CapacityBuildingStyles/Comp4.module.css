@@ -2,82 +2,35 @@
 
 /* ===== TITLES ===== */
 .titleCenter {
-  font-size: 2.5rem !important;
-  font-weight: 800 !important;
+  font-size: 2.1rem !important;
+  font-weight: 700 !important;
   color: #0a0a1a !important;
-  line-height: 1.2 !important;
   text-align: center !important;
 }
+
 /* ===== PARAGRAPHS ===== */
-.paragraphCenter {
+.paragraph {
   font-size: 1.05rem !important;
   line-height: 1.8 !important;
   color: #4a4a6a !important;
   margin: 0 !important;
-  text-align: center !important;
 }
-/* ===== CARDS ===== */
-.card {
-  border-radius: 12px;
+
+/* ===== IMAGES ===== */
+.image {
+  border-radius: 8px;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  cursor: pointer;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  max-width: 100%;
+  margin: 0;
 }
-.card:hover {
-  transform: translateY(-8px);
-}
-.cardImage {
-  position: relative;
+.image img {
   width: 100%;
-  height: 220px;
-  overflow: hidden;
-}
-.cardImage img {
-  width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 400px;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
 }
-.card:hover .cardImage img {
-  transform: scale(1.08);
-}
-.cardContent {
-  padding: 24px 20px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.cardTitle {
-  font-family: "Inter", sans-serif !important;
-  font-size: 1.05rem !important;
-  font-weight: 700 !important;
-  color: #131212 !important;
-}
-.cardDescription {
-  font-family: "Inter", sans-serif !important;
-  font-size: 0.9rem !important;
-  color: rgba(9, 9, 9, 0.75) !important;
-  flex-grow: 1;
-}
-/* Card Light Variant - to maintain beauty */
-.cardLight {
-  background: #ffffff;
-  border: 1px solid rgba(10, 10, 26, 0.08);
-  box-shadow: 0 2px 12px rgba(10, 10, 26, 0.06);
-}
-.cardLight:hover {
-  border-color: #0a0a1a;
-  box-shadow: 0 16px 32px rgba(10, 10, 26, 0.15);
-  background: #fafafa;
-}
-.cardLight .cardTitle {
-  color: #0a0a1a !important;
-}
-.cardLight .cardDescription {
-  color: #4a4a6a !important;
+.image img:hover {
+  transform: scale(1.02);
 }

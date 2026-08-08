@@ -2,11 +2,9 @@
 
 /* ===== TITLES ===== */
 .title {
-  font-size: 2.5rem !important;
-  font-weight: 800 !important;
+  font-size: 2.1rem !important;
+  font-weight: 700 !important;
   color: #0a0a1a !important;
-  line-height: 1.3 !important;
-  margin: 0 !important;
 }
 
 /* ===== PARAGRAPHS ===== */
@@ -14,7 +12,6 @@
   font-size: 1.05rem !important;
   line-height: 1.8 !important;
   color: #4a4a6a !important;
-  margin: 0 !important;
 }
 
 /* ===== IMAGES ===== */

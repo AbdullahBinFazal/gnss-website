@@ -1,0 +1,129 @@
+
+{
+  "comp2": {
+    "title": "A digital window into satellite navigation:",
+    "description": "The Digital Observatory transforms receiver measurements and scientific datasets into clear, interactive visualizations for education, research and operational awareness.",
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-2-1200x1200.jpg",
+    "cards": [
+      {
+        "id": 1,
+        "title": "Education",
+        "image": "https://www.bing.com/th/id/OIP.SZf4oyaN8vqDmWBYhoXXYgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 2,
+        "title": "Research",
+        "image": "https://tse1.mm.bing.net/th/id/OIP.nEWcNXhCrSEcaIXEKip62gHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "id": 3,
+        "title": "Operational Awareness",
+        "image": "https://th.bing.com/th/id/OIP.ArJ46B1JWc3zwiPkrV5BUAHaFY?w=238&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+      }
+    ]
+  },
+  "comp3": {
+    "title": "GNSS Observatory",
+    "description": "The GNSS Observatory integrates global datasets with observations from u-blox, Septentrio and ICTP receiver systems. It supports the analysis of satellite visibility, navigation signals, positioning stability, atmospheric effects and receiver performance.",
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png",
+    "cards": {
+      "title": "It Includes:",
+      "items": [
+        {
+          "id": 1,
+          "title": "UTC time and data-epoch status",
+          "image": "https://th.bing.com/th/id/OIP.atw2SPUI_KmPKX2p0T4Q6gHaD4?w=365&h=182&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 2,
+          "title": "Visible and tracked satellites",
+          "image": "https://th.bing.com/th/id/OIP.9wKbS_vFeuM75SyS5fR_0AHaEK?w=293&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 3,
+          "title": "Skyplot: satellite azimuth and elevation",
+          "image": "https://th.bing.com/th/id/OIP.EW6BpiXhE7UfWG_szTbPkQHaES?w=328&h=190&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 4,
+          "title": "Carrier-to-noise density ratio (C/N0)",
+          "image": "https://www.bing.com/th/id/OIP.rvDSA566RWHRRo64JD5yvQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 5,
+          "title": "Receiver position on map and mean-position scatter",
+          "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 6,
+          "title": "TEC map from the GISTM receiver",
+          "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 7,
+          "title": "Ionospheric delay, tropospheric delay and receiver clock bias",
+          "image": "https://www.bing.com/th/id/OIP.xiMY4x2N7mOqP5LWIi2gCQHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 8,
+          "title": "GDOP, PDOP, HDOP, VDOP and TDOP",
+          "image": "https://www.bing.com/th/id/OIP.AQPbmgtKub1Hm8F2KU39DAHaD6?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 9,
+          "title": "Multi-constellation status",
+          "image": "https://www.bing.com/th/id/OIP.bmfgSdGU2fyqVUWe-QxDjAHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 10,
+          "title": "Visible-satellite ground tracks",
+          "image": "https://www.bing.com/th/id/OIP.QLvHIv5DHGFXI6Mlx83UYwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 11,
+          "title": "Cycle-slip monitoring from Septentrio observations",
+          "image": "https://www.bing.com/th/id/OIP.1UvH1oFkfbvszNpDWBU65QHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        }
+      ]
+    }
+  },
+  "comp4": {
+    "title": "Space Weather Observatory",
+    "description": "The Space Weather Observatory presents the Sun-Earth environment as an interconnected system, linking solar activity, solar wind, the magnetosphere and the ionosphere with their effects on GNSS signals and positioning performance.",
+    "cards": {
+      "title": "It Links:",
+      "items": [
+        {
+          "id": 1,
+          "title": "Sun: Sunspots, solar flares, extreme-ultraviolet imagery and coronal mass ejection indicators.",
+          "image": "https://th.bing.com/th/id/OIP.FT2aA2C_VeYIUobNoBLAWAHaG9?w=189&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 2,
+          "title": "Solar Wind & IMF: Speed, density, temperature and interplanetary magnetic-field parameters.",
+          "image": "https://th.bing.com/th/id/OIP.A7LIGgAELjOXUqvsSUqDqwHaHa?w=166&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 3,
+          "title": "Geomagnetic Field: Geomagnetic indices, storm conditions and magnetospheric response.",
+          "image": "https://th.bing.com/th/id/OIP.1_IV1q-bh0QMjm9b3qDvIQHaEK?w=301&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 4,
+          "title": "Ionosphere: Ionospheric variability, scintillation indicators and GNSS signal-propagation effects.",
+          "image": "https://th.bing.com/th/id/OIP.zNhHiSZi3KfD9lH_VAxIPwHaFC?w=252&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 5,
+          "title": "Total Electron Content: Local and regional TEC visualisation derived from GNSS observations and validated external products.",
+          "image": "https://www.bing.com/th/id/OIP.W2oSyEAw6sBNAh7NiifW_AHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        },
+        {
+          "id": 6,
+          "title": "PolaRx5 GISTM Receiver: High-rate observations for TEC, amplitude scintillation and phase scintillation studies.",
+          "image": "https://www.bing.com/th/id/OIP.u__BtzFlCgBAChA0i92VmQHaFs?w=193&h=148&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        }
+      ]
+    }
+  }
+}

@@ -11,13 +11,6 @@ const Comp2 = () => {
   return (
     <section style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {/* Section 1: Title + Image + Text */}
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Title level={2} className={styles.titleCenter}>
-            {data.title}
-          </Title>
-        </Flex>
-
         <Row gutter={[40, 40]} align="middle">
           <Col xs={24} lg={10}>
             <div className={styles.image}>
@@ -27,6 +20,9 @@ const Comp2 = () => {
 
           <Col xs={24} lg={14}>
             <Flex vertical gap={16}>
+              <Title level={2} className={styles.title}>
+                {data.title}
+              </Title>
               <Paragraph className={styles.paragraph}>
                 {data.description}
               </Paragraph>

@@ -26,13 +26,27 @@ const Home = () => {
     <div>
       <Comp1 />
       <Comp2 />
-      <Comp3 />
-      <Comp4 />
-      <Comp5 />
+      
+      <div id="core-focus">
+        <Comp3 />
+      </div>
+      
+      <div id="about-the-lab">
+        <Comp4 />
+      </div>
+      
+      <div id="facilities-section">
+        <Comp5 />
+      </div>
+      
       <Comp6 />
       <Comp7 />
       <Comp8 />
-      <Comp9 />
+      
+      <div id="collaborations-section">
+        <Comp9 />
+      </div>
+      
       <Comp10 />
       <Comp11 />
       <LocationMap />

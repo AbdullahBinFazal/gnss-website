@@ -1,38 +1,88 @@
 // src/pages/Research/components/Comp4.jsx
-import { Row, Col, Typography, Flex } from "antd";
+import { useState } from "react";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { Col, Row, Typography, Flex } from "antd";
 import styles from "../../../styles/ResearchStyles/Comp4.module.css";
+import researchData from "../../../json/pages/research/researchData.json";
 
 const { Title, Paragraph } = Typography;
 
 const Comp4 = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const data = researchData.comp4;
+
+  const cardsPerView = 3;
+  const totalCards = data.cards.length;
+  const maxIndex = Math.max(0, totalCards - cardsPerView);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === maxIndex ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? maxIndex : prevIndex - 1
+    );
+  };
+
+  const visibleCards = data.cards.slice(currentIndex, currentIndex + cardsPerView);
+
   return (
-    <section style={{ padding: "80px 20px" }}>
+    <section style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Row gutter={[48, 48]} align="middle">
-          <Col xs={24} lg={12}>
-            <div className={styles.image}>
-              <img
-                src="https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-1-1200x1200.jpg"
-                alt="Ionospheric Modeling & Space Weather"
-              />
-            </div>
-          </Col>
-          <Col xs={24} lg={12}>
-            <Flex vertical gap={16}>
-              <Title level={2} className={styles.title}>
-                Ionospheric Modeling <span>& Space Weather</span>
-              </Title>
-              <Paragraph className={styles.paragraph}>
-                The ionosphere remains a primary source of error for GNSS
-                signals. Our team develops regional Total Electron Content (TEC)
-                models and monitors ionospheric scintillation anomalies over
-                Pakistan's geographic coordinates. This research is vital for
-                predicting space weather impacts on satellite communication and
-                aviation navigation.
-              </Paragraph>
-            </Flex>
-          </Col>
-        </Row>
+        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
+          <Title level={2} className={styles.titleCenter}>
+            {data.title}
+          </Title>
+          <Paragraph className={styles.paragraphCenter}>
+            {data.description}
+          </Paragraph>
+        </Flex>
+
+        <div className={styles.carouselWrapper}>
+          <button className={styles.carouselArrow} onClick={handlePrev}>
+            <LeftOutlined />
+          </button>
+
+          <div className={styles.carouselContainer}>
+            <Row gutter={[24, 24]} justify="center">
+              {visibleCards.map((card) => (
+                <Col key={card.id} xs={24} sm={24} md={8}>
+                  <div className={styles.card}>
+                    <div className={styles.cardImage}>
+                      <img src={card.image} alt={card.title} />
+                      <div className={styles.cardOverlay} />
+                    </div>
+                    <div className={styles.cardContent}>
+                      <Title level={4} className={styles.cardTitle}>
+                        {card.title}
+                      </Title>
+                      <Paragraph className={styles.cardDescription}>
+                        {card.description}
+                      </Paragraph>
+                    </div>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          </div>
+
+          <button className={styles.carouselArrow} onClick={handleNext}>
+            <RightOutlined />
+          </button>
+        </div>
+
+        <div className={styles.carouselIndicators}>
+          {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
+            <button
+              key={idx}
+              className={`${styles.indicator} ${currentIndex === idx ? styles.indicatorActive : ""}`}
+              onClick={() => setCurrentIndex(idx)}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
