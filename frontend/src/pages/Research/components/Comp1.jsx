@@ -10,7 +10,7 @@ const Comp1 = () => {
       <div className={styles.heroOverlay} />
       <Flex vertical justify="center" align="center" className={styles.heroContent}>
         <Title level={1} className={styles.heroTitle}>
-          Research Domains
+          Research
         </Title>
       </Flex>
     </section>

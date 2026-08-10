@@ -10,7 +10,7 @@ const Comp1 = () => {
       <div className={styles.heroOverlay} />
       <div className={styles.heroContent}>
         <Title level={1} className={styles.heroTitle}>
-          <span>MS/PhD GNSS</span> Program
+          <span>Academics</span>
         </Title>
         <Paragraph className={styles.heroDescription}>
           Pakistan's First Dedicated Graduate Program in Global Navigation Satellite Systems

@@ -24,7 +24,6 @@ body {
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
 ::-webkit-scrollbar-thumb { background: var(--bg-secondary); border-radius: 9999px; }
 ::-webkit-scrollbar-thumb:hover { background: #000000; }
-
 /* ===== UTILITY ===== */
 .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; width: 100%; }
 /* ===== ANIMATIONS ===== */
@@ -36,4 +35,37 @@ body {
 @keyframes scrollTags {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+/* ===== ACTIVE NAV LINK STYLES ===== */
+/* Style for the active menu item in Ant Design Menu */
+.ant-menu-item-selected {
+  background: transparent !important;
+}
+.ant-menu-item-selected .ant-menu-title-content {
+  color: #1890ff !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+}
+/* Style for NavLink active class */
+.active-nav-link {
+  color: #1890ff !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+}
+/* Override for dropdown triggered items */
+.ant-dropdown-trigger .active-nav-link {
+  color: #1890ff !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+}
+/* Remove default Ant Design blue background on selection */
+.ant-menu-item-selected::after {
+  border-bottom-color: transparent !important;
+}
+/* Keep the underline for active items */
+.ant-menu-item-selected::after {
+  border-bottom: none !important;
 }

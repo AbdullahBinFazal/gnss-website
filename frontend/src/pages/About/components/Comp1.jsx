@@ -10,7 +10,7 @@ const Comp1 = () => {
       <div className={styles.heroOverlay} />
       <div className={styles.heroContent}>
         <Title level={1} className={styles.heroTitle}>
-          About <span>Us</span>
+          About <span></span>
         </Title>
         <Paragraph className={styles.heroDescription}>
           Global Navigation Satellite System Lab, a research and development

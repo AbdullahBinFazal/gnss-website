@@ -9,8 +9,8 @@ const DigitalObservatory = () => {
     <div>
       <Comp1 />
       
-      {/* GNSS Observatory - Comp2 (IN DROPDOWN) */}
-      <div >
+      {/* Satellite Navigation - Comp2 (IN DROPDOWN) */}
+      <div id="satellite-navigation-section" style={{ scrollMarginTop: "130px" }}>
         <Comp2 />
       </div>
 

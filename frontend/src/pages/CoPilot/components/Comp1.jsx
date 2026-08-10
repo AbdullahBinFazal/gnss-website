@@ -10,7 +10,7 @@ const Comp1 = () => {
       <div className={styles.heroOverlay} />
       <div className={styles.heroContent}>
         <Title level={1} className={styles.heroTitle}>
-          GNSS <span>Co-Pilot</span>
+          <span>Co-Pilot</span>
         </Title>
         <Paragraph className={styles.heroDescription}>
           Your intelligent assistant for GNSS research, navigation, and space applications. 

@@ -1,12 +1,29 @@
 // src/pages/Home/components/Comp3.jsx
 import { Col, Row, Typography, Flex } from 'antd';
+import { useNavigate } from 'react-router-dom';
 import styles from "../../../styles/HomeStyles/Comp3.module.css";
 import homeData from "../../../json/pages/home/homeData.json";
 
 const { Title, Paragraph } = Typography;
 
 const Comp3 = () => {
+  const navigate = useNavigate();
   const data = homeData.comp3;
+
+  // Mapping card titles to page URLs
+  const pageMap = {
+    "Research and Innovation": "/research",
+    "Academic Excellence": "/programs",
+    "Digital Observation": "/digital-observatory",
+    "Capacity Development": "/capacity-building",
+  };
+
+  const handleCardClick = (title) => {
+    const path = pageMap[title];
+    if (path) {
+      navigate(path);
+    }
+  };
 
   return (
     <section style={{ padding: "60px 20px" }}>
@@ -20,7 +37,17 @@ const Comp3 = () => {
         <Row gutter={[24, 24]} justify="center">
           {data.cards.map((card) => (
             <Col key={card.id} xs={24} sm={12} md={6}>
-              <div className={styles.card}>
+              <div 
+                className={styles.card}
+                onClick={() => handleCardClick(card.title)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    handleCardClick(card.title);
+                  }
+                }}
+              >
                 <div className={styles.cardImage}>
                   <img src={card.image} alt={card.title} />
                   <div className={styles.cardOverlay} />

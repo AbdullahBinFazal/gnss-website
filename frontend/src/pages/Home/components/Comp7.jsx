@@ -1,12 +1,39 @@
 // src/pages/Home/components/Comp7.jsx
 import { Col, Row, Typography, Flex } from 'antd';
+import { useNavigate } from 'react-router-dom';
 import styles from "../../../styles/HomeStyles/Comp7.module.css";
 import homeData from "../../../json/pages/home/homeData.json";
 
 const { Title, Paragraph } = Typography;
 
 const Comp7 = () => {
+  const navigate = useNavigate();
   const data = homeData.comp7;
+
+  // Mapping card titles to Digital Observatory page section IDs
+  const sectionMap = {
+    "GNSS Observatory": "/digital-observatory#gnss-observatory-cards-section",
+    "Space Weather": "/digital-observatory#space-weather-section",
+    "Digital Observatory": "/digital-observatory", // Goes to Digital Observatory page (top)
+    "Satellite Navigation": "/digital-observatory#satellite-navigation-section",
+  };
+
+  const handleCardClick = (title) => {
+    const path = sectionMap[title];
+    if (path) {
+      navigate(path);
+      // Force scroll to section after navigation
+      setTimeout(() => {
+        const hash = path.split('#')[1];
+        if (hash) {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }, 500);
+    }
+  };
 
   return (
     <section style={{ padding: "60px 20px" }}>
@@ -40,7 +67,17 @@ const Comp7 = () => {
         <Row gutter={[24, 24]} justify="center" style={{ marginTop: "48px" }}>
           {data.cards.map((card) => (
             <Col key={card.id} xs={12} sm={6} md={6}>
-              <div className={styles.card}>
+              <div 
+                className={styles.card}
+                onClick={() => handleCardClick(card.title)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    handleCardClick(card.title);
+                  }
+                }}
+              >
                 <div className={styles.cardImage}>
                   <img src={card.image} alt={card.title} />
                   <div className={styles.cardOverlay} />

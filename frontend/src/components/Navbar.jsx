@@ -33,7 +33,6 @@ const Navbar = () => {
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.replace("#", "");
-      // Wait for DOM to render
       setTimeout(() => {
         const element = document.getElementById(id);
         if (element) {
@@ -41,7 +40,6 @@ const Navbar = () => {
         }
       }, 300);
     } else {
-      // If no hash, scroll to top of page
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location]);
@@ -88,64 +86,56 @@ const Navbar = () => {
     { key: "team-section", label: "Team" },
   ];
 
+  const researchSections = [
+    { key: "domains-section", label: "Domains" },
+    { key: "projects-section", label: "Projects" },
+    { key: "publications-section", label: "Publications" },
+  ];
 
-const researchSections = [
-  { key: "domains-section", label: "Domains" },
-  { key: "projects-section", label: "Projects" },
-  { key: "publications-section", label: "Publications" },
-];
+  const programsSections = [
+    { key: "ms-program-section", label: "MS Program" },
+    { key: "phd-program-section", label: "PhD Program" },
+    { key: "bs-program-section", label: "BS Program" },
+  ];
 
-  // ─── OTHER PAGE SECTIONS ───
-// ─── PROGRAMS SECTIONS (UPDATED) ───
-const programsSections = [
-  { key: "ms-program-section", label: "MS Program" },
-  { key: "phd-program-section", label: "PhD Program" },
-  { key: "bs-program-section", label: "BS Program" },
-];
+  const facilitiesSections = [
+    { key: "ecosystem-section", label: "Ecosystem" },
+    { key: "environment-section", label: "Environment" },
+    { key: "receivers-section", label: "Receivers" },
+    { key: "equipments-section", label: "Equipments" },
+  ];
 
-// ─── FACILITIES SECTIONS (UPDATED) ───
-const facilitiesSections = [
-  { key: "ecosystem-section", label: "Ecosystem" },
-  { key: "environment-section", label: "Environment" },
-  { key: "receivers-section", label: "Receivers" },
-  { key: "equipments-section", label: "Equipments" },
-];
+  const digitalObservatorySections = [
+    { key: "satellite-navigation-section", label: "Satellite Navigation" },
+    { key: "gnss-observatory-cards-section", label: "GNSS Observatory" },
+    { key: "space-weather-section", label: "Space Weather" },
+  ];
 
-// ─── DIGITAL OBSERVATORY SECTIONS (UPDATED) ───
-const digitalObservatorySections = [
-  { key: "gnss-observatory-cards-section", label: "GNSS Observatory" },
-  { key: "space-weather-section", label: "Space Weather" },
-];
+  const capacityBuildingSections = [
+    { key: "gnss-school-section", label: "GNSS School" },
+    { key: "conferences-section", label: "Conferences" },
+    { key: "workshops-section", label: "Workshops" },
+    { key: "seminars-section", label: "Seminars" },
+  ];
 
- // ─── CAPACITY BUILDING SECTIONS (UPDATED) ───
-const capacityBuildingSections = [
-  { key: "gnss-school-section", label: "GNSS School" },
-  { key: "conferences-section", label: "Conferences" },
-  { key: "workshops-section", label: "Workshops" },
-  { key: "seminars-section", label: "Seminars" },
-];
+  const collaborationsSections = [
+    { key: "objectives-section", label: "Objectives" },
+    { key: "institutions-section", label: "Institutions" },
+    { key: "engagement-section", label: "Engagement" },
+  ];
 
-// ─── COLLABORATIONS SECTIONS (UPDATED) ───
-const collaborationsSections = [
-  { key: "objectives-section", label: "Objectives" },
-  { key: "institutions-section", label: "Institutions" },
-  { key: "engagement-section", label: "Engagement" },
-];
+  const opportunitiesSections = [
+    { key: "projects-section", label: "Projects" },
+    { key: "internships-section", label: "Internships" },
+    { key: "assistantships-section", label: "AssistantShips" },
+    { key: "collaborations-section", label: "Collaborations" },
+  ];
 
-// ─── OPPORTUNITIES SECTIONS (UPDATED) ───
-const opportunitiesSections = [
-  { key: "projects-section", label: "Projects" },
-  { key: "internships-section", label: "Internships" },
-  { key: "assistantships-section", label: "AssistantShips" },
-  { key: "collaborations-section", label: "Collaborations" },
-];
-
-// ─── COPILOT SECTIONS (UPDATED) ───
-const coPilotSections = [
-  { key: "explains-section", label: "It Explains" },
-  { key: "guides-section", label: "It Guides" },
-  { key: "suggests-section", label: "It Suggests" },
-];
+  const coPilotSections = [
+    { key: "explains-section", label: "It Explains" },
+    { key: "guides-section", label: "It Guides" },
+    { key: "suggests-section", label: "It Suggests" },
+  ];
 
   // ─── DESKTOP MENU ITEMS ───
   const desktopMenuItems = [
@@ -159,7 +149,12 @@ const coPilotSections = [
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink to="/">Home</NavLink>
+          <NavLink 
+            to="/" 
+            className={({ isActive }) => isActive ? "active-nav-link" : ""}
+          >
+            Home
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -173,7 +168,12 @@ const coPilotSections = [
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink to="/about">About</NavLink>
+          <NavLink 
+            to="/about"
+            className={({ isActive }) => isActive ? "active-nav-link" : ""}
+          >
+            About
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -187,7 +187,12 @@ const coPilotSections = [
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink to="/research">Research</NavLink>
+          <NavLink 
+            to="/research"
+            className={({ isActive }) => isActive ? "active-nav-link" : ""}
+          >
+            Research
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -201,7 +206,12 @@ const coPilotSections = [
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink to="/programs">Academics</NavLink>
+          <NavLink 
+            to="/programs"
+            className={({ isActive }) => isActive ? "active-nav-link" : ""}
+          >
+            Academics
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -215,7 +225,12 @@ const coPilotSections = [
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink to="/facilities">Facilities</NavLink>
+          <NavLink 
+            to="/facilities"
+            className={({ isActive }) => isActive ? "active-nav-link" : ""}
+          >
+            Facilities
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -229,7 +244,12 @@ const coPilotSections = [
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink to="/digital-observatory">Digital Observatory</NavLink>
+          <NavLink 
+            to="/digital-observatory"
+            className={({ isActive }) => isActive ? "active-nav-link" : ""}
+          >
+            Digital Observatory
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -243,7 +263,12 @@ const coPilotSections = [
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink to="/capacity-building">Capacity Building</NavLink>
+          <NavLink 
+            to="/capacity-building"
+            className={({ isActive }) => isActive ? "active-nav-link" : ""}
+          >
+            Capacity Building
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -257,7 +282,12 @@ const coPilotSections = [
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink to="/collaborations">Collaborations</NavLink>
+          <NavLink 
+            to="/collaborations"
+            className={({ isActive }) => isActive ? "active-nav-link" : ""}
+          >
+            Collaborations
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -271,7 +301,12 @@ const coPilotSections = [
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink to="/opportunities">Opportunities</NavLink>
+          <NavLink 
+            to="/opportunities"
+            className={({ isActive }) => isActive ? "active-nav-link" : ""}
+          >
+            Opportunities
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -285,13 +320,25 @@ const coPilotSections = [
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink to="/copilot">Co-Pilot</NavLink>
+          <NavLink 
+            to="/copilot"
+            className={({ isActive }) => isActive ? "active-nav-link" : ""}
+          >
+            Co-Pilot
+          </NavLink>
         </Dropdown>
       ),
     },
     {
       key: "/contact-us",
-      label: <NavLink to="/contact-us">Contact Us</NavLink>,
+      label: (
+        <NavLink 
+          to="/contact-us"
+          className={({ isActive }) => isActive ? "active-nav-link" : ""}
+        >
+          Contact Us
+        </NavLink>
+      ),
     },
   ];
 
@@ -368,11 +415,10 @@ const coPilotSections = [
           />
         </Link>
 
-        {/* Desktop Menu */}
+        {/* Desktop Menu - REMOVED selectedKeys */}
         {!isMobile && (
           <Menu
             mode="horizontal"
-            selectedKeys={[location.pathname]}
             items={desktopMenuItems}
             style={{
               display: "flex",
@@ -423,7 +469,7 @@ const coPilotSections = [
           <div style={{ padding: "8px 0" }}>
             <Menu
               mode="inline"
-              selectedKeys={[location.pathname]}
+              // REMOVED selectedKeys={[location.pathname]}
               items={mobileMenuItems}
               style={{
                 border: "none",
