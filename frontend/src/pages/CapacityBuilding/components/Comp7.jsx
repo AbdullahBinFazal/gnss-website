@@ -1,6 +1,6 @@
 // src/pages/CapacityBuilding/components/Comp7.jsx
 import { Col, Row, Typography, Flex } from "antd";
-import styles from "../../../styles/CapacityBuildingStyles/Comp7.module.css";
+import styles from "../../../styles/CapacityBuildingStyles/CapacityBuilding.module.css";
 import capacityBuildingData from "../../../json/pages/capacityBuilding/capacityBuildingData.json";
 
 const { Title, Paragraph } = Typography;
@@ -9,7 +9,7 @@ const Comp7 = () => {
   const data = capacityBuildingData.comp7;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionOffWhite} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Section 1: Image + Text */}
         <Row gutter={[40, 40]} align="middle">

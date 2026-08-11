@@ -70,14 +70,6 @@ const Navbar = () => {
     }));
   };
 
-  // ─── HOME SECTIONS ───
-  const homeSections = [
-    { key: "core-focus", label: "Core Focus" },
-    { key: "about-the-lab", label: "About" },
-    { key: "facilities-section", label: "Facilities" },
-    { key: "collaborations-section", label: "Collaborations" },
-  ];
-
   // ─── ABOUT SECTIONS ───
   const aboutSections = [
     { key: "history-section", label: "History" },
@@ -138,28 +130,16 @@ const Navbar = () => {
   ];
 
   // ─── DESKTOP MENU ITEMS ───
+  // Note: Keys must match the path for selectedKeys to work
   const desktopMenuItems = [
     {
       key: "/",
       label: (
-        <Dropdown
-          menu={{
-            items: createDropdownItems(homeSections, "/"),
-          }}
-          placement="bottom"
-          trigger={["hover"]}
-        >
-          <NavLink 
-            to="/" 
-            className={({ isActive }) => isActive ? "active-nav-link" : ""}
-          >
-            Home
-          </NavLink>
-        </Dropdown>
+        <NavLink to="/">Home</NavLink>
       ),
     },
     {
-      key: "about",
+      key: "/about",
       label: (
         <Dropdown
           menu={{
@@ -168,17 +148,12 @@ const Navbar = () => {
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink 
-            to="/about"
-            className={({ isActive }) => isActive ? "active-nav-link" : ""}
-          >
-            About
-          </NavLink>
+          <NavLink to="/about">About</NavLink>
         </Dropdown>
       ),
     },
     {
-      key: "research",
+      key: "/research",
       label: (
         <Dropdown
           menu={{
@@ -187,17 +162,12 @@ const Navbar = () => {
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink 
-            to="/research"
-            className={({ isActive }) => isActive ? "active-nav-link" : ""}
-          >
-            Research
-          </NavLink>
+          <NavLink to="/research">Research</NavLink>
         </Dropdown>
       ),
     },
     {
-      key: "programs",
+      key: "/programs",
       label: (
         <Dropdown
           menu={{
@@ -206,17 +176,12 @@ const Navbar = () => {
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink 
-            to="/programs"
-            className={({ isActive }) => isActive ? "active-nav-link" : ""}
-          >
-            Academics
-          </NavLink>
+          <NavLink to="/programs">Academics</NavLink>
         </Dropdown>
       ),
     },
     {
-      key: "facilities",
+      key: "/facilities",
       label: (
         <Dropdown
           menu={{
@@ -225,17 +190,12 @@ const Navbar = () => {
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink 
-            to="/facilities"
-            className={({ isActive }) => isActive ? "active-nav-link" : ""}
-          >
-            Facilities
-          </NavLink>
+          <NavLink to="/facilities">Facilities</NavLink>
         </Dropdown>
       ),
     },
     {
-      key: "digital-observatory",
+      key: "/digital-observatory",
       label: (
         <Dropdown
           menu={{
@@ -244,17 +204,12 @@ const Navbar = () => {
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink 
-            to="/digital-observatory"
-            className={({ isActive }) => isActive ? "active-nav-link" : ""}
-          >
-            Digital Observatory
-          </NavLink>
+          <NavLink to="/digital-observatory">Digital Observatory</NavLink>
         </Dropdown>
       ),
     },
     {
-      key: "capacity-building",
+      key: "/capacity-building",
       label: (
         <Dropdown
           menu={{
@@ -263,17 +218,12 @@ const Navbar = () => {
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink 
-            to="/capacity-building"
-            className={({ isActive }) => isActive ? "active-nav-link" : ""}
-          >
-            Capacity Building
-          </NavLink>
+          <NavLink to="/capacity-building">Capacity Building</NavLink>
         </Dropdown>
       ),
     },
     {
-      key: "collaborations",
+      key: "/collaborations",
       label: (
         <Dropdown
           menu={{
@@ -282,17 +232,12 @@ const Navbar = () => {
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink 
-            to="/collaborations"
-            className={({ isActive }) => isActive ? "active-nav-link" : ""}
-          >
-            Collaborations
-          </NavLink>
+          <NavLink to="/collaborations">Collaborations</NavLink>
         </Dropdown>
       ),
     },
     {
-      key: "opportunities",
+      key: "/opportunities",
       label: (
         <Dropdown
           menu={{
@@ -301,17 +246,12 @@ const Navbar = () => {
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink 
-            to="/opportunities"
-            className={({ isActive }) => isActive ? "active-nav-link" : ""}
-          >
-            Opportunities
-          </NavLink>
+          <NavLink to="/opportunities">Opportunities</NavLink>
         </Dropdown>
       ),
     },
     {
-      key: "copilot",
+      key: "/copilot",
       label: (
         <Dropdown
           menu={{
@@ -320,24 +260,14 @@ const Navbar = () => {
           placement="bottom"
           trigger={["hover"]}
         >
-          <NavLink 
-            to="/copilot"
-            className={({ isActive }) => isActive ? "active-nav-link" : ""}
-          >
-            Co-Pilot
-          </NavLink>
+          <NavLink to="/copilot">Co-Pilot</NavLink>
         </Dropdown>
       ),
     },
     {
       key: "/contact-us",
       label: (
-        <NavLink 
-          to="/contact-us"
-          className={({ isActive }) => isActive ? "active-nav-link" : ""}
-        >
-          Contact Us
-        </NavLink>
+        <NavLink to="/contact-us">Contact Us</NavLink>
       ),
     },
   ];
@@ -415,10 +345,11 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Desktop Menu - REMOVED selectedKeys */}
+        {/* Desktop Menu */}
         {!isMobile && (
           <Menu
             mode="horizontal"
+            selectedKeys={[location.pathname]}
             items={desktopMenuItems}
             style={{
               display: "flex",
@@ -469,7 +400,7 @@ const Navbar = () => {
           <div style={{ padding: "8px 0" }}>
             <Menu
               mode="inline"
-              // REMOVED selectedKeys={[location.pathname]}
+              selectedKeys={[location.pathname]}
               items={mobileMenuItems}
               style={{
                 border: "none",

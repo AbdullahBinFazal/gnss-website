@@ -1,6 +1,6 @@
 // src/pages/Collaborations/components/Comp5.jsx
 import { Col, Row, Typography, Flex } from "antd";
-import styles from "../../../styles/CollaborationsStyles/Comp5.module.css";
+import styles from "../../../styles/CollaborationsStyles/Collaborations.module.css";
 import collaborationsData from "../../../json/pages/collaborations/collaborationsData.json";
 
 const { Title, Paragraph } = Typography;
@@ -9,7 +9,7 @@ const Comp5 = () => {
   const data = collaborationsData.comp5;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionWhite} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <Row gutter={[40, 40]} align="middle">
           <Col xs={24} lg={10}>

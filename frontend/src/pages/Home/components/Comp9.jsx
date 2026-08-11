@@ -1,7 +1,7 @@
 // src/pages/Home/components/Comp9.jsx
 import { Col, Row, Typography, Flex } from 'antd';
 import { useNavigate } from 'react-router-dom';
-import styles from "../../../styles/HomeStyles/Comp9.module.css";
+import styles from "../../../styles/HomeStyles/Home.module.css";
 import homeData from "../../../json/pages/home/homeData.json";
 
 const { Title, Paragraph } = Typography;
@@ -36,7 +36,7 @@ const Comp9 = () => {
   };
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionLightGrey} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
           <Title level={2} className={styles.titleCenter}>

@@ -1,6 +1,6 @@
 // src/pages/Collaborations/components/Comp4.jsx
 import { Col, Row, Typography, Flex } from "antd";
-import styles from "../../../styles/CollaborationsStyles/Comp4.module.css";
+import styles from "../../../styles/CollaborationsStyles/Collaborations.module.css";
 import collaborationsData from "../../../json/pages/collaborations/collaborationsData.json";
 
 const { Title } = Typography;
@@ -9,7 +9,7 @@ const Comp4 = () => {
   const data = collaborationsData.comp4;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionOffWhite} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Section 1: Academic and Research Institutions */}
         <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>

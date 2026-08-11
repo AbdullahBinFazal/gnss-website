@@ -1,6 +1,6 @@
 // src/pages/ContactUs/components/Comp1.jsx
 import { Typography } from "antd";
-import styles from "../../../styles/ContactUsStyles/Comp1.module.css";
+import styles from "../../../styles/ContactUsStyles/ContactUs.module.css";
 
 const { Title, Paragraph } = Typography;
 

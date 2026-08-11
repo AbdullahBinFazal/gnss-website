@@ -1,6 +1,6 @@
 // src/pages/Programs/components/Comp1.jsx
 import { Typography } from "antd";
-import styles from "../../../styles/ProgramsStyles/Comp1.module.css";
+import styles from "../../../styles/ProgramsStyles/Programs.module.css";
 
 const { Title, Paragraph } = Typography;
 

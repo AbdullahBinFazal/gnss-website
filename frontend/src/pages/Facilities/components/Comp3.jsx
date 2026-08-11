@@ -1,6 +1,6 @@
 // src/pages/Facilities/components/Comp3.jsx
 import { Col, Row, Typography, Flex } from "antd";
-import styles from "../../../styles/FacilitiesStyles/Comp3.module.css";
+import styles from "../../../styles/FacilitiesStyles/Facilities.module.css";
 import facilitiesData from "../../../json/pages/facilities/facilitiesData.json";
 
 const { Title, Paragraph } = Typography;
@@ -9,7 +9,7 @@ const Comp3 = () => {
   const data = facilitiesData.comp3;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionLightGrey} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Section 1: Title + Image + Text */}
         <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>

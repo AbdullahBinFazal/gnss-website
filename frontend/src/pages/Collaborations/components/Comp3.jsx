@@ -1,6 +1,6 @@
 // src/pages/Collaborations/components/Comp3.jsx
 import { Col, Row, Typography, Flex } from "antd";
-import styles from "../../../styles/CollaborationsStyles/Comp3.module.css";
+import styles from "../../../styles/CollaborationsStyles/Collaborations.module.css";
 import collaborationsData from "../../../json/pages/collaborations/collaborationsData.json";
 
 const { Title, Paragraph } = Typography;
@@ -9,7 +9,7 @@ const Comp3 = () => {
   const data = collaborationsData.comp3;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionLightGrey} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Section 1: Image + Title + Text */}
         <Row gutter={[40, 40]} align="middle">

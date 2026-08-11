@@ -14,7 +14,7 @@ import {
   Typography,
 } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import styles from "../../../styles/ResearchStyles/Comp8.module.css";
+import styles from "../../../styles/ResearchStyles/Research.module.css";
 import researchData from "../../../json/pages/research/researchData.json";
 
 const { Title, Paragraph, Text } = Typography;
@@ -152,7 +152,7 @@ const Comp8 = () => {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.sectionWhite} style={{ padding: "80px 20px" }}>
       <div className={styles.container}>
         <div className={styles.header}>
           <Title level={2} className={styles.titleCenter}>

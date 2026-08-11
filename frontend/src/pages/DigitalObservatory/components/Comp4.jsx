@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Col, Row, Typography, Flex } from "antd";
-import styles from "../../../styles/DigitalObservatoryStyles/Comp4.module.css";
+import styles from "../../../styles/DigitalObservatoryStyles/DigitalObservatory.module.css";
 import digitalObservatoryData from "../../../json/pages/digitalObservatory/digitalObservatoryData.json";
 
 const { Title, Paragraph } = Typography;
@@ -30,7 +30,7 @@ const Comp4 = () => {
   const visibleCards = data.cards.items.slice(currentIndex, currentIndex + cardsPerView);
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionOffWhite} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Section 1: Title + Text */}
         <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>

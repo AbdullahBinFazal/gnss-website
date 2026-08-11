@@ -1,0 +1,245 @@
+/* src/styles/DigitalObservatoryStyles/DigitalObservatory.module.css */
+
+/* ============================================================
+   DIGITAL OBSERVATORY PAGE - COMP 1 (HERO SECTION)
+   ============================================================ */
+.hero {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 20px 60px;
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=400&fit=crop');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+.heroContent {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.heroTitle {
+  font-size: 3.5rem !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5) !important;
+  margin-bottom: 16px !important;
+  line-height: 1.2 !important;
+}
+.heroTitle span {
+  color: #ffffff;
+}
+.heroDescription {
+  font-size: 1.2rem !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  max-width: 700px;
+  margin: 0 auto !important;
+  line-height: 1.8 !important;
+  text-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================
+   DIGITAL OBSERVATORY PAGE - COMP 2
+   ============================================================ */
+.sectionWhite {
+  background: #ffffff;
+}
+
+/* ============================================================
+   DIGITAL OBSERVATORY PAGE - COMP 3
+   ============================================================ */
+.sectionLightGrey {
+  background: #ecedf1;
+}
+
+/* ============================================================
+   DIGITAL OBSERVATORY PAGE - COMP 4
+   ============================================================ */
+.sectionOffWhite {
+  background: #ffffff;
+}
+
+/* ============================================================
+   COMMON TITLES
+   ============================================================ */
+.title {
+  font-size: 2.1rem !important;
+  font-weight: 700 !important;
+  color: #0a0a1a !important;
+  margin: 0 !important;
+}
+
+.titleCenter {
+  font-size: 2.1rem !important;
+  font-weight: 700 !important;
+  color: #0a0a1a !important;
+  text-align: center !important;
+}
+
+.cardsTitle {
+  font-size: 2.1rem !important;
+  font-weight: 700 !important;
+  color: #0a0a1a !important;
+  text-align: center !important;
+}
+
+/* ============================================================
+   COMMON PARAGRAPHS
+   ============================================================ */
+.paragraph {
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  color: #4a4a6a !important;
+  margin: 0 !important;
+}
+
+.paragraphCenter {
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  color: #4a4a6a !important;
+  text-align: center !important;
+  max-width: 800px;
+  margin: 0 auto !important;
+}
+
+/* ============================================================
+   COMMON IMAGES
+   ============================================================ */
+.image {
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 82%;
+  margin: 0;
+}
+.image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* ============================================================
+   COMMON CARDS
+   ============================================================ */
+.card {
+  background: rgba(239, 239, 242, 0.7);
+  border: 1px solid rgba(0, 150, 200, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+}
+.card:hover {
+  border-color: rgba(0, 150, 200, 0.6);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 150, 200, 0.25);
+  background: rgba(241, 241, 242, 0.9);
+}
+
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgb(9, 9, 9) 0%, rgb(7, 7, 7) 100%);
+}
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.cardContent {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardTitle {
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  color: #050404 !important;
+  margin: 0 !important;
+}
+
+.cardTitleSmall {
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  color: #050404 !important;
+  margin: 0 !important;
+}
+
+.cardTitleExtraSmall {
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: #050404 !important;
+  margin: 0 !important;
+}
+
+/* ============================================================
+   COMMON CAROUSEL
+   ============================================================ */
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.carouselArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(10, 10, 26, 0.15);
+  background: rgba(10, 10, 26, 0.06);
+  color: #0a0a1a;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+.carouselArrow:hover {
+  background: #0a0a1a;
+  border-color: #0a0a1a;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(10, 10, 26, 0.25);
+}
+.carouselContainer {
+  flex: 1;
+  overflow: hidden;
+  min-width: 0;
+  max-width: 1200px;
+}

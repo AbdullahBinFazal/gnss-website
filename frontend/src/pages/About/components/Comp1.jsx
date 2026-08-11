@@ -1,6 +1,6 @@
 // src/pages/About/components/comp1.jsx
 import { Flex, Typography } from "antd";
-import styles from "../../../styles/AboutStyles/Comp1.module.css";
+import styles from "../../../styles/AboutStyles/About.module.css";
 
 const { Title, Paragraph } = Typography;
 

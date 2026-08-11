@@ -30,7 +30,7 @@
     "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
   },
   "platformCards": {
-    "title": "The Lab was therefore developed as an integrated research platform for:",
+    "title": "The Lab was developed as a research platform for:",
     "cards": [
       {
         "id": 1,
@@ -79,10 +79,10 @@
   "comp4": {
     "title": "Vision",
     "description": "To position the GNSS Research Lab as a nationally leading and internationally recognized center of excellence in satellite navigation, precise positioning, resilient Positioning, Navigation and Timing (PNT), and space-weather research. The Lab aims to strengthen indigenous technological capability, develop skilled human resources, and deliver GNSS-enabled solutions that support sustainable development, resilient infrastructure, environmental monitoring, smart mobility, agriculture, disaster management, and national strategic priorities.",
-    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-4-800x792.jpg"
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/linkages-and-Outreach-circle-1200x1199.png"
   },
   "comp5": {
-    "title": "Alignment with the United Nations Sustainable Development Goals",
+    "title": "Alignment with the United Nations Development Goals",
     "description": "The GNSS Research Lab contributes United Nations Sustainable Development Goals through research, technology development, academic programmes, observatory services, capacity building, and national and international collaboration.",
     "cards": [
       {
@@ -148,7 +148,7 @@
  "comp8": {
   "title": "Team",
   "description": "The lab brings together academic leadership, GNSS specialists, research staff, graduate researchers and technical personnel working across satellite navigation, signal processing, space weather, geodesy and integrated navigation.",
-  "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-4-800x792.jpg",
+ "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png",
   "teamCards": {
     "title": "The lab brings together :",
     "description": "academic leadership, GNSS specialists, research staff, graduate researchers and technical personnel working across:",

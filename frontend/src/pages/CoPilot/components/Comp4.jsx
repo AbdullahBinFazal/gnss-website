@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Typography, Flex, Row, Col } from "antd";
-import styles from "../../../styles/CoPilotStyles/Comp4.module.css";
+import styles from "../../../styles/CoPilotStyles/CoPilot.module.css";
 import copilotData from "../../../json/pages/copilot/copilotData.json";
 
 const { Title } = Typography;
@@ -20,7 +20,7 @@ const Comp4 = () => {
   const visibleCards = data.cards.slice(carouselIndex, carouselIndex + cardsPerView);
 
   return (
-    <section style={{ padding: "80px 20px", background: "#ffffff" }}>
+    <section className={styles.sectionOffWhite} style={{ padding: "80px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <Flex vertical align="center" gap={8} style={{ marginBottom: "48px" }}>
           <Title level={2} className={styles.titleCenter}>

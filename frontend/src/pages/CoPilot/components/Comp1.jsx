@@ -1,6 +1,6 @@
 // src/pages/CoPilot/components/Comp1.jsx
 import { Typography } from "antd";
-import styles from "../../../styles/CoPilotStyles/Comp1.module.css";
+import styles from "../../../styles/CoPilotStyles/CoPilot.module.css";
 
 const { Title, Paragraph } = Typography;
 

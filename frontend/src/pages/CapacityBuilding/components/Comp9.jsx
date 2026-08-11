@@ -1,6 +1,6 @@
 // src/pages/CapacityBuilding/components/Comp9.jsx
 import { Col, Row, Typography, Flex } from "antd";
-import styles from "../../../styles/CapacityBuildingStyles/Comp9.module.css";
+import styles from "../../../styles/CapacityBuildingStyles/CapacityBuilding.module.css";
 import capacityBuildingData from "../../../json/pages/capacityBuilding/capacityBuildingData.json";
 
 const { Title, Paragraph } = Typography;

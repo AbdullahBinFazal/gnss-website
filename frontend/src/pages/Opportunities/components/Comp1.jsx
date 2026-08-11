@@ -1,6 +1,6 @@
 // src/pages/Opportunities/components/Comp1.jsx
 import { Typography } from "antd";
-import styles from "../../../styles/OpportunitiesStyles/Comp1.module.css";
+import styles from "../../../styles/OpportunitiesStyles/Opportunities.module.css";
 
 const { Title, Paragraph } = Typography;
 

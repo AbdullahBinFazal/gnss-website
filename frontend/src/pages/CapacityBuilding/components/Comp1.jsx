@@ -1,6 +1,6 @@
 // src/pages/CapacityBuilding/components/Comp1.jsx
 import { Flex, Typography } from "antd";
-import styles from "../../../styles/CapacityBuildingStyles/Comp1.module.css";
+import styles from "../../../styles/CapacityBuildingStyles/CapacityBuilding.module.css";
 
 const { Title, Paragraph } = Typography;
 

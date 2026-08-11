@@ -1,6 +1,6 @@
 // src/pages/Home/components/Comp10.jsx
 import { Col, Row, Typography, Flex } from 'antd';
-import styles from "../../../styles/HomeStyles/Comp10.module.css";
+import styles from "../../../styles/HomeStyles/Home.module.css";
 import homeData from "../../../json/pages/home/homeData.json";
 
 const { Title, Paragraph } = Typography;
@@ -9,7 +9,7 @@ const Comp10 = () => {
   const data = homeData.comp10;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionOffWhite} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
           <Title level={2} className={styles.titleCenter}>

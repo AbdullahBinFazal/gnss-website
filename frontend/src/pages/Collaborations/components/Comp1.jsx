@@ -1,6 +1,6 @@
 // src/pages/Collaborations/components/Comp1.jsx
 import { Typography } from "antd";
-import styles from "../../../styles/CollaborationsStyles/Comp1.module.css";
+import styles from "../../../styles/CollaborationsStyles/Collaborations.module.css";
 
 const { Title, Paragraph } = Typography;
 

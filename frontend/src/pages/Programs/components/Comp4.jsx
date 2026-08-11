@@ -1,6 +1,6 @@
 // src/pages/Programs/components/Comp4.jsx
 import { Col, Row, Typography, Flex, Button } from "antd";
-import styles from "../../../styles/ProgramsStyles/Comp4.module.css";
+import styles from "../../../styles/ProgramsStyles/Programs.module.css";
 import programsData from "../../../json/pages/programs/programsData.json";
 
 const { Title, Paragraph } = Typography;
@@ -9,7 +9,7 @@ const Comp4 = () => {
   const data = programsData.comp4;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionOffWhite} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Section 1: Title + Image + Text */}
         <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>

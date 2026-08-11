@@ -1,6 +1,6 @@
 // src/pages/Research/components/Comp1.jsx
 import { Flex, Typography } from "antd";
-import styles from "../../../styles/ResearchStyles/Comp1.module.css";
+import styles from "../../../styles/ResearchStyles/Research.module.css";
 
 const { Title } = Typography;
 

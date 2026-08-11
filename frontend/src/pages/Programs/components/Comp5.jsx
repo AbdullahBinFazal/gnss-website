@@ -1,6 +1,6 @@
 // src/pages/Programs/components/Comp5.jsx
 import { Col, Row, Typography, Flex, Button } from "antd";
-import styles from "../../../styles/ProgramsStyles/Comp5.module.css";
+import styles from "../../../styles/ProgramsStyles/Programs.module.css";
 import programsData from "../../../json/pages/programs/programsData.json";
 
 const { Title, Paragraph } = Typography;
@@ -9,7 +9,7 @@ const Comp5 = () => {
   const data = programsData.comp5;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionWhite} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Section 1: Title + Text */}
         <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>

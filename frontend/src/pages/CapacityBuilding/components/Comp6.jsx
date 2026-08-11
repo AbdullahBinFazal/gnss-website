@@ -1,6 +1,6 @@
 // src/pages/CapacityBuilding/components/Comp6.jsx
 import { Col, Row, Typography, Flex } from "antd";
-import styles from "../../../styles/CapacityBuildingStyles/Comp6.module.css";
+import styles from "../../../styles/CapacityBuildingStyles/CapacityBuilding.module.css";
 import capacityBuildingData from "../../../json/pages/capacityBuilding/capacityBuildingData.json";
 
 const { Title, Paragraph } = Typography;
@@ -9,7 +9,7 @@ const Comp6 = () => {
   const data = capacityBuildingData.comp6;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionLightGrey} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Section 1: Image + Text with Heading on top of text */}
         <Row gutter={[40, 40]} align="middle">

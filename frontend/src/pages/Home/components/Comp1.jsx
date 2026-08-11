@@ -1,7 +1,7 @@
 // src/pages/Home/components/Comp1.jsx
 import { Link } from "react-router-dom";
 import { Button, Typography, Flex } from 'antd';
-import styles from "../../../styles/HomeStyles/Comp1.module.css";
+import styles from "../../../styles/HomeStyles/Home.module.css";
 import heroVideo from "../../../assets/hero-bg.mp4";
 
 const { Title, Paragraph } = Typography;

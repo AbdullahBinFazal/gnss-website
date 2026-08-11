@@ -1,6 +1,6 @@
 // src/pages/Facilities/components/Comp7.jsx
 import { Col, Row, Typography, Flex } from "antd";
-import styles from "../../../styles/FacilitiesStyles/Comp7.module.css";
+import styles from "../../../styles/FacilitiesStyles/Facilities.module.css";
 import facilitiesData from "../../../json/pages/facilities/facilitiesData.json";
 
 const { Title, Paragraph } = Typography;
@@ -9,7 +9,7 @@ const Comp7 = () => {
   const data = facilitiesData.comp7;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionOffWhite} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <Row gutter={[40, 40]} align="middle">
           <Col xs={24} lg={10}>

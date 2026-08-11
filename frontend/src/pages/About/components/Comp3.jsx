@@ -1,6 +1,6 @@
 // src/pages/About/components/Comp3.jsx
 import { Col, Row, Typography, Flex } from "antd";
-import styles from "../../../styles/AboutStyles/Comp3.module.css";
+import styles from "../../../styles/AboutStyles/About.module.css";
 import aboutData from "../../../json/pages/about/aboutData.json";
 
 const { Title, Paragraph } = Typography;
@@ -9,7 +9,7 @@ const Comp3 = () => {
   const data = aboutData.comp3;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section className={styles.sectionWhite} style={{ padding: "60px 20px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Section 1: Title + 3 Cards */}
         <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
