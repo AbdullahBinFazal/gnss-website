@@ -1,107 +1,61 @@
-
 {
   "comp2": {
-    "title": "GNSS Research Lab provides:",
-    "description": "The GNSS Research Lab provides a focused environment for research, academic development and technology-oriented problem solving in Global Navigation Satellite Systems.",
-    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png"
+    "title": "GENESIS:",
+    "description": "The GNSS Research Lab was established at the Institute of Space Technology (IST) under the National Center of GIS & Space Applications (NCGSA) to strengthen Pakistan's research and technological capacity in Positioning, Navigation and Timing (PNT). Its foundation was built upon IST's pioneering MS in Global Navigation Satellite Systems, launched in Spring 2014 in accordance with the curriculum developed by the United Nations Office for Outer Space Affairs. As Pakistan's only specialized GNSS degree program, it created a growing need for dedicated infrastructure to support advanced education, experimentation and applied research in satellite navigation.",
+    "image": "https://media.licdn.com/dms/image/v2/D4D22AQEEDkP_abgOdw/feedshare-shrink_800/B4DZPK8UFEHMAk-/0/1734276631324?e=2147483647&v=beta&t=6OIUK3uiS5IYE4E6xkuz-FE-IOOHWepQWODnEYnwGqg"
   },
-"comp3": {
-  "title": "The GNSS Research Lab was established",
-  "cards": [
-    {
-      "id": 1,
-      "title": "At the Institute of Space Technology, Islamabad (IST)",
-      "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Under the National Center of GIS & Space Applications (NCGSA)",
-     "image": "https://th.bing.com/th/id/OIP.yAmXcFKm6L2r4LebQ1TMFwHaEy?w=266&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-    },
-    {
-      "id": 3,
-      "title": "To strengthen Pakistan's research and technological capacity in Positioning, Navigation and Timing (PNT)",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbF9tmh8Y3MapueSi-0b1J52pSwLetO83Bg5temF39Jw&s=10"
-    }
-  ],
-  "history": {
-    "title": "History",
-    "description": "Its foundation was built upon IST's pioneering MS in Global Navigation Satellite Systems, launched in Spring 2014 in accordance with the curriculum developed by the United Nations Office for Outer Space Affairs. As Pakistan's only specialized GNSS degree programme, it created a growing need for dedicated infrastructure to support advanced education, experimentation and applied research in satellite navigation.",
+  "comp3": {
+    "title": "FOCUS",
+    "description": "The Lab was therefore developed as an integrated research platform for GNSS receivers, signal processing, precise positioning, augmentation systems, software-defined navigation, sensor integration, ionospheric monitoring and resilient PNT. Its facilities support academic programmes, research projects, technology development, field experimentation and professional capacity building.Today, the GNSS Research Lab contributes to indigenous space capability and the practical application of satellite navigation in surveying, transportation, telecommunications, agriculture, disaster management, environmental monitoring, infrastructure development and national security. ",
     "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
   },
-  "platformCards": {
-    "title": "The Lab was developed as a research platform for:",
+  "comp31": {
+    "title": "Activities",
+    "description": "GNSS Research Lab activities also support:",
     "cards": [
       {
         "id": 1,
-        "title": "GNSS receivers, signal processing, precise positioning, augmentation systems",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsIgTsAMsjqlEkTtY2VsiLA3BaUpZN2AlGlJCmlE0lQ&s"
+        "title": "Pakistan's National Space Policy",
+        "image": "https://tse1.mm.bing.net/th/id/OIP.AwNp0shRCZrSMwOcRU5iHgHaEK?r=0&pid=ImgDet&w=178&h=100&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 2,
-        "title": "Software-defined navigation, sensor integration, ionospheric monitoring and resilient PNT",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXufIpHfPcP3eiLcAUfPqHe-olGfpiRTx2_VyyOQ_uQ&s"
+        "title": "URAAN Pakistan 5Es framework",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3UqDkXW2J6kT1jGVgVBdkH2VSBXir3yhiUilsjvbADg&s=10"
       },
       {
         "id": 3,
-        "title": "Its facilities support academic programmes, research projects, technology development",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovv6kfpPFmL_ZR0W4lJYw4Cj2mbmB7yFk_txz9MXWDA&s=10"
-      },
-      {
-        "id": 4,
-        "title": "Field experimentation and professional capacity building",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo82NmMqHnmGumSzwiGrZPy27Mbd9-rmJoA2Lg1OE85A&s=10"
+        "title": "United Nations Development Goals",
+        "image": "https://tse3.mm.bing.net/th/id/OIP.VScU6oV9Hd4uBDdYo5drMwHaEK?r=0&pid=ImgDet&w=178&h=100&c=7&dpr=1.5&o=7&rm=3"
       }
     ]
   },
-  "gnssContributions": {
-    "title": "GNSS Contributions",
-    "description": "Today, the GNSS Research Lab contributes to indigenous space capability and the practical application of satellite navigation in :",
-    "cards": [
-      {
-        "id": 1,
-        "title": "GNSS contributes in various domains like Surveying, transportation, telecommunications, agriculture",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TsPDyappY7ct6zVUsTRcmqy2fjSnhMi9y_50GUP7Tw&s=10"
-      },
-      {
-        "id": 2,
-        "title": "Disaster management, environmental monitoring, infrastructure development and national security",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW09p2dACxHz-IbngVyOBKQh4WnnIYsMJwPa7icClFkw&s=10"
-      },
-      {
-        "id": 3,
-        "title": "Its activities also support Pakistan's National Space Policy, the URAAN Pakistan 5Es framework, and relevant United Nations Sustainable Development Goals",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3UqDkXW2J6kT1jGVgVBdkH2VSBXir3yhiUilsjvbADg&s=10"
-      }
-    ]
-  }
-},
   "comp4": {
     "title": "Vision",
     "description": "To position the GNSS Research Lab as a nationally leading and internationally recognized center of excellence in satellite navigation, precise positioning, resilient Positioning, Navigation and Timing (PNT), and space-weather research. The Lab aims to strengthen indigenous technological capability, develop skilled human resources, and deliver GNSS-enabled solutions that support sustainable development, resilient infrastructure, environmental monitoring, smart mobility, agriculture, disaster management, and national strategic priorities.",
-    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/linkages-and-Outreach-circle-1200x1199.png"
+    "image": "https://apiweb.ist.edu.pk/media/original_images/01.jpg"
   },
   "comp5": {
-    "title": "Alignment with the United Nations Development Goals",
+    "title": "Alignment with UN Development Goals",
     "description": "The GNSS Research Lab contributes United Nations Sustainable Development Goals through research, technology development, academic programmes, observatory services, capacity building, and national and international collaboration.",
     "cards": [
       {
         "id": 1,
         "title": "Zero Hunger",
         "description": "The Lab supports GNSS-enabled precision agriculture, crop and land monitoring, irrigation planning, livestock tracking, and efficient resource management. Research and training in RTK, PPP, CORS, and geospatial data collection contribute to sustainable agricultural practices and improved food security.",
-        "image": "https://th.bing.com/th/id/OIP.Cw5BUF6IB0h335XjC2LQYAHaGN?w=203&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        "image": "https://tse3.mm.bing.net/th/id/OIP.pSFFmA6DEr2OcnnmW1yHnQHaFj?r=0&pid=ImgDet&w=178&h=133&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 2,
         "title": "Industry, Innovation and Infrastructure",
         "description": "The Lab advances indigenous capability in GNSS receivers, signal processing, software-defined radio, augmentation systems, integrated navigation, precise positioning, and resilient PNT. Its research infrastructure supports innovation in surveying, telecommunications, transportation, engineering, and critical infrastructure.",
-        "image": "https://th.bing.com/th/id/OIP.V_trZbn5Bi16wYW_zuX1qQHaEo?w=276&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        "image": "https://th.bing.com/th/id/OIP.hKTejbo0D0qAp_d4W4gQRgHaFA?w=221&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
       },
       {
         "id": 3,
         "title": "Sustainable Cities and Communities",
         "description": "GNSS technologies developed and studied at the Lab support intelligent transportation, urban planning, cadastral mapping, infrastructure monitoring, emergency response, and smart-city applications. These capabilities contribute to safer, more efficient, and more resilient communities.",
-        "image": "https://th.bing.com/th/id/OIP.iGPrr-dhwqe7Vqc4L0SOQAHaEK?w=287&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        "image": "https://th.bing.com/th/id/OIP.InOV4QkX65R99ARKfJmwVAHaE8?w=266&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
       },
       {
         "id": 4,
@@ -120,7 +74,7 @@
   "comp6": {
     "title": "Mission",
     "description": "To advance GNSS science and technology through high-quality research, specialised academic programmes, modern infrastructure, collaborative innovation and practical capacity building.",
-    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png"
+    "image": "https://tse3.mm.bing.net/th/id/OIP.8mRygD32y8eLT9OqLt5b2AHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   "comp7": {
     "title": "Strategic Objectives",
@@ -129,51 +83,92 @@
         "id": 1,
         "title": "Research, Innovation and Technological Development",
         "description": "Conduct high-quality research and develop practical GNSS, PNT and space-weather solutions aligned with emerging national and global needs.",
-        "image": "https://th.bing.com/th/id/OIP.Hug6gW0UI7GQ77cbe_GIiQHaEJ?w=325&h=183&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        "image": "https://th.bing.com/th/id/OIP.czHHVoTuNqVoLzjXZMUx0AHaEJ?w=301&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
       },
       {
         "id": 2,
         "title": "Education, Capacity Building and Human Capital Development",
         "description": "Deliver specialized academic programmes, research supervision and hands-on training that prepare students and professionals for advanced GNSS practice.",
-        "image": "https://th.bing.com/th/id/OIP.2YWBBIPkLVmUH2_jQ8IWNQHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        "image": "https://tse4.mm.bing.net/th/id/OIP.dtRsrbBudY97o9y2cA4ZBAHaE4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
       },
       {
         "id": 3,
         "title": "Collaboration, National Impact and Knowledge Transfer",
         "description": "Build productive partnerships, transfer knowledge into applications and contribute to Pakistan's space, geospatial and digital infrastructure.",
-        "image": "https://th.bing.com/th/id/OIP.8omodOH6IlyAtJULuRt9KwHaEO?w=306&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        "image": "https://tse2.mm.bing.net/th/id/OIP.7nJcg0TP54FsHZI6kAMy-wHaEO?r=0&pid=ImgDet&w=199&h=113&c=7&dpr=1.5&o=7&rm=3"
       }
     ]
   },
- "comp8": {
-  "title": "Team",
-  "description": "The lab brings together academic leadership, GNSS specialists, research staff, graduate researchers and technical personnel working across satellite navigation, signal processing, space weather, geodesy and integrated navigation.",
- "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png",
-  "teamCards": {
-    "title": "The lab brings together :",
-    "description": "academic leadership, GNSS specialists, research staff, graduate researchers and technical personnel working across:",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Satellite Navigation",
-        "image": "https://th.bing.com/th/id/OIP.3L9jwIu-GxlefCVJCcXvlwHaEK?w=314&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Signal Processing",
-        "image": "https://th.bing.com/th/id/OIP.ZjO1udZ4B83FDylBnsXJrwHaFN?w=246&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 3,
-        "title": "Space Weather",
-        "image": "https://th.bing.com/th/id/OIP.T1nOtqW5yfPXI88Fy4CDxgHaEh?w=307&h=187&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 4,
-        "title": "Geodesy and Integrated Navigation",
-        "image": "https://th.bing.com/th/id/OIP.9v695xmg7EA4ZBL0VdzXCwHaEK?w=282&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      }
-    ]
-  }
+  "comp8": {
+    "title": "Team",
+    "description": "The lab brings together academic leadership, GNSS specialists, research staff, graduate researchers and technical personnel working across satellite navigation, signal processing, space weather, geodesy and integrated navigation.",
+    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-4-800x792.jpg",
+    "teamCards": {
+      "title": "The lab brings together :",
+      "description": "academic leadership, GNSS specialists, research staff, graduate researchers and technical personnel working across:",
+      "cards": [
+        {
+          "id": 1,
+          "title": "Satellite Navigation",
+          "image": "https://th.bing.com/th/id/OIP.3L9jwIu-GxlefCVJCcXvlwHaEK?w=314&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 2,
+          "title": "Signal Processing",
+          "image": "https://th.bing.com/th/id/OIP.ZjO1udZ4B83FDylBnsXJrwHaFN?w=246&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 3,
+          "title": "Space Weather",
+          "image": "https://th.bing.com/th/id/OIP.T1nOtqW5yfPXI88Fy4CDxgHaEh?w=307&h=187&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+          "id": 4,
+          "title": "Geodesy and Integrated Navigation",
+          "image": "https://th.bing.com/th/id/OIP.9v695xmg7EA4ZBL0VdzXCwHaEK?w=282&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        }
+      ]
+    }
+  },
+ "comp9": {
+  "title": "OUR PEOPLE",
+  "description": "Our strength lies in our collaborative, multi-tiered research team, uniting experienced academic leadership with brilliant student innovators.",
+  "leadership": [
+    {
+      "id": 1,
+      "name": "Prof. Dr. Najam Abbas Naqvi",
+      "role": "Chairman, NCGSA",
+      "detail": "Serving As Chairman, NCGSA",
+      "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/ncgsa.png"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Syed Najeeb Ahmad",
+      "role": "Vice Chancellor, IST Islamabad",
+      "detail": "Serving As Vice Chancellor at Institute of space technology",
+      "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/IST.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Abdul Waheed",
+      "role": "Principal Investigator/Lab Director",
+      "detail": "Serving As Principal Investigator/Lab Director at Institute of space technology",
+      "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/Picture2.jpg"
+    }
+  ],
+  "phdCandidates": [
+    {
+      "id": 1,
+      "name": "Daniyal Raza Kazmi",
+      "detail": "Space Scientist, At IST",
+      "image": "https://media.licdn.com/dms/image/v2/D4E03AQHk4mn4ZXHLCQ/profile-displayphoto-shrink_800_800/B4EZdYaMcPG4Ac-/0/1749534952140?e=1788393600&v=beta&t=SHo1hwdMS-1zPOaICPuvaA-ou_UwvohYalGrYF0Xl_g"
+    },
+    {
+      "id": 2,
+      "name": "Syed Muhammad Ali",
+      "detail": "Software Engineer, At IST",
+      "image": "https://media.licdn.com/dms/image/v2/D4D03AQF3Z50hp51I4g/profile-displayphoto-shrink_800_800/B4DZc1gNeqGUAg-/0/1748949327574?e=1788393600&v=beta&t=I-pniMtdIYfbVEwimwXC8bQNiSa2ylZPwughjTQypvM"
+    }
+  ]
 }
 }

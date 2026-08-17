@@ -1,186 +1,374 @@
-/* src/styles/ProgramsStyles/Programs.module.css */
+/* ============================================
+   PROGRAMS.MODULE.CSS - Consolidated Styles
+   All common classes declared once, used everywhere
+   All paddings and designs preserved exactly as original
+   ============================================ */
 
-/* ============================================================
-   PROGRAMS PAGE - COMP 1 (HERO SECTION)
-   ============================================================ */
-.hero {
-  min-height: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  padding: 80px 20px 60px;
-  background-size: cover;
-  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=400&fit=crop');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.heroOverlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 0;
-}
-.heroContent {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 800px;
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-.heroTitle {
-  font-size: 3.5rem !important;
-  font-weight: 900 !important;
-  color: #ffffff !important;
-  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5) !important;
-  margin-bottom: 16px !important;
-  line-height: 1.2 !important;
-}
-.heroTitle span {
-  color: #ffffff;
-}
-.heroDescription {
-  font-size: 1.2rem !important;
-  color: rgba(255, 255, 255, 0.95) !important;
-  max-width: 700px;
-  margin: 0 auto !important;
-  line-height: 1.8 !important;
-  text-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+  padding: 0 32px;
 }
 
-/* ============================================================
-   PROGRAMS PAGE - COMP 2
-   ============================================================ */
-.sectionWhite {
-  background: #ffffff;
+/* ===== SECTION BACKGROUNDS ===== */
+.sectionLight {
+  background: #F3EFED;
 }
 
-/* ============================================================
-   PROGRAMS PAGE - COMP 3
-   ============================================================ */
-.sectionLightGrey {
-  background: #e7e8eb;
+.sectionDark {
+  background: #0B1020;
 }
 
-/* ============================================================
-   PROGRAMS PAGE - COMP 4
-   ============================================================ */
-.sectionOffWhite {
-  background: #ffffff;
+/* ===== SECTION PADDING MODIFIERS ===== */
+.padding110 {
+  padding: 110px 0;
 }
 
-/* ============================================================
-   PROGRAMS PAGE - COMP 5
-   ============================================================ */
-.sectionWhiteTwo {
-  background: #f2eeee;
+.padding60 {
+  padding: 60px 20px;
 }
 
-/* ============================================================
-   PROGRAMS PAGE - COMP 6
-   ============================================================ */
-.sectionLightGreyTwo {
-  background: #fbfbfb;
-}
-
-/* ============================================================
-   COMMON TITLES
-   ============================================================ */
-.titleCenter {
-  font-size: 2.1rem !important;
+/* ===== TITLES ===== */
+.title {
+  font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
-  color: #0a0a1a !important;
-  text-align: center !important;
-}
-
-/* ============================================================
-   COMMON PARAGRAPHS
-   ============================================================ */
-.paragraph {
-  font-size: 1.05rem !important;
-  line-height: 1.8 !important;
-  color: #4a4a6a !important;
   margin: 0 !important;
 }
 
-.paragraphCenter {
-  font-size: 1.05rem !important;
-  line-height: 1.8 !important;
-  color: #4a4a6a !important;
-  text-align: center !important;
-  max-width: 800px;
-  margin: 0 auto !important;
+.sectionLight .title {
+  color: #0B1020 !important;
 }
 
-/* ============================================================
-   COMMON IMAGES
-   ============================================================ */
-.image {
-  border-radius: 8px;
-  overflow: hidden;
-  max-width: 82%;
-  margin: 0;
+.sectionDark .title {
+  color: #F3EFED !important;
 }
-.image img {
+
+/* Title sizes */
+.titleSize40 {
+  font-size: 40px !important;
+  line-height: 60px !important;
+}
+
+.sectionLight .titleSize40 {
+  line-height: 60px !important;
+}
+
+.sectionDark .titleSize40 {
+  line-height: 60px !important;
+}
+
+.sectionLight .titleSize40 {
+  line-height: 72px !important;
+  text-align: center;
+}
+
+/* ===== DESCRIPTIONS ===== */
+.description {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 400 !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.sectionLight .description {
+  color: rgba(11, 16, 32, 0.8) !important;
+}
+
+.sectionDark .description {
+  color: rgb(246, 249, 250) !important;
+}
+
+.descriptionSize18 {
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
+.sectionDark .descriptionSize18 {
+  color: rgb(255, 255, 255) !important;
+}
+
+.sectionLight .descriptionSize18 {
+  color: rgba(0, 0, 0, 0.8) !important;
+  line-height: 32px !important;
+}
+
+.sectionLight .descriptionSize18 {
+  color: rgba(11, 16, 32, 0.8) !important;
+  line-height: 24px !important;
+}
+
+.sectionLight .descriptionSize18 {
+  color: rgba(0, 0, 0, 0.8) !important;
+  line-height: 32px !important;
+}
+
+.descriptionCenter {
+  max-width: 900px;
+  margin: 8px auto 0 auto !important;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* ===== IMAGE WRAPPER & IMAGE ===== */
+.imageWrapper {
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.sectionLight .imageWrapper {
+  background: #FFFFFF;
+  border: 1px solid rgba(36, 48, 74, 0.1);
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.05), 0px 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.sectionDark .imageWrapper {
+  background: #151C31;
+  border: 1px solid rgba(182, 202, 213, 0.1);
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.2), 0px 8px 10px -6px rgba(0, 0, 0, 0.2);
+}
+
+.image {
   width: 100%;
   height: auto;
-  max-height: 400px;
-  object-fit: cover;
-  display: block;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 4px;
   transition: transform 0.4s ease;
 }
 
-/* ============================================================
-   COMMON BUTTON
-   ============================================================ */
-.programBtn {
-  background: #0a0a1a !important;
-  border-color: #0a0a1a !important;
-  color: #ffffff !important;
-  padding: 12px 32px !important;
-  height: auto !important;
-  font-weight: 600 !important;
-  border-radius: 8px !important;
-}
-.programBtn:hover {
-  background: #1a1a2e !important;
-  border-color: #1a1a2e !important;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+.image:hover {
+  transform: scale(1.02);
 }
 
-/* ============================================================
-   COMMON CARDS
-   ============================================================ */
-.card {
-  background: rgba(239, 239, 242, 0.7);
-  border: 1px solid rgba(0, 150, 200, 0.2);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+/* ===== LINKS ===== */
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  margin-top: 16px;
+  transition: all 0.3s ease;
+}
+
+.sectionLight .link {
+  color: #3F7391;
+}
+
+.sectionDark .link {
+  color: #f7f7f7;
+  letter-spacing: 1.2px;
+}
+
+.sectionDark .link {
+  color: #ffffff;
+}
+
+.link:hover {
+  color: #0B70C1;
+}
+
+.link::after {
+  content: '→';
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.link:hover::after {
+  transform: translateX(4px);
+}
+
+/* ===== VERTICAL CARDS ===== */
+.verticalCards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.verticalCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  padding: 10px 16px;
+  transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.sectionLight .verticalCard {
+  background: #FFFFFF;
+  border: 1px solid rgba(36, 48, 74, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.sectionDark .verticalCard {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(182, 202, 213, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.sectionLight .verticalCard:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: rgba(58, 208, 238, 0.3);
+}
+
+.sectionDark .verticalCard:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: rgba(58, 208, 238, 0.3);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.verticalCardImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.sectionLight .verticalCardImage {
+  background: #f0f0f0;
+}
+
+.sectionDark .verticalCardImage {
+  background: #1a1a2e;
+}
+
+.verticalCardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.verticalCardContent {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.verticalCardTitle {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  margin: 0 !important;
+}
+
+.sectionLight .verticalCardTitle {
+  color: #0B1020 !important;
+}
+
+.sectionDark .verticalCardTitle {
+  color: #F3EFED !important;
+}
+
+/* ============================================
+   COMP 5 - CAROUSEL (Shared)
+   ============================================ */
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.carouselArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(11, 16, 32, 0.15);
+  background: rgba(255, 255, 255, 0.8);
+  color: #0B1020;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.carouselArrow:hover {
+  background: #0B1020;
+  border-color: #0B1020;
+  color: #F3EFED;
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(11, 16, 32, 0.25);
+}
+
+.carouselContainer {
+  flex: 1;
+  overflow: hidden;
+  min-width: 0;
+  max-width: 1200px;
+}
+
+.carouselIndicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(11, 16, 32, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.indicatorActive {
+  background: #D63A45;
+  width: 30px;
+  border-radius: 5px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: #FFFFFF;
+  border: 1px solid rgba(36, 48, 74, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(8px);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
 }
+
 .card:hover {
-  border-color: rgba(0, 150, 200, 0.6);
   transform: translateY(-8px);
-  box-shadow: 0 12px 32px rgba(0, 150, 200, 0.25);
-  background: rgba(241, 241, 242, 0.9);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
 }
 
 .cardImage {
-  position: relative;
   width: 100%;
   height: 200px;
   overflow: hidden;
-  background: linear-gradient(135deg, rgb(9, 9, 9) 0%, rgb(7, 7, 7) 100%);
+  flex-shrink: 0;
+  background: #f5f5f5;
 }
+
 .cardImage img {
   width: 100%;
   height: 100%;
@@ -189,19 +377,221 @@
   transition: transform 0.5s ease;
 }
 
-.cardContent {
-  padding: 20px;
-  flex-grow: 1;
+.card:hover .cardImage img {
+  transform: scale(1.05);
+}
+
+.cardTitle {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #000000 !important;
+  margin: 24px 20px 20px 20px !important;
+  text-align: center;
+}
+
+/* ============================================
+   COMP 1 - HERO SECTION (Unique)
+   ============================================ */
+.hero {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 60px;
+  background: #0B1020;
 }
 
-.cardTitle {
-  font-family: "Inter", sans-serif !important;
-  font-size: 0.95rem !important;
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/030/800/382/small_2x/a-satellite-in-the-orbit-of-planet-earth-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.heroOverlayShadow {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 16, 32, 0.8);
+  z-index: 1;
+}
+
+.heroOverlay {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: calc(50% - 600px/2);
+  top: calc(50% - 600px/2 - 0.25px);
+  background: rgba(63, 115, 145, 0.1);
+  filter: blur(60px);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.heroDecorations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.decoLine1 {
+  position: absolute;
+  left: -13.89%;
+  right: -13.89%;
+  top: 77.48%;
+  bottom: 0.53%;
+  border: 1.31914px solid #24304A;
+}
+
+.decoLine2 {
+  position: absolute;
+  left: 13.89%;
+  right: 50%;
+  top: 17.02%;
+  bottom: 22.52%;
+  border: 1.31914px dashed #5F8598;
+}
+
+.decoLine3 {
+  position: absolute;
+  left: 50%;
+  right: 16.67%;
+  top: 22.52%;
+  bottom: 22.52%;
+  border: 1.31914px dashed #5F8598;
+}
+
+.decoDot1 {
+  position: absolute;
+  left: 13.61%;
+  right: 85.83%;
+  top: 16.58%;
+  bottom: 82.54%;
+  background: #FFFFFF;
+}
+
+.decoDot2 {
+  position: absolute;
+  left: 13.06%;
+  right: 85.28%;
+  top: 15.7%;
+  bottom: 81.66%;
+  opacity: 0.3;
+  border: 1.31914px solid #FFFFFF;
+}
+
+.decoDot3 {
+  position: absolute;
+  left: 83.06%;
+  right: 16.39%;
+  top: 22.08%;
+  bottom: 77.04%;
+  background: #FFFFFF;
+}
+
+.decoDot4 {
+  position: absolute;
+  left: 82.5%;
+  right: 15.83%;
+  top: 21.2%;
+  bottom: 76.16%;
+  opacity: 0.3;
+  border: 1.31914px solid #FFFFFF;
+}
+
+.decoDot5 {
+  position: absolute;
+  left: 49.72%;
+  right: 49.72%;
+  top: 5.59%;
+  bottom: 93.53%;
+  background: #FFFFFF;
+}
+
+.decoDot6 {
+  position: absolute;
+  left: 49.17%;
+  right: 49.17%;
+  top: 4.71%;
+  bottom: 92.65%;
+  opacity: 0.3;
+  border: 1.31914px solid #FFFFFF;
+}
+
+.decoDot7 {
+  position: absolute;
+  left: 49.58%;
+  right: 49.58%;
+  top: 76.82%;
+  bottom: 21.86%;
+  background: #57C2F5;
+}
+
+.decoLine4 {
+  position: absolute;
+  left: 29.17%;
+  right: 29.17%;
+  top: 66.49%;
+  bottom: 22.52%;
+  border: 1.31914px solid #24304A;
+}
+
+.decoLine5 {
+  position: absolute;
+  left: 36.11%;
+  right: 36.11%;
+  top: 70.23%;
+  bottom: 22.52%;
+  border: 1.31914px solid #24304A;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroTitle {
+  font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
-  color: #050404 !important;
-  margin: 0 !important;
+  font-size: 42px !important;
+  line-height: 95px !important;
+  color: #F3EFED !important;
+  margin-bottom: 24px !important;
+  max-width: 910px;
+  text-align: center;
+}
+
+.heroDescription {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+  color: rgb(254, 255, 255) !important;
+  max-width: 650px;
+  margin: 0 auto 40px auto !important;
+  text-align: center;
 }

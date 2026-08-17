@@ -1,128 +1,95 @@
 
 {
-  "comp2": {
-    "title": "Developing practical GNSS capability:",
-    "description": "The lab delivers focused schools, workshops, seminars and technical sessions that connect GNSS theory with practical tools, datasets and real-world applications.",
-    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png"
-  },
-  "comp3": {
-    "title": "GNSS School",
-    "description": "The GNSS School is a specialized learning platform for senior students, researchers, engineers and professionals.",
-    "cards": [
-      {
-        "id": 1,
-        "title": "It combines expert lectures, practical demonstrations",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.lNbGtoOLo0zqrWVE49-AzgHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Data-processing exercises across GNSS signals",
-        "image": "https://insidegnss.com/wp-content/uploads/2026/02/EGNSS-demos_News-item.png"
-      },
-      {
-        "id": 3,
-        "title": "Receivers, positioning algorithms, augmentation",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.3Zl8lOZfwYJq4wb0wnhLSQHaFj?r=0&pid=ImgDet&w=178&h=133&c=7&dpr=1.5&o=7&rm=3"
-      },
-      {
-        "id": 4,
-        "title": "Ionospheric effects and emerging applications",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.cynadWDj38u70qWdgXxMBAAAAA?r=0&pid=ImgDet&w=178&h=120&c=7&dpr=1.5&o=7&rm=3"
-      }
-    ]
-  },
-  "comp4": {
-    "title": "GNSS Winter Schools",
-    "description": "First GNSS Winter School (22-26 February 2021) and Second GNSS Winter School, Space Weather and Applications (19-21 October 2022)",
-    "image": "https://apiweb.ist.edu.pk/media/original_images/01.jpg"
-  },
+"comp3": {
+  "title": "GNSS School",
+  "description": "The GNSS School is a specialized learning platform for senior students, researchers, engineers and professionals. First GNSS Winter School (22-26 February 2021) and Second GNSS Winter School, Space Weather and Applications (19-21 October 2022)",
+  "image": "https://apiweb.ist.edu.pk/media/original_images/01.jpg",
+  "cards": [
+    {
+      "id": 1,
+      "title": "It combines expert lectures, practical demonstrations",
+      "image": "https://tse3.mm.bing.net/th/id/OIP.lNbGtoOLo0zqrWVE49-AzgHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "id": 2,
+      "title": "Data-processing exercises across GNSS signals",
+      "image": "https://insidegnss.com/wp-content/uploads/2026/02/EGNSS-demos_News-item.png"
+    },
+    {
+      "id": 3,
+      "title": "Receivers, positioning algorithms, augmentation",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.3Zl8lOZfwYJq4wb0wnhLSQHaFj?r=0&pid=ImgDet&w=178&h=133&c=7&dpr=1.5&o=7&rm=3"
+    },
+    {
+      "id": 4,
+      "title": "Ionospheric effects and emerging applications",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.cynadWDj38u70qWdgXxMBAAAAA?r=0&pid=ImgDet&w=178&h=120&c=7&dpr=1.5&o=7&rm=3"
+    }
+  ]
+},
   "comp5": {
-    "title": "Workshops And Trainings",
+    "title": "Trainings",
     "description": "Workshops and technical training sessions provide hands-on exposure to:",
     "cards": [
       {
         "id": 1,
         "title": "GNSS data processing, RTKLIB",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.Zw5QGArBVqx6uFNP2ZNNNQHaEL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        "image": "https://tse4.mm.bing.net/th/id/OIP.0B2fP2_4fOe0RY4gWCaFyAHaEK?r=0&pid=ImgDet&w=199&h=112&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 2,
         "title": "Receiver systems, TEC extraction",
-        "image": "https://tse2.mm.bing.net/th/id/OIP.to80gOdS5Hw_Tn3-cU0PRAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        "image": "https://tse1.mm.bing.net/th/id/OIP.GNtYkVi0JRtcBTRW5gFv-gHaE8?r=0&pid=ImgDet&w=199&h=132&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 3,
         "title": "Signal preprocessing, space weather",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.yyhHPxU7m7zyG7CC7_i9aAHaF8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        "image": "https://tse4.mm.bing.net/th/id/OIP.UFVn0X7ZL9PJx3W7Ia-RtwHaDt?r=0&pid=ImgDet&w=199&h=99&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 4,
-        "title": "Science communication and related space-technology applications",
+        "title": "Space-technology applications",
         "image": "https://tse4.mm.bing.net/th/id/OIP.uAAJJWhm3pSaP2s3Psnz6wHaFF?r=0&pid=ImgDet&w=199&h=136&c=7&dpr=1.5&o=7&rm=3"
       }
     ]
   },
-  "comp6": {
-    "title": "Seminars and webinars connect learners with experts from academia, industry and the international space community.",
-    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png",
-    "cards": {
-      "title": "The Topics Are:",
-      "items": [
-        {
-          "id": 1,
-          "title": "GNSS antennas, spoofing mitigation",
-          "image": "https://tse3.mm.bing.net/th/id/OIP.CUFFFCE8CfDGS8FZV2OKZAAAAA?r=0&pid=ImgDet&w=178&h=100&c=7&dpr=1.5&o=7&rm=3"
-        },
-        {
-          "id": 2,
-          "title": "Receiver design, satellite technology",
-          "image": "https://www.slidegeeks.com/media/catalog/product/cache/1280x720/S/a/Satellite_Systems_With_Receiver_And_Transmitter_Ppt_PowerPoint_Presentation_Gallery_Icon_PDF_Slide_1.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Careers, curriculum, public engagement",
-          "image": "https://tse1.mm.bing.net/th/id/OIP.RUBpwbWA8kR9hsEotmXD7gHaE8?r=0&pid=ImgDet&w=178&h=118&c=7&dpr=1.5&o=7&rm=3"
-        },
-        {
-          "id": 4,
-          "title": "Emerging space applications",
-          "image": "https://tse4.mm.bing.net/th/id/OIP.GP1nDVX24_aXbK0aO9EMzgHaFE?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-        }
-      ]
-    }
-  },
-  "comp7": {
-    "title": "Conferences",
-    "description": "The lab contributes to national and international conferences through technical papers, thematic sessions, panel discussions, demonstrations and research networking. The Position, Navigation and Timing track at ICAST 2025 provided a focused platform for research exchange across GNSS, ionospheric science and navigation technologies.",
-     "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg",
-    "cards": {
-      "title": "Engagement Advances In:",
-      "items": [
-        {
-          "id": 1,
-          "title": "GNSS integrity, resilient PNT",
-          "image": "https://d3oegytn6n7k3n.cloudfront.net/Pictures/480xany/9/4/2/54942_RPNT-infographic.-Credit-Orolia-Maritime.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Receiver technologies",
-          "image": "https://tse2.mm.bing.net/th/id/OIP.5wYq4p0YIE5bKfiS8CnPgwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-        },
-        {
-          "id": 3,
-          "title": "Ionospheric science",
-          "image": "https://tse3.mm.bing.net/th/id/OIP.QeZQeb8rfPpcXer2mXeXUgHaFk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-        },
-        {
-          "id": 4,
-          "title": "Navigation algorithms and capacity development",
-          "image": "https://th.bing.com/th/id/R.892ecfed0769bf18f1167773342124e0?rik=aEk2FIE%2fAHYBRw&pid=ImgRaw&r=0"
-        }
-      ]
-    }
-  },
+ "comp6": {
+  "title": "Seminars",
+  "description": "Seminars and webinars connect learners with experts from academia, industry and the international space community. Topics span GNSS antennas, spoofing mitigation, receiver design, satellite technology, careers, curriculum, public engagement and emerging space applications.",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQO7tR9CBKP4v8oBIWdj22Ml17--8OlkAnngAM6rcGng&s=10"
+},
+ "comp7": {
+  "title": "Conferences",
+  "description": "The lab contributes to national and international conferences through technical papers, thematic sessions, panel discussions, demonstrations and research networking. The Position, Navigation and Timing track at ICAST 2025 provided a focused platform for research exchange across GNSS, ionospheric science and navigation technologies.",
+  "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg",
+  "cards": {
+    "title": "Engagement Advances In:",
+    "items": [
+      {
+        "id": 1,
+        "title": "GNSS integrity, resilient PNT",
+        "image": "https://d3oegytn6n7k3n.cloudfront.net/Pictures/480xany/9/4/2/54942_RPNT-infographic.-Credit-Orolia-Maritime.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Receiver technologies",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.5wYq4p0YIE5bKfiS8CnPgwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "id": 3,
+        "title": "Ionospheric science",
+        "image": "https://tse3.mm.bing.net/th/id/OIP.QeZQeb8rfPpcXer2mXeXUgHaFk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "id": 4,
+        "title": "Navigation algorithms and capacity development",
+        "image": "https://th.bing.com/th/id/R.892ecfed0769bf18f1167773342124e0?rik=aEk2FIE%2fAHYBRw&pid=ImgRaw&r=0"
+      }
+    ]
+  }
+},
   "comp8": {
-    "title": "Workshops and Trainings",
+    "title": "Workshops",
     "cards": [
       {
         "id": 1,
@@ -130,7 +97,7 @@
         "subtitle": "Date: 22-26 Feb 2021 | Venue: Institute of Space Technology, Islamabad | Mode: On-site",
         "resourcePerson": "Resource Person: Dr. Najam Abbas; Mr. Shakaib Ahmed; Dr. Munawar Shah; Mr. Daniel Seybold, Katrin Dietmayer; Muhammad Saad; Dr. Xiaoliang Wang; Dr. Umar Iqbal Bhatti",
         "participants": "Participants: 25",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.wLnVZM4fs-vv8gXZa2KbUgHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        "image": "https://tse1.mm.bing.net/th/id/OIP.HRQVbtvSLOb1_E6nQeM2ggHaE7?r=0&pid=ImgDet&w=199&h=132&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 2,
@@ -138,7 +105,7 @@
         "subtitle": "Date: 11 Jan 2022 | Venue: Institute of Space Technology, Islamabad | Mode: On-site",
         "resourcePerson": "Resource Person: Dr. Zainab S. Farooq; Imtiaz Nabi",
         "participants": "Participants: 6",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.E4N5NO4yIKNFW9wD_pPdQgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        "image": "https://tse2.mm.bing.net/th/id/OIP.9OsZ1dGCAXtKfhQZGZ7J3gHaD-?r=0&pid=ImgDet&w=199&h=106&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 3,
@@ -146,7 +113,7 @@
         "subtitle": "Date: 23 May 2022 | Venue: Institute of Space Technology, Islamabad | Mode: On Site",
         "resourcePerson": "Resource Person: Dr. Munawwar Shah; Rasim Shehzad",
         "participants": "Participants: 9",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.ep70gJK7NhPIGfXN4baHNQHaFF?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        "image": "https://tse1.mm.bing.net/th/id/OIP.xnmBcsYHl2_SLlyoRnhw7QHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
       },
       {
         "id": 4,
@@ -179,11 +146,11 @@
     "cards": [
       {
         "id": 1,
-        "title": "Attitude Determination of Platforms through GNSS",
+        "title": "Attitude Determination of Platforms",
         "subtitle": "Date: 28 Oct 2022 | Venue: Institute of Space Technology, Islamabad | Mode: On Site",
         "resourcePerson": "Resource Person: Dr. Salma Zainab",
         "participants": "Participants: 45",
-        "image": "https://th.bing.com/th?q=GNSS+Software&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=PK&setlang=en&adlt=moderate&t=1&mw=247"
+        "image": "https://tse3.mm.bing.net/th/id/OIP.QCkTtzH9aCXgKh01nMhehQAAAA?r=0&pid=ImgDet&w=178&h=178&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 2,
@@ -191,7 +158,7 @@
         "subtitle": "Date: 18 Aug 2023 | Venue: Institute of Space Technology, Islamabad | Mode: On Site",
         "resourcePerson": "Resource Person: Dr. Salma Zainab",
         "participants": "Participants: 69",
-        "image": "https://tse4.mm.bing.net/th/id/OIP.9SgFXFgfgtn-gYxcVUTF5AHaEK?r=0&pid=ImgDet&w=199&h=112&c=7&dpr=1.5&o=7&rm=3"
+        "image": "https://tse4.mm.bing.net/th/id/OIP.n83WW_9Yoy_Zk_9LdVtWpwHaFF?r=0&pid=ImgDet&w=178&h=122&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 3,
@@ -199,7 +166,7 @@
         "subtitle": "Date: 5 Mar 2024 | Venue: Institute of Space Technology, Islamabad | Mode: On Site",
         "resourcePerson": "Resource Person: Dr. Salma Zainab",
         "participants": "Participants: 25",
-        "image": "https://tse4.mm.bing.net/th/id/OIP.5C2a5vMp3J3u_ojhCMdgWAHaDu?r=0&pid=ImgDet&w=199&h=100&c=7&dpr=1.5&o=7&rm=3"
+        "image": "https://tse2.mm.bing.net/th/id/OIP.fPKfUepse2rvNkjem873rwHaFE?r=0&pid=ImgDet&w=178&h=122&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 4,
@@ -207,7 +174,7 @@
         "subtitle": "Date: 7 Mar 2024 | Venue: Institute of Space Technology, Islamabad | Mode: On Site",
         "resourcePerson": "Resource Person: Dr. Salma Zainab",
         "participants": "Participants: 58",
-        "image": "https://tse2.mm.bing.net/th/id/OIP.D3a_sUReSNg9Ugtf2nRGZgHaEb?r=0&pid=ImgDet&w=199&h=118&c=7&dpr=1.5&o=7&rm=3"
+        "image": "https://tse4.mm.bing.net/th/id/OIP.Pgjr8iSWj0z-BiKwMe6xowHaFj?r=0&pid=ImgDet&w=178&h=133&c=7&dpr=1.5&o=7&rm=3"
       }
     ]
   }

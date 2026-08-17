@@ -1,0 +1,224 @@
+/* src/styles/CoPilotStyles/Comp3.module.css */
+
+/* ===== SECTION BACKGROUND - LIGHT ===== */
+.sectionCoPilot {
+  background: #F3EFED;
+  padding: 110px 0;
+}
+
+/* ===== TITLE - DARK TEXT ===== */
+.coPilotTitle {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 40px !important;
+  line-height: 60px !important;
+  color: #000000 !important;
+  margin: 0 !important;
+}
+
+/* ===== DESCRIPTION - DARK TEXT ===== */
+.coPilotDescription {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  line-height: 24px !important;
+  color: rgba(11, 16, 32, 0.8) !important;
+  margin: 0 0 16px 0 !important;
+}
+
+/* ===== VERTICAL CARDS - LIKE HOME COMP 5 ===== */
+.cardsVerticalContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.verticalCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 10px 16px;
+  border: 1px solid rgba(36, 48, 74, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.verticalCard:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: rgba(58, 208, 238, 0.3);
+}
+
+.verticalCardImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #f0f0f0;
+}
+
+.verticalCardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.verticalCardContent {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.verticalCardTitle {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  color: #0B1020 !important;
+  margin: 0 !important;
+}
+
+/* ===== IMAGE WRAPPER ===== */
+.coPilotImageWrapper {
+  background: #FFFFFF;
+  border: 1px solid rgba(36, 48, 74, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.05), 0px 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.coPilotImage {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 4px;
+  transition: transform 0.4s ease;
+}
+
+.coPilotImage:hover {
+  transform: scale(1.02);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .sectionCoPilot {
+    padding: 80px 0;
+  }
+
+  .coPilotTitle {
+    font-size: 36px !important;
+    line-height: 44px !important;
+  }
+
+  .coPilotDescription {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  .verticalCardImage {
+    width: 44px;
+    height: 44px;
+  }
+
+  .verticalCardTitle {
+    font-size: 13px !important;
+  }
+
+  .coPilotImageWrapper {
+    min-height: 300px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionCoPilot {
+    padding: 60px 0;
+  }
+
+  .coPilotTitle {
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+
+  .coPilotDescription {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+
+  .verticalCard {
+    padding: 10px 14px;
+    gap: 14px;
+  }
+
+  .verticalCardImage {
+    width: 40px;
+    height: 40px;
+  }
+
+  .verticalCardTitle {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+
+  .coPilotImageWrapper {
+    min-height: 250px;
+    padding: 12px;
+  }
+
+  .coPilotImage {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionCoPilot {
+    padding: 40px 0;
+  }
+
+  .coPilotTitle {
+    font-size: 22px !important;
+    line-height: 28px !important;
+  }
+
+  .coPilotDescription {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  .verticalCard {
+    padding: 8px 12px;
+    gap: 10px;
+  }
+
+  .verticalCardImage {
+    width: 36px;
+    height: 36px;
+  }
+
+  .verticalCardTitle {
+    font-size: 10px !important;
+    line-height: 14px !important;
+  }
+
+  .coPilotImageWrapper {
+    min-height: 200px;
+    padding: 8px;
+  }
+
+  .coPilotImage {
+    max-height: 200px;
+  }
+}

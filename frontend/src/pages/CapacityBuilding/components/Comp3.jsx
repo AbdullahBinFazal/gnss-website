@@ -9,33 +9,40 @@ const Comp3 = () => {
   const data = capacityBuildingData.comp3;
 
   return (
-    <section className={styles.sectionLightGrey} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Title level={2} className={styles.titleCenter}>
+    <section className={`${styles.sectionLight} ${styles.padding96}`}>
+      <div className={styles.container}>
+        <Flex vertical align="center" style={{ marginBottom: "48px" }}>
+          <Title level={2} className={`${styles.title} ${styles.titleSize40}`}>
             {data.title}
           </Title>
-          <Paragraph className={styles.paragraphCenter}>
-            {data.description}
-          </Paragraph>
         </Flex>
 
-        <Row gutter={[24, 24]} justify="center">
-          {data.cards.map((card) => (
-            <Col key={card.id} xs={12} sm={12} md={6}>
-              <div className={styles.card}>
-                <div className={styles.cardImage}>
-                  <img src={card.image} alt={card.title} />
-                  <div className={styles.cardOverlay} />
-                </div>
-                <div className={styles.cardContent}>
-                  <Title level={4} className={styles.cardTitle}>
-                    {card.title}
-                  </Title>
-                </div>
+        <Row gutter={[40, 40]} align="middle">
+          <Col xs={24} lg={12}>
+            <div className={styles.verticalList}>
+              <div className={styles.descriptionWithBorder}>
+                <Paragraph className={`${styles.description} ${styles.descriptionSize20}`}>
+                  {data.description}
+                </Paragraph>
               </div>
-            </Col>
-          ))}
+              {data.cards && data.cards.map((card) => (
+                <div key={card.id} className={styles.verticalListItem}>
+                  <div className={styles.verticalListItemContent}>
+                    <span className={styles.verticalListItemText}>{card.title}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Col>
+          <Col xs={24} lg={12}>
+            <div className={styles.imageWrapper}>
+              <img 
+                src={data.image} 
+                alt="Capacity Building" 
+                className={styles.imageCover}
+              />
+            </div>
+          </Col>
         </Row>
       </div>
     </section>

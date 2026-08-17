@@ -1,5 +1,6 @@
 // src/pages/Programs/components/Comp4.jsx
-import { Col, Row, Typography, Flex, Button } from "antd";
+import { Col, Row, Typography, Flex } from "antd";
+import { Link } from "react-router-dom";
 import styles from "../../../styles/ProgramsStyles/Programs.module.css";
 import programsData from "../../../json/pages/programs/programsData.json";
 
@@ -7,62 +8,53 @@ const { Title, Paragraph } = Typography;
 
 const Comp4 = () => {
   const data = programsData.comp4;
+  const cards = data.buttonCards || [];
 
   return (
-    <section className={styles.sectionOffWhite} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {/* Section 1: Title + Image + Text */}
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Title level={2} className={styles.titleCenter}>
-            {data.title}
-          </Title>
-        </Flex>
-
+    <section className={`${styles.sectionDark} ${styles.padding110}`}>
+      <div className={styles.container}>
         <Row gutter={[40, 40]} align="middle">
           <Col xs={24} lg={10}>
-            <div className={styles.image}>
-              <img src={data.image} alt="PhD GNSS" />
+            <div className={styles.imageWrapper}>
+              <img 
+                src={data.image} 
+                alt="Program" 
+                className={styles.image}
+              />
             </div>
           </Col>
-
           <Col xs={24} lg={14}>
             <Flex vertical gap={16}>
-              <Paragraph className={styles.paragraph}>
+              <Title level={2} className={`${styles.title} ${styles.titleSize40}`}>
+                {data.title}
+              </Title>
+              <Paragraph className={`${styles.description} ${styles.descriptionSize18}`}>
                 {data.description}
               </Paragraph>
+              <div className={styles.verticalCards}>
+                {cards && cards.map((card) => (
+                  <div key={card.id} className={styles.verticalCard}>
+                    <div className={styles.verticalCardImage}>
+                      <img src={card.image} alt={card.title} />
+                    </div>
+                    <div className={styles.verticalCardContent}>
+                      <Title level={4} className={styles.verticalCardTitle}>
+                        {card.title}
+                      </Title>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <a 
+                href={data.button.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={styles.link}
+              >
+                VIEW PROGRAM 
+              </a>
             </Flex>
           </Col>
-        </Row>
-
-        {/* Section 2: Button */}
-        <Flex justify="center" style={{ marginTop: "40px" }}>
-          <Button 
-            type="primary" 
-            size="large"
-            className={styles.programBtn}
-            onClick={() => window.open(data.button.link, "_blank")}
-          >
-            {data.button.text}
-          </Button>
-        </Flex>
-
-        {/* Section 3: Button Cards */}
-        <Row gutter={[24, 24]} justify="center" style={{ marginTop: "40px" }}>
-          {data.buttonCards.map((card) => (
-            <Col key={card.id} xs={24} sm={12} md={8}>
-              <div className={styles.card}>
-                <div className={styles.cardImage}>
-                  <img src={card.image} alt={card.title} />
-                  <div className={styles.cardOverlay} />
-                </div>
-                <div className={styles.cardContent}>
-                  <Title level={4} className={styles.cardTitle}>
-                    {card.title}
-                  </Title>
-                </div>
-              </div>
-            </Col>
-          ))}
         </Row>
       </div>
     </section>

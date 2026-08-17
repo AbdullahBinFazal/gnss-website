@@ -1,6 +1,6 @@
 // src/pages/Home/components/Comp1.jsx
 import { Link } from "react-router-dom";
-import { Button, Typography, Flex } from 'antd';
+import { Typography } from 'antd';
 import styles from "../../../styles/HomeStyles/Home.module.css";
 import heroVideo from "../../../assets/hero-bg.mp4";
 
@@ -8,9 +8,9 @@ const { Title, Paragraph } = Typography;
 
 const Comp1 = () => {
   return (
-    <section className={styles.homeHero}>
+    <section className={styles.hero}>
       <video 
-        className={styles.homeHeroVideo} 
+        className={styles.heroVideo} 
         autoPlay 
         loop 
         muted 
@@ -20,30 +20,17 @@ const Comp1 = () => {
         <source src={heroVideo} type="video/mp4" />
       </video>
 
-      <div className={styles.homeHeroContent}>
+      <div className={styles.heroDecorations} />
+
+      <div className={styles.heroContent}>
         <div className={styles.fadeInUp}>
-          <Title level={1} className={styles.homeHeroTitle}>
-            Advancing <span>GNSS</span> Research &<br />
-            Space Applications
+          <Title level={1} className={styles.heroTitle}>
+            Advancing GNSS Research And
+            Applications
           </Title>
-          
-          <Paragraph className={styles.homeHeroDescription}>
-            The GNSS program at NCGSA focuses on cutting-edge research in
-            navigation, timing, surveying, and space applications.
+          <Paragraph className={styles.heroDescription}>
+            The GNSS Research Lab of National Center of GIS & Space Applications at the Institute of Space Technology advances research, education and applied innovation in satellite navigation, precise positioning, resilient PNT and space-weather monitoring. 
           </Paragraph>
-          
-          <Flex gap="16px" justify="center" wrap="wrap" className={styles.homeHeroButtons}>
-            <Link to="/programs">
-              <Button type="primary" size="large" className={styles.primaryBtn}>
-                Explore Program →
-              </Button>
-            </Link>
-            <Link to="/research">
-              <Button size="large" className={styles.secondaryBtn}>
-                View Research
-              </Button>
-            </Link>
-          </Flex>
         </div>
       </div>
     </section>

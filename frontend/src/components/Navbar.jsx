@@ -5,9 +5,140 @@ import { logout } from "../store/authSlice";
 import gnssLogo from "../assets/GNSS-Logo.png";
 import { useState, useEffect } from "react";
 import { Layout, Menu, Dropdown, Button, Drawer } from "antd";
-import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import { MenuOutlined, CloseOutlined, DownOutlined } from "@ant-design/icons";
 
 const { Header } = Layout;
+
+// Inline styles for navbar (Figma design)
+const navbarStyles = {
+  header: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 1000,
+    background: "rgba(4, 9, 19, 0.9)",
+    backdropFilter: "blur(8px)",
+    borderBottom: "0.666667px solid #01050d2c",
+    height: "var(--header-height, 120px)",
+    display: "flex",
+    alignItems: "center",
+    padding: "0 30px",
+    width: "100%",
+  },
+  container: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    width: "100%",
+    height: "100%",
+    maxWidth: "100%",
+  },
+  logoLink: {
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    color: "#000000",
+    textDecoration: "none",
+    flexShrink: 0,
+  },
+  logoImage: {
+    height: "99px",
+    width: "auto",
+    objectFit: "contain",
+  },
+  desktopMenu: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "transparent",
+    border: "none",
+    flex: 1,
+    gap: "0px",
+  },
+  mobileMenuButton: {
+    fontSize: "20px",
+    color: "#909BAD",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "transparent",
+    border: "none",
+  },
+  navLink: {
+    fontFamily: "'Space Grotesk', sans-serif",
+    fontWeight: 500,
+    fontSize: "11px",
+    lineHeight: "10px",
+    color: "#fefefe",
+    textDecoration: "none",
+    // textTransform: "uppercase",
+    // letterSpacing: "1.08px",
+    padding: "27px 7px 25px",
+    position: "relative",
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "4px",
+    transition: "color 0.3s ease",
+  },
+  activeNavLink: {
+    fontFamily: "'Space Grotesk', sans-serif",
+    fontWeight: 500,
+    fontSize: "10px",
+    lineHeight: "10px",
+    color: "#54C4ED",
+    textDecoration: "none",
+    textTransform: "uppercase",
+    letterSpacing: "1.08px",
+    padding: "27px 7px 25px",
+    position: "relative",
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "4px",
+  },
+  activeUnderline: {
+    position: "absolute",
+    bottom: "19px",
+    left: "7px",
+    right: "7px",
+    height: "1px",
+    background: "#54C4ED",
+  },
+  dropdownArrow: {
+    fontSize: "10px",
+    color: "#ffffff",
+  },
+  dropdownOverlay: {
+    background: "#0B1019",
+    border: "1px solid #283243",
+    borderRadius: "4px",
+    padding: "4px 0",
+  },
+  dropdownLink: {
+    fontFamily: "'Space Grotesk', sans-serif",
+    fontWeight: 500,
+    fontSize: "10px",
+    color: "#f0f0f0",
+    textDecoration: "none",
+    textTransform: "uppercase",
+    letterSpacing: "1.08px",
+    display: "block",
+    padding: "6px 16px",
+    transition: "color 0.3s ease",
+  },
+  mobileNavLink: {
+    fontFamily: "'Space Grotesk', sans-serif",
+    fontWeight: 500,
+    fontSize: "12px",
+    color: "#909BAD",
+    textDecoration: "none",
+    textTransform: "uppercase",
+    letterSpacing: "1.08px",
+    display: "block",
+    padding: "12px 20px",
+    transition: "color 0.3s ease",
+  },
+};
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -63,6 +194,9 @@ const Navbar = () => {
         <Link 
           to={`${basePath}#${section.key}`}
           onClick={() => setMobileMenuOpen(false)}
+          style={navbarStyles.dropdownLink}
+          onMouseEnter={(e) => e.target.style.color = "#54C4ED"}
+          onMouseLeave={(e) => e.target.style.color = "#909BAD"}
         >
           {section.label}
         </Link>
@@ -72,10 +206,10 @@ const Navbar = () => {
 
   // ─── ABOUT SECTIONS ───
   const aboutSections = [
-    { key: "history-section", label: "History" },
     { key: "vision-section", label: "Vision" },
-    { key: "objectives-section", label: "Objectives" },
-    { key: "team-section", label: "Team" },
+    { key: "research-teams-carousel", label: "Mission" },
+    { key: "lab-leadership", label: "Objectives" },
+    { key: "people-section", label: "Our People" },
   ];
 
   const researchSections = [
@@ -91,14 +225,13 @@ const Navbar = () => {
   ];
 
   const facilitiesSections = [
-    { key: "ecosystem-section", label: "Ecosystem" },
-    { key: "environment-section", label: "Environment" },
+    { key: "ecosystem-section", label: "Antennas" },
+    { key: "gnss-station-section", label: "GNSS Station" },
     { key: "receivers-section", label: "Receivers" },
-    { key: "equipments-section", label: "Equipments" },
+    { key: "equipments-section", label: "Workstations" },
   ];
 
   const digitalObservatorySections = [
-    { key: "satellite-navigation-section", label: "Satellite Navigation" },
     { key: "gnss-observatory-cards-section", label: "GNSS Observatory" },
     { key: "space-weather-section", label: "Space Weather" },
   ];
@@ -111,31 +244,32 @@ const Navbar = () => {
   ];
 
   const collaborationsSections = [
-    { key: "objectives-section", label: "Objectives" },
     { key: "institutions-section", label: "Institutions" },
     { key: "engagement-section", label: "Engagement" },
   ];
 
   const opportunitiesSections = [
-    { key: "projects-section", label: "Projects" },
+    { key: "research-opportunities", label: "Graduate Research" },
     { key: "internships-section", label: "Internships" },
-    { key: "assistantships-section", label: "AssistantShips" },
-    { key: "collaborations-section", label: "Collaborations" },
   ];
 
-  const coPilotSections = [
-    { key: "explains-section", label: "It Explains" },
-    { key: "guides-section", label: "It Guides" },
-    { key: "suggests-section", label: "It Suggests" },
-  ];
+  const coPilotSections = [];
 
   // ─── DESKTOP MENU ITEMS ───
-  // Note: Keys must match the path for selectedKeys to work
   const desktopMenuItems = [
     {
       key: "/",
       label: (
-        <NavLink to="/">Home</NavLink>
+        <NavLink 
+          to="/" 
+          style={({ isActive }) => ({
+            ...navbarStyles.navLink,
+            ...(isActive ? navbarStyles.activeNavLink : {}),
+          })}
+        >
+          Home
+          {location.pathname === "/" && <span style={navbarStyles.activeUnderline} />}
+        </NavLink>
       ),
     },
     {
@@ -144,11 +278,22 @@ const Navbar = () => {
         <Dropdown
           menu={{
             items: createDropdownItems(aboutSections, "/about"),
+            style: { background: "#0B1019", border: "1px solid #283243" },
           }}
           placement="bottom"
           trigger={["hover"]}
+          overlayStyle={{ background: "#0B1019" }}
         >
-          <NavLink to="/about">About</NavLink>
+          <NavLink 
+            to="/about" 
+            style={({ isActive }) => ({
+              ...navbarStyles.navLink,
+              ...(isActive ? navbarStyles.activeNavLink : {}),
+            })}
+          >
+            About <DownOutlined style={navbarStyles.dropdownArrow} />
+            {location.pathname === "/about" && <span style={navbarStyles.activeUnderline} />}
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -158,11 +303,22 @@ const Navbar = () => {
         <Dropdown
           menu={{
             items: createDropdownItems(researchSections, "/research"),
+            style: { background: "#0B1019", border: "1px solid #283243" },
           }}
           placement="bottom"
           trigger={["hover"]}
+          overlayStyle={{ background: "#0B1019" }}
         >
-          <NavLink to="/research">Research</NavLink>
+          <NavLink 
+            to="/research" 
+            style={({ isActive }) => ({
+              ...navbarStyles.navLink,
+              ...(isActive ? navbarStyles.activeNavLink : {}),
+            })}
+          >
+            Research <DownOutlined style={navbarStyles.dropdownArrow} />
+            {location.pathname === "/research" && <span style={navbarStyles.activeUnderline} />}
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -172,11 +328,22 @@ const Navbar = () => {
         <Dropdown
           menu={{
             items: createDropdownItems(programsSections, "/programs"),
+            style: { background: "#0B1019", border: "1px solid #283243" },
           }}
           placement="bottom"
           trigger={["hover"]}
+          overlayStyle={{ background: "#0B1019" }}
         >
-          <NavLink to="/programs">Academics</NavLink>
+          <NavLink 
+            to="/programs" 
+            style={({ isActive }) => ({
+              ...navbarStyles.navLink,
+              ...(isActive ? navbarStyles.activeNavLink : {}),
+            })}
+          >
+            Academics <DownOutlined style={navbarStyles.dropdownArrow} />
+            {location.pathname === "/programs" && <span style={navbarStyles.activeUnderline} />}
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -186,11 +353,22 @@ const Navbar = () => {
         <Dropdown
           menu={{
             items: createDropdownItems(facilitiesSections, "/facilities"),
+            style: { background: "#0B1019", border: "1px solid #283243" },
           }}
           placement="bottom"
           trigger={["hover"]}
+          overlayStyle={{ background: "#0B1019" }}
         >
-          <NavLink to="/facilities">Facilities</NavLink>
+          <NavLink 
+            to="/facilities" 
+            style={({ isActive }) => ({
+              ...navbarStyles.navLink,
+              ...(isActive ? navbarStyles.activeNavLink : {}),
+            })}
+          >
+            Facilities <DownOutlined style={navbarStyles.dropdownArrow} />
+            {location.pathname === "/facilities" && <span style={navbarStyles.activeUnderline} />}
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -200,11 +378,22 @@ const Navbar = () => {
         <Dropdown
           menu={{
             items: createDropdownItems(digitalObservatorySections, "/digital-observatory"),
+            style: { background: "#0B1019", border: "1px solid #283243" },
           }}
           placement="bottom"
           trigger={["hover"]}
+          overlayStyle={{ background: "#0B1019" }}
         >
-          <NavLink to="/digital-observatory">Digital Observatory</NavLink>
+          <NavLink 
+            to="/digital-observatory" 
+            style={({ isActive }) => ({
+              ...navbarStyles.navLink,
+              ...(isActive ? navbarStyles.activeNavLink : {}),
+            })}
+          >
+            Digital Observatory <DownOutlined style={navbarStyles.dropdownArrow} />
+            {location.pathname === "/digital-observatory" && <span style={navbarStyles.activeUnderline} />}
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -214,11 +403,22 @@ const Navbar = () => {
         <Dropdown
           menu={{
             items: createDropdownItems(capacityBuildingSections, "/capacity-building"),
+            style: { background: "#0B1019", border: "1px solid #283243" },
           }}
           placement="bottom"
           trigger={["hover"]}
+          overlayStyle={{ background: "#0B1019" }}
         >
-          <NavLink to="/capacity-building">Capacity Building</NavLink>
+          <NavLink 
+            to="/capacity-building" 
+            style={({ isActive }) => ({
+              ...navbarStyles.navLink,
+              ...(isActive ? navbarStyles.activeNavLink : {}),
+            })}
+          >
+            Capacity Building <DownOutlined style={navbarStyles.dropdownArrow} />
+            {location.pathname === "/capacity-building" && <span style={navbarStyles.activeUnderline} />}
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -228,11 +428,22 @@ const Navbar = () => {
         <Dropdown
           menu={{
             items: createDropdownItems(collaborationsSections, "/collaborations"),
+            style: { background: "#0B1019", border: "1px solid #283243" },
           }}
           placement="bottom"
           trigger={["hover"]}
+          overlayStyle={{ background: "#0B1019" }}
         >
-          <NavLink to="/collaborations">Collaborations</NavLink>
+          <NavLink 
+            to="/collaborations" 
+            style={({ isActive }) => ({
+              ...navbarStyles.navLink,
+              ...(isActive ? navbarStyles.activeNavLink : {}),
+            })}
+          >
+            Collaborations <DownOutlined style={navbarStyles.dropdownArrow} />
+            {location.pathname === "/collaborations" && <span style={navbarStyles.activeUnderline} />}
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -242,11 +453,22 @@ const Navbar = () => {
         <Dropdown
           menu={{
             items: createDropdownItems(opportunitiesSections, "/opportunities"),
+            style: { background: "#0B1019", border: "1px solid #283243" },
           }}
           placement="bottom"
           trigger={["hover"]}
+          overlayStyle={{ background: "#0B1019" }}
         >
-          <NavLink to="/opportunities">Opportunities</NavLink>
+          <NavLink 
+            to="/opportunities" 
+            style={({ isActive }) => ({
+              ...navbarStyles.navLink,
+              ...(isActive ? navbarStyles.activeNavLink : {}),
+            })}
+          >
+            Opportunities <DownOutlined style={navbarStyles.dropdownArrow} />
+            {location.pathname === "/opportunities" && <span style={navbarStyles.activeUnderline} />}
+          </NavLink>
         </Dropdown>
       ),
     },
@@ -256,110 +478,99 @@ const Navbar = () => {
         <Dropdown
           menu={{
             items: createDropdownItems(coPilotSections, "/copilot"),
+            style: { background: "#0B1019", border: "1px solid #283243" },
           }}
           placement="bottom"
           trigger={["hover"]}
+          overlayStyle={{ background: "#0B1019" }}
         >
-          <NavLink to="/copilot">Co-Pilot</NavLink>
+          <NavLink 
+            to="/copilot" 
+            style={({ isActive }) => ({
+              ...navbarStyles.navLink,
+              ...(isActive ? navbarStyles.activeNavLink : {}),
+            })}
+          >
+            Co-Pilot <DownOutlined style={navbarStyles.dropdownArrow} />
+            {location.pathname === "/copilot" && <span style={navbarStyles.activeUnderline} />}
+          </NavLink>
         </Dropdown>
       ),
     },
     {
       key: "/contact-us",
       label: (
-        <NavLink to="/contact-us">Contact Us</NavLink>
+        <NavLink 
+          to="/contact-us" 
+          style={({ isActive }) => ({
+            ...navbarStyles.navLink,
+            ...(isActive ? navbarStyles.activeNavLink : {}),
+          })}
+        >
+          Contact Us
+          {location.pathname === "/contact-us" && <span style={navbarStyles.activeUnderline} />}
+        </NavLink>
       ),
     },
   ];
 
   // ─── MOBILE MENU ITEMS ───
   const mobileMenuItems = [
-    { key: "/", label: <NavLink to="/" onClick={() => setMobileMenuOpen(false)}>Home</NavLink> },
-    { key: "/about", label: <NavLink to="/about" onClick={() => setMobileMenuOpen(false)}>About</NavLink> },
-    { key: "/research", label: <NavLink to="/research" onClick={() => setMobileMenuOpen(false)}>Research</NavLink> },
-    { key: "/programs", label: <NavLink to="/programs" onClick={() => setMobileMenuOpen(false)}>Academics</NavLink> },
-    { key: "/facilities", label: <NavLink to="/facilities" onClick={() => setMobileMenuOpen(false)}>Facilities</NavLink> },
-    { key: "/digital-observatory", label: <NavLink to="/digital-observatory" onClick={() => setMobileMenuOpen(false)}>Digital Observatory</NavLink> },
-    { key: "/capacity-building", label: <NavLink to="/capacity-building" onClick={() => setMobileMenuOpen(false)}>Capacity Building</NavLink> },
-    { key: "/collaborations", label: <NavLink to="/collaborations" onClick={() => setMobileMenuOpen(false)}>Collaborations</NavLink> },
-    { key: "/opportunities", label: <NavLink to="/opportunities" onClick={() => setMobileMenuOpen(false)}>Opportunities</NavLink> },
-    { key: "/copilot", label: <NavLink to="/copilot" onClick={() => setMobileMenuOpen(false)}>Co-Pilot</NavLink> },
-    { key: "/contact-us", label: <NavLink to="/contact-us" onClick={() => setMobileMenuOpen(false)}>Contact Us</NavLink> },
+    { key: "/", label: <NavLink to="/" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Home</NavLink> },
+    { key: "/about", label: <NavLink to="/about" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>About</NavLink> },
+    { key: "/research", label: <NavLink to="/research" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Research</NavLink> },
+    { key: "/programs", label: <NavLink to="/programs" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Academics</NavLink> },
+    { key: "/facilities", label: <NavLink to="/facilities" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Facilities</NavLink> },
+    { key: "/digital-observatory", label: <NavLink to="/digital-observatory" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Digital Observatory</NavLink> },
+    { key: "/capacity-building", label: <NavLink to="/capacity-building" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Capacity Building</NavLink> },
+    { key: "/collaborations", label: <NavLink to="/collaborations" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Collaborations</NavLink> },
+    { key: "/opportunities", label: <NavLink to="/opportunities" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Opportunities</NavLink> },
+    { key: "/copilot", label: <NavLink to="/copilot" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Co-Pilot</NavLink> },
+    { key: "/contact-us", label: <NavLink to="/contact-us" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Contact Us</NavLink> },
   ];
 
   // Add Admin link if user is admin
   if (isAdmin) {
     desktopMenuItems.push({
       key: "/admin",
-      label: <NavLink to="/admin">Admin</NavLink>,
+      label: (
+        <NavLink 
+          to="/admin" 
+          style={({ isActive }) => ({
+            ...navbarStyles.navLink,
+            ...(isActive ? navbarStyles.activeNavLink : {}),
+          })}
+        >
+          Admin
+          {location.pathname === "/admin" && <span style={navbarStyles.activeUnderline} />}
+        </NavLink>
+      ),
     });
     mobileMenuItems.push({
       key: "/admin",
-      label: <NavLink to="/admin" onClick={() => setMobileMenuOpen(false)}>Admin</NavLink>,
+      label: <NavLink to="/admin" onClick={() => setMobileMenuOpen(false)} style={navbarStyles.mobileNavLink}>Admin</NavLink>,
     });
   }
 
   return (
-    <Header 
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1000,
-        background: "rgba(255, 255, 255, 0.98)",
-        backdropFilter: "blur(20px)",
-        borderBottom: "1px solid rgba(0,0,0,0.06)",
-        height: "var(--header-height, 120px)",
-        display: "flex",
-        alignItems: "center",
-        padding: "0 40px",
-        width: "100%",
-      }}
-    >
-      <div style={{ 
-        display: "flex", 
-        alignItems: "center", 
-        justifyContent: "space-between",
-        width: "100%",
-        height: "100%",
-        maxWidth: "100%",
-      }}>
-        {/* Logo */}
-        <Link to="/" style={{ 
-          display: "flex", 
-          alignItems: "center", 
-          gap: "12px",
-          color: "#000000",
-          textDecoration: "none",
-          flexShrink: 0,
-        }}>
+    <Header style={navbarStyles.header}>
+      <div style={navbarStyles.container}>
+        {/* Logo - Keep original */}
+        <Link to="/" style={navbarStyles.logoLink}>
           <img 
             src={gnssLogo} 
             alt="GNSS Logo" 
-            style={{ 
-              height: "75px", 
-              width: "auto", 
-              objectFit: "contain",
-            }} 
+            style={navbarStyles.logoImage} 
           />
         </Link>
 
-        {/* Desktop Menu */}
+        {/* Desktop Menu - Figma UI */}
         {!isMobile && (
           <Menu
             mode="horizontal"
             selectedKeys={[location.pathname]}
             items={desktopMenuItems}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              background: "transparent",
-              border: "none",
-              flex: 1,
-              gap: "16px",
-            }}
+            style={navbarStyles.desktopMenu}
           />
         )}
 
@@ -367,34 +578,30 @@ const Navbar = () => {
         {isMobile && (
           <Button
             type="text"
-            icon={<MenuOutlined />}
+            icon={<MenuOutlined style={{ color: "#909BAD" }} />}
             onClick={() => setMobileMenuOpen(true)}
-            style={{
-              fontSize: "20px",
-              color: "#000000",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
+            style={navbarStyles.mobileMenuButton}
           />
         )}
 
-        {/* Mobile Drawer */}
+        {/* Mobile Drawer - Dark theme */}
         <Drawer
           placement="right"
           open={mobileMenuOpen}
           onClose={() => setMobileMenuOpen(false)}
           closable={true}
-          closeIcon={<CloseOutlined />}
+          closeIcon={<CloseOutlined style={{ color: "#909BAD" }} />}
           width={280}
           styles={{
             body: {
               padding: 0,
+              background: "#0B1019",
             },
             header: {
-              borderBottom: "1px solid rgba(0,0,0,0.06)",
+              borderBottom: "0.666667px solid #283243",
               padding: "16px 20px",
-            }
+              background: "#0B1019",
+            },
           }}
         >
           <div style={{ padding: "8px 0" }}>

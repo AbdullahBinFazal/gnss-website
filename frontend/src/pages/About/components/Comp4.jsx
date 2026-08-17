@@ -9,21 +9,24 @@ const Comp4 = () => {
   const data = aboutData.comp4;
 
   return (
-    <section className={styles.sectionLightGrey} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+    <section className={`${styles.sectionDark} ${styles.padding128}`}>
+      <div className={styles.container}>
         <Row gutter={[40, 40]} align="middle">
           <Col xs={24} lg={10}>
-            <div className={styles.image}>
-              <img src={data.image} alt="Vision" />
+            <div className={styles.imageWrapper}>
+              <img 
+                src={data.image} 
+                alt="Vision" 
+                className={styles.image}
+              />
             </div>
           </Col>
-
           <Col xs={24} lg={14}>
             <Flex vertical gap={16}>
-              <Title level={2} className={styles.title}>
+              <Title level={2} className={`${styles.title} ${styles.titleSize41}`} style={{ textAlign: 'left', width: '100%' }}>
                 {data.title}
               </Title>
-              <Paragraph className={styles.paragraph}>
+              <Paragraph className={`${styles.description} ${styles.descriptionSize18}`} style={{ textAlign: 'left', width: '100%' }}>
                 {data.description}
               </Paragraph>
             </Flex>

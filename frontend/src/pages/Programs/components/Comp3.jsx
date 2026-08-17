@@ -1,5 +1,6 @@
 // src/pages/Programs/components/Comp3.jsx
-import { Col, Row, Typography, Flex, Button } from "antd";
+import { Col, Row, Typography, Flex } from "antd";
+import { Link } from "react-router-dom";
 import styles from "../../../styles/ProgramsStyles/Programs.module.css";
 import programsData from "../../../json/pages/programs/programsData.json";
 
@@ -9,66 +10,51 @@ const Comp3 = () => {
   const data = programsData.comp3;
 
   return (
-    <section className={styles.sectionLightGrey} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {/* Section 1: Title + Text */}
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Title level={2} className={styles.titleCenter}>
-            {data.title}
-          </Title>
-          <Paragraph className={styles.paragraphCenter}>
-            {data.description}
-          </Paragraph>
-        </Flex>
-
-        {/* Section 2: Cards */}
-        <Row gutter={[24, 24]} justify="center">
-          {data.cards.map((card) => (
-            <Col key={card.id} xs={12} sm={12} md={6}>
-              <div className={styles.card}>
-                <div className={styles.cardImage}>
-                  <img src={card.image} alt={card.title} />
-                  <div className={styles.cardOverlay} />
-                </div>
-                <div className={styles.cardContent}>
-                  <Title level={4} className={styles.cardTitle}>
-                    {card.title}
-                  </Title>
-                </div>
+    <section className={`${styles.sectionLight} ${styles.padding110}`}>
+      <div className={styles.container}>
+        <Row gutter={[40, 40]} align="middle">
+          <Col xs={24} lg={14}>
+            <Flex vertical gap={16}>
+              <Title level={2} className={`${styles.title} ${styles.titleSize40}`} style={{ textAlign: 'left', width: '100%' }}>
+                {data.title}
+              </Title>
+              <Paragraph className={`${styles.description} ${styles.descriptionSize18}`} style={{ textAlign: 'left', width: '100%' }}>
+                {data.description}
+              </Paragraph>
+              <div className={styles.verticalCards} style={{ width: '100%' }}>
+                {data.cards && data.cards.map((card) => (
+                  <div key={card.id} className={styles.verticalCard}>
+                    <div className={styles.verticalCardImage}>
+                      <img src={card.image} alt={card.title} />
+                    </div>
+                    <div className={styles.verticalCardContent}>
+                      <Title level={4} className={styles.verticalCardTitle}>
+                        {card.title}
+                      </Title>
+                    </div>
+                  </div>
+                ))}
               </div>
-            </Col>
-          ))}
-        </Row>
-
-        {/* Section 3: Button */}
-        <Flex justify="center" style={{ marginTop: "40px" }}>
-          <Button 
-            type="primary" 
-            size="large"
-            className={styles.programBtn}
-            onClick={() => window.open(data.button.link, "_blank")}
-          >
-            {data.button.text}
-          </Button>
-        </Flex>
-
-        {/* Section 4: Button Cards */}
-        <Row gutter={[24, 24]} justify="center" style={{ marginTop: "40px" }}>
-          {data.buttonCards.map((card) => (
-            <Col key={card.id} xs={24} sm={12} md={12}>
-              <div className={styles.card}>
-                <div className={styles.cardImage}>
-                  <img src={card.image} alt={card.title} />
-                  <div className={styles.cardOverlay} />
-                </div>
-                <div className={styles.cardContent}>
-                  <Title level={4} className={styles.cardTitle}>
-                    {card.title}
-                  </Title>
-                </div>
-              </div>
-            </Col>
-          ))}
+              <a 
+                href={data.button.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={styles.link}
+                style={{ alignSelf: 'flex-start' }}
+              >
+                VIEW PROGRAM 
+              </a>
+            </Flex>
+          </Col>
+          <Col xs={24} lg={10}>
+            <div className={styles.imageWrapper}>
+              <img 
+                src={data.image} 
+                alt="Program" 
+                className={styles.image}
+              />
+            </div>
+          </Col>
         </Row>
       </div>
     </section>

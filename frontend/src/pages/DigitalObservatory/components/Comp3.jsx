@@ -12,7 +12,7 @@ const Comp3 = () => {
   const data = digitalObservatoryData.comp3;
 
   const cardsPerView = 3;
-  const totalCards = data.cards.items.length;
+  const totalCards = data.cards.length;
   const maxIndex = Math.max(0, totalCards - cardsPerView);
 
   const handleNext = () => {
@@ -27,78 +27,55 @@ const Comp3 = () => {
     );
   };
 
-  const visibleCards = data.cards.items.slice(currentIndex, currentIndex + cardsPerView);
+  const visibleCards = data.cards.slice(currentIndex, currentIndex + cardsPerView);
 
   return (
-    <section className={styles.sectionLightGrey} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {/* Section 1: Title + Image + Text */}
-        <Row gutter={[40, 40]} align="middle">
-          <Col xs={24} lg={10}>
-            <div className={styles.image}>
-              <img src={data.image} alt="GNSS Observatory" />
-            </div>
-          </Col>
+    <section className={`${styles.sectionDark} ${styles.padding60}`}>
+      <div className={styles.container}>
+        <Flex vertical align="center" gap={12} style={{ marginBottom: "48px" }}>
+          <Title level={2} className={`${styles.title} ${styles.titleSize40}`}>
+            {data.title}
+          </Title>
+          <Paragraph className={`${styles.description} ${styles.descriptionSize20} ${styles.descriptionCenter}`}>
+            {data.description}
+          </Paragraph>
+        </Flex>
 
-          <Col xs={24} lg={14}>
-            <Flex vertical gap={16}>
-              <Title level={2} className={styles.title}>
-                {data.title}
-              </Title>
-              <Paragraph className={styles.paragraph}>
-                {data.description}
-              </Paragraph>
-            </Flex>
-          </Col>
-        </Row>
+        <div className={styles.carouselWrapper}>
+          <button className={styles.carouselArrow} onClick={handlePrev}>
+            <LeftOutlined />
+          </button>
 
-        {/* Section 2: Carousel Cards */}
-        <div style={{ marginTop: "60px" }}>
-          <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-            <Title level={2} className={styles.cardsTitle}>
-              {data.cards.title}
-            </Title>
-          </Flex>
-
-          <div className={styles.carouselWrapper}>
-            <button className={styles.carouselArrow} onClick={handlePrev}>
-              <LeftOutlined />
-            </button>
-
-            <div className={styles.carouselContainer}>
-              <Row gutter={[24, 24]} justify="center">
-                {visibleCards.map((card) => (
-                  <Col key={card.id} xs={24} sm={24} md={8}>
-                    <div className={styles.card}>
-                      <div className={styles.cardImage}>
-                        <img src={card.image} alt={card.title} />
-                        <div className={styles.cardOverlay} />
-                      </div>
-                      <div className={styles.cardContent}>
-                        <Title level={4} className={styles.cardTitle}>
-                          {card.title}
-                        </Title>
-                      </div>
+          <div className={styles.carouselContainer}>
+            <Row gutter={[24, 24]} justify="center">
+              {visibleCards.map((card) => (
+                <Col key={card.id} xs={24} sm={24} md={8}>
+                  <div className={styles.card}>
+                    <div className={styles.cardImage}>
+                      <img src={card.image} alt={card.title} />
                     </div>
-                  </Col>
-                ))}
-              </Row>
-            </div>
-
-            <button className={styles.carouselArrow} onClick={handleNext}>
-              <RightOutlined />
-            </button>
+                    <Title level={4} className={styles.cardTitle}>
+                      {card.title}
+                    </Title>
+                  </div>
+                </Col>
+              ))}
+            </Row>
           </div>
 
-          <div className={styles.carouselIndicators}>
-            {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
-              <button
-                key={idx}
-                className={`${styles.indicator} ${currentIndex === idx ? styles.indicatorActive : ""}`}
-                onClick={() => setCurrentIndex(idx)}
-              />
-            ))}
-          </div>
+          <button className={styles.carouselArrow} onClick={handleNext}>
+            <RightOutlined />
+          </button>
+        </div>
+
+        <div className={styles.carouselIndicators}>
+          {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
+            <button
+              key={idx}
+              className={`${styles.indicator} ${currentIndex === idx ? styles.indicatorActive : ""}`}
+              onClick={() => setCurrentIndex(idx)}
+            />
+          ))}
         </div>
       </div>
     </section>

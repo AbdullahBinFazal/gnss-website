@@ -1,18 +1,39 @@
 // src/pages/Research/components/Comp1.jsx
-import { Flex, Typography } from "antd";
+import { Typography } from "antd";
 import styles from "../../../styles/ResearchStyles/Research.module.css";
 
-const { Title } = Typography;
+const { Title, Paragraph } = Typography;
 
 const Comp1 = () => {
   return (
     <section className={styles.hero}>
+      <div className={styles.heroBackground} />
+      <div className={styles.heroOverlayShadow} />
       <div className={styles.heroOverlay} />
-      <Flex vertical justify="center" align="center" className={styles.heroContent}>
+      
+      <div className={styles.heroDecorations}>
+        <div className={styles.decoLine1} />
+        <div className={styles.decoLine2} />
+        <div className={styles.decoLine3} />
+        <div className={styles.decoDot1} />
+        <div className={styles.decoDot2} />
+        <div className={styles.decoDot3} />
+        <div className={styles.decoDot4} />
+        <div className={styles.decoDot5} />
+        <div className={styles.decoDot6} />
+        <div className={styles.decoDot7} />
+        <div className={styles.decoLine4} />
+        <div className={styles.decoLine5} />
+      </div>
+
+      <div className={styles.heroContent}>
         <Title level={1} className={styles.heroTitle}>
           Research
         </Title>
-      </Flex>
+        <Paragraph className={styles.heroDescription}>
+          The lab conducts fundamental and applied research across GNSS science, positioning algorithms, receiver technologies, resilient PNT, space weather and emerging navigation applications.
+        </Paragraph>
+      </div>
     </section>
   );
 };

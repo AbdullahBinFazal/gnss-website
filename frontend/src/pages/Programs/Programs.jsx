@@ -1,6 +1,5 @@
 // src/pages/Programs/Programs.jsx
 import Comp1 from "./components/Comp1";
-import Comp2 from "./components/Comp2";
 import Comp3 from "./components/Comp3";
 import Comp4 from "./components/Comp4";
 import Comp5 from "./components/Comp5";
@@ -11,10 +10,7 @@ const Programs = () => {
     <div>
       <Comp1 />
       
-      {/* Academics - Comp2 (NOT in dropdown) */}
-      <div id="academics" style={{ scrollMarginTop: "130px" }}>
-        <Comp2 />
-      </div>
+     
       
       {/* MS Program - Comp3 (IN DROPDOWN) */}
       <div id="ms-program-section" style={{ scrollMarginTop: "130px" }}>

@@ -30,10 +30,10 @@ const Comp8 = () => {
   const visibleCards = data.cards.slice(currentIndex, currentIndex + cardsPerView);
 
   return (
-    <section className={styles.sectionWhite} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Title level={2} className={styles.titleCenter}>
+    <section className={`${styles.sectionLight} ${styles.padding60}`}>
+      <div className={styles.container}>
+        <Flex vertical align="center" gap={12} style={{ marginBottom: "48px" }}>
+          <Title level={2} className={`${styles.title} ${styles.titleSize40}`}>
             {data.title}
           </Title>
         </Flex>
@@ -50,16 +50,13 @@ const Comp8 = () => {
                   <div className={styles.card}>
                     <div className={styles.cardImage}>
                       <img src={card.image} alt={card.title} />
-                      <div className={styles.cardOverlay} />
                     </div>
-                    <div className={styles.cardContent}>
-                      <Title level={4} className={styles.cardTitle}>
-                        {card.title}
-                      </Title>
-                      <div className={styles.cardSubtitle}>{card.subtitle}</div>
-                      <div className={styles.cardResource}>{card.resourcePerson}</div>
-                      <div className={styles.cardParticipants}>{card.participants}</div>
-                    </div>
+                    <Title level={4} className={styles.cardTitle}>
+                      {card.title}
+                    </Title>
+                    <Paragraph className={styles.cardDescription}>
+                      {card.subtitle}
+                    </Paragraph>
                   </div>
                 </Col>
               ))}

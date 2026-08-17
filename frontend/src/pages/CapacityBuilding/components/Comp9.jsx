@@ -9,10 +9,10 @@ const Comp9 = () => {
   const data = capacityBuildingData.comp9;
 
   return (
-    <section style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Title level={2} className={styles.titleCenter}>
+    <section className={`${styles.sectionDark} ${styles.padding60}`}>
+      <div className={styles.container}>
+        <Flex vertical align="center" style={{ marginBottom: "60px" }}>
+          <Title level={2} className={`${styles.title} ${styles.titleSize40}`}>
             {data.title}
           </Title>
         </Flex>
@@ -23,15 +23,25 @@ const Comp9 = () => {
               <div className={styles.card}>
                 <div className={styles.cardImage}>
                   <img src={card.image} alt={card.title} />
-                  <div className={styles.cardOverlay} />
                 </div>
-                <div className={styles.cardContent}>
-                  <Title level={4} className={styles.cardTitle}>
+
+                <div className={styles.cardOverlay}>
+                  <span className={styles.cardOverlayTitle}>
                     {card.title}
-                  </Title>
-                  <div className={styles.cardSubtitle}>{card.subtitle}</div>
-                  <div className={styles.cardResource}>{card.resourcePerson}</div>
-                  <div className={styles.cardParticipants}>{card.participants}</div>
+                  </span>
+                </div>
+
+                <div className={styles.cardContent}>
+                  <span className={styles.cardSubtitle}>
+                    {card.subtitle}
+                  </span>
+                  <div className={styles.cardDivider} />
+                  <Paragraph className={styles.cardDescription}>
+                    {card.resourcePerson}
+                  </Paragraph>
+                  <Paragraph className={styles.cardDescription}>
+                    {card.participants}
+                  </Paragraph>
                 </div>
               </div>
             </Col>

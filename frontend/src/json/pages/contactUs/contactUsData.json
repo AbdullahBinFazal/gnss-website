@@ -1,74 +1,72 @@
 
 {
-  "comp2": {
-    "title": "Connect with the GNSS Research Lab",
-    "description": "Contact the lab for academic coordination, research collaboration, facility access, training, observatory support and institutional engagement.",
-    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/linkages-and-Outreach-circle-1200x1199.png"
-  },
-  "comp3": {
-    "title": "Institution details:",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Lab Principal Investigator: Dr. Abdul Waheed",
-        "image": "https://th.bing.com/th/id/OIP.Q4SAttAerw8Mw_hNx6_jxwHaE7?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Institution: GNSS Research Lab, National Center of GIS & Space Applications",
-        "image": "https://th.bing.com/th/id/OIP.fAfHx_uXBf8hNRiw-Fy1mwHaFj?w=265&h=198&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 3,
-        "title": "Host University: Institute of Space Technology",
-        "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
-      }
-    ]
-  },
-  "comp4": {
-    "title": "Contact details:",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Address: Islamabad Expressway, Islamabad, Pakistan",
-        "image": "https://th.bing.com/th?q=Pakistan+View+Islamabad&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=PK&setlang=en&adlt=moderate&t=1&mw=247"
-      },
-      {
-        "id": 2,
-        "title": "Office Number: +92-51-9675750",
-        "image": "https://apiweb.ist.edu.pk/media/original_images/01.jpg"
-      },
-      {
-        "id": 3,
-        "title": "Email: waheed@ist.edu.pk",
-        "image": "https://th.bing.com/th/id/OIP.Q4SAttAerw8Mw_hNx6_jxwHaE7?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      }
-    ]
-  },
-  "comp5": {
-    "title": "Socials:",
-    "cards": [
-      {
-        "id": 1,
-        "title": "LinkedIN: GNSS Research Lab - LinkedIn",
-        "buttonText": "Click to view",
-        "buttonLink": "https://www.linkedin.com/company/gnss-research-lab-ncgsa",
-        "image": "https://th.bing.com/th/id/OIF.R9dSjHiCEFOuQNPdchbyuA?w=318&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Facebook: GNSS Research Lab - Facebook",
-        "buttonText": "Click to view",
-        "buttonLink": "https://www.facebook.com/GNSSResearchLab/",
-        "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
-      },
-      {
-        "id": 3,
-        "title": "NCGSA Website: The NCGSA Website",
-        "buttonText": "Click to view",
-        "buttonLink": "http://www.ncgsa.org.pk/",
-        "image": "https://www.bing.com/th/id/OIP.PLDEmW2WWa1HFIkbzo1qawAAAA?w=193&h=170&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
-      }
-    ]
-  }
+ "comp2": {
+  "title": "Institution details",
+  "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg",
+  "cards": [
+    {
+      "id": 1,
+      "title": "Lab Principal Investigator: Dr. Abdul Waheed",
+      "image": "https://th.bing.com/th/id/OIP.Q4SAttAerw8Mw_hNx6_jxwHaE7?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 2,
+      "title": "Institution: GNSS Research Lab, National Center of GIS & Space Applications",
+      "image": "https://th.bing.com/th/id/OIP.fAfHx_uXBf8hNRiw-Fy1mwHaFj?w=265&h=198&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 3,
+      "title": "Host University: Institute of Space Technology",
+      "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
+    }
+  ]
+},
+"comp3": {
+  "title": "Contact details",
+  "image": "https://media.licdn.com/dms/image/v2/D4D22AQEEDkP_abgOdw/feedshare-shrink_800/B4DZPK8UFEHMAk-/0/1734276631324?e=2147483647&v=beta&t=6OIUK3uiS5IYE4E6xkuz-FE-IOOHWepQWODnEYnwGqg",
+  "cards": [
+    {
+      "id": 1,
+      "title": "Address: Islamabad Expressway, Islamabad, Pakistan",
+      "image": "https://th.bing.com/th?q=Pakistan+View+Islamabad&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=PK&setlang=en&adlt=moderate&t=1&mw=247"
+    },
+    {
+      "id": 2,
+      "title": "Office Number: +92-51-9675750",
+      "image": "https://apiweb.ist.edu.pk/media/original_images/01.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Email: waheed@ist.edu.pk",
+      "image": "https://th.bing.com/th/id/OIP.Q4SAttAerw8Mw_hNx6_jxwHaE7?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    }
+  ]
+},
+"comp4": {
+  "title": "Socials",
+  "image": "https://apiweb.ist.edu.pk/media/original_images/01.jpg",
+  "cards": [
+    {
+      "id": 1,
+      "title": "LinkedIN: GNSS Research Lab - LinkedIn",
+      "buttonText": "VIEW",
+      "buttonLink": "https://www.linkedin.com/company/gnss-research-lab-ncgsa",
+      "image": "https://th.bing.com/th/id/OIF.R9dSjHiCEFOuQNPdchbyuA?w=318&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 2,
+      "title": "Facebook: GNSS Research Lab - Facebook",
+      "buttonText": "VIEW",
+      "buttonLink": "https://www.facebook.com/GNSSResearchLab/",
+      "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
+    },
+    {
+      "id": 3,
+      "title": "NCGSA Website: The NCGSA Website",
+      "buttonText": "VIEW",
+      "buttonLink": "http://www.ncgsa.org.pk/",
+      "image": "https://www.bing.com/th/id/OIP.PLDEmW2WWa1HFIkbzo1qawAAAA?w=193&h=170&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+    }
+  ]
+}
 }

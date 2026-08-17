@@ -1,6 +1,6 @@
 // src/pages/Home/components/Comp9.jsx
 import { Col, Row, Typography, Flex } from 'antd';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import styles from "../../../styles/HomeStyles/Home.module.css";
 import homeData from "../../../json/pages/home/homeData.json";
 
@@ -10,21 +10,16 @@ const Comp9 = () => {
   const navigate = useNavigate();
   const data = homeData.comp9;
 
-  // Mapping card titles to Collaborations page section IDs
   const sectionMap = {
     "Institutions": "/collaborations#institutions-section",
     "Engagements": "/collaborations#engagement-section",
-    "Objectives": "/collaborations#objectives-section",
-    "Collaborations": "/collaborations", // Goes to Collaborations page (top)
   };
 
-  const handleCardClick = (title) => {
-    const path = sectionMap[title];
-    if (path) {
-      navigate(path);
-      // Force scroll to section after navigation
+  const handleCardClick = (link) => {
+    if (link) {
+      navigate(link);
       setTimeout(() => {
-        const hash = path.split('#')[1];
+        const hash = link.split('#')[1];
         if (hash) {
           const element = document.getElementById(hash);
           if (element) {
@@ -35,62 +30,58 @@ const Comp9 = () => {
     }
   };
 
+  const filteredCards = data.cards.filter(card => 
+    card.title === "Institutions" || card.title === "Engagements"
+  );
+
   return (
-    <section className={styles.sectionLightGrey} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Title level={2} className={styles.titleCenter}>
+    <section className={`${styles.sectionLight} ${styles.padding60}`}>
+      <div className={styles.container}>
+        <Flex vertical align="center" gap={12} style={{ marginBottom: "48px" }}>
+          <Title level={2} className={`${styles.title} ${styles.titleSize42}`}>
             {data.title}
           </Title>
+          <Paragraph className={`${styles.description} ${styles.descriptionSize18_32} ${styles.descriptionCenter900}`}>
+            {data.description}
+          </Paragraph>
         </Flex>
 
-        <Row gutter={[40, 40]} align="middle">
-          <Col xs={24} lg={10}>
-            <div className={styles.image}>
-              <img src={data.image} alt="Collaborations" />
-            </div>
-          </Col>
-
-          <Col xs={24} lg={14}>
-            <Flex vertical gap={16}>
-              <Title level={3} className={styles.subtitle}>
-                {data.subtitle}
-              </Title>
-              <Paragraph className={styles.paragraph}>
-                {data.description}
-              </Paragraph>
-            </Flex>
-          </Col>
-        </Row>
-
-        {/* Cards Row */}
-        <Row gutter={[24, 24]} justify="center" style={{ marginTop: "48px" }}>
-          {data.cards.map((card) => (
-            <Col key={card.id} xs={12} sm={6} md={6}>
-              <div 
-                className={styles.card}
-                onClick={() => handleCardClick(card.title)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    handleCardClick(card.title);
-                  }
-                }}
-              >
-                <div className={styles.cardImage}>
-                  <img src={card.image} alt={card.title} />
-                  <div className={styles.cardOverlay} />
-                </div>
-                <div className={styles.cardContent}>
+        <Row gutter={[24, 24]} justify="center">
+          {filteredCards.map((card) => {
+            const link = sectionMap[card.title] || "#";
+            return (
+              <Col key={card.id} xs={24} sm={12} md={8} lg={8} xl={8}>
+                <div 
+                  className={styles.card}
+                  onClick={() => handleCardClick(link)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      handleCardClick(link);
+                    }
+                  }}
+                >
+                  <div className={styles.cardImage}>
+                    <img src={card.image} alt={card.title} />
+                  </div>
                   <Title level={4} className={styles.cardTitle}>
                     {card.title}
                   </Title>
+                  <Link to={link} className={styles.exploreLink}>
+                    EXPLORE 
+                  </Link>
                 </div>
-              </div>
-            </Col>
-          ))}
+              </Col>
+            );
+          })}
         </Row>
+
+        <Flex justify="center" style={{ marginTop: "48px" }}>
+          <Link to="/collaborations" className={styles.viewAllLink}>
+            VIEW COLLABORATIONS 
+          </Link>
+        </Flex>
       </div>
     </section>
   );

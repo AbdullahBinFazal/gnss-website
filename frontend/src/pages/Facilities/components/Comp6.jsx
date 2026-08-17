@@ -7,46 +7,34 @@ const { Title, Paragraph } = Typography;
 
 const Comp6 = () => {
   const data = facilitiesData.comp6;
+  const cards = data.gistmCards?.cards || [];
 
   return (
-    <section className={styles.sectionLightGrey} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {/* Section 1: Title + Text */}
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Title level={2} className={styles.titleCenter}>
+    <section className={`${styles.sectionDark} ${styles.padding60}`}>
+      <div className={styles.container}>
+        <Flex vertical align="center" gap={12} style={{ marginBottom: "48px" }}>
+          <Title level={2} className={`${styles.title} ${styles.titleSize40}`}>
             {data.title}
           </Title>
-          <Paragraph className={styles.paragraphCenter}>
+          <Paragraph className={`${styles.description} ${styles.descriptionSize20} ${styles.descriptionCenter}`}>
             {data.description}
           </Paragraph>
         </Flex>
 
-        {/* Section 2: GISTM Cards */}
-        <div style={{ marginTop: "60px" }}>
-          <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-            <Title level={2} className={styles.gistmTitle}>
-              {data.gistmCards.title}
-            </Title>
-          </Flex>
-
-          <Row gutter={[24, 24]} justify="center">
-            {data.gistmCards.cards.map((card) => (
-              <Col key={card.id} xs={12} sm={12} md={6}>
-                <div className={styles.card}>
-                  <div className={styles.cardImage}>
-                    <img src={card.image} alt={card.title} />
-                    <div className={styles.cardOverlay} />
-                  </div>
-                  <div className={styles.cardContent}>
-                    <Title level={4} className={styles.cardTitle}>
-                      {card.title}
-                    </Title>
-                  </div>
+        <Row gutter={[24, 24]} justify="center">
+          {cards.map((card) => (
+            <Col key={card.id} xs={24} sm={12} md={6}>
+              <div className={styles.card}>
+                <div className={styles.cardImage}>
+                  <img src={card.image} alt={card.title} />
                 </div>
-              </Col>
-            ))}
-          </Row>
-        </div>
+                <Title level={4} className={styles.cardTitle}>
+                  {card.title}
+                </Title>
+              </div>
+            </Col>
+          ))}
+        </Row>
       </div>
     </section>
   );

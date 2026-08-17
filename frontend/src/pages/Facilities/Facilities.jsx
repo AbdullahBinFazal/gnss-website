@@ -1,6 +1,5 @@
 // src/pages/Facilities/Facilities.jsx
 import Comp1 from "./components/Comp1";
-import Comp2 from "./components/Comp2";
 import Comp3 from "./components/Comp3";
 import Comp4 from "./components/Comp4";
 import Comp5 from "./components/Comp5";
@@ -12,28 +11,33 @@ const Facilities = () => {
   return (
     <div>
       <Comp1 />
-      <Comp2 />
       
-      {/* Ecosystem - Comp3 (IN DROPDOWN) */}
+      {/* Antennas - Comp3 (IN DROPDOWN) */}
       <div id="ecosystem-section" style={{ scrollMarginTop: "130px" }}>
         <Comp3 />
       </div>
       
-      {/* Environment - Comp4 (IN DROPDOWN) */}
-      <div id="environment-section" style={{ scrollMarginTop: "130px" }}>
+      {/* Softwares - Comp4 (NOT IN DROPDOWN) */}
+      <div style={{ scrollMarginTop: "130px" }}>
         <Comp4 />
       </div>
       
-      <Comp5 />
+      {/* GNSS Station - Comp5 (IN DROPDOWN) */}
+      <div id="gnss-station-section" style={{ scrollMarginTop: "130px" }}>
+        <Comp5 />
+      </div>
       
       {/* Receivers - Comp6 (IN DROPDOWN) */}
       <div id="receivers-section" style={{ scrollMarginTop: "130px" }}>
         <Comp6 />
       </div>
       
-      <Comp7 />
+      {/* Comp7 (NOT IN DROPDOWN) */}
+      <div style={{ scrollMarginTop: "130px" }}>
+        <Comp7 />
+      </div>
       
-      {/* Equipments - Comp8 (IN DROPDOWN) */}
+      {/* Workstations - Comp8 (IN DROPDOWN) */}
       <div id="equipments-section" style={{ scrollMarginTop: "130px" }}>
         <Comp8 />
       </div>

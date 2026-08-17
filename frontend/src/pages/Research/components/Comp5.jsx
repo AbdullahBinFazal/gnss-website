@@ -8,55 +8,48 @@ const { Title, Paragraph } = Typography;
 const Comp5 = () => {
   const data = researchData.comp5;
 
+  const listItems = [
+    { id: 1, text: "Journal publications" },
+    { id: 2, text: "Conference publications" },
+    { id: 3, text: "MS research theses" }
+  ];
+
   return (
-    <section className={styles.sectionWhite} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {/* Section 1: Image + Text with Heading on top of text */}
+    <section className={`${styles.sectionLight} ${styles.padding96}`}>
+      <div className={styles.container}>
+        <Flex vertical align="center" style={{ marginBottom: "48px" }}>
+          <Title level={2} className={`${styles.title} ${styles.titleSize41}`}>
+            {data.title}
+          </Title>
+        </Flex>
+
         <Row gutter={[40, 40]} align="middle">
-          <Col xs={24} lg={10}>
-            <div className={styles.image}>
-              <img src={data.image} alt="Publications" />
+          <Col xs={24} lg={12}>
+            <div className={styles.imageWrapper}>
+              <img 
+                src={data.image} 
+                alt="Publications" 
+                className={styles.imageCover}
+              />
             </div>
           </Col>
-
-          <Col xs={24} lg={14}>
-            <Flex vertical gap={16}>
-              <Title level={2} className={styles.title}>
-                {data.title}
-              </Title>
-              <Paragraph className={styles.paragraph}>
-                {data.description}
-              </Paragraph>
-            </Flex>
-          </Col>
-        </Row>
-
-        {/* Section 2: Cards */}
-        <div style={{ marginTop: "60px" }}>
-          <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-            <Title level={2} className={styles.cardsTitle}>
-              {data.cards.title}
-            </Title>
-          </Flex>
-
-          <Row gutter={[24, 24]} justify="center">
-            {data.cards.items.map((card) => (
-              <Col key={card.id} xs={24} sm={12} md={8}>
-                <div className={styles.card}>
-                  <div className={styles.cardImage}>
-                    <img src={card.image} alt={card.title} />
-                    <div className={styles.cardOverlay} />
-                  </div>
-                  <div className={styles.cardContent}>
-                    <Title level={4} className={styles.cardTitle}>
-                      {card.title}
-                    </Title>
+          <Col xs={24} lg={12}>
+            <div className={styles.verticalList}>
+              <div className={styles.descriptionWithBorder}>
+                <Paragraph className={`${styles.description} ${styles.descriptionSize19}`}>
+                  {data.description}
+                </Paragraph>
+              </div>
+              {listItems.map((item) => (
+                <div key={item.id} className={styles.verticalListItem}>
+                  <div className={styles.verticalListItemContent}>
+                    <span className={styles.verticalListItemText}>{item.text}</span>
                   </div>
                 </div>
-              </Col>
-            ))}
-          </Row>
-        </div>
+              ))}
+            </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );

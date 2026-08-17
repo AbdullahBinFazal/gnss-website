@@ -1,134 +1,67 @@
-
 {
-  "comp2": {
-    "title": "Connecting expertise to accelerate GNSS research and impact",
-    "description": "The lab builds national and international relationships that support",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Joint research, instrument deployment",
-        "image": "https://th.bing.com/th/id/OIP.vbIwfdoiaeIqzicruR7gswHaEn?w=244&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Academic exchange",
-        "image": "https://th.bing.com/th?q=Medicine+Science+Academic+Exchange&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=PK&setlang=en&adlt=moderate&t=1&mw=247"
-      },
-      {
-        "id": 3,
-        "title": "Training, data sharing",
-        "image": "https://th.bing.com/th/id/OIP.6M1IYRcizgIF3lYat19cUgHaFm?w=251&h=190&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 4,
-        "title": "Technology development",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.C4sZ2rJ9hPhJZWSbx7osfgHaDt?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      }
-    ]
-  },
   "comp3": {
-"title": "Areas Include:",
-    "description": "Collaboration is organised around shared scientific objectives and measurable outcomes. Priority areas include:",
-    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png",
+    "title": "Areas Include:",
+    "description": "Collaboration is organized around shared scientific objectives and measurable outcomes. Priority areas include precise positioning infrastructure, resilient PNT, space-weather monitoring, receiver development, GNSS applications and advanced human-capital development.",
+    "image": "https://apiweb.ist.edu.pk/media/original_images/01.jpg"
+  },
+  "comp4": {
+    "title": "Academic and Research Institutions:",
     "cards": [
       {
         "id": 1,
-        "title": "Precise positioning infrastructure",
-        "image": "https://www.bing.com/th/id/OIP.EghR7amyfBcObKlnT4OcqgHaGI?w=193&h=160&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        "title": "Joint supervision",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.y2opgEpGWgUTInoqTjD7rAHaE8?r=0&pid=ImgDet&w=178&h=118&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 2,
-        "title": "Resilient PNT, space-weather monitoring",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.Cjaq9cuz-AGKm0f-KjRuBgHaE1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        "title": "Collaborative projects",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.qWSVQ6AHTFKJHk7dIlj8VwHaFj?r=0&pid=ImgDet&w=178&h=133&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 3,
-        "title": "Receiver development",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.FSY3xErrDnMiZscPRQVvCwHaFN?r=0&pid=ImgDet&w=199&h=140&c=7&dpr=1.5&o=7&rm=3"
+        "title": "Publications",
+        "image": "https://tse4.mm.bing.net/th/id/OIP.n83WW_9Yoy_Zk_9LdVtWpwHaFF?r=0&pid=ImgDet&w=178&h=122&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 4,
-        "title": "GNSS applications and advanced human-capital development",
-        "image": "https://tse4.mm.bing.net/th/id/OIP.E42Fo3b7dyUEKrLAMobjzAHaEK?r=0&pid=ImgDet&w=199&h=111&c=7&dpr=1.5&o=7&rm=3"
+        "title": "Exchange and shared facilities",
+        "image": "https://tse2.mm.bing.net/th/id/OIP.fPKfUepse2rvNkjem873rwHaFE?r=0&pid=ImgDet&w=178&h=122&c=7&dpr=1.5&o=7&rm=3"
       }
     ]
   },
-"comp4": {
-  "title": "Academic and Research Institutions:",
-  "cards": [
-    {
-      "id": 1,
-      "title": "Joint supervision",
-      "image": "https://th.bing.com/th/id/OIP.OHH6Dk-J0L_cDRLrYdIDkgHaGc?w=172&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-    },
-    {
-      "id": 2,
-      "title": "Collaborative projects",
-      "image": "https://tse1.mm.bing.net/th/id/OIP.r17ay35xff_Hbww9bs-0qAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-    },
-    {
-      "id": 3,
-      "title": "Publications",
-      "image": "https://tse2.mm.bing.net/th/id/OIP.A1w_lkYAiwd9jvvPa3SOSAHaE7?r=0&pid=ImgDet&w=199&h=132&c=7&dpr=1.5&o=7&rm=3"
-    },
-    {
-      "id": 4,
-      "title": "Exchange and shared facilities",
-      "image": "https://th.bing.com/th/id/OIP.ojhhsauduvJPmOGX5v6IGwHaFr?w=194&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-    }
-  ],
-  "governmentCards": {
+  "comp5": {
     "title": "Government and Public-Sector Organizations",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Applied research",
-        "image": "https://th.bing.com/th/id/OIP.eMBiUI7M7nxASluKwDnU0gAAAA?w=294&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "National infrastructure",
-        "image": "https://th.bing.com/th/id/OIP.CHfVaJ8Gigw3oAiuwueQRAHaFh?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
-      },
-      {
-        "id": 3,
-        "title": "Policy-relevant studies",
-        "image": "https://th.bing.com/th/id/OIP.RmgdUxagBmyTSCjbbKQ7TgHaEc?w=312&h=187&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 4,
-        "title": "Technical capacity building",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.rLunFBueoJXH6k7ckJTSvAHaE2?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      }
-    ]
+    "description": "Applied research, national infrastructure, policy-relevant studies and technical capacity building.",
+    "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
   },
-  "industryCards": {
+  "comp6": {
     "title": "Industry and Technology Partners",
     "cards": [
       {
         "id": 1,
         "title": "Testing, validation",
-        "image": "https://th.bing.com/th/id/OIP.FhxUZpjPtpI3tg3GpfGPegHaE8?w=195&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        "image": "https://tse4.mm.bing.net/th/id/OIP.y52SKvC3KCrlV6aqgeR6uAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
       },
       {
         "id": 2,
         "title": "Product development",
-        "image": "https://www.bing.com/th/id/OIP.qhyCsb5KuAoLwT1tYZHZ8wHaFn?w=193&h=146&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        "image": "https://tse4.mm.bing.net/th/id/OIP.n83WW_9Yoy_Zk_9LdVtWpwHaFF?r=0&pid=ImgDet&w=178&h=122&c=7&dpr=1.5&o=7&rm=3"
       },
       {
         "id": 3,
         "title": "Services, consultancy",
-        "image": "https://th.bing.com/th/id/OIP.VSAkct6qP69IFx-z2A0OfwHaE8?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+        "image": "https://news-media.stanford.edu/wp-content/uploads/2018/09/20162505/Satellite_hometop.jpg"
       },
       {
         "id": 4,
         "title": "Workforce development",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.aodQ9WXHpztNQ6vBGB2uNAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        "image": "https://tse2.mm.bing.net/th/id/OIP.qWSVQ6AHTFKJHk7dIlj8VwHaFj?r=0&pid=ImgDet&w=178&h=133&c=7&dpr=1.5&o=7&rm=3"
       }
     ]
   },
-  "internationalCards": {
+  "comp7": {
     "title": "International Scientific Networks",
+    "image": "https://media.licdn.com/dms/image/v2/D4D22AQEEDkP_abgOdw/feedshare-shrink_800/B4DZPK8UFEHMAk-/0/1734276631324?e=2147483647&v=beta&t=6OIUK3uiS5IYE4E6xkuz-FE-IOOHWepQWODnEYnwGqg",
     "cards": [
       {
         "id": 1,
@@ -151,11 +84,27 @@
         "image": "https://tse1.mm.bing.net/th/id/OIP.PvCz9RO1_AB2goFbDt1QEQHaEX?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
       }
     ]
-  }
-},
-  "comp5": {
+  },
+  "comp8": {
     "title": "Engagement includes",
-    "description": "The lab's international engagement includes cooperation with the Abdus Salam International Centre for Theoretical Physics on GNSS and space-weather observation, alongside participation in wider GNSS and space-weather communities.",
-    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/CIRCULAR-3-1200x1165.jpg"
+    "description": "The lab's international engagement includes cooperation with the Abdus Salam International Centre for Theoretical Physics on GNSS and space-weather observation.",
+    "image": "https://apiweb.ist.edu.pk/media/original_images/01.jpg",
+    "cards": [
+      {
+        "id": 1,
+        "title": "space-weather observation",
+        "image": "https://www.bing.com/th/id/OIP.gGQ0opBVGxr7jMCyor4DngAAAA?w=193&h=149&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      },
+      {
+        "id": 2,
+        "title": "wider GNSS",
+        "image": "https://tse1.mm.bing.net/th/id/OIP.o8Yqd4qVT-hD81vflENoVAHaE7?r=0&pid=ImgDet&w=199&h=132&c=7&dpr=1.5&o=7&rm=3"
+      },
+      {
+        "id": 3,
+        "title": "space-weather communities",
+        "image": "https://tse1.mm.bing.net/th/id/OIP.PvCz9RO1_AB2goFbDt1QEQHaEX?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+      }
+    ]
   }
 }

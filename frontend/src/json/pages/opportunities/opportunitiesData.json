@@ -1,169 +1,25 @@
 
 {
-  "comp2": {
-    "title": "Learn, research and innovate with the GNSS Research Lab",
-    "description": "The lab offers pathways for students, researchers, professionals and partner organizations to contribute to advanced work in satellite navigation and PNT.",
-    "image": "https://ncgsa.org.pk/wp-content/uploads/2026/01/NCGSA-Research-Labs.png"
-  },
+ "comp2": {
+  "title": "Graduate Research",
+  "description": "MS and PhD thesis opportunities aligned with :",
+  "image": "https://media.licdn.com/dms/image/v2/D4D22AQEEDkP_abgOdw/feedshare-shrink_800/B4DZPK8UFEHMAk-/0/1734276631324?e=2147483647&v=beta&t=6OIUK3uiS5IYE4E6xkuz-FE-IOOHWepQWODnEYnwGqg",
+  "cards": [
+    {
+      "id": 1,
+      "title": "research domains",
+      "image": "https://th.bing.com/th/id/OIP.pBigfKk3G25eM6u9C0T3WAHaGs?w=199&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": 2,
+      "title": "available supervision",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.9s-IslKVLooKjiyUsPAxIgHaFe?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    }
+  ]
+},
   "comp3": {
-    "title": "Graduate Research",
-    "cards": [
-      {
-        "id": 1,
-        "title": "MS and PhD thesis opportunities",
-        "image": "https://th.bing.com/th/id/OIP.pBigfKk3G25eM6u9C0T3WAHaGs?w=199&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Aligned with active research domains",
-        "image": "https://th.bing.com/th/id/OIP.YOiShC60cUcWqU4xj5tV2wHaGp?w=184&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 3,
-        "title": "Available supervision",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.9s-IslKVLooKjiyUsPAxIgHaFe?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      }
-    ]
-  },
-  "comp4": {
-    "title": "Undergraduate Projects",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Final-year projects",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.M38lGwGpLN9kOdOLJnA16AHaD1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Design projects",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.ru4CD0GCmqii68TNXLuSSgHaFE?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      },
-      {
-        "id": 3,
-        "title": "Supervised research exposure for eligible students",
-        "image": "https://th.bing.com/th/id/OIP.PuYdjXu4NopFAt1qn09kvQHaE8?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      }
-    ]
-  },
-  "comp5": {
-    "title": "Internships",
-    "description": "Structured opportunities for",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Practical learning",
-        "image": "https://ncgsa.org.pk/wp-content/uploads/2025/08/internship-1200x800.jpg"
-      },
-      {
-        "id": 2,
-        "title": "Data analysis",
-        "image": "https://tse4.mm.bing.net/th/id/OIP.NFH_KBNgVu0RT57sWMZwhgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      },
-      {
-        "id": 3,
-        "title": "Software development",
-        "image": "https://th.bing.com/th/id/OIP.Ap660ZoLTTg6fM0mD4ukZAHaE3?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
-      },
-      {
-        "id": 4,
-        "title": "Research support",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.hBcTq5suA_z9a4P5_CtkqwHaE7?r=0&pid=ImgDet&w=199&h=132&c=7&dpr=1.5&o=7&rm=3"
-      }
-    ]
-  },
-  "comp6": {
-    "title": "Research Assistantships",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Project-based",
-        "image": "https://th.bing.com/th/id/OIP.x-Dm97GIwUJTGWtFmddaxAHaE8?w=279&h=185&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Positions announced subject to funding",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.EjsOvoGC6lPdC7_zjLmXTwHaE7?r=0&pid=ImgDet&w=199&h=132&c=7&dpr=1.5&o=7&rm=3"
-      },
-      {
-        "id": 3,
-        "title": "And institutional approval",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.RPqLb56EdsKflHwqchxjpgHaEa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      }
-    ]
-  },
-  "comp7": {
-    "title": "Visiting Researchers",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Short-term academic engagement",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.qxIMzwyUvm68KCgyXHD2YAHaDv?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Joint experiments",
-        "image": "https://tse2.mm.bing.net/th/id/OIP.R9m_sA549r-sv5VHebqJAwHaFT?r=0&pid=ImgDet&w=199&h=141&c=7&dpr=1.5&o=7&rm=3"
-      },
-      {
-        "id": 3,
-        "title": "Seminars",
-        "image": "https://www.bing.com/th/id/OIP.1k4sa2FEismKR-RN6m5UTgHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
-      },
-      {
-        "id": 4,
-        "title": "Collaborative studies",
-        "image": "https://www.bing.com/th/id/OIP.Fwdq7EC_0xy_GGbK7GBXugHaFp?w=193&h=147&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
-      }
-    ]
-  },
-  "comp8": {
-    "title": "Professional Training",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Custom short courses",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.DlaTVyYeWtQ_v9CeBjBXYwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Technical sessions for academic participants",
-        "image": "https://www.bing.com/th/id/OIP.ENkfxICfOvCYdxM1OnTPtgHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
-      },
-      {
-        "id": 3,
-        "title": "Public-sector participants",
-        "image": "https://www.bing.com/th/id/OIP.um5bYXnjhqp-Rt8hHrnD-QHaER?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
-      },
-      {
-        "id": 4,
-        "title": "Industry participants",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.mlWGqgQhScNc0Yi5ck_0kAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-      }
-    ]
-  },
-  "comp9": {
-    "title": "Institutional Collaboration",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Joint proposals",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.CH0V8p9sUSFN3H5NHxePKwHaHa?r=0&pid=ImgDet&w=199&h=199&c=7&dpr=1.5&o=7&rm=3"
-      },
-      {
-        "id": 2,
-        "title": "Instrument hosting",
-        "image": "https://tse3.mm.bing.net/th/id/OIP.1sOVUerVUBy0GApQx8yDggHaEK?r=0&pid=ImgDet&w=199&h=112&c=7&dpr=1.5&o=7&rm=3"
-      },
-      {
-        "id": 3,
-        "title": "Data-sharing initiatives",
-        "image": "https://tse4.mm.bing.net/th/id/OIP.PXztRRKXZSDbPumx4u_LOQHaFP?r=0&pid=ImgDet&w=199&h=140&c=7&dpr=1.5&o=7&rm=3"
-      },
-      {
-        "id": 4,
-        "title": "Technology-development partnerships",
-        "image": "https://tse2.mm.bing.net/th/id/OIP.jExtHakicXA9cTE2qL614wHaFj?r=0&pid=ImgDet&w=199&h=149&c=7&dpr=1.5&o=7&rm=3"
-      }
-    ]
-  }
+  "title": "Internships",
+  "description": "Structured opportunities for practical learning, data analysis, software development and research support.",
+  "image": "https://ncgsa.org.pk/wp-content/uploads/2025/08/internship.jpg"
+}
 }

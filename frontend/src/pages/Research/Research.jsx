@@ -1,6 +1,5 @@
 // src/pages/Research/Research.jsx
 import Comp1 from "./components/Comp1";
-import Comp2 from "./components/Comp2";
 import Comp3 from "./components/Comp3";
 import Comp4 from "./components/Comp4";
 import Comp5 from "./components/Comp5";
@@ -13,11 +12,7 @@ const Research = () => {
     <div>
       <Comp1 />
       
-      {/* Research Detail - Comp2 (NOT in dropdown) */}
-      <div id="research-detail" style={{ scrollMarginTop: "130px" }}>
-        <Comp2 />
-      </div>
-
+     
       {/* Domains - Comp3 (IN DROPDOWN) */}
       <div id="domains-section" style={{ scrollMarginTop: "130px" }}>
         <Comp3 />

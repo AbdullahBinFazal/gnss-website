@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Col, Row, Typography, Flex } from "antd";
+import { useNavigate, Link } from 'react-router-dom';
 import styles from "../../../styles/AboutStyles/About.module.css";
 import aboutData from "../../../json/pages/about/aboutData.json";
 
@@ -30,13 +31,13 @@ const Comp5 = () => {
   const visibleCards = data.cards.slice(currentIndex, currentIndex + cardsPerView);
 
   return (
-    <section className={styles.sectionOffWhite} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Title level={2} className={styles.titleCenter}>
+    <section className={`${styles.sectionLight} ${styles.padding60}`}>
+      <div className={styles.container}>
+        <Flex vertical align="center" gap={12} style={{ marginBottom: "48px" }}>
+          <Title level={2} className={`${styles.title} ${styles.titleSize40}`}>
             {data.title}
           </Title>
-          <Paragraph className={styles.paragraphCenter}>
+          <Paragraph className={`${styles.description} ${styles.descriptionSize20} ${styles.descriptionCenter900}`}>
             {data.description}
           </Paragraph>
         </Flex>
@@ -53,16 +54,13 @@ const Comp5 = () => {
                   <div className={styles.card}>
                     <div className={styles.cardImage}>
                       <img src={card.image} alt={card.title} />
-                      <div className={styles.cardOverlay} />
                     </div>
-                    <div className={styles.cardContent}>
-                      <Title level={4} className={styles.cardTitle}>
-                        {card.title}
-                      </Title>
-                      <Paragraph className={styles.cardDescription}>
-                        {card.description}
-                      </Paragraph>
-                    </div>
+                    <Title level={4} className={styles.cardTitle}>
+                      {card.title}
+                    </Title>
+                    <Paragraph className={styles.cardDescription}>
+                      {card.description}
+                    </Paragraph>
                   </div>
                 </Col>
               ))}

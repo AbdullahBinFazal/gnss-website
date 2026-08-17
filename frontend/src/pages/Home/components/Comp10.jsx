@@ -1,5 +1,7 @@
 // src/pages/Home/components/Comp10.jsx
-import { Col, Row, Typography, Flex } from 'antd';
+import { Typography, Flex } from 'antd';
+import { Link } from 'react-router-dom';
+import { Button } from 'antd';
 import styles from "../../../styles/HomeStyles/Home.module.css";
 import homeData from "../../../json/pages/home/homeData.json";
 
@@ -9,32 +11,50 @@ const Comp10 = () => {
   const data = homeData.comp10;
 
   return (
-    <section className={styles.sectionOffWhite} style={{ padding: "60px 20px" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Flex vertical align="center" gap={8} style={{ marginBottom: "40px" }}>
-          <Title level={2} className={styles.titleCenter}>
+    <section className={styles.sectionCoPilot}>
+      <div className={styles.coPilotContainer}>
+        <Flex vertical align="center" className={styles.coPilotContent}>
+          <div className={styles.coPilotIconWrapper}>
+            <div className={styles.coPilotIcon}>
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <line x1="32" y1="53.33" x2="32" y2="5.33" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="32" y1="58.67" x2="32" y2="53.33" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="45.33" y1="53.33" x2="18.67" y2="5.33" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="45.33" y1="58.67" x2="18.67" y2="53.33" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="5.33" y1="32" x2="53.33" y2="32" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="5.33" y1="45.33" x2="53.33" y2="18.67" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="5.33" y1="18.67" x2="53.33" y2="45.33" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="53.33" y1="32" x2="58.67" y2="32" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="53.33" y1="45.33" x2="58.67" y2="45.33" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="53.33" y1="18.67" x2="58.67" y2="18.67" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="18.67" y1="53.33" x2="53.33" y2="53.33" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="10.67" y1="53.33" x2="18.67" y2="53.33" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="10.67" y1="10.67" x2="10.67" y2="10.67" stroke="#F3EFED" strokeWidth="2.67"/>
+                <line x1="21.33" y1="10.67" x2="21.33" y2="10.67" stroke="#F3EFED" strokeWidth="2.67"/>
+              </svg>
+            </div>
+          </div>
+
+          <Title level={1} className={styles.coPilotTitle}>
             {data.title}
           </Title>
+          <Paragraph className={styles.coPilotDescription}>
+            {data.description}
+          </Paragraph>
+
+          {data.button && (
+            <Link to={data.button.link || "/copilot"}>
+              <Button className={styles.coPilotButton}>
+                {data.button.text || "LAUNCH GNSS CO-PILOT"}
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <line x1="4.17" y1="10" x2="15.83" y2="10" stroke="#0B1020" strokeWidth="1.67"/>
+                  <line x1="10" y1="4.17" x2="15.83" y2="10" stroke="#0B1020" strokeWidth="1.67"/>
+                  <line x1="10" y1="15.83" x2="15.83" y2="10" stroke="#0B1020" strokeWidth="1.67"/>
+                </svg>
+              </Button>
+            </Link>
+          )}
         </Flex>
-
-        <Row gutter={[40, 40]} align="middle">
-          <Col xs={24} lg={10}>
-            <div className={styles.image}>
-              <img src={data.image} alt="GNSS Co-Pilot" />
-            </div>
-          </Col>
-
-          <Col xs={24} lg={14}>
-            <Flex vertical gap={16}>
-              <Title level={3} className={styles.subtitle}>
-                {data.subtitle}
-              </Title>
-              <Paragraph className={styles.paragraph}>
-                {data.description}
-              </Paragraph>
-            </Flex>
-          </Col>
-        </Row>
       </div>
     </section>
   );
