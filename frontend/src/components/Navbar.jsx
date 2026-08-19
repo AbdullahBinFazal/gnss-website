@@ -17,22 +17,28 @@ const navbarStyles = {
     left: 0,
     right: 0,
     zIndex: 1000,
-    background: "rgba(4, 9, 19, 0.9)",
+    background: "rgb(0, 0, 0)",
     backdropFilter: "blur(8px)",
-    borderBottom: "0.666667px solid #01050d2c",
-    height: "var(--header-height, 120px)",
+    borderBottom: "0.666667px solid #01050d",
+    height: "auto",
+    minHeight: "80px",
     display: "flex",
-    alignItems: "center",
-    padding: "0 30px",
+    flexDirection: "row",
+    alignItems: "stretch",
+    padding: "0",
     width: "100%",
+    flexWrap: "wrap",
   },
-  container: {
+  logoSection: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
-    width: "100%",
-    height: "100%",
-    maxWidth: "100%",
+    justifyContent: "center",
+    flexShrink: 0,
+    padding: "10px 15px",
+    height: "auto",
+    minHeight: "80px",
+    borderRight: "0.5px solid rgb(0, 0, 0)",
+    width: "auto",
   },
   logoLink: {
     display: "flex",
@@ -43,9 +49,64 @@ const navbarStyles = {
     flexShrink: 0,
   },
   logoImage: {
-    height: "99px",
+    height: "90px",
     width: "auto",
     objectFit: "contain",
+  },
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "stretch",
+    justifyContent: "flex-start",
+    width: "100%",
+    height: "auto",
+    flex: 1,
+    minHeight: "80px",
+  },
+  firstRow: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+    flex: 1,
+    borderBottom: "0.5px solid rgba(0, 0, 0, 0.99)",
+    padding: "4px 10px",
+    minHeight: "30px",
+  },
+  labName: {
+    fontFamily: "'Inter', sans-serif",
+    fontWeight: 800,
+    fontSize: "16px",
+    lineHeight: "1.2",
+    color: "#F3EFED",
+    textAlign: "center",
+  },
+  secondRow: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+    flex: 1,
+    borderBottom: "0.5px solid rgb(0, 0, 0)",
+    padding: "4px 10px",
+    minHeight: "30px",
+  },
+  organizationName: {
+    fontFamily: "'Inter', sans-serif",
+    fontWeight: 600,
+    fontSize: "13px",
+    lineHeight: "1.2",
+    color: "rgba(243, 239, 237, 0.8)",
+    textAlign: "center",
+  },
+  thirdRow: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    width: "100%",
+    flex: 1,
+    padding: "4px 10px",
+    minHeight: "40px",
   },
   desktopMenu: {
     display: "flex",
@@ -55,6 +116,9 @@ const navbarStyles = {
     border: "none",
     flex: 1,
     gap: "0px",
+    flexShrink: 1,
+    minWidth: 0,
+    overflow: "hidden",
   },
   mobileMenuButton: {
     fontSize: "20px",
@@ -64,22 +128,23 @@ const navbarStyles = {
     justifyContent: "center",
     background: "transparent",
     border: "none",
+    marginLeft: "auto",
   },
   navLink: {
     fontFamily: "'Space Grotesk', sans-serif",
     fontWeight: 500,
-    fontSize: "11px",
+    fontSize: "10px",
     lineHeight: "10px",
     color: "#fefefe",
     textDecoration: "none",
-    // textTransform: "uppercase",
-    // letterSpacing: "1.08px",
-    padding: "27px 7px 25px",
+    padding: "15px 5px",
     position: "relative",
     display: "inline-flex",
     alignItems: "center",
-    gap: "4px",
+    gap: "1px",
     transition: "color 0.3s ease",
+    flexShrink: 0,
+    whiteSpace: "nowrap",
   },
   activeNavLink: {
     fontFamily: "'Space Grotesk', sans-serif",
@@ -90,17 +155,19 @@ const navbarStyles = {
     textDecoration: "none",
     textTransform: "uppercase",
     letterSpacing: "1.08px",
-    padding: "27px 7px 25px",
+    padding: "15px 5px",
     position: "relative",
     display: "inline-flex",
     alignItems: "center",
     gap: "4px",
+    flexShrink: 0,
+    whiteSpace: "nowrap",
   },
   activeUnderline: {
     position: "absolute",
-    bottom: "19px",
-    left: "7px",
-    right: "7px",
+    bottom: "10px", // FIXED: changed from 12px to 10px
+    left: "5px",
+    right: "5px",
     height: "1px",
     background: "#54C4ED",
   },
@@ -140,6 +207,63 @@ const navbarStyles = {
   },
 };
 
+// Desktop styles override (applied on larger screens)
+const desktopStyles = {
+  logoImage: {
+    height: "105px",
+    width: "auto",
+    objectFit: "contain",
+  },
+  labName: {
+    fontSize: "25px",
+    lineHeight: "60px",
+  },
+  organizationName: {
+    fontSize: "20px",
+    lineHeight: "29px",
+  },
+  navLink: {
+    padding: "27px 7px 25px",
+    fontSize: "11px",
+    flexShrink: 0,
+    whiteSpace: "nowrap",
+  },
+  activeNavLink: {
+    padding: "27px 7px 25px",
+    fontSize: "10px",
+    flexShrink: 0,
+    whiteSpace: "nowrap",
+  },
+  activeUnderline: {
+    bottom: "17px", // FIXED: changed from 19px to 17px
+    left: "7px",
+    right: "7px",
+  },
+  logoSection: {
+    padding: "0 30px",
+    minHeight: "150px",
+    borderRight: "0.5px solid rgba(0, 0, 0, 0.97)",
+  },
+  firstRow: {
+    padding: "0",
+    paddingRight: "170px",
+  },
+  secondRow: {
+    padding: "0",
+    paddingRight: "170px",
+  },
+  thirdRow: {
+    padding: "0",
+    paddingRight: "20px",
+  },
+  desktopMenu: {
+    flex: 1,
+    flexShrink: 1,
+    minWidth: 0,
+    overflow: "hidden",
+  },
+};
+
 const Navbar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -159,6 +283,37 @@ const Navbar = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  // Get merged styles based on screen size
+  const getStyles = () => {
+    if (isMobile) {
+      return navbarStyles;
+    }
+    // Merge desktop styles
+    return {
+      header: { ...navbarStyles.header, height: "150px", minHeight: "150px", flexWrap: "nowrap" },
+      logoSection: { ...navbarStyles.logoSection, ...desktopStyles.logoSection },
+      logoLink: navbarStyles.logoLink,
+      logoImage: { ...navbarStyles.logoImage, ...desktopStyles.logoImage },
+      container: { ...navbarStyles.container, minHeight: "150px" },
+      firstRow: { ...navbarStyles.firstRow, ...desktopStyles.firstRow },
+      labName: { ...navbarStyles.labName, ...desktopStyles.labName },
+      secondRow: { ...navbarStyles.secondRow, ...desktopStyles.secondRow },
+      organizationName: { ...navbarStyles.organizationName, ...desktopStyles.organizationName },
+      thirdRow: { ...navbarStyles.thirdRow, ...desktopStyles.thirdRow },
+      desktopMenu: { ...navbarStyles.desktopMenu, ...desktopStyles.desktopMenu },
+      mobileMenuButton: navbarStyles.mobileMenuButton,
+      navLink: { ...navbarStyles.navLink, ...desktopStyles.navLink },
+      activeNavLink: { ...navbarStyles.activeNavLink, ...desktopStyles.activeNavLink },
+      activeUnderline: { ...navbarStyles.activeUnderline, ...desktopStyles.activeUnderline },
+      dropdownArrow: navbarStyles.dropdownArrow,
+      dropdownOverlay: navbarStyles.dropdownOverlay,
+      dropdownLink: navbarStyles.dropdownLink,
+      mobileNavLink: navbarStyles.mobileNavLink,
+    };
+  };
+
+  const styles = getStyles();
 
   // Handle hash navigation - scroll to section
   useEffect(() => {
@@ -263,12 +418,12 @@ const Navbar = () => {
         <NavLink 
           to="/" 
           style={({ isActive }) => ({
-            ...navbarStyles.navLink,
-            ...(isActive ? navbarStyles.activeNavLink : {}),
+            ...styles.navLink,
+            ...(isActive ? styles.activeNavLink : {}),
           })}
         >
           Home
-          {location.pathname === "/" && <span style={navbarStyles.activeUnderline} />}
+          {location.pathname === "/" && <span style={styles.activeUnderline} />}
         </NavLink>
       ),
     },
@@ -287,12 +442,12 @@ const Navbar = () => {
           <NavLink 
             to="/about" 
             style={({ isActive }) => ({
-              ...navbarStyles.navLink,
-              ...(isActive ? navbarStyles.activeNavLink : {}),
+              ...styles.navLink,
+              ...(isActive ? styles.activeNavLink : {}),
             })}
           >
             About <DownOutlined style={navbarStyles.dropdownArrow} />
-            {location.pathname === "/about" && <span style={navbarStyles.activeUnderline} />}
+            {location.pathname === "/about" && <span style={styles.activeUnderline} />}
           </NavLink>
         </Dropdown>
       ),
@@ -312,12 +467,12 @@ const Navbar = () => {
           <NavLink 
             to="/research" 
             style={({ isActive }) => ({
-              ...navbarStyles.navLink,
-              ...(isActive ? navbarStyles.activeNavLink : {}),
+              ...styles.navLink,
+              ...(isActive ? styles.activeNavLink : {}),
             })}
           >
             Research <DownOutlined style={navbarStyles.dropdownArrow} />
-            {location.pathname === "/research" && <span style={navbarStyles.activeUnderline} />}
+            {location.pathname === "/research" && <span style={styles.activeUnderline} />}
           </NavLink>
         </Dropdown>
       ),
@@ -337,12 +492,12 @@ const Navbar = () => {
           <NavLink 
             to="/programs" 
             style={({ isActive }) => ({
-              ...navbarStyles.navLink,
-              ...(isActive ? navbarStyles.activeNavLink : {}),
+              ...styles.navLink,
+              ...(isActive ? styles.activeNavLink : {}),
             })}
           >
             Academics <DownOutlined style={navbarStyles.dropdownArrow} />
-            {location.pathname === "/programs" && <span style={navbarStyles.activeUnderline} />}
+            {location.pathname === "/programs" && <span style={styles.activeUnderline} />}
           </NavLink>
         </Dropdown>
       ),
@@ -362,12 +517,12 @@ const Navbar = () => {
           <NavLink 
             to="/facilities" 
             style={({ isActive }) => ({
-              ...navbarStyles.navLink,
-              ...(isActive ? navbarStyles.activeNavLink : {}),
+              ...styles.navLink,
+              ...(isActive ? styles.activeNavLink : {}),
             })}
           >
             Facilities <DownOutlined style={navbarStyles.dropdownArrow} />
-            {location.pathname === "/facilities" && <span style={navbarStyles.activeUnderline} />}
+            {location.pathname === "/facilities" && <span style={styles.activeUnderline} />}
           </NavLink>
         </Dropdown>
       ),
@@ -387,12 +542,12 @@ const Navbar = () => {
           <NavLink 
             to="/digital-observatory" 
             style={({ isActive }) => ({
-              ...navbarStyles.navLink,
-              ...(isActive ? navbarStyles.activeNavLink : {}),
+              ...styles.navLink,
+              ...(isActive ? styles.activeNavLink : {}),
             })}
           >
             Digital Observatory <DownOutlined style={navbarStyles.dropdownArrow} />
-            {location.pathname === "/digital-observatory" && <span style={navbarStyles.activeUnderline} />}
+            {location.pathname === "/digital-observatory" && <span style={styles.activeUnderline} />}
           </NavLink>
         </Dropdown>
       ),
@@ -412,12 +567,12 @@ const Navbar = () => {
           <NavLink 
             to="/capacity-building" 
             style={({ isActive }) => ({
-              ...navbarStyles.navLink,
-              ...(isActive ? navbarStyles.activeNavLink : {}),
+              ...styles.navLink,
+              ...(isActive ? styles.activeNavLink : {}),
             })}
           >
             Capacity Building <DownOutlined style={navbarStyles.dropdownArrow} />
-            {location.pathname === "/capacity-building" && <span style={navbarStyles.activeUnderline} />}
+            {location.pathname === "/capacity-building" && <span style={styles.activeUnderline} />}
           </NavLink>
         </Dropdown>
       ),
@@ -437,12 +592,12 @@ const Navbar = () => {
           <NavLink 
             to="/collaborations" 
             style={({ isActive }) => ({
-              ...navbarStyles.navLink,
-              ...(isActive ? navbarStyles.activeNavLink : {}),
+              ...styles.navLink,
+              ...(isActive ? styles.activeNavLink : {}),
             })}
           >
             Collaborations <DownOutlined style={navbarStyles.dropdownArrow} />
-            {location.pathname === "/collaborations" && <span style={navbarStyles.activeUnderline} />}
+            {location.pathname === "/collaborations" && <span style={styles.activeUnderline} />}
           </NavLink>
         </Dropdown>
       ),
@@ -462,12 +617,12 @@ const Navbar = () => {
           <NavLink 
             to="/opportunities" 
             style={({ isActive }) => ({
-              ...navbarStyles.navLink,
-              ...(isActive ? navbarStyles.activeNavLink : {}),
+              ...styles.navLink,
+              ...(isActive ? styles.activeNavLink : {}),
             })}
           >
             Opportunities <DownOutlined style={navbarStyles.dropdownArrow} />
-            {location.pathname === "/opportunities" && <span style={navbarStyles.activeUnderline} />}
+            {location.pathname === "/opportunities" && <span style={styles.activeUnderline} />}
           </NavLink>
         </Dropdown>
       ),
@@ -487,12 +642,12 @@ const Navbar = () => {
           <NavLink 
             to="/copilot" 
             style={({ isActive }) => ({
-              ...navbarStyles.navLink,
-              ...(isActive ? navbarStyles.activeNavLink : {}),
+              ...styles.navLink,
+              ...(isActive ? styles.activeNavLink : {}),
             })}
           >
             Co-Pilot <DownOutlined style={navbarStyles.dropdownArrow} />
-            {location.pathname === "/copilot" && <span style={navbarStyles.activeUnderline} />}
+            {location.pathname === "/copilot" && <span style={styles.activeUnderline} />}
           </NavLink>
         </Dropdown>
       ),
@@ -503,12 +658,12 @@ const Navbar = () => {
         <NavLink 
           to="/contact-us" 
           style={({ isActive }) => ({
-            ...navbarStyles.navLink,
-            ...(isActive ? navbarStyles.activeNavLink : {}),
+            ...styles.navLink,
+            ...(isActive ? styles.activeNavLink : {}),
           })}
         >
           Contact Us
-          {location.pathname === "/contact-us" && <span style={navbarStyles.activeUnderline} />}
+          {location.pathname === "/contact-us" && <span style={styles.activeUnderline} />}
         </NavLink>
       ),
     },
@@ -537,12 +692,12 @@ const Navbar = () => {
         <NavLink 
           to="/admin" 
           style={({ isActive }) => ({
-            ...navbarStyles.navLink,
-            ...(isActive ? navbarStyles.activeNavLink : {}),
+            ...styles.navLink,
+            ...(isActive ? styles.activeNavLink : {}),
           })}
         >
           Admin
-          {location.pathname === "/admin" && <span style={navbarStyles.activeUnderline} />}
+          {location.pathname === "/admin" && <span style={styles.activeUnderline} />}
         </NavLink>
       ),
     });
@@ -553,71 +708,87 @@ const Navbar = () => {
   }
 
   return (
-    <Header style={navbarStyles.header}>
-      <div style={navbarStyles.container}>
-        {/* Logo - Keep original */}
-        <Link to="/" style={navbarStyles.logoLink}>
+    <Header style={styles.header}>
+      {/* Logo Section - Spans all 3 rows */}
+      <div style={styles.logoSection}>
+        <Link to="/" style={styles.logoLink}>
           <img 
             src={gnssLogo} 
             alt="GNSS Logo" 
-            style={navbarStyles.logoImage} 
+            style={styles.logoImage} 
           />
         </Link>
-
-        {/* Desktop Menu - Figma UI */}
-        {!isMobile && (
-          <Menu
-            mode="horizontal"
-            selectedKeys={[location.pathname]}
-            items={desktopMenuItems}
-            style={navbarStyles.desktopMenu}
-          />
-        )}
-
-        {/* Mobile Menu Button */}
-        {isMobile && (
-          <Button
-            type="text"
-            icon={<MenuOutlined style={{ color: "#909BAD" }} />}
-            onClick={() => setMobileMenuOpen(true)}
-            style={navbarStyles.mobileMenuButton}
-          />
-        )}
-
-        {/* Mobile Drawer - Dark theme */}
-        <Drawer
-          placement="right"
-          open={mobileMenuOpen}
-          onClose={() => setMobileMenuOpen(false)}
-          closable={true}
-          closeIcon={<CloseOutlined style={{ color: "#909BAD" }} />}
-          width={280}
-          styles={{
-            body: {
-              padding: 0,
-              background: "#0B1019",
-            },
-            header: {
-              borderBottom: "0.666667px solid #283243",
-              padding: "16px 20px",
-              background: "#0B1019",
-            },
-          }}
-        >
-          <div style={{ padding: "8px 0" }}>
-            <Menu
-              mode="inline"
-              selectedKeys={[location.pathname]}
-              items={mobileMenuItems}
-              style={{
-                border: "none",
-                background: "transparent",
-              }}
-              onClick={() => setMobileMenuOpen(false)}
-            />
-          </div>
-        </Drawer>
       </div>
+
+      {/* Main Container - All text rows */}
+      <div style={styles.container}>
+        {/* First Row - GNSS Research Lab */}
+        <div style={styles.firstRow}>
+          <span style={styles.labName}>GNSS Research Lab</span>
+        </div>
+
+        {/* Second Row - NCGSA, IST, Islamabad */}
+        <div style={styles.secondRow}>
+          <span style={styles.organizationName}>NCGSA, Institute Of Space Technology, Islamabad</span>
+        </div>
+
+        {/* Third Row - Navigation Menu */}
+        <div style={styles.thirdRow}>
+          {/* Desktop Menu */}
+          {!isMobile && (
+            <Menu
+              mode="horizontal"
+              selectedKeys={[location.pathname]}
+              items={desktopMenuItems}
+              style={styles.desktopMenu}
+            />
+          )}
+
+          {/* Mobile Menu Button */}
+          {isMobile && (
+            <Button
+              type="text"
+              icon={<MenuOutlined style={{ color: "#909BAD" }} />}
+              onClick={() => setMobileMenuOpen(true)}
+              style={styles.mobileMenuButton}
+            />
+          )}
+        </div>
+      </div>
+
+      {/* Mobile Drawer - Dark theme */}
+      <Drawer
+        placement="right"
+        open={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
+        closable={true}
+        closeIcon={<CloseOutlined style={{ color: "#909BAD" }} />}
+        width={280}
+        styles={{
+          body: {
+            padding: 0,
+            background: "#0B1019",
+          },
+          header: {
+            borderBottom: "0.666667px solid #283243",
+            padding: "16px 20px",
+            background: "#0B1019",
+          },
+        }}
+      >
+        <div style={{ padding: "8px 0" }}>
+          <Menu
+            mode="inline"
+            selectedKeys={[location.pathname]}
+            items={mobileMenuItems}
+            style={{
+              border: "none",
+              background: "transparent",
+            }}
+            onClick={() => setMobileMenuOpen(false)}
+          />
+        </div>
+      </Drawer>
     </Header>
   );
 };

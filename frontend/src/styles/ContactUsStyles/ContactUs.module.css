@@ -2,6 +2,7 @@
    CONTACTUS.MODULE.CSS - Consolidated Styles
    All common classes declared once, used everywhere
    All paddings and designs preserved exactly as original
+   PROPER TEXT ALIGNMENT FOR DIFFERENT CONTENT TYPES
    ============================================ */
 
 /* ===== CONTAINER ===== */
@@ -29,11 +30,14 @@
   padding: 96px 0 128px 0;
 }
 
-/* ===== TITLES ===== */
+/* ============================================
+   TITLES - CENTERED
+   ============================================ */
 .title {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
   margin: 0 !important;
+  text-align: justify !important;
 }
 
 .sectionLight .title {
@@ -42,24 +46,29 @@
 
 .sectionDark .title {
   color: #F3EFED !important;
-  text-align: center;
+  text-align: justify !important;
 }
 
 /* Title sizes */
 .titleSize40 {
   font-size: 40px !important;
   line-height: 60px !important;
+  text-align: justify !important;
 }
 
 .sectionDark .titleSize40 {
   line-height: 48px !important;
 }
 
-/* ===== DESCRIPTIONS ===== */
+/* ============================================
+   DESCRIPTIONS - JUSTIFIED (for longer text)
+   ============================================ */
 .description {
   font-family: 'Inter', sans-serif !important;
   font-weight: 300 !important;
   margin: 0 !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .sectionLight .description {
@@ -70,7 +79,9 @@
   color: rgb(255, 255, 255) !important;
 }
 
-/* ===== LINKS ===== */
+/* ============================================
+   LINKS
+   ============================================ */
 .link {
   display: inline-flex;
   align-items: center;
@@ -107,16 +118,21 @@
   color: #0B70C1;
 }
 
-/* ===== IMAGE WRAPPER & IMAGE ===== */
+/* ============================================
+   IMAGE WRAPPER & IMAGE
+   ============================================ */
 .imageWrapper {
-  border-radius: 12px;
-  padding: 20px;
+  background: #24304A;
+  border: 1px solid rgba(135, 135, 136, 0.5);
+  border-radius: 8px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
   min-height: 400px;
+  text-align: justify;
 }
 
 .sectionLight .imageWrapper {
@@ -134,9 +150,9 @@
 
 .image {
   width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: contain;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
   border-radius: 4px;
   transition: transform 0.4s ease;
 }
@@ -145,7 +161,9 @@
   transform: scale(1.02);
 }
 
-/* ===== VERTICAL CARDS ===== */
+/* ============================================
+   VERTICAL CARDS - LEFT ALIGNED
+   ============================================ */
 .verticalCards {
   display: flex;
   flex-direction: column;
@@ -236,6 +254,7 @@
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
   margin: 0 !important;
+  text-align: left !important;
 }
 
 .sectionLight .verticalCardTitle {
@@ -251,7 +270,7 @@
 }
 
 /* ============================================
-   COMP 1 - HERO SECTION (Unique)
+   COMP 1 - HERO SECTION (Unique - KEPT CENTERED)
    ============================================ */
 .hero {
   min-height: 100vh;
@@ -441,7 +460,7 @@
   color: #F3EFED !important;
   margin-bottom: 24px !important;
   max-width: 910px;
-  text-align: center;
+  text-align: center !important;
 }
 
 .heroDescription {
@@ -452,5 +471,5 @@
   color: rgb(254, 255, 255) !important;
   max-width: 650px;
   margin: 0 auto 40px auto !important;
-  text-align: center;
+  text-align: justify !important;
 }

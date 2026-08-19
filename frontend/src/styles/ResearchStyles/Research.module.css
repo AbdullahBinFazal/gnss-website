@@ -2,6 +2,7 @@
    RESEARCH.MODULE.CSS - Consolidated Styles
    All common classes declared once, used everywhere
    All paddings and designs preserved exactly as original
+   ALL CONTENT JUSTIFIED
    ============================================ */
 
 /* ===== CONTAINER ===== */
@@ -36,12 +37,15 @@
   padding: 96px 0 128px 0;
 }
 
-/* ===== TITLES ===== */
+/* ============================================
+   TITLES - JUSTIFIED
+   ============================================ */
 .title {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
   margin: 0 !important;
-  text-align: center;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .sectionLight .title {
@@ -56,22 +60,30 @@
 .titleSize41 {
   font-size: 41px !important;
   line-height: 48px !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .titleSize42 {
   font-size: 42px !important;
   line-height: 72px !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .sectionDark .titleSize41 {
   line-height: 72px !important;
 }
 
-/* ===== DESCRIPTIONS ===== */
+/* ============================================
+   DESCRIPTIONS - JUSTIFIED
+   ============================================ */
 .description {
   font-family: 'Inter', sans-serif !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   margin: 0 !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .sectionLight .description {
@@ -79,62 +91,75 @@
 }
 
 .sectionDark .description {
-  color: rgba(0, 0, 0, 0.8) !important;
+  color: rgba(251, 249, 249, 0.993) !important;
 }
 
 .descriptionSize19 {
-  font-size: 19px !important;
+  font-size: 21px !important;
   line-height: 32px !important;
 }
 
 .descriptionSize20 {
-  font-size: 20px !important;
+  font-size: 22px !important;
   line-height: 32px !important;
 }
 
 .descriptionCenter {
-  font-size: 17px !important;
+  font-size: 19px !important;
   line-height: 28px !important;
   max-width: 672px;
   margin: 0 auto !important;
-  text-align: center;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .descriptionCenter900 {
   max-width: 900px;
   margin: 8px auto 0 auto !important;
-  text-align: center;
+  text-align: justify !important;
+  text-justify: inter-word !important;
   padding: 0 20px;
 }
 
 .descriptionWithBorder {
   border-left: 2px solid #D63A45;
   padding-left: 26px;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
-/* ===== IMAGE WRAPPER & IMAGE ===== */
+/* ============================================
+   IMAGE WRAPPER & IMAGE
+   ============================================ */
 .imageWrapper {
-  background: #151C31;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
+  background: #24304A;
+  border: 1px solid rgba(135, 135, 136, 0.5);
+  border-radius: 8px;
   padding: 0;
-  overflow: hidden;
-  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  min-height: 426px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
 }
 
-.imageCover {
+.image {
   width: 100%;
   height: 100%;
+  min-height: 300px;
   object-fit: cover;
-  display: block;
+  border-radius: 4px;
+  transition: transform 0.4s ease;
 }
 
-/* ===== CARDS ===== */
+.image:hover {
+  transform: scale(1.02);
+}
+
+/* ============================================
+   CARDS - JUSTIFIED
+   ============================================ */
 .card {
   border-radius: 16px;
   overflow: hidden;
@@ -201,10 +226,13 @@
 .cardTitle {
   font-family: 'Inter', sans-serif !important;
   font-weight: 500 !important;
-  font-size: 16px !important;
+  font-size: 24px !important;
   line-height: 28px !important;
   color: #000000 !important;
   margin: 24px 20px 8px 20px !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  align-content: center;
 }
 
 .sectionDark .cardTitle {
@@ -214,22 +242,26 @@
 .cardDescription {
   font-family: 'Inter', sans-serif !important;
   font-weight: 300 !important;
-  font-size: 14px !important;
+  font-size: 22px !important;
   line-height: 23px !important;
   color: rgba(0, 0, 0, 0.7) !important;
   margin: 0 20px 16px 20px !important;
   flex: 1;
+  text-align: justify !important;
 }
 
 .sectionDark .cardDescription {
-  font-weight: 400 !important;
-  font-size: 13px !important;
-  line-height: 18px !important;
+  font-weight: 300 !important;
+  font-size: 23px !important;
+  line-height: 19px !important;
   color: #000000 !important;
-  text-align: center;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
-/* ===== CARD OVERLAY (for dark cards) ===== */
+/* ============================================
+   CARD OVERLAY (for dark cards)
+   ============================================ */
 .cardOverlay {
   background: rgba(196, 232, 251, 0.8);
   padding: 10px 16px 14px;
@@ -242,10 +274,11 @@
 .cardOverlayTitle {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 22px;
   color: #000000;
-  text-align: center;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .cardContent {
@@ -255,11 +288,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: justify !important;
   border-bottom: 0.888889px solid #DFE5E8;
 }
 
-/* ===== VERTICAL LIST ===== */
+/* ============================================
+   VERTICAL LIST - JUSTIFIED
+   ============================================ */
 .verticalList {
   display: flex;
   flex-direction: column;
@@ -298,102 +333,62 @@
   line-height: 20px !important;
   color: #0B1020 !important;
   margin: 0 !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 /* ============================================
-   CAROUSEL (Shared)
+   ANT DESIGN CAROUSEL STYLES - FOR ALL COMPONENTS
    ============================================ */
-.carouselWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+.antCarousel {
+  margin: 0 -12px;
+}
+
+.antCarousel :global(.slick-slide) {
+  padding: 0 12px;
+}
+
+.carouselSlide {
+  padding: 0 12px;
+}
+
+/* Ant Design Carousel dots customization */
+.antCarousel :global(.slick-dots) {
   position: relative;
-  padding: 20px 0;
-}
-
-.carouselArrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-  padding: 0;
-}
-
-.sectionLight .carouselArrow {
-  border: 2px solid rgba(11, 16, 32, 0.15);
-  background: rgba(255, 255, 255, 0.8);
-  color: #0B1020;
-}
-
-.sectionDark .carouselArrow {
-  border: 2px solid rgba(182, 202, 213, 0.15);
-  background: rgba(11, 16, 32, 0.8);
-  color: #B6CAD5;
-}
-
-.sectionLight .carouselArrow:hover {
-  background: #0B1020;
-  border-color: #0B1020;
-  color: #F3EFED;
-  transform: scale(1.1);
-  box-shadow: 0 4px 16px rgba(11, 16, 32, 0.25);
-}
-
-.sectionDark .carouselArrow:hover {
-  background: #F3EFED;
-  border-color: #F3EFED;
-  color: #0B1020;
-  transform: scale(1.1);
-  box-shadow: 0 4px 16px rgba(243, 239, 237, 0.25);
-}
-
-.carouselContainer {
-  flex: 1;
-  overflow: hidden;
-  min-width: 0;
-  max-width: 1200px;
-}
-
-.carouselIndicators {
-  display: flex;
+  bottom: -40px;
+  display: flex !important;
   justify-content: center;
   gap: 8px;
-  margin-top: 24px;
 }
 
-.indicator {
+.antCarousel :global(.slick-dots li) {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+}
+
+.antCarousel :global(.slick-dots li button) {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
   padding: 0;
-}
-
-.sectionLight .indicator {
   background: rgba(11, 16, 32, 0.2);
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.sectionDark .indicator {
+.sectionDark .antCarousel :global(.slick-dots li button) {
   background: rgba(182, 202, 213, 0.2);
 }
 
-.indicatorActive {
+.antCarousel :global(.slick-dots li.slick-active button) {
   background: #D63A45;
   width: 30px;
   border-radius: 5px;
 }
 
 /* ============================================
-   PUBLICATION CARDS (Comp6, Comp7, Comp8)
+   PUBLICATION CARDS (Comp6, Comp7, Comp8) - JUSTIFIED
    ============================================ */
 .publicationCard {
   background: transparent;
@@ -428,7 +423,7 @@
 .publicationCategoryTag span {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 400;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.45px;
   text-transform: uppercase;
@@ -438,7 +433,7 @@
 .publicationYear {
   font-family: 'Inter', monospace;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -450,21 +445,25 @@
   line-height: 25px;
   color: #0B1020;
   margin: 4px 0 0 0;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .publicationAuthors {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 19px;
   line-height: 20px;
-  color: rgba(36, 48, 74, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   margin: 0 0 4px 0;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .publicationLink {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 15px;
   color: #000000;
   text-decoration: none;
@@ -489,7 +488,9 @@
   transform: translateX(4px);
 }
 
-/* ===== FILTER CHIPS ===== */
+/* ============================================
+   FILTER CHIPS
+   ============================================ */
 .filterWrapper {
   display: flex;
   flex-wrap: wrap;
@@ -528,9 +529,11 @@
   border-color: #1a1a2e;
 }
 
-/* ===== EMPTY STATE ===== */
+/* ============================================
+   EMPTY STATE
+   ============================================ */
 .emptyState {
-  text-align: center;
+  text-align: justify;
   padding: 40px 0;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 18px;
@@ -728,7 +731,8 @@
   color: #F3EFED !important;
   margin-bottom: 24px !important;
   max-width: 910px;
-  text-align: center;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .heroDescription {
@@ -739,5 +743,80 @@
   color: rgb(254, 255, 255) !important;
   max-width: 650px;
   margin: 0 auto 40px auto !important;
-  text-align: center;
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+/* ============================================
+   COMP 6 - PUBLICATION CARDS - DARK THEME ONLY
+   ============================================ */
+.sectionDark .publicationCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(182, 202, 213, 0.1);
+}
+
+.sectionDark .publicationCard:hover {
+  border-color: rgba(58, 208, 238, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sectionDark .publicationCategoryTag {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.sectionDark .publicationCategoryTag span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sectionDark .publicationYear {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sectionDark .publicationTitle {
+  color: #F3EFED;
+}
+
+.sectionDark .publicationAuthors {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sectionDark .publicationLink {
+  color: #B6CAD5;
+}
+
+.sectionDark .publicationLink:hover {
+  color: #0B70C1;
+}
+
+/* ============================================
+   COMP 6 - FILTER CHIPS - DARK THEME
+   ============================================ */
+.sectionDark .filterChip {
+  border: 1px solid rgba(182, 202, 213, 0.2);
+  color: #eaeff1;
+}
+
+.sectionDark .filterChip:hover {
+  border-color: rgba(253, 254, 254, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sectionDark .filterChipActive {
+  background: #f9fbfc;
+  border-color: #54C4ED;
+  color: #0B1020;
+}
+
+.sectionDark .filterChipActive:hover {
+  background: #3a8faf;
+  border-color: #3a8faf;
+}
+
+/* ============================================
+   COMP 6 - EMPTY STATE - DARK THEME
+   ============================================ */
+.sectionDark .emptyState {
+  color: rgba(182, 202, 213, 0.6);
 }

@@ -1,9 +1,9 @@
 
 {
 "comp3": {
-  "title": "MS Global Navigation Satellite Systems",
+  "title": "MS In Global Navigation Satellite Systems",
   "description": "Launched in 2014, the MS GNSS programme develops advanced expertise in satellite navigation theory, technology and applications. The programme combines specialized coursework with a research thesis and covers:",
-  "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg",
+  "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93591452_1591974404293372_2782460963184443392_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x720&ctp=s1080x720&_nc_cat=102&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=mL-miuPoF4oQ7kNvwGfhE3V&_nc_oc=Ado5kCg5HstLBd7FppVnZwE2eNrjyjaw7ch7cXRrAnQUKmZkk-s0PezBs14cQSKSRq0&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=6VXX13XRi3UgDKkvYxz5xQ&_nc_ss=7a289&oh=00_AQETIaOSJ2NZBToBsOoiC18eXlAOnAFkxEJySUuxvvSSqQ&oe=6AAB72C5",
   "cards": [
     {
       "id": 1,
@@ -44,7 +44,7 @@
   "comp4": {
     "title": "PhD in Global Navigation Satellite Systems",
     "description": "The PhD GNSS programme advances research and innovation in satellite-based PNT technologies and strengthens high-level national expertise in this strategic field. Doctoral research is supported by specialized receivers, software-defined radio platforms, CORS infrastructure and digital observatory facilities.",
-    "image": "https://apiweb.ist.edu.pk/media/original_images/01.jpg",
+    "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93028224_1591974164293396_6386180992612171776_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x720&ctp=s1080x720&_nc_cat=103&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=3NaKxAeZd8UQ7kNvwEcnQT8&_nc_oc=AdoAJHego9reZTnUZ5PiGo5Yfh-z8Hund2_Letpyj8HL4hpni5Usj7zK1cNOWPXNhT4&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=fQT2coinSv_VzXHaI2QIkA&_nc_ss=7a289&oh=00_AQFkTd43pcerOIZKrGh5LrdPs-GUbNYdMNQaTBBIw286kA&oe=6AAB4A0B",
     "button": {
       "text": "Programme link",
       "link": "https://www.ist.edu.pk/academics?page=275&&section=phd-in-global-navigation-satellite-systems-gnss"
@@ -68,23 +68,23 @@
     ]
   },
   "comp5": {
-    "title": "MS Space Technology and Applications",
+    "title": "MS In Space Technology and Applications",
     "description": "The interdisciplinary MS Space Technology and Applications programme provides advanced education and research pathways across five specialized domains. It is designed for students from diverse backgrounds and integrates :",
     "cards": [
       {
         "id": 1,
         "title": "Space technology",
-        "image": "https://www.bing.com/th/id/OIP.9qBoqRt-NJQv5PJQfaOx5gHaFw?w=193&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+        "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93245411_1591884864302326_1623438848375652352_n.jpg?stp=dst-jpg_tt6&cstp=mx1944x1296&ctp=s1944x1296&_nc_cat=105&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=wMrQqJxDf70Q7kNvwEMiN0O&_nc_oc=AdroTlq4IgpHSsDEB-RgcJQjUSuIN9sU2Wn5NjVTTrrceXd-yyjVvQT8B0J-lQps-DI&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=hnEHqTwap0VdNLNcZ6DAGw&_nc_ss=7a289&oh=00_AQF_64V8ixLJVXs1aHeLwcKLeP_9ZksS9GDKIAEgy3gcSw&oe=6AAB6204"
       },
       {
         "id": 2,
         "title": "Data analytics",
-        "image": "https://tse2.mm.bing.net/th/id/OIP.M84O7dFJDeenh3IhkoRCAAHaEC?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93357703_1591860597638086_1143535794179276800_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1367&ctp=s2048x1367&_nc_cat=102&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=HAxl9aIfQZwQ7kNvwGOWjYw&_nc_oc=AdquagM7FTWTUcLBYs3zHqW6saj59vCjl3n3drCag4HupZs6yZo6KP0KSQXFiv78TzY&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=Lx4ds4mCfMwxWgEgVURNfw&_nc_ss=7a289&oh=00_AQHZ7bmJqboG0QHvwlkB70vTjQ1z1OFhuXZJy6ADo-a4Ug&oe=6AAB6668"
       },
       {
         "id": 3,
         "title": "Laboratory learning",
-        "image": "https://th.bing.com/th/id/OIP.CMqQWtmDk2N8NG4FFcIyfAHaE8?w=237&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/485304270_1188786699703118_7980539072204505410_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tYBc3b4fq8MQ7kNvwHmDxzP&_nc_oc=AdoX3NH-MmZJc3MeuNsYqSNDpfcmxGAD80ZartIXwvVZgmumq7ZeAnnjgIqj3RUsurg&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=AgFeXbA6Tuu46gcPnIQsmA&_nc_ss=7a289&oh=00_AQG2m9JYbfrqIBfgt0ht_8fn3kWCNUL4bl9wU1pOW8_h5w&oe=6A89D3E5"
       },
       {
         "id": 4,
@@ -110,7 +110,7 @@
     ]
   },
   "comp6": {
-    "title": "BS Satellite Navigation & Applications",
+    "title": "BS In Satellite Navigation & Applications",
     "description": "The BS Satellite Navigation & Applications programme builds foundations in physics, mathematics, computation and space-science applications. Eligible students may undertake final-year research linked with GNSS Research Lab activities. And Students gain exposure to :",
     "image": "https://media.licdn.com/dms/image/v2/D4D22AQEEDkP_abgOdw/feedshare-shrink_800/B4DZPK8UFEHMAk-/0/1734276631324?e=2147483647&v=beta&t=6OIUK3uiS5IYE4E6xkuz-FE-IOOHWepQWODnEYnwGqg",
     "button": {

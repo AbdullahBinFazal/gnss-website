@@ -2,6 +2,7 @@
    CAPACITYBUILDING.MODULE.CSS - Consolidated Styles
    All common classes declared once, used everywhere
    All paddings and designs preserved exactly as original
+   PROPER TEXT ALIGNMENT FOR DIFFERENT CONTENT TYPES
    ============================================ */
 
 /* ===== CONTAINER ===== */
@@ -39,11 +40,14 @@
   padding: 60px 20px;
 }
 
-/* ===== TITLES ===== */
+/* ============================================
+   TITLES - CENTERED
+   ============================================ */
 .title {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
   margin: 0 !important;
+  text-align: justify !important;
 }
 
 .sectionLight .title {
@@ -58,11 +62,13 @@
 .titleSize38 {
   font-size: 38px !important;
   line-height: 60px !important;
+  text-align: justify !important;
 }
 
 .titleSize40 {
   font-size: 40px !important;
   line-height: 48px !important;
+  text-align: justify !important;
 }
 
 .sectionDark .titleSize40 {
@@ -73,11 +79,15 @@
   line-height: 48px !important;
 }
 
-/* ===== DESCRIPTIONS ===== */
+/* ============================================
+   DESCRIPTIONS - JUSTIFIED (for longer text)
+   ============================================ */
 .description {
   font-family: 'Inter', sans-serif !important;
   font-weight: 300 !important;
   margin: 0 !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .sectionLight .description {
@@ -89,8 +99,10 @@
 }
 
 .descriptionSize18 {
-  font-size: 18px !important;
+  font-size: 20px !important;
   line-height: 29px !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .sectionLight .descriptionSize18 {
@@ -100,12 +112,15 @@
 .descriptionSize20 {
   font-size: 20px !important;
   line-height: 32px !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .descriptionCenter {
   max-width: 900px;
   margin: 8px auto 0 auto !important;
-  text-align: center;
+  text-align: justify !important;
+  text-justify: inter-word !important;
   padding: 0 20px;
 }
 
@@ -113,18 +128,25 @@
 .descriptionWithBorder {
   border-left: 2px solid #D63A45;
   padding-left: 26px;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
-/* ===== IMAGE WRAPPER & IMAGE ===== */
+/* ============================================
+   IMAGE WRAPPER & IMAGE
+   ============================================ */
 .imageWrapper {
+  background: #24304A;
+  border: 1px solid rgba(135, 135, 136, 0.5);
   border-radius: 8px;
-  padding: 20px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  min-height: 400px;
+  min-height: 200px;
+  text-align: justify;
 }
 
 .sectionLight .imageWrapper {
@@ -144,9 +166,9 @@
 
 .image {
   width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: contain;
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
   border-radius: 4px;
   transition: transform 0.4s ease;
 }
@@ -164,7 +186,9 @@
   border-radius: 12px;
 }
 
-/* ===== CARDS ===== */
+/* ============================================
+   CARDS - TITLES CENTERED, DESCRIPTIONS JUSTIFIED
+   ============================================ */
 .card {
   border-radius: 16px;
   overflow: hidden;
@@ -229,13 +253,13 @@
 
 .cardTitle {
   font-family: 'Inter', sans-serif !important;
-  text-align: center;
+  text-align: justify !important;
 }
 
 .sectionDark .cardTitle {
   color: #ffffff !important;
   font-weight: 500 !important;
-  font-size: 16px !important;
+  font-size: 19px !important;
   line-height: 28px !important;
   margin: 24px 20px 20px 20px !important;
 }
@@ -243,7 +267,7 @@
 .sectionLight .cardTitle {
   color: #000000 !important;
   font-weight: 700 !important;
-  font-size: 16px !important;
+  font-size: 17px !important;
   line-height: 28px !important;
   margin: 24px 20px 8px 20px !important;
 }
@@ -251,15 +275,18 @@
 .cardDescription {
   font-family: 'Inter', sans-serif !important;
   font-weight: 300 !important;
-  font-size: 14px !important;
+  font-size: 18px !important;
   line-height: 23px !important;
   color: rgba(0, 0, 0, 0.7) !important;
   margin: 0 20px 16px 20px !important;
-  text-align: center;
+  text-align: justify !important;
+  text-justify: inter-word !important;
   flex: 1;
 }
 
-/* ===== VERTICAL CARDS ===== */
+/* ============================================
+   VERTICAL CARDS - LEFT ALIGNED
+   ============================================ */
 .verticalCards {
   display: flex;
   flex-direction: column;
@@ -312,13 +339,16 @@
 .verticalCardTitle {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 16px !important;
+  font-size: 19px !important;
   line-height: 20px !important;
   color: #F3EFED !important;
   margin: 0 !important;
+  text-align: left !important;
 }
 
-/* ===== VERTICAL LIST ITEMS (Comp3) ===== */
+/* ============================================
+   VERTICAL LIST ITEMS (Comp3) - LEFT ALIGNED
+   ============================================ */
 .verticalList {
   display: flex;
   flex-direction: column;
@@ -353,13 +383,16 @@
 .verticalListItemText {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 16px !important;
+  font-size: 17px !important;
   line-height: 20px !important;
   color: #0B1020 !important;
   margin: 0 !important;
+  text-align: left !important;
 }
 
-/* ===== GLASS CARDS ===== */
+/* ============================================
+   GLASS CARDS - TITLES CENTERED, DESCRIPTIONS JUSTIFIED
+   ============================================ */
 .glassCard {
   backdrop-filter: blur(12px);
   border: 1px solid rgba(182, 202, 213, 0.1);
@@ -376,10 +409,11 @@
 .glassCardTitle {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 40px !important;
+  font-size: 35px !important;
   line-height: 66px !important;
   color: #F3EFED !important;
   margin: 8px 0 16px 0 !important;
+  text-align: center !important;
 }
 
 .glassCardDescription {
@@ -389,38 +423,66 @@
   line-height: 32px !important;
   color: rgb(255, 255, 255) !important;
   margin: 0 0 24px 0 !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 /* ============================================
-   COMP 8 - CAROUSEL (Unique)
+   ANT DESIGN CAROUSEL STYLES (Comp 8)
    ============================================ */
-.carouselWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  position: relative;
-  padding: 20px 0;
+.antCarousel {
+  margin: 0 -12px;
+}
+
+.antCarousel :global(.slick-slide) {
+  padding: 0 12px;
+}
+
+.carouselSlide {
+  padding: 0 12px;
 }
 
 .carouselArrow {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 2px solid rgba(11, 16, 32, 0.15);
-  background: rgba(255, 255, 255, 0.8);
-  color: #0B1020;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
   flex-shrink: 0;
   padding: 0;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
-.carouselArrow:hover {
+.sectionDark .carouselArrow {
+  border: 2px solid rgba(182, 202, 213, 0.15);
+  background: rgba(11, 16, 32, 0.8);
+  color: #B6CAD5;
+}
+
+.sectionLight .carouselArrow {
+  border: 2px solid rgba(11, 16, 32, 0.15);
+  background: rgba(255, 255, 255, 0.8);
+  color: #0B1020;
+}
+
+.sectionDark .carouselArrow:hover {
+  background: #F3EFED;
+  border-color: #F3EFED;
+  color: #0B1020;
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(243, 239, 237, 0.25);
+}
+
+.sectionLight .carouselArrow:hover {
   background: #0B1020;
   border-color: #0B1020;
   color: #F3EFED;
@@ -428,32 +490,39 @@
   box-shadow: 0 4px 16px rgba(11, 16, 32, 0.25);
 }
 
-.carouselContainer {
-  flex: 1;
-  overflow: hidden;
-  min-width: 0;
-  max-width: 1200px;
-}
-
-.carouselIndicators {
-  display: flex;
+/* Ant Design Carousel dots customization */
+.antCarousel :global(.slick-dots) {
+  position: relative;
+  bottom: -40px;
+  display: flex !important;
   justify-content: center;
   gap: 8px;
-  margin-top: 24px;
 }
 
-.indicator {
+.antCarousel :global(.slick-dots li) {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+}
+
+.antCarousel :global(.slick-dots li button) {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: none;
-  background: rgba(11, 16, 32, 0.2);
-  cursor: pointer;
-  transition: all 0.3s ease;
   padding: 0;
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.indicatorActive {
+.sectionDark .antCarousel :global(.slick-dots li button) {
+  background: rgba(182, 202, 213, 0.2);
+}
+
+.sectionLight .antCarousel :global(.slick-dots li button) {
+  background: rgba(11, 16, 32, 0.2);
+}
+
+.antCarousel :global(.slick-dots li.slick-active button) {
   background: #D63A45;
   width: 30px;
   border-radius: 5px;
@@ -477,7 +546,7 @@
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
-  text-align: center;
+  text-align: center !important;
 }
 
 .cardContent {
@@ -487,17 +556,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: center !important;
   border-bottom: 0.888889px solid #DFE5E8;
 }
 
 .cardSubtitle {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 6px;
+  text-align: center !important;
 }
 
 .cardDivider {
@@ -508,7 +578,7 @@
 }
 
 /* ============================================
-   COMP 1 - HERO SECTION (Unique)
+   COMP 1 - HERO SECTION (Unique - KEPT CENTERED)
    ============================================ */
 .hero {
   min-height: 100vh;
@@ -698,7 +768,7 @@
   color: #F3EFED !important;
   margin-bottom: 24px !important;
   max-width: 910px;
-  text-align: center;
+  text-align: center !important;
 }
 
 .heroDescription {
@@ -709,5 +779,5 @@
   color: rgb(254, 255, 255) !important;
   max-width: 650px;
   margin: 0 auto 40px auto !important;
-  text-align: center;
+  text-align: justify !important;
 }

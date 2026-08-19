@@ -28,7 +28,7 @@ const Comp1 = () => {
 
       <div className={styles.heroContent}>
         <Title level={1} className={styles.heroTitle}>
-          ABOUT GNSS RESEARCH LAB
+          ABOUT 
         </Title>
         <Paragraph className={styles.heroDescription}>
           The GNSS Research Lab provides a focused environment for research, academic development and technology-oriented problem solving in Global Navigation Satellite Systems.

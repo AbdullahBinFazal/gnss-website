@@ -1,7 +1,7 @@
 
 {
 "comp2": {
-  "title": "Welcome to the GNSS Research Lab",
+  "title": "About The GNSS Research Lab",
   "description1": "The Global Navigation Satellite System (GNSS) Research Lab is a premier academic and research facility operating under the umbrella of the National Center of GIS and Space Applications (NCGSA). Our lab is dedicated to advancing the science, engineering, and practical applications of satellite-based positioning, navigation, and timing (PNT) technologies.",
   "description2": "By bridging the gap between theoretical space sciences and terrestrial engineering, we develop cutting-edge solutions that drive national progress in autonomous navigation, geospatial infrastructure, and atmospheric monitoring.",
   "linkText": "LEARN MORE ABOUT US",
@@ -54,24 +54,44 @@
     {
       "id": 1,
       "title": "Domains",
-      "image": "https://tse2.mm.bing.net/th/id/OIP.qWSVQ6AHTFKJHk7dIlj8VwHaFj?r=0&pid=ImgDet&w=178&h=133&c=7&dpr=1.5&o=7&rm=3"
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/494564945_3082173035273494_3902262682260078314_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1046&ctp=s2048x1046&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=t87-4AGTpLUQ7kNvwGoRF-0&_nc_oc=Ado9KmK9SBmUT3rmcc-TRxhAlp4L8hXDgUnQMMO2QF6Qh6FUwjMQAZbbSUt5p0-ZlC4&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=I29WZY3s9QZtfqUq-zpE9Q&_nc_ss=7a289&oh=00_AQHPH7wfWcjueaIXeLtEvCD-vUN1j-IK7FPgZE364o9a_A&oe=6A89B1E0"
     },
     {
       "id": 2,
       "title": "Projects",
-      "image": "https://tse4.mm.bing.net/th/id/OIP.n83WW_9Yoy_Zk_9LdVtWpwHaFF?r=0&pid=ImgDet&w=178&h=122&c=7&dpr=1.5&o=7&rm=3"
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/485151831_1188786416369813_3942919946031294113_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zd1BIoqhEKYQ7kNvwFwW8FM&_nc_oc=AdqxLTS634mbLslDk19AV13TnHSN_Qz7g4eZlIV13V_N1tkxiCR0qWvgOGIYjhi416o&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=qFeh6nYvn-k7VY0-_zmW-w&_nc_ss=7a289&oh=00_AQEMwHmQZIv_jeR_wGbA7tpVr_qUhHdrcFiVyW_1DM2_Pg&oe=6A89DD1F"
     },
     {
       "id": 3,
       "title": "Publications",
-      "image": "https://tse2.mm.bing.net/th/id/OIP.fPKfUepse2rvNkjem873rwHaFE?r=0&pid=ImgDet&w=178&h=122&c=7&dpr=1.5&o=7&rm=3"
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/485143501_1188786476369807_8633007401751323704_n.jpg?stp=dst-jpg_tt6&cstp=mx960x685&ctp=s960x685&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Njof9f_1xLcQ7kNvwF6OY0o&_nc_oc=AdpSAomW6l0BZMyuXcf1lvpoxpoWgcTpHr3SfGsT0lzOkWaxyRS9vK1pdSTM_CBJLLk&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=p_R9WQSC0ZC_FvSCLp89jA&_nc_ss=7a289&oh=00_AQGbdlkqMtrmJkUMOwl1nnpwKmJwgpLJE9FS5sr6qwf9Cg&oe=6A89D4FC"
     }
   ]
 },
 "comp61": {
   "title": "Academics",
   "description": "Explore specialized education and research pathways through the MS GNSS, PhD GNSS, MS Space Technology and Applications, and BS Satellite Navigation and Applications programs.",
-  "image": "https://media.licdn.com/dms/image/v2/D4D22AQEEDkP_abgOdw/feedshare-shrink_800/B4DZPK8UFEHMAk-/0/1734276631324?e=2147483647&v=beta&t=6OIUK3uiS5IYE4E6xkuz-FE-IOOHWepQWODnEYnwGqg"
+  "button": {
+    "text": "VIEW ACADEMICS",
+    "link": "/programs"
+  },
+  "cards": [
+    {
+      "id": 1,
+      "title": "MS GNSS",
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93591452_1591974404293372_2782460963184443392_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x720&ctp=s1080x720&_nc_cat=102&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=mL-miuPoF4oQ7kNvwGfhE3V&_nc_oc=Ado5kCg5HstLBd7FppVnZwE2eNrjyjaw7ch7cXRrAnQUKmZkk-s0PezBs14cQSKSRq0&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=6VXX13XRi3UgDKkvYxz5xQ&_nc_ss=7a289&oh=00_AQETIaOSJ2NZBToBsOoiC18eXlAOnAFkxEJySUuxvvSSqQ&oe=6AAB72C5"
+    },
+    {
+      "id": 2,
+      "title": "PhD GNSS",
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93028224_1591974164293396_6386180992612171776_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x720&ctp=s1080x720&_nc_cat=103&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=3NaKxAeZd8UQ7kNvwEcnQT8&_nc_oc=AdoAJHego9reZTnUZ5PiGo5Yfh-z8Hund2_Letpyj8HL4hpni5Usj7zK1cNOWPXNhT4&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=fQT2coinSv_VzXHaI2QIkA&_nc_ss=7a289&oh=00_AQFkTd43pcerOIZKrGh5LrdPs-GUbNYdMNQaTBBIw286kA&oe=6AAB4A0B"
+    },
+    {
+      "id": 3,
+      "title": "BS Satellite Navigation",
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93245411_1591884864302326_1623438848375652352_n.jpg?stp=dst-jpg_tt6&cstp=mx1944x1296&ctp=s1944x1296&_nc_cat=105&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=wMrQqJxDf70Q7kNvwEMiN0O&_nc_oc=AdroTlq4IgpHSsDEB-RgcJQjUSuIN9sU2Wn5NjVTTrrceXd-yyjVvQT8B0J-lQps-DI&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=hnEHqTwap0VdNLNcZ6DAGw&_nc_ss=7a289&oh=00_AQF_64V8ixLJVXs1aHeLwcKLeP_9ZksS9GDKIAEgy3gcSw&oe=6AAB6204"
+    }
+  ]
 },
 "comp7": {
   "title": "Digital Observatory",
@@ -82,12 +102,12 @@
     {
       "id": 1,
       "title": "GNSS Observatory",
-      "image": "https://th.bing.com/th/id/OIP.i1W0L66rHzDLY3EZuFleAwHaEJ?w=371&h=187&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93255255_1591851567638989_4978600242686459904_n.jpg?stp=dst-jpg_tt6&cstp=mx1944x1296&ctp=s1944x1296&_nc_cat=105&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=6gI4VqmaaL4Q7kNvwGGNU8V&_nc_oc=AdrTojgblR5KImj5eaIclC5YoKGp8FVyqMmiEIValNFO8QP0lKHmSV3WOe-xA1dLMZg&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=-bgUQbhL4oZPcKe4A8m-AA&_nc_ss=7a289&oh=00_AQG1wEK43xXyf7Qym44yB5xL7tI61lYksT63--SOnmKGOA&oe=6AAB770F"
     },
     {
       "id": 2,
       "title": "Space Weather",
-      "image": "https://www.bing.com/th/id/OIP.fB0rH4CPIdP75kwtdMZnTgHaFj?w=193&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93518383_1591883624302450_4372497889553809408_n.jpg?stp=dst-jpg_tt6&cstp=mx1944x1296&ctp=s1944x1296&_nc_cat=107&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=nPWeYt-dcEMQ7kNvwGM8kr5&_nc_oc=Adq7vuSPH99oK8XlaBEGjE0eGctSH5_ktW4cvBysWd5TSI9d82jXzp63teZt_QUIlVo&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=Imz4Uhqdfq1sVgzAtZvMEw&_nc_ss=7a289&oh=00_AQGlVfp7nlzjR2yid_kw2Y5evu91bKJRt5i_PJKgSntVqQ&oe=6AAB6388"
     },
     {
       "id": 3,
@@ -133,12 +153,12 @@
     {
       "id": 1,
       "title": "Institutions",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjEPWuhwcdVAvlewqIjb-dzrs3hsmOkHwN8qySs7nxLg&s=10"
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/485308110_1188786736369781_6837069700211183854_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JicXGB-dHh4Q7kNvwEQ6U3F&_nc_oc=AdrLxnFwx35K60GmCuvxIYBKowqQCWglGGkPxZJmG1WG8723kX4h5oTLSdeZ6wszXXk&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=46Qf9pN9gcaGVIdOA27BBg&_nc_ss=7a289&oh=00_AQHtJ19hOn_X--5JTobJs-Qzu5ym4hx_fHUDi7RxUXnbUg&oe=6A89C94B"
     },
     {
       "id": 2,
       "title": "Engagements",
-      "image": "https://th.bing.com/th/id/OIP.2sTpdNUuTiSrAZOfTCF-MwHaEJ?w=295&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/494699711_3082172698606861_7748339765932285314_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1367&ctp=s2048x1367&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WMdihw2qNboQ7kNvwHalE6T&_nc_oc=Adqr3YuIwUl6_yE7dDsXblYz4F0HjlSL6cql3_3HGPDvQopDMyimRwya_hTNRtkUiFM&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=rZY1OY2gjmTNL6vK0eopjg&_nc_ss=7a289&oh=00_AQEVYWIb2qGlO7gq2YcFdPLfq9MRkTt_fidwSlIYnZI8BQ&oe=6A89C6BF"
     },
     {
       "id": 3,
@@ -153,7 +173,7 @@
   ]
 },
 "comp10": {
-  "title": "AI-Powered Co-Pilot for GNSS",
+  "title": "Copilot",
   "description": "Get help from your GNSS digital assistant.",
   "button": {
     "text": "LAUNCH CO-PILOT",
@@ -164,7 +184,7 @@
 "comp12": {
   "title": "Contact Us",
   "description": "Get in touch with GNSS Research Lab through our contact details, and our socials",
-  "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
+  "image": "https://media.licdn.com/dms/image/v2/D4D22AQEEDkP_abgOdw/feedshare-shrink_800/B4DZPK8UFEHMAk-/0/1734276631324?e=2147483647&v=beta&t=6OIUK3uiS5IYE4E6xkuz-FE-IOOHWepQWODnEYnwGqg"
 },
 "comp11": {
   "title": "Opportunities",
@@ -175,7 +195,7 @@
     {
       "id": 1,
       "title": "Projects",
-      "image": "https://th.bing.com/th/id/OIP.gFUjBcoMjLC8BTVUoHa_lgHaFj?w=238&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+      "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/494564945_3082173035273494_3902262682260078314_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1046&ctp=s2048x1046&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=t87-4AGTpLUQ7kNvwGoRF-0&_nc_oc=Ado9KmK9SBmUT3rmcc-TRxhAlp4L8hXDgUnQMMO2QF6Qh6FUwjMQAZbbSUt5p0-ZlC4&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=I29WZY3s9QZtfqUq-zpE9Q&_nc_ss=7a289&oh=00_AQHPH7wfWcjueaIXeLtEvCD-vUN1j-IK7FPgZE364o9a_A&oe=6A89B1E0"
     },
     {
       "id": 2,

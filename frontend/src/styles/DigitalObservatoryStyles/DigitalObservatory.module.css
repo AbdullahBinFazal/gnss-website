@@ -2,6 +2,7 @@
    DIGITALOBSERVATORY.MODULE.CSS - Consolidated Styles
    All common classes declared once, used everywhere
    All paddings and designs preserved exactly as original
+   PROPER TEXT ALIGNMENT FOR DIFFERENT CONTENT TYPES
    ============================================ */
 
 /* ===== CONTAINER ===== */
@@ -29,11 +30,14 @@
   padding: 60px 20px;
 }
 
-/* ===== TITLES ===== */
+/* ============================================
+   TITLES - CENTERED
+   ============================================ */
 .title {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
   margin: 0 !important;
+  text-align: justify !important;
 }
 
 .sectionLight .title {
@@ -42,18 +46,19 @@
 
 .sectionDark .title {
   color: #F3EFED !important;
-  text-align: center;
 }
 
 /* Title sizes */
 .titleSize38 {
   font-size: 38px !important;
   line-height: 60px !important;
+  text-align: justify !important;
 }
 
 .titleSize40 {
   font-size: 40px !important;
   line-height: 72px !important;
+  text-align: justify !important;
 }
 
 .sectionLight .titleSize40 {
@@ -64,11 +69,15 @@
   line-height: 72px !important;
 }
 
-/* ===== DESCRIPTIONS ===== */
+/* ============================================
+   DESCRIPTIONS - JUSTIFIED (for longer text)
+   ============================================ */
 .description {
   font-family: 'Inter', sans-serif !important;
   font-weight: 300 !important;
   margin: 0 !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .sectionLight .description {
@@ -80,8 +89,10 @@
 }
 
 .descriptionSize18 {
-  font-size: 18px !important;
+  font-size: 20px !important;
   line-height: 29px !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .sectionLight .descriptionSize18 {
@@ -95,6 +106,8 @@
 .descriptionSize20 {
   font-size: 20px !important;
   line-height: 32px !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
 .sectionDark .descriptionSize20 {
@@ -108,29 +121,33 @@
 .descriptionCenter {
   max-width: 900px;
   margin: 8px auto 0 auto !important;
-  text-align: center;
+  text-align: justify !important;
+  text-justify: inter-word !important;
   padding: 0 20px;
 }
 
-/* ===== IMAGE WRAPPER & IMAGE ===== */
+/* ============================================
+   IMAGE WRAPPER & IMAGE
+   ============================================ */
 .imageWrapper {
   background: #24304A;
   border: 1px solid rgba(135, 135, 136, 0.5);
   border-radius: 8px;
-  padding: 20px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
   min-height: 400px;
+  text-align: justify;
 }
 
 .image {
   width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: contain;
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
   border-radius: 4px;
   transition: transform 0.4s ease;
 }
@@ -139,7 +156,9 @@
   transform: scale(1.02);
 }
 
-/* ===== CARDS ===== */
+/* ============================================
+   CARDS - TITLES CENTERED
+   ============================================ */
 .card {
   border-radius: 16px;
   overflow: hidden;
@@ -204,10 +223,10 @@
 
 .cardTitle {
   font-family: 'Inter', sans-serif !important;
-  font-weight: 500 !important;
-  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-size: 19px !important;
   line-height: 28px !important;
-  text-align: center;
+  text-align: justify !important;
 }
 
 .sectionDark .cardTitle {
@@ -221,7 +240,7 @@
 }
 
 /* ============================================
-   COMP 1 - HERO SECTION (Unique)
+   COMP 1 - HERO SECTION (Unique - KEPT CENTERED)
    ============================================ */
 .hero {
   min-height: 100vh;
@@ -411,7 +430,7 @@
   color: #F3EFED !important;
   margin-bottom: 24px !important;
   max-width: 910px;
-  text-align: center;
+  text-align: center !important;
 }
 
 .heroDescription {
@@ -422,96 +441,53 @@
   color: rgb(254, 255, 255) !important;
   max-width: 650px;
   margin: 0 auto 40px auto !important;
-  text-align: center;
+  text-align: center !important;
 }
 
 /* ============================================
-   COMP 3 & 5 - CAROUSEL (Shared)
+   ANT DESIGN CAROUSEL STYLES (Comp 3 & 5)
    ============================================ */
-.carouselWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+.antCarousel {
+  margin: 0 -12px;
+}
+
+.antCarousel :global(.slick-slide) {
+  padding: 0 12px;
+}
+
+/* Ant Design Carousel dots customization */
+.antCarousel :global(.slick-dots) {
   position: relative;
-  padding: 20px 0;
-}
-
-.carouselArrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-  padding: 0;
-}
-
-.sectionDark .carouselArrow {
-  border: 2px solid rgba(182, 202, 213, 0.15);
-  background: rgba(11, 16, 32, 0.8);
-  color: #B6CAD5;
-}
-
-.sectionLight .carouselArrow {
-  border: 2px solid rgba(11, 16, 32, 0.15);
-  background: rgba(255, 255, 255, 0.8);
-  color: #0B1020;
-}
-
-.sectionDark .carouselArrow:hover {
-  background: #F3EFED;
-  border-color: #F3EFED;
-  color: #0B1020;
-  transform: scale(1.1);
-  box-shadow: 0 4px 16px rgba(243, 239, 237, 0.25);
-}
-
-.sectionLight .carouselArrow:hover {
-  background: #0B1020;
-  border-color: #0B1020;
-  color: #F3EFED;
-  transform: scale(1.1);
-  box-shadow: 0 4px 16px rgba(11, 16, 32, 0.25);
-}
-
-.carouselContainer {
-  flex: 1;
-  overflow: hidden;
-  min-width: 0;
-  max-width: 1200px;
-}
-
-.carouselIndicators {
-  display: flex;
+  bottom: -40px;
+  display: flex !important;
   justify-content: center;
   gap: 8px;
-  margin-top: 24px;
 }
 
-.indicator {
+.antCarousel :global(.slick-dots li) {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+}
+
+.antCarousel :global(.slick-dots li button) {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
   padding: 0;
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.sectionDark .indicator {
+.sectionDark .antCarousel :global(.slick-dots li button) {
   background: rgba(182, 202, 213, 0.2);
 }
 
-.sectionLight .indicator {
+.sectionLight .antCarousel :global(.slick-dots li button) {
   background: rgba(11, 16, 32, 0.2);
 }
 
-.indicatorActive {
+.antCarousel :global(.slick-dots li.slick-active button) {
   background: #D63A45;
   width: 30px;
   border-radius: 5px;

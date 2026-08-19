@@ -1,36 +1,56 @@
 // src/pages/Programs/components/Comp5.jsx
-import { useState } from "react";
+import { Carousel, Typography, Flex } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import { Col, Row, Typography, Flex } from "antd";
 import { Link } from "react-router-dom";
 import styles from "../../../styles/ProgramsStyles/Programs.module.css";
 import programsData from "../../../json/pages/programs/programsData.json";
 
 const { Title, Paragraph } = Typography;
 
+// Custom arrow components for Ant Design Carousel
+const PrevArrow = ({ onClick }) => (
+  <button className={styles.carouselArrow} onClick={onClick}>
+    <LeftOutlined />
+  </button>
+);
+
+const NextArrow = ({ onClick }) => (
+  <button className={styles.carouselArrow} onClick={onClick}>
+    <RightOutlined />
+  </button>
+);
+
 const Comp5 = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const data = programsData.comp5;
 
+  // Combine both card arrays
   const allCards = [...(data.cards || []), ...(data.buttonCards || [])];
-  
-  const cardsPerView = 3;
-  const totalCards = allCards.length;
-  const maxIndex = Math.max(0, totalCards - cardsPerView);
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === maxIndex ? 0 : prevIndex + 1
-    );
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? maxIndex : prevIndex - 1
-    );
-  };
-
-  const visibleCards = allCards.slice(currentIndex, currentIndex + cardsPerView);
 
   return (
     <section className={`${styles.sectionLight} ${styles.padding60}`}>
@@ -44,42 +64,20 @@ const Comp5 = () => {
           </Paragraph>
         </Flex>
 
-        <div className={styles.carouselWrapper}>
-          <button className={styles.carouselArrow} onClick={handlePrev}>
-            <LeftOutlined />
-          </button>
-
-          <div className={styles.carouselContainer}>
-            <Row gutter={[24, 24]} justify="center">
-              {visibleCards.map((card) => (
-                <Col key={card.id} xs={24} sm={24} md={8}>
-                  <div className={styles.card}>
-                    <div className={styles.cardImage}>
-                      <img src={card.image} alt={card.title} />
-                    </div>
-                    <Title level={4} className={styles.cardTitle}>
-                      {card.title}
-                    </Title>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </div>
-
-          <button className={styles.carouselArrow} onClick={handleNext}>
-            <RightOutlined />
-          </button>
-        </div>
-
-        <div className={styles.carouselIndicators}>
-          {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
-            <button
-              key={idx}
-              className={`${styles.indicator} ${currentIndex === idx ? styles.indicatorActive : ""}`}
-              onClick={() => setCurrentIndex(idx)}
-            />
+        <Carousel {...settings} className={styles.antCarousel}>
+          {allCards.map((card) => (
+            <div key={card.id} className={styles.carouselSlide}>
+              <div className={styles.card}>
+                <div className={styles.cardImage}>
+                  <img src={card.image} alt={card.title} />
+                </div>
+                <Title level={4} className={styles.cardTitle}>
+                  {card.title}
+                </Title>
+              </div>
+            </div>
           ))}
-        </div>
+        </Carousel>
 
         <Flex justify="center" style={{ marginTop: "40px" }}>
           <a 

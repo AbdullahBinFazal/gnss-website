@@ -1,5 +1,10 @@
 /* src/styles/OpportunitiesStyles/Comp3.module.css */
 
+/* ============================================
+   SECTION BACKGROUND - LIGHT
+   ALL CONTENT PROPERLY ALIGNED
+   ============================================ */
+
 /* ===== SECTION BACKGROUND ===== */
 .sectionOpportunities {
   background: #F3EFED;
@@ -11,7 +16,9 @@
   margin: 0 auto;
 }
 
-/* ===== TITLE - CENTERED ===== */
+/* ============================================
+   TITLE - CENTERED
+   ============================================ */
 .opportunitiesTitle {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
@@ -19,7 +26,7 @@
   line-height: 48px !important;
   color: #0B1020 !important;
   margin: 0 !important;
-  text-align: center;
+  text-align: center !important;
 }
 
 /* ===== CONTENT ROW ===== */
@@ -58,7 +65,9 @@
   justify-content: center;
 }
 
-/* ===== DESCRIPTION ===== */
+/* ============================================
+   DESCRIPTION - JUSTIFIED (longer text)
+   ============================================ */
 .opportunitiesDescriptionWrapper {
   border-left: 2px solid #D63A45;
   padding-left: 26px;
@@ -71,9 +80,13 @@
   line-height: 32px !important;
   color: rgba(0, 0, 0, 0.8) !important;
   margin: 0 !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 
-/* ===== VERTICAL CARDS - LIKE HOME COMP 5 ===== */
+/* ============================================
+   VERTICAL CARDS - LEFT ALIGNED
+   ============================================ */
 .opportunitiesList {
   display: flex;
   flex-direction: column;
@@ -108,101 +121,9 @@
 .opportunitiesListItemText {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 16px !important;
+  font-size: 19px !important;
   line-height: 20px !important;
   color: #000000 !important;
   margin: 0 !important;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 992px) {
-  .sectionOpportunities {
-    padding: 60px 0 80px 0;
-  }
-
-  .opportunitiesTitle {
-    font-size: 36px !important;
-    line-height: 40px !important;
-  }
-
-  .opportunitiesDescription {
-    font-size: 18px !important;
-    line-height: 28px !important;
-  }
-
-  .opportunitiesListItemText {
-    font-size: 14px !important;
-  }
-
-  .opportunitiesImageWrapper {
-    min-height: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .sectionOpportunities {
-    padding: 40px 0 60px 0;
-  }
-
-  .opportunitiesTitle {
-    font-size: 28px !important;
-    line-height: 32px !important;
-  }
-
-  .opportunitiesDescription {
-    font-size: 16px !important;
-    line-height: 24px !important;
-  }
-
-  .opportunitiesDescriptionWrapper {
-    padding-left: 16px;
-  }
-
-  .opportunitiesListItem {
-    padding: 10px 16px;
-    gap: 14px;
-  }
-
-  .opportunitiesListItemText {
-    font-size: 12px !important;
-    line-height: 16px !important;
-  }
-
-  .opportunitiesImageWrapper {
-    min-height: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .sectionOpportunities {
-    padding: 30px 0 40px 0;
-  }
-
-  .opportunitiesTitle {
-    font-size: 22px !important;
-    line-height: 26px !important;
-  }
-
-  .opportunitiesDescription {
-    font-size: 14px !important;
-    line-height: 22px !important;
-  }
-
-  .opportunitiesDescriptionWrapper {
-    padding-left: 12px;
-  }
-
-  .opportunitiesListItem {
-    padding: 8px 12px;
-    gap: 10px;
-  }
-
-  .opportunitiesListItemText {
-    font-size: 10px !important;
-    line-height: 14px !important;
-  }
-
-  .opportunitiesImageWrapper {
-    min-height: 200px;
-  }
+  text-align: left !important;
 }

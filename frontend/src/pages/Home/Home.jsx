@@ -46,7 +46,7 @@ const Home = () => {
  <Comp11 /> 
 
        <Comp10 />
-          <Comp12 />
+         
      
       <LocationMap />
     </div>

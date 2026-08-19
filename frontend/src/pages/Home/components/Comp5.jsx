@@ -25,7 +25,7 @@ const Comp5 = () => {
   };
 
   return (
-    <section className={`${styles.sectionLight} ${styles.padding80}`}>
+    <section className={`${styles.sectionDark} ${styles.padding80}`}>
       <div className={styles.container}>
         <Row gutter={[40, 40]} align="middle">
           <Col xs={24} lg={12}>

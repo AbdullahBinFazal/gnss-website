@@ -25,8 +25,7 @@ const Comp1 = () => {
       <div className={styles.heroContent}>
         <div className={styles.fadeInUp}>
           <Title level={1} className={styles.heroTitle}>
-            Advancing GNSS Research And
-            Applications
+            Advancing GNSS Research And Applications
           </Title>
           <Paragraph className={styles.heroDescription}>
             The GNSS Research Lab of National Center of GIS & Space Applications at the Institute of Space Technology advances research, education and applied innovation in satellite navigation, precise positioning, resilient PNT and space-weather monitoring. 

@@ -1,48 +1,67 @@
 // src/pages/Research/components/Comp8.jsx
 import { useState } from "react";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import { Col, Row, Typography, Flex } from "antd";
+import { Carousel, Col, Row, Typography, Flex } from "antd";
 import styles from "../../../styles/ResearchStyles/Research.module.css";
 import researchData from "../../../json/pages/research/researchData.json";
 
 const { Title, Paragraph } = Typography;
 
+// Custom arrow components for Ant Design Carousel
+const PrevArrow = ({ onClick }) => (
+  <button className={styles.carouselArrow} onClick={onClick}>
+    <LeftOutlined />
+  </button>
+);
+
+const NextArrow = ({ onClick }) => (
+  <button className={styles.carouselArrow} onClick={onClick}>
+    <RightOutlined />
+  </button>
+);
+
 const Comp8 = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [activeFilter, setActiveFilter] = useState("All");
   const data = researchData.comp8;
   const publications = data.publications;
 
-  const cardsPerView = 3;
   const categories = ["All", ...new Set(publications.map((p) => p.category))];
   const filtered = publications.filter((pub) => {
     return activeFilter === "All" || pub.category === activeFilter;
   });
 
-  const totalCards = filtered.length;
-  const maxIndex = Math.max(0, totalCards - cardsPerView);
-
   const handleFilterChange = (filter) => {
     setActiveFilter(filter);
-    setCurrentIndex(0);
   };
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex >= maxIndex ? 0 : prevIndex + 1
-    );
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex <= 0 ? maxIndex : prevIndex - 1
-    );
-  };
-
-  const visibleCards = filtered.slice(currentIndex, currentIndex + cardsPerView);
 
   return (
-    <section className={`${styles.sectionLight} ${styles.padding96}`}>
+    <section className={`${styles.sectionDark} ${styles.padding96}`}>
       <div className={styles.container}>
         <Flex vertical align="center" style={{ marginBottom: "24px" }}>
           <Title level={2} className={`${styles.title} ${styles.titleSize41}`}>
@@ -69,47 +88,23 @@ const Comp8 = () => {
         </div>
 
         {filtered.length > 0 ? (
-          <>
-            <div className={styles.carouselWrapper}>
-              <button className={styles.carouselArrow} onClick={handlePrev}>
-                <LeftOutlined />
-              </button>
-
-              <div className={styles.carouselContainer}>
-                <Row gutter={[24, 24]} justify="center">
-                  {visibleCards.map((pub) => (
-                    <Col key={pub.id} xs={24} sm={24} md={8}>
-                      <div className={styles.publicationCard}>
-                        <div className={styles.publicationCardContent}>
-                          <div className={styles.publicationCategoryTag}>
-                            <span>{pub.category}</span>
-                          </div>
-                          <span className={styles.publicationYear}>{pub.year}</span>
-                          <h3 className={styles.publicationTitle}>{pub.title}</h3>
-                          <p className={styles.publicationAuthors}>Supervisor: {pub.supervisor}</p>
-                          <a href="#" className={styles.publicationLink}>VIEW THESIS</a>
-                        </div>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
+          <Carousel {...settings} className={styles.antCarousel}>
+            {filtered.map((pub) => (
+              <div key={pub.id} className={styles.carouselSlide}>
+                <div className={styles.publicationCard}>
+                  <div className={styles.publicationCardContent}>
+                    <div className={styles.publicationCategoryTag}>
+                      <span>{pub.category}</span>
+                    </div>
+                    <span className={styles.publicationYear}>{pub.year}</span>
+                    <h3 className={styles.publicationTitle}>{pub.title}</h3>
+                    <p className={styles.publicationAuthors}>Supervisor: {pub.supervisor}</p>
+                    <a href="#" className={styles.publicationLink}>VIEW THESIS</a>
+                  </div>
+                </div>
               </div>
-
-              <button className={styles.carouselArrow} onClick={handleNext}>
-                <RightOutlined />
-              </button>
-            </div>
-
-            <div className={styles.carouselIndicators}>
-              {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
-                <button
-                  key={idx}
-                  className={`${styles.indicator} ${currentIndex === idx ? styles.indicatorActive : ""}`}
-                  onClick={() => setCurrentIndex(idx)}
-                />
-              ))}
-            </div>
-          </>
+            ))}
+          </Carousel>
         ) : (
           <div className={styles.emptyState}>
             <p>No theses found for this category.</p>

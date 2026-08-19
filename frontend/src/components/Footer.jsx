@@ -66,7 +66,7 @@ const Footer = () => {
             <div style={{ 
               fontSize: "14px", 
               lineHeight: "24px",
-              color: "#8D96A8",
+              color: "#ffffff",
               marginBottom: "14px",
             }}>
               GNSS Research Lab, Institute Of Space Technology,<br />
@@ -78,7 +78,7 @@ const Footer = () => {
             <div style={{ 
               fontSize: "14px", 
               lineHeight: "24px",
-              color: "#8D96A8",
+              color: "#fcfdff",
               marginBottom: "14px",
             }}>
               +92 51 9273316-17<br />
@@ -92,7 +92,7 @@ const Footer = () => {
               lineHeight: "24px",
               color: "#8D96A8",
             }}>
-              11:00 AM - 05:00 PM (Mon-Fri)
+              08:00 AM - 04:00 PM (Mon-Fri)
             </div>
           </Col>
 
@@ -199,7 +199,7 @@ const Footer = () => {
             <div style={{
               fontSize: "13px",
               lineHeight: "20px",
-              color: "#8D96A8",
+              color: "#fefeff",
               marginTop: "12px",
               maxWidth: "220px",
             }}>
@@ -296,7 +296,7 @@ const Footer = () => {
                   }}
                 />
                 <span style={{
-                  color: "#9FB2CA",
+                  color: "#f5f5f5",
                   fontSize: "9px",
                   fontWeight: 700,
                   letterSpacing: "0.5px",
@@ -337,7 +337,7 @@ const Footer = () => {
                   }}
                 />
                 <span style={{
-                  color: "#9FB2CA",
+                  color: "#fafbfb",
                   fontSize: "9px",
                   fontWeight: 700,
                   letterSpacing: "0.5px",
@@ -383,7 +383,7 @@ const Footer = () => {
                     style={{
                       fontSize: "14px",
                       lineHeight: "24px",
-                      color: "#8D96A8",
+                      color: "#fafbfd",
                       textDecoration: "none",
                       padding: "0",
                       margin: "0",
@@ -417,7 +417,7 @@ const Footer = () => {
                     style={{
                       fontSize: "14px",
                       lineHeight: "24px",
-                      color: "#8D96A8",
+                      color: "#fcfcfc",
                       textDecoration: "none",
                       padding: "0",
                       margin: "0",
@@ -441,7 +441,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div style={{
-        borderTop: "0.666667px solid rgba(255, 255, 255, 0.3)",
+        borderTop: "0.666667px solid rgb(255, 255, 255)",
         padding: "24px 24px",
         maxWidth: "1168px",
         margin: "0 auto",
@@ -455,9 +455,9 @@ const Footer = () => {
           fontSize: "11px",
           letterSpacing: "1.2px",
           textTransform: "uppercase",
-          color: "#586276",
+          color: "#fbfcff",
         }}>
-          © 2026 NCGSA - National Center of GIS &amp; Space Applications. All Rights Reserved.
+          © 2026 GNSS - GNSS Research Lab, NCGSA, IST. All Rights Reserved.
         </div>
 
         <div style={{
@@ -475,7 +475,7 @@ const Footer = () => {
           fontSize: "11px",
           letterSpacing: "1.2px",
           textTransform: "uppercase",
-          color: "#586276",
+          color: "#ffffff",
         }}>
           <span style={{ cursor: "pointer", transition: "color 0.3s ease" }}>Privacy</span>
           <span style={{ cursor: "pointer", transition: "color 0.3s ease" }}>Terms</span>

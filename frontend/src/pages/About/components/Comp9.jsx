@@ -9,7 +9,7 @@ const Comp9 = () => {
   const data = aboutData.comp9;
 
   return (
-    <section className={`${styles.sectionDark} ${styles.padding60}`}>
+    <section className={`${styles.sectionLight} ${styles.padding60}`}>
       <div className={styles.container}>
         <Flex vertical align="center" gap={12} style={{ marginBottom: "48px" }}>
           <Title level={2} className={`${styles.title} ${styles.titleSize41}`}>

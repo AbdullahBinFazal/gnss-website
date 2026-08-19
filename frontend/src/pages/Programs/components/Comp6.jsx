@@ -13,6 +13,14 @@ const Comp6 = () => {
   return (
     <section className={`${styles.sectionDark} ${styles.padding110}`}>
       <div className={styles.container}>
+        {/* Title at the top - centered */}
+        <Flex vertical align="center" style={{ marginBottom: "48px" }}>
+          <Title level={2} className={`${styles.title} ${styles.titleSize40}`}>
+            {data.title}
+          </Title>
+        </Flex>
+
+        {/* Content with image and vertical cards */}
         <Row gutter={[40, 40]} align="middle">
           <Col xs={24} lg={10}>
             <div className={styles.imageWrapper}>
@@ -25,9 +33,6 @@ const Comp6 = () => {
           </Col>
           <Col xs={24} lg={14}>
             <Flex vertical gap={16}>
-              <Title level={2} className={`${styles.title} ${styles.titleSize40}`}>
-                {data.title}
-              </Title>
               <Paragraph className={`${styles.description} ${styles.descriptionSize18}`}>
                 {data.description}
               </Paragraph>

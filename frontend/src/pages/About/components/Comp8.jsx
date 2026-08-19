@@ -9,7 +9,7 @@ const Comp8 = () => {
   const data = aboutData.comp8;
 
   return (
-    <section className={`${styles.sectionLight} ${styles.padding128}`}>
+    <section className={`${styles.sectionDark} ${styles.padding128}`}>
       <div className={styles.container}>
         <Row gutter={[40, 40]} align="middle">
           <Col xs={24} lg={14}>

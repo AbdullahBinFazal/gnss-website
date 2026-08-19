@@ -12,12 +12,17 @@ const Comp3 = () => {
   return (
     <section className={`${styles.sectionLight} ${styles.padding110}`}>
       <div className={styles.container}>
+        {/* Title at the top - centered */}
+        <Flex vertical align="center" style={{ marginBottom: "48px" }}>
+          <Title level={2} className={`${styles.title} ${styles.titleSize40}`}>
+            {data.title}
+          </Title>
+        </Flex>
+
+        {/* Content with image and vertical cards */}
         <Row gutter={[40, 40]} align="middle">
           <Col xs={24} lg={14}>
             <Flex vertical gap={16}>
-              <Title level={2} className={`${styles.title} ${styles.titleSize40}`} style={{ textAlign: 'left', width: '100%' }}>
-                {data.title}
-              </Title>
               <Paragraph className={`${styles.description} ${styles.descriptionSize18}`} style={{ textAlign: 'left', width: '100%' }}>
                 {data.description}
               </Paragraph>

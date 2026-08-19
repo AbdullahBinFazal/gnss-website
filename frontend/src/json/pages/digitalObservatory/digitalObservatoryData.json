@@ -2,7 +2,7 @@
   "comp2": {
     "title": "GNSS Observatory",
     "description": "The GNSS Observatory integrates global datasets with observations from u-blox, Septentrio and ICTP receiver systems. It supports the analysis of satellite visibility, navigation signals, positioning stability, atmospheric effects and receiver performance.",
-    "image": "https://media.licdn.com/dms/image/v2/D4D22AQEEDkP_abgOdw/feedshare-shrink_800/B4DZPK8UFEHMAk-/0/1734276631324?e=2147483647&v=beta&t=6OIUK3uiS5IYE4E6xkuz-FE-IOOHWepQWODnEYnwGqg"
+    "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93373802_1591950784295734_2019065921145929728_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=110&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=8V9LOLmiRkUQ7kNvwHXcWSQ&_nc_oc=AdqdEABRxdLg65fvbhCzhTOS93ZQFVMT5AWyUfpof-NrK4-nPOmgGvXBa4UD2_2Xlk0&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=KW3-ocI8q-mv2OVOuga0gA&_nc_ss=7a289&oh=00_AQEn4tC-oPYNRmNLCOEWJL18miOuls4Lk8tVgKHRAa_REA&oe=6AAB6386"
   },
   "comp3": {
     "title": "It Includes",
@@ -11,17 +11,17 @@
       {
         "id": 1,
         "title": "UTC time and data-epoch status",
-        "image": "https://tse4.mm.bing.net/th/id/OIP._WcuwkKWEwP3LBSg4LQF7gHaE7?r=0&pid=ImgDet&w=199&h=132&c=7&dpr=1.5&o=7&rm=3"
+        "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93276932_1591959584294854_7185631950093156352_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=101&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=vzaUFFoNGAMQ7kNvwG9nTkO&_nc_oc=Adq5ru20ywM7eT4981G6CNzxqkLja1TdndGRbkcEKGFSXoI2MwLiPq9lJPALmMchKG4&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=pMI5Y8fFSsGirsEcNITREg&_nc_ss=7a289&oh=00_AQFzGxDWQ6htDJLAwbUPQe013y9uc7kVirPYT81PfeNtVA&oe=6AAB7FD8"
       },
       {
         "id": 2,
         "title": "Visible and tracked satellites",
-        "image": "https://tse2.mm.bing.net/th/id/OIP.pLnr-3ZioNM3OcKQNDKgHwHaEf?r=0&pid=ImgDet&w=199&h=120&c=7&dpr=1.5&o=7&rm=3"
+        "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t39.30808-6/485151831_1188786416369813_3942919946031294113_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zd1BIoqhEKYQ7kNvwFwW8FM&_nc_oc=AdqxLTS634mbLslDk19AV13TnHSN_Qz7g4eZlIV13V_N1tkxiCR0qWvgOGIYjhi416o&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=qFeh6nYvn-k7VY0-_zmW-w&_nc_ss=7a289&oh=00_AQEMwHmQZIv_jeR_wGbA7tpVr_qUhHdrcFiVyW_1DM2_Pg&oe=6A89DD1F"
       },
       {
         "id": 3,
         "title": "Skyplot: satellite azimuth and elevation",
-        "image": "https://tse1.mm.bing.net/th/id/OIP.HRQVbtvSLOb1_E6nQeM2ggHaE7?r=0&pid=ImgDet&w=199&h=132&c=7&dpr=1.5&o=7&rm=3"
+        "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93357703_1591860597638086_1143535794179276800_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1367&ctp=s2048x1367&_nc_cat=102&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=HAxl9aIfQZwQ7kNvwGOWjYw&_nc_oc=AdquagM7FTWTUcLBYs3zHqW6saj59vCjl3n3drCag4HupZs6yZo6KP0KSQXFiv78TzY&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=Lx4ds4mCfMwxWgEgVURNfw&_nc_ss=7a289&oh=00_AQHZ7bmJqboG0QHvwlkB70vTjQ1z1OFhuXZJy6ADo-a4Ug&oe=6AAB6668"
       },
       {
         "id": 4,
@@ -68,7 +68,7 @@
   "comp4": {
     "title": "Space Weather Observatory",
     "description": "The Space Weather Observatory presents the Sun-Earth environment as an interconnected system, linking solar activity, solar wind, the magnetosphere and the ionosphere with their effects on GNSS signals and positioning performance.",
-    "image": "https://cdn.mos.cms.futurecdn.net/Y3ZmpCDuJKyDuQGjq4AhCa-1200-80.jpg"
+    "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93062009_1591951217629024_4578519280240295936_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=0hqfPjDVL3YQ7kNvwG-ur8h&_nc_oc=AdrdfVjvUNsESsrIKRmx6RzsUEPNSkrN0bbK-N8HyrRJCQTf2WZsz6DU_XAJGSghOfo&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=jlGKD7rs3weSE9IVhjQpnQ&_nc_ss=7a289&oh=00_AQFEY5Kq-e0eWWYJRvpDsMTvvqGezL6JX9LYo8WreOjOwQ&oe=6AAB66B5"
   },
   "comp5": {
     "title": "It Links",

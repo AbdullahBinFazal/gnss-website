@@ -3,10 +3,10 @@
 "comp3": {
   "title": "GNSS Receivers and Antennas",
   "description": "The laboratory supports multi-constellation and multi-frequency observations through research-grade and cost-effective GNSS receivers. Its receiver ecosystem includes Septentrio and u-blox platforms, geodetic antennas, survey accessories and configurable hardware for positioning, timing and signal-quality studies.",
-  "image": "https://apiweb.ist.edu.pk/media/original_images/524621008_1212422727565885_3425970150472339642_n.jpg"
+  "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93782006_1591951100962369_2785574921848225792_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=102&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=RWEwoBtKw-sQ7kNvwGo4XGr&_nc_oc=AdrZWS8aGQuGHlo8ERQkKvWyspMrwlLvmjemVkpCuVPpRNH4xyVjIrE73_5gr_tj1Mo&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=bycKMJlw79nACkKY22j3Nw&_nc_ss=7a289&oh=00_AQF3693njlKs5SIfbb57K2NASmkbNUQ_DJfdJU89KiJ03g&oe=6AAB79FF"
 },
   "comp4": {
-    "title": "Software and Processing Platforms",
+    "title": "Software Processing Platforms",
     "description": "Dedicated platforms support simulation, post-processing, real-time positioning and data analysis. The working environment includes MATLAB, Systems Tool Kit, RTKLIB, GNSS-SDR, RINEX utilities and custom tools for:",
     "platformCards": {
       "title": "The working environment includes :",
@@ -37,7 +37,7 @@
   "comp5": {
     "title": "ICTP GNSS Station",
     "description": "The ICTP GNSS station supports continuous observation of navigation signals and contributes to research in ionospheric variability and space weather. The station strengthens international scientific cooperation and enables the lab to connect local observations with broader research networks.",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.ye1KHoD-sOsydD6KLfOMawHaFj?r=0&pid=ImgDet&w=178&h=133&c=7&dpr=1.5&o=7&rm=3"
+    "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93518383_1591883624302450_4372497889553809408_n.jpg?stp=dst-jpg_tt6&cstp=mx1944x1296&ctp=s1944x1296&_nc_cat=107&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=nPWeYt-dcEMQ7kNvwGM8kr5&_nc_oc=Adq7vuSPH99oK8XlaBEGjE0eGctSH5_ktW4cvBysWd5TSI9d82jXzp63teZt_QUIlVo&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=0AhW3svDI1IMWd0xvwV-OA&_nc_ss=7a289&oh=00_AQFoVsEWTUtynxnQnl3oNuhoragBIf658SrZxZK94NzpqQ&oe=6AAB6388"
   },
   "comp6": {
     "title": "GISTM Receiver",
@@ -71,7 +71,7 @@
   "comp7": {
     "title": "Academic CORS Network",
     "description": "The Academic and Research GNSS CORS Network is designed to support high-precision positioning, geodetic research, training and practical applications in the Islamabad region. The infrastructure enables reference-station data access, RTK/NRTK experimentation, correction delivery and long-term coordinate monitoring.",
-    "image": "https://media.licdn.com/dms/image/v2/D4D22AQEEDkP_abgOdw/feedshare-shrink_800/B4DZPK8UFEHMAk-/0/1734276631324?e=2147483647&v=beta&t=6OIUK3uiS5IYE4E6xkuz-FE-IOOHWepQWODnEYnwGqg"
+    "image": "https://scontent.fisb9-1.fna.fbcdn.net/v/t1.6435-9/93028224_1591974164293396_6386180992612171776_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x720&ctp=s1080x720&_nc_cat=103&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=3NaKxAeZd8UQ7kNvwEcnQT8&_nc_oc=AdoAJHego9reZTnUZ5PiGo5Yfh-z8Hund2_Letpyj8HL4hpni5Usj7zK1cNOWPXNhT4&_nc_zt=23&_nc_ht=scontent.fisb9-1.fna&_nc_gid=fQT2coinSv_VzXHaI2QIkA&_nc_ss=7a289&oh=00_AQFkTd43pcerOIZKrGh5LrdPs-GUbNYdMNQaTBBIw286kA&oe=6AAB4A0B"
   },
   "comp8": {
     "title": "Student Research Workstations",
