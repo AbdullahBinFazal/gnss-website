@@ -246,11 +246,11 @@ const desktopStyles = {
   },
   firstRow: {
     padding: "0",
-    paddingRight: "170px",
+    paddingRight: "230px",
   },
   secondRow: {
     padding: "0",
-    paddingRight: "170px",
+    paddingRight: "230px",
   },
   thirdRow: {
     padding: "0",
