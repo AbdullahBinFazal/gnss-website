@@ -106,7 +106,7 @@ const navbarStyles = {
     width: "100%",
     flex: 1,
     padding: "4px 10px",
-    minHeight: "40px",
+    minHeight: "50px",
   },
   desktopMenu: {
     display: "flex",
@@ -133,7 +133,7 @@ const navbarStyles = {
   navLink: {
     fontFamily: "'Space Grotesk', sans-serif",
     fontWeight: 500,
-    fontSize: "10px",
+    fontSize: "12px",
     lineHeight: "10px",
     color: "#fefefe",
     textDecoration: "none",
@@ -254,7 +254,7 @@ const desktopStyles = {
   },
   thirdRow: {
     padding: "0",
-    paddingRight: "20px",
+    paddingRight: "90px",
   },
   desktopMenu: {
     flex: 1,
