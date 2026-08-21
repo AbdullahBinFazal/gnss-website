@@ -14,7 +14,7 @@ import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
 import UserDashboard from "./pages/UserDashboard/UserDashboard";
 import Faculty from "./pages/Faculty/Faculty";  
 import Programs from "./pages/Programs/Programs";
-import CoPilot from "./pages/CoPilot/CoPilot";
+import Copilot from "./pages/Copilot";
 import Collaborations from "./pages/Collaborations/Collaborations";
 import Opportunities from "./pages/Opportunities/Opportunities";
 import CapacityBuilding from "./pages/CapacityBuilding/CapacityBuilding";
@@ -46,7 +46,7 @@ function AppContent() {
           <Route path="/register" element={<Register />} />
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/programs" element={<Programs />} />
-          <Route path="/copilot" element={<CoPilot />} />
+          <Route path="/copilot" element={<Copilot />} />
           <Route path="/collaborations" element={<Collaborations />} />
           <Route path="/dashboard" element={<ProtectedRoute><UserDashboard /></ProtectedRoute>} />
           <Route path="/contact-us" element={<ContactUs />} />

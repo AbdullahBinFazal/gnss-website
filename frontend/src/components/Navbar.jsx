@@ -408,7 +408,7 @@ const Navbar = () => {
     { key: "internships-section", label: "Internships" },
   ];
 
-  const coPilotSections = [];
+  
 
   // ─── DESKTOP MENU ITEMS ───
   const desktopMenuItems = [
@@ -628,30 +628,20 @@ const Navbar = () => {
       ),
     },
     {
-      key: "/copilot",
-      label: (
-        <Dropdown
-          menu={{
-            items: createDropdownItems(coPilotSections, "/copilot"),
-            style: { background: "#0B1019", border: "1px solid #283243" },
-          }}
-          placement="bottom"
-          trigger={["hover"]}
-          overlayStyle={{ background: "#0B1019" }}
-        >
-          <NavLink 
-            to="/copilot" 
-            style={({ isActive }) => ({
-              ...styles.navLink,
-              ...(isActive ? styles.activeNavLink : {}),
-            })}
-          >
-            Co-Pilot <DownOutlined style={navbarStyles.dropdownArrow} />
-            {location.pathname === "/copilot" && <span style={styles.activeUnderline} />}
-          </NavLink>
-        </Dropdown>
-      ),
-    },
+  key: "/copilot",
+  label: (
+    <NavLink 
+      to="/copilot" 
+      style={({ isActive }) => ({
+        ...styles.navLink,
+        ...(isActive ? styles.activeNavLink : {}),
+      })}
+    >
+      Co-Pilot
+      {location.pathname === "/copilot" && <span style={styles.activeUnderline} />}
+    </NavLink>
+  ),
+},
     {
       key: "/contact-us",
       label: (
